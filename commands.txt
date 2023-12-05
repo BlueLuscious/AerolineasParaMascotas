@@ -1,0 +1,26 @@
+# cd (folder) or (.. (back))
+# pip freeze or pip list (show all package)
+
+Create virtual venv
+    # python -m venv .venv
+    # Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+    # .venv\Scripts\activate.bat y venv\Scripts\deactivate.bat (cmd)
+    # .venv\Scripts\activate y deactivate (python)
+    # .venv\Scripts\activate.ps1 y deactivate (powershell)
+
+Create proyects and apps
+    # django-admin startproject (name)
+    # django-admin startapp BFB (name)
+
+Proyect commands 
+    # python manage.py runserver
+    # python manage.py migrate
+    # python manage.py makemigration (name)
+    # python manage.py createsuperuser
+
+Create requirements
+    # pip install package-name (once)
+    # pip freeze > requirements.txt
+
+Define the environment variable 
+    # set DJANGO_SETTINGS_MODULE=myproject.settings 
