@@ -248,10 +248,6 @@
 
 
 
-
-
-
-
                         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
                             <div class="tm-bg-white">
                                 <div class="tm-bg-primary tm-sidebar-pad">
@@ -261,30 +257,33 @@
                                 {% comment %} <!-- -------------------------------------------------------------------------------------------------------------------------- -->
                                 <!-- BLOCKCONTENT DE DESTINATION --> {% endcomment %}
                                 <div class="tm-sidebar-pad-2">
-                                    <a href="#" class="media tm-media tm-recommended-item">
-                                        <img src="img/tn-img-01.jpg" alt="Image">
-                                        <div class="media-body tm-media-body tm-bg-gray">
-                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Europe</h4>
-                                        </div>                                        
-                                    </a>
-                                    <a href="#" class="media tm-media tm-recommended-item">
-                                        <img src="img/tn-img-02.jpg" alt="Image">
-                                        <div class="media-body tm-media-body tm-bg-gray">
-                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Asia</h4>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="media tm-media tm-recommended-item">
-                                        <img src="img/tn-img-03.jpg" alt="Image">
-                                        <div class="media-body tm-media-body tm-bg-gray">
-                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Africa</h4>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="media tm-media tm-recommended-item">
-                                        <img src="img/tn-img-04.jpg" alt="Image">
-                                        <div class="media-body tm-media-body tm-bg-gray">
-                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">South America</h4>
-                                        </div>
-                                    </a>
+                                    {% for destination in destinations %}
+                                    {% comment %} <a href="#" class="media tm-media tm-recommended-item"></a> {% endcomment %}
+                                        {% comment %} <img src="img/tn-img-01.jpg" alt="Image"> {% endcomment %}
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <div class="media-body tm-media-body tm-bg-gray">
+                                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">{{ destination.country }}</h4>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="tm-bg-white-shadow">
+                                                        <ul>
+                                                            <li>
+                                                                <h5>{{ destination.city }}</h5>
+                                                            </li>
+                                                            <li>
+                                                                <h5>{{ destination.airport }}</h5>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    {% endfor %}
                                 </div>
                                 {% comment %} <!-- CIERRE BLOCKCONTENT DESTINATION -->
                                 <!-- -------------------------------------------------------------------------------------------------------------------------- --> {% endcomment %}
@@ -293,9 +292,6 @@
                     </div>
                 </div>
             </div>
-
-
-
 
 
 
