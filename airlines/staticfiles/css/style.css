@@ -1,0 +1,49 @@
+.tm-article-carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-indicators li {
+    cursor: pointer;
+}
+
+.carousel-caption h5 {
+    padding: 1%;
+    border-radius: 50vh;
+    background-color: rgb(30, 30, 30);
+}
+
+.carousel-caption h5:first-of-type {
+    font-size: 1.5em;
+}
+.carousel-caption h5:last-of-type {
+    color: rgb(175, 175, 175);
+    font-size: 1.25em;
+}
+
+/* company name responsive */
+.company-name {
+    color: white;
+    font-size: 2em;
+}
+
+@media screen {
+    @media (max-width: 524px) {
+        .company-name {
+            font-size: 1.5em;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .company-name {
+            font-size: 1.25em;
+        }
+    }
+    
+    @media (max-width: 340px) {
+        .company-name {
+            font-size: 1em;
+        }
+    }
+}
+/* company name responsive */

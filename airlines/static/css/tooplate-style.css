@@ -11,6 +11,7 @@ body {
 	font-size: 13px;
 	font-weight: 400;
 	overflow-x: hidden;
+	background-color: rgb(35, 35, 35);
 }
 
 a, button { transition: all 0.3s ease; }
@@ -26,10 +27,13 @@ a:focus {
 .tm-margin-b-0 { margin-bottom: 0; }
 .tm-margin-b-20 { margin-bottom: 20px; }
 .tm-p-4 { padding: 2rem!important; }
+.tm-color-black { color: rgb(30, 30, 30); }
 .tm-color-white { color: white; }
 .tm-color-primary {	color: #fc8014; }
 .tm-bg-primary { background: #fc8014; }
+.tm-bg-secondary { background: #fc8014; }
 .tm-bg-gray { background: #F4F4F4; }
+.tm-bg-black { background: rgb(30, 30, 30); }
 .tm-bg-white { background: white; }
 .tm-bg-dark-blue { background: #1f3646; }
 
@@ -69,7 +73,7 @@ p {
 	font-size: 1.8rem;
 	font-weight: 700;
 }
-.navbar a { color: black; }
+.navbar a { color: white; }
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(238, 80, 87, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -97,7 +101,7 @@ p {
 
 .nav-link.active,
 .nav-link:hover {
-	color: white;
+	color: rgb(30, 30, 30);
 	background: #fc8014;	
 }
 
@@ -111,8 +115,7 @@ p {
     padding: 0;
     z-index: 10000;
     transition: all 0.2s ease-in-out;
-    height: 119px;
-    background: white;
+    background: rgb(30, 30, 30);
 }
 
 .tm-top-bar.active {
@@ -121,7 +124,6 @@ p {
 }
 
 .tm-top-bar.active .navbar-expand-lg .navbar-nav .nav-link { padding: 30px 35px; }
-.tm-top-bar-bg { height: 119px; }
 .tm-section { min-height: 515px; }
 
 .tm-section-pad {
@@ -137,7 +139,7 @@ p {
 #tm-section-5 { background-image: url('../img/bg-img-2.jpg'); }
 
 #tm-section-6 {
-	background-image: url('../img/bg-img-3.jpg');
+	background-image: url('../img/bg-img-3-copy.jpg');
 	background-position: top center;
 	padding-top: 120px;
 	padding-bottom: 60px;
@@ -260,7 +262,7 @@ select.tm-select::-ms-expand { display: none; }
 }
 
 .tm-section-title {
-	color: white;
+    color: rgb(30, 30, 30);
 	font-size: 3rem;
 }
 
@@ -280,15 +282,15 @@ select.tm-select::-ms-expand { display: none; }
 .tm-btn-white-bordered {
 	display: inline-block;
 	padding: 10px 25px;
-	border: 2px solid white;
+	border: 2px solid rgb(30, 30, 30);;
 	background: transparent;
 	text-transform: uppercase;
 }
 
 .tm-btn-white-bordered:hover,
 .tm-btn-white-bordered:focus {
-	color: #ee5057;
-	background: white;	
+	color: #fc8014;
+	background: rgb(30, 30, 30);
 }
 
 .slick-dots { bottom: -35px; }
