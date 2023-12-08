@@ -18,6 +18,8 @@ Proyect commands
     # python manage.py makemigration (name)
     # python manage.py createsuperuser
 
+    # python manage.py collectstatic
+
 Create requirements
     # pip install package-name (once)
     # pip freeze > requirements.txt
