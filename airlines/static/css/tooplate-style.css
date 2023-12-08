@@ -142,7 +142,9 @@ p {
 	padding-top: 120px;
 	padding-bottom: 60px;
 }
-
+.logotipo{
+	width: 100px;
+}
 .tm-bg-img {
 	background-position: center center;
 	background-repeat: no-repeat;
