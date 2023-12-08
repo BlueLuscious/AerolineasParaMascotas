@@ -1,7 +1,6 @@
 .logotipo{
     width: 80px;
     border-radius: 5em;
-    margin-right: 2em;
 }
 
 .tm-article-carousel {
@@ -28,6 +27,7 @@
 }
 
 .company-name {
+    margin-left: 2em;
     color: white;
     font-size: 2em;
 }
@@ -37,11 +37,11 @@
     @media (max-width: 1200px) {
         .company-name {
             font-size: 1.8em;
+            margin-left: 0;
         }
 
         .logotipo{
-            width: 50px;
-            margin-right: 0;
+            width: 60px;
         }
 
         .tm-top-bar {
@@ -52,6 +52,10 @@
     @media (max-width: 767px) {
         .company-name {
             font-size: 1.5em;
+        }
+
+        .logotipo{
+            width: 50px;
         }
 
         .navbar-toggler {
@@ -78,6 +82,10 @@
     @media (max-width: 355px) {
         .company-name {
             font-size: 1em;
+        }
+
+        .logotipo{
+            width: 45px;
         }
 
         .navbar-toggler {
