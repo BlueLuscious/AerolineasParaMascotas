@@ -9,6 +9,10 @@
     <title>Level HTML Template by Tooplate</title>
     {% load static %}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Martian+Mono:wght@700&family=Noto+Serif+Makasar&family=Oswald:wght@500&family=Overlock+SC&family=Pacifico&display=swap" rel="stylesheet">
+
     <!-- Google web font "Open Sans" -->
     <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}"> <!-- Font Awesome -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> <!-- Bootstrap style -->
@@ -38,26 +42,26 @@
                         
                         <nav class="navbar navbar-expand-lg narbar-light">
                             <a class="navbar-brand mr-auto" href="#">
-                                <img src="img/logo.png" alt="">
-                            Aerolineas para mascotas
+                                <img src="{% static 'img/logotipo.jpg' %}" class="logotipo">
+                            Aerolinea para mascotas
                             </a>
                             <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             
-                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-black">
                                 <ul class="navbar-nav ml-auto">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="#top">Inicio <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-4">Portfolio</a>
+                                    <a class="nav-link" href="#tm-section-4">Quienes somos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-5">Blog Entries</a>
+                                    <a class="nav-link" href="#tm-section-5">Opiniones</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-6">Contact Us</a>
+                                    <a class="nav-link" href="#tm-section-6">Contactanos</a>
                                 </li>
                             </ul>
                         </div>
@@ -70,87 +74,7 @@
                 <div class="container ie-h-align-center-fix">
                     <div class="row">
                         <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
-                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
-                                <div class="form-row tm-search-form-row">
-                                    <div class="form-group tm-form-element tm-form-element-100">
-                                        <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
-                                        <input name="city" type="text" class="form-control" id="inputCity"
-                                            placeholder="Type your destination...">
-                                    </div>
-                                    <div class="form-group tm-form-element tm-form-element-50">
-                                        <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
-                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn"
-                                            placeholder="Check In">
-                                    </div>
-                                    <div class="form-group tm-form-element tm-form-element-50">
-                                        <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
-                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut"
-                                            placeholder="Check Out">
-                                    </div>
-                                </div>
-                                <div class="form-row tm-search-form-row">
-                                    <div class="form-group tm-form-element tm-form-element-2">
-                                        <select name="adult" class="form-control tm-select" id="adult">
-                                            <option value="">Adult</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
-                                        </select>
-                                        <i class="fa fa-2x fa-user tm-form-element-icon"></i>
-                                    </div>
-                                    <div class="form-group tm-form-element tm-form-element-2">
-                                        <select name="children" class="form-control tm-select" id="children">
-                                            <option value="">Children</option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
-                                        </select>
-                                        <i class="fa fa-user tm-form-element-icon tm-form-element-icon-small"></i>
-                                    </div>
-                                    <div class="form-group tm-form-element tm-form-element-2">
-                                        <select name="room" class="form-control tm-select" id="room">
-                                            <option value="">Room</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
-                                        </select>
-                                        <i class="fa fa-2x fa-bed tm-form-element-icon"></i>
-                                    </div>
-                                    <div class="form-group tm-form-element tm-form-element-2">
-                                        <button type="submit" class="btn btn-primary tm-btn-search">Check
-                                            Availability</button>
-                                    </div>
-                                </div>
-                                <div class="form-row clearfix pl-2 pr-2 tm-fx-col-xs">
-                                    <p class="tm-margin-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                    <a href="#"
-                                        class="ie-10-ml-auto ml-auto mt-1 tm-font-semibold tm-color-primary">Need
-                                        Help?</a>
-                                </div>
-                            </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -161,9 +85,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
-                        <h2 class="tm-section-title">We are here to help you?</h2>
-                        <p class="tm-color-black tm-section-subtitle">Subscribe to get our newsletters</p>
-                        <a href="#" class="tm-color-black tm-btn-white-bordered">Subscribe Newletters</a>
+                        <h2 class="tm-section-title">¿A donde vas hoy? </h2>
+                        <h4 class="tm-section-menortitle"> Deja a tu amigo peludo en las mejores manos </h4>
+                        <p class="tm-color-black tm-section-subtitle">Especialistas en traslado de mascotas</p>
+                        <a href="#" class="tm-color-black tm-btn-white-bordered">Ver mas</a>
                     </div>
                 </div>
             </div>
@@ -177,22 +102,24 @@
             <div class="container tm-pt-5 tm-pb-4">
                 <div class="row text-center">
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
-                        <i class="fa tm-fa-6x fa-legal tm-color-primary tm-margin-b-20"></i>
-                        <h3 class="tm-color-primary tm-article-title-1">Level HTML Template by Tooplate website</h3>
-                        <p>You are allowed to download, edit and use this template for your business or client websites.
+                        <i class="fa tm-fa-6x fa-paw tm-color-primary tm-margin-b-20"></i>
+                        <h3 class="tm-color-primary tm-article-title-1">[Inserte frase]</h3>
+                        <p>[inserte parrafo]
                         </p>
                         <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-plane tm-color-primary tm-margin-b-20"></i>
-                        <h3 class="tm-color-primary tm-article-title-1">Original Website Template Producer</h3>
-                        <p>You are NOT allowed to re-distribute the downloadable template ZIP file on any website.</p>
+                        <h3 class="tm-color-primary tm-article-title-1">[Inserte frase]</h3>
+                        <p>[inserte parrafo]
+                        </p>
                         <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-life-saver tm-color-primary tm-margin-b-20"></i>
-                        <h3 class="tm-color-primary tm-article-title-1">Contact us if you have any question</h3>
-                        <p>If you see this template being distributed on any other site, that is an illegal copy.</p>
+                        <h3 class="tm-color-primary tm-article-title-1">[Inserte frase]</h3>
+                        <p>[inserte parrafo]
+                        </p>
                         <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
                     </article>
                 </div>
