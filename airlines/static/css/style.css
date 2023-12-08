@@ -1,6 +1,9 @@
 .logotipo{
-    width: 100px;
+    width: 80px;
+    border-radius: 5em;
+    margin-right: 2em;
 }
+
 .tm-article-carousel {
     display: flex;
     justify-content: center;
@@ -24,29 +27,61 @@
     font-size: 1.25em;
 }
 
-/* company name responsive */
 .company-name {
     color: white;
     font-size: 2em;
 }
 
 @media screen {
-    @media (max-width: 524px) {
+
+    @media (max-width: 1200px) {
         .company-name {
-            font-size: 1.5em;
+            font-size: 1.8em;
+        }
+
+        .logotipo{
+            width: 50px;
+            margin-right: 0;
+        }
+
+        .tm-top-bar {
+            height: 67.5px;
         }
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 767px) {
+        .company-name {
+            font-size: 1.5em;
+        }
+
+        .navbar-toggler {
+            font-size: 1em;
+        }
+
+        .navbar-toggler-icon {
+            height: 2em;
+        }
+    }
+
+    @media (max-width: 475px) {
         .company-name {
             font-size: 1.25em;
         }
     }
     
-    @media (max-width: 340px) {
+    @media (max-width: 410px) {
+        .navbar-toggler {
+            font-size: 0.75em;
+        }
+    }
+    
+    @media (max-width: 355px) {
         .company-name {
             font-size: 1em;
         }
+
+        .navbar-toggler {
+            font-size: 0.75em;
+        }
     }
 }
-/* company name responsive */

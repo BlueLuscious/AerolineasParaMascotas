@@ -183,7 +183,7 @@ p {
 }
 
 .tm-top-bar .navbar-expand-lg .navbar-nav .nav-link {
-	padding:10px 35px;
+	padding: 15px 35px;
 }
 
 .tm-top-bar {
@@ -216,7 +216,7 @@ p {
 }
 
 #tm-section-1 {
-	background-image: url('../img/bg-img-1.jpg');
+	background-image: url('../img/bg-img-1.png');
 	height: 515px;
 }
 
@@ -229,10 +229,6 @@ p {
 	background-position: top center;
 	padding-top: 120px;
 	padding-bottom: 60px;
-}
-
-.logotipo {
-	width: 100px;
 }
 
 .tm-bg-img {
@@ -606,7 +602,6 @@ video {
 @media screen and (max-width: 991px) {
 
 	.tm-top-bar.active,
-	.tm-top-bar,
 	.tm-top-bar-bg {
 		height: 65px;
 	}
