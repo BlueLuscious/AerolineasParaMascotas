@@ -229,29 +229,30 @@
         </svg>
         <div class="container ie-h-align-center-fix">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-7">
-                    <div id="google-map"></div>
-                </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-5 mt-3 mt-md-0">
                     <div class="tm-bg-white tm-p-4">
-                        <form action="index.html" method="post" class="contact-form">
+                        <form action="/index/" method="get" class="contact-form">
+                            {% csrf_token %}
                             <div class="form-group">
                                 <input type="text" id="contact_name" name="contact_name" class="form-control"
-                                    placeholder="Name" required />
+                                    placeholder="Nombre completo" required />
                             </div>
+                            <div class="warning"></div>
                             <div class="form-group">
                                 <input type="email" id="contact_email" name="contact_email" class="form-control"
                                     placeholder="Email" required />
                             </div>
+                            <div class="warning"></div>
                             <div class="form-group">
-                                <input type="text" id="contact_subject" name="contact_subject" class="form-control"
-                                    placeholder="Subject" required />
+                                <input type="text" id="contact_phone" name="contact_phone" class="form-control"
+                                    placeholder="Telefono" required />
                             </div>
-                            <div class="form-group">
+                            <div class="warning"></div>
+<!--                             <div class="form-group">
                                 <textarea id="contact_message" name="contact_message" class="form-control" rows="9"
-                                    placeholder="Message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary tm-btn-primary">Send Message Now</button>
+                                    placeholder="Comentarios"></textarea>
+                            </div> -->
+                            <button type="submit" id="send_contact_form" class="btn btn-primary tm-btn-primary">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -259,7 +260,7 @@
         </div>
     </div>
 
-    <footer class="tm-bg-dark-blue">
+    <footer class="tm-bg-black">
         <div class="container">
             <div class="row">
                 <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
@@ -293,6 +294,7 @@
     <script src="{% static 'js/datepicker.min.js' %}"></script>
     <script src="{% static 'js/jquery.singlePageNav.min.js' %}"></script>
     <script src="{% static 'slick/slick.min.js' %}"></script>
+    <script type="module" src="{% static 'js/script.js' %}"></script>
 
     <script>
         $(document).ready(function () {
