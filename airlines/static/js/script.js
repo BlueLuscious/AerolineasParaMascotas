@@ -2,10 +2,14 @@ import { FormValidations } from "./validations.js"
 const validator = new FormValidations
 
 document.addEventListener('DOMContentLoaded', function() {
-
     const inputs = Array.from(document.getElementsByClassName('form-control'))
     const sendForm = document.getElementById('send_contact_form')
     const warnings = Array.from(document.getElementsByClassName('warning'))
+
+    const choices = Array.from(document.getElementsByClassName('choices_contact_bar'))
+    const emailChoice = document.getElementById('email_choice')
+    const whatsappChoice = document.getElementById('whatsapp_choice')
+    const choicesDivs = [emailChoice, whatsappChoice]
     
     inputs.forEach(function(input, index) {
         input.addEventListener('click', function() {
@@ -19,15 +23,37 @@ document.addEventListener('DOMContentLoaded', function() {
         warning.style.display = 'none'
     })
 
+    let email_is_active = true
+    let whatsapp_is_active = false
+
+    choices.forEach(function(choice, index) {
+        choice.addEventListener('click', function() {
+            if (index == 0) {
+                changeModeActive(choicesDivs[1], choicesDivs[0])
+                email_is_active = true
+                whatsapp_is_active = false
+            }
+            if (index == 1) {
+                changeModeActive(choicesDivs[0], choicesDivs[1])
+                email_is_active = false
+                whatsapp_is_active = true
+            }
+        })
+    })
+
     /* validate form */
     sendForm.addEventListener('click', function(event) {
-        
         const validatedName = validator.validateFullName(inputs[0], warnings[0])
         const validatedEmail = validator.validateEmail(inputs[1], warnings[1])
         const validatedPhone = validator.validatePhoneNumber(inputs[2], warnings[2])
 
         if (validatedName && validatedEmail && validatedPhone) {
-            openEmail(inputs[0].value, inputs[1].value, inputs[2].value)
+            if (email_is_active){
+                openEmail(inputs[0].value, inputs[1].value, inputs[2].value)
+            }
+            if (whatsapp_is_active) {
+                openWhatsApp(inputs[0].value, inputs[1].value, inputs[2].value)
+            }
             sendForm.submit()
         } else {
             showWarning(validatedName, warnings[0])
@@ -35,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
             showWarning(validatedPhone, warnings[2])
             event.preventDefault()
         }
-
     })
     /* validate form */
 
@@ -49,12 +74,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /* open emailWin */
     function openEmail(fullName, email, phone) {
-        const body = `Nombre completo: ${fullName}
-        Correo Electronico: ${email}
-        Telefono: ${phone}`
+        const body = `Nombre completo: ${fullName}.
+        Correo Electronico: ${email}.
+        Teléfono: ${phone}.`
     
         win=window.open(`mailto:santamarialucio01@gmail.com?subject=Datos de contacto&body=${encodeURIComponent(body)}`,'emailWin')
     }
     /* open emailWin */
 
+    /* open whatsapp */
+    function openWhatsApp(fullName, email, phone) {
+        const danielPhoneNumber = 5491150599636
+        const messageWA = `Datos de contacto:
+        Nombre completo: ${fullName}.
+        Correo Electronico: ${email}.
+        Teléfono: ${phone}.`
+
+        window.open(`https://wa.me/${danielPhoneNumber}/?text=${encodeURIComponent(messageWA)}`)
+    }
+    /* open whatsapp */
+
+    /* change clases to fake an active mode */
+    function changeModeActive(choiceDiv_0, choiceDiv_1) {
+        choiceDiv_0.removeAttribute('class')
+        choiceDiv_0.className = 'choice_contact_bar'
+        choiceDiv_1.removeAttribute('class')
+        choiceDiv_1.className = 'choice_contact_bar_alt'
+    }
+    /* change clases to fake an active mode */
 })

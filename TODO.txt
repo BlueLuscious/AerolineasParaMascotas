@@ -1,2 +1,1 @@
-# Cambiar fondo imagen arriba del footer. (Lucio)
-# Mejorar el envio del formulario de contacto. (Lucio)
+# Mejorar AUN MAS el envio del formulario de contacto. (Lucio)
