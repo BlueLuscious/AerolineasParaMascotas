@@ -260,7 +260,7 @@ p {
 }
 
 .form-control:focus {
-	border-color: #faa860;
+	border-color: #ffa556;
 	box-shadow: 0 0 0 0.2rem rgba(238, 80, 87, .25);
 }
 
@@ -278,8 +278,8 @@ p {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-	background-color: #faa860;
-	border-color: #faa860;
+	background-color: #ffa556;
+	border-color: #ffa556;
 }
 
 .tm-search-form .tm-form-element {
@@ -295,7 +295,7 @@ p {
 }
 
 .tm-form-element-icon {
-	color: #faa860;
+	color: #ffa556;
 	position: absolute;
 	top: 10px;
 	left: 15px;
@@ -485,7 +485,7 @@ select.tm-select::-ms-expand {
 }
 
 .tm-recommended-item:hover h4 {
-	color: #faa860;
+	color: #ffa556;
 }
 
 .tm-media {

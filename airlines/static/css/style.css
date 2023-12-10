@@ -1,3 +1,16 @@
+body::-webkit-scrollbar {
+    background-color: rgb(30, 30, 30);
+    width: 1.25em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fc8014;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #ffa556;
+}
+
 .warning {
     margin-bottom: 10%;
     padding: 2%;
