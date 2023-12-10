@@ -1,8 +1,96 @@
+/* body scrollbar color design */
+body::-webkit-scrollbar {
+    background-color: rgb(30, 30, 30);
+    width: 1.25em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fc8014;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #ffa556;
+}
+/* body scrollbar color design */
+
+.warning {
+    margin-bottom: 10%;
+    padding: 2%;
+    padding-left: 3%;
+    color: white;
+    background-color: #ee5057;
+}
+
+.row {
+    justify-content: center;
+}
+
+/* contact form choices */
+.choice_contact_bar button {
+    width: 225px;
+    border: 0.2em solid #ffa556;
+    outline: transparent;
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+}
+
+.choice_contact_bar button:hover {
+    border: 0.2em solid white;
+}
+
+.choice_contact_bar_alt button {
+    width: 225px;
+    border: 0.2em solid white;
+    outline: transparent;
+    color: white;
+}
+
+.choice_contact_bar:first-of-type button {
+    border-radius: 2em 0em 0em 2em;
+}
+
+.choice_contact_bar_alt:first-of-type button {
+    border-radius: 2em 0em 0em 2em;
+    background-color: #db4a39;
+}
+
+.choice_contact_bar:first-of-type button:hover {
+    background-color: #db6659;
+}
+
+.choice_contact_bar:last-of-type button {
+    border-radius: 0em 2em 2em 0em;
+}
+
+.choice_contact_bar_alt:last-of-type button {
+    border-radius: 0em 2em 2em 0em;
+    background-color: #00bb2d;
+}
+
+.choice_contact_bar:last-of-type button:hover {
+    background-color: #43ba5f;
+}
+
+.bi {
+    color: #ffa556;
+    font-size: 2.5em;
+}
+
+.choice_contact_bar_alt button .bi {
+    color: white;
+}
+
+.choice_contact_bar button:hover .bi {
+    color: white;
+}
+/* contact form choices */
+
 .logotipo{
     width: 80px;
     border-radius: 5em;
 }
 
+/* carrousel */
 .tm-article-carousel {
     display: flex;
     justify-content: center;
@@ -25,6 +113,7 @@
     color: rgb(175, 175, 175);
     font-size: 1.25em;
 }
+/* carrousel */
 
 .company-name {
     margin-left: 2em;
