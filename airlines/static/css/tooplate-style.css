@@ -80,7 +80,9 @@ a:focus {
 .tm-bg-white {
 	background: white;
 }
-
+.tm-contact-form {
+	background: rgba(0, 0, 0, 0.34);
+}
 .tm-bg-dark-blue {
 	background: #1f3646;
 }
@@ -584,8 +586,8 @@ video {
 }
 
 .contact-form .form-control {
-	background-color: #F4F4F4;
-	border: none;
+	background-color: #131313da;
+	border: 2px solid #fc8014;
 	font-size: 0.8rem;
 	font-weight: 300;
 }
