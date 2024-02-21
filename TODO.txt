@@ -1,1 +1,12 @@
 # Mejorar AUN MAS el envio del formulario de contacto. (Lucio)
+
+# Logo Colours:
+Blues:
+	#28489D
+	#2B72B6
+	#30A1E1
+
+Reds:
+	#C22922
+	#D52B2D
+	#EF242C

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Level HTML Template by Tooplate</title>
+    <title>Aerolineas para mascotas</title>
     {% load static %}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,14 +40,14 @@
     <body>
         <div class="tm-main-content" id="top">
             <div class="tm-top-bar-bg"></div>
-            <div class="tm-top-bar" id="tm-top-bar">
+            <div class="tm-top-bar tm-bg-primary" id="tm-top-bar">
                 <!-- Top Navbar -->
                 <div class="container">
                     <div class="row">
                         
                         <nav class="navbar navbar-expand-lg narbar-light">
                             <a class="navbar-brand mr-auto" href="#">
-                                <img src="{% static 'img/logotipo.jpg' %}" class="logotipo">
+                                <img src="{% static 'img/logotipo.png' %}" class="logotipo">
                             </a>
                             <div class="company-name navbar-brand mr-auto">Aerolinea para mascotas</div>
                             <div class="navbar-brand mr-auto"></div>
@@ -55,7 +55,7 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             
-                            <div id="mainNav" class="collapse navbar-collapse tm-bg-black">
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-primary">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item">
                                     <a class="nav-link" href="#top">Inicio <span class="sr-only">(current)</span></a>
@@ -95,7 +95,10 @@
                         <h2 class="tm-section-title">¿A donde vas hoy? </h2>
                         <h4 class="tm-section-menortitle"> Deja a tu amigo peludo en las mejores manos </h4>
                         <p class="tm-color-black tm-section-subtitle">Especialistas en traslado de mascotas</p>
-                        <a href="#" class="tm-color-black tm-btn-white-bordered">Ver mas</a>
+                        <a href="#"
+                            class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered">
+                            Ver mas
+                        </a>
                     </div>
                 </div>
             </div>
@@ -104,7 +107,7 @@
         <div class="tm-section tm-position-relative">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"
                 class="tm-section-down-arrow">
-                <polygon fill="#fc8014" points="0,0  100,0  50,60"></polygon>
+                <polygon fill="#28489D" points="0,0  100,0  50,60"></polygon>
             </svg>
             <div class="container tm-pt-5 tm-pb-4">
                 <div class="row text-center">
@@ -146,7 +149,7 @@
         <div class="tm-article-carousel">
             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
                 <div class="tm-bg-white">
-                    <div class="tm-bg-primary tm-sidebar-pad">
+                    <div class="tm-bg-secondary tm-sidebar-pad">
                         <h3 class="tm-color-white tm-sidebar-title">Te acompañamos a todos lados!</h3>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
                             data-slide="prev">
@@ -185,7 +188,7 @@
         <br><br><br><br>
         <!-- Bloody Carrousel -->
 
-        <div class="tm-section tm-section-pad tm-bg-secondary" id="tm-section-4">
+        <div class="tm-section tm-section-pad tm-bg-primary" id="tm-section-4">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
@@ -200,7 +203,9 @@
                                     <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam
                                         sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit
                                         amet viverra id, iaculis sit amet ligula.</p>
-                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">Get More Info.</a>
+                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary tm-color-white tm-border-radius-s">
+                                        Get More Info.
+                                    </a>
                                 </div>
                             </article>
                             <article class="tm-bg-white mr-2 tm-carousel-item">
@@ -213,7 +218,9 @@
                                     <p>Pellentesque quis dui sit amet purus scelerisque eleifend sed ut eros. Morbi
                                         viverra blandit massa in varius. Sed nec ex eu ex tincidunt iaculis.
                                         Curabitur eget turpis gravida.</p>
-                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">View Detail</a>
+                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary tm-color-white tm-border-radius-s">
+                                        View Detail
+                                    </a>
                                 </div>
                             </article>
                             <!-- Repite el patrón para las demás imágenes -->
@@ -228,7 +235,7 @@
     <div class="tm-section tm-section-pad tm-bg-img tm-position-relative" id="tm-section-6">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"
             class="tm-section-down-arrow">
-            <polygon fill="#fc8014" points="0,0  100,0  50,60"></polygon>
+            <polygon fill="#28489D" points="0,0  100,0  50,60"></polygon>
         </svg>
         <div class="container ie-h-align-center-fix">
             <div class="row">
@@ -255,7 +262,7 @@
                                 <textarea id="contact_message" name="contact_message" class="form-control" rows="9"
                                     placeholder="Comentarios"></textarea>
                             </div> -->
-                            <button type="submit" id="send_contact_form" class="btn btn-primary tm-btn-primary">Enviar</button>
+                            <button type="submit" id="send_contact_form" class="btn btn-primary tm-btn-primary tm-color-white">Enviar</button>
                         </form>
                     </div>
                 </div>

@@ -1,10 +1,5 @@
-/*
-
-Tooplate 2095 Level
-
-https://www.tooplate.com/view/2095-level
-
-*/
+/* Tooplate 2095 Level
+https://www.tooplate.com/view/2095-level */
 
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -41,6 +36,10 @@ a:focus {
 	margin-bottom: 0;
 }
 
+.tm-margin-b-5 {
+	margin-bottom: 5px;
+}
+
 .tm-margin-b-20 {
 	margin-bottom: 20px;
 }
@@ -58,15 +57,15 @@ a:focus {
 }
 
 .tm-color-primary {
-	color: #fc8014;
+	color: #28489D;
 }
 
 .tm-bg-primary {
-	background: #fc8014;
+	background: #28489D;
 }
 
 .tm-bg-secondary {
-	background: #fc8014;
+	background: #D52B2D;
 }
 
 .tm-bg-gray {
@@ -119,7 +118,7 @@ a:focus {
 
 a.tm-color-primary:hover,
 a.tm-color-primary:active {
-	color: #fc8014;
+	color: #28489D;
 }
 
 .tm-font-light {
@@ -132,6 +131,10 @@ a.tm-color-primary:active {
 
 .tm-font-semibold {
 	font-weight: 600;
+}
+
+.tm-border-radius-s {
+	border-radius: 0.25rem;
 }
 
 p {
@@ -159,7 +162,10 @@ p {
 }
 
 .navbar-toggler {
-	border-color: #fc8014;
+	border: 1.5px solid;
+	border-radius: 0.25rem;
+	border-color: #ffffff;
+	outline: none;
 	cursor: pointer;
 }
 
@@ -180,12 +186,13 @@ p {
 
 .nav-link.active,
 .nav-link:hover {
-	color: rgb(30, 30, 30);
-	background: #fc8014;
+	color: #EF242C;
+	background: #ffffff;
 }
 
 .tm-top-bar .navbar-expand-lg .navbar-nav .nav-link {
 	padding: 15px 35px;
+	transition: padding 0.3s ease;
 }
 
 .tm-top-bar {
@@ -196,7 +203,6 @@ p {
 	padding: 0;
 	z-index: 10000;
 	transition: all 0.2s ease-in-out;
-	background: rgb(30, 30, 30);
 }
 
 .tm-top-bar.active {
@@ -262,14 +268,14 @@ p {
 }
 
 .form-control:focus {
-	border-color: #ffa556;
+	border-color: rgb(30, 30, 30);
 	box-shadow: 0 0 0 0.2rem rgba(238, 80, 87, .25);
 }
 
 .btn-primary {
-	background-color: #fc8014;
-	border-color: #fc8014;
-	border-radius: 0;
+	border: 1.5px solid;
+	background-color: #EF242C;
+	border-color: #EF242C;
 	cursor: pointer;
 	font-size: 0.7rem;
 	font-weight: 600;
@@ -280,8 +286,9 @@ p {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-	background-color: #ffa556;
-	border-color: #ffa556;
+	color: #EF242C;
+	background-color: #ffffff;
+	border-color: #EF242C;
 }
 
 .tm-search-form .tm-form-element {
@@ -297,7 +304,7 @@ p {
 }
 
 .tm-form-element-icon {
-	color: #ffa556;
+	color: rgb(30, 30, 30);
 	position: absolute;
 	top: 10px;
 	left: 15px;
@@ -370,7 +377,7 @@ select.tm-select::-ms-expand {
 }
 
 .tm-section-2 {
-	background: #fc8014;
+	background: #28489D;
 	padding-top: 50px;
 	position: relative;
 }
@@ -383,9 +390,9 @@ select.tm-select::-ms-expand {
 
 .tm-section-menortitle {
 	font-family: 'Pacifico', cursive;
-	
 	color: rgb(30, 30, 30);
 	font-size: 1.9rem;
+	margin-bottom: 15px;
 }
 
 .tm-section-title-2 {
@@ -399,7 +406,7 @@ select.tm-select::-ms-expand {
 	font-family: 'Oswald', sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
-	margin-bottom: 25px;
+	margin-bottom: 40px;
 }
 
 .tm-section-subtitle-2 {
@@ -409,16 +416,15 @@ select.tm-select::-ms-expand {
 .tm-btn-white-bordered {
 	display: inline-block;
 	padding: 10px 25px;
-	border: 2px solid rgb(30, 30, 30);
-	;
-	background: transparent;
 	text-transform: uppercase;
 }
 
 .tm-btn-white-bordered:hover,
 .tm-btn-white-bordered:focus {
-	color: #fc8014;
-	background: rgb(30, 30, 30);
+	color: #EF242C;
+	background: #ffffff;
+	border: 1.5px solid;
+	border-color: #EF242C;
 }
 
 .slick-dots {
@@ -487,7 +493,7 @@ select.tm-select::-ms-expand {
 }
 
 .tm-recommended-item:hover h4 {
-	color: #ffa556;
+	color: rgb(30, 30, 30);
 }
 
 .tm-media {
@@ -587,7 +593,7 @@ video {
 
 .contact-form .form-control {
 	background-color: #131313da;
-	border: 2px solid #fc8014;
+	border: 2px solid #28489D;
 	font-size: 0.8rem;
 	font-weight: 300;
 }
@@ -599,6 +605,13 @@ video {
 	display: block;
 	height: 0;
 	clear: both;
+}
+
+@media screen and (max-width: 1200px) {
+	.tm-top-bar .navbar-expand-lg .navbar-nav .nav-link {
+		padding: 10px 30px;
+		transition: padding 0.3s ease;
+	}
 }
 
 @media screen and (max-width: 991px) {

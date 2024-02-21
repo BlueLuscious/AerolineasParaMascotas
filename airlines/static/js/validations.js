@@ -53,7 +53,7 @@ export class FormValidations {
             phoneNumberInput.style.borderBottomColor = 'rgb(180, 20, 60)'
             return false
         } else if (!/^\d+$/.test(phoneNumberInput.value)) {
-            warning.innerHTML = 'Telefeno debe tener solo letras'
+            warning.innerHTML = 'Telefeno debe tener solo numeros'
             phoneNumberInput.style.borderBottomColor = 'rgb(180, 20, 60)'
             return false
         } else if (phoneNumberInput.value.length != 10) {
