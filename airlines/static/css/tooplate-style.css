@@ -416,6 +416,8 @@ select.tm-select::-ms-expand {
 .tm-btn-white-bordered {
 	display: inline-block;
 	padding: 10px 25px;
+	border: 1.5px solid;
+	border-color: #EF242C;
 	text-transform: uppercase;
 }
 
@@ -423,8 +425,6 @@ select.tm-select::-ms-expand {
 .tm-btn-white-bordered:focus {
 	color: #EF242C;
 	background: #ffffff;
-	border: 1.5px solid;
-	border-color: #EF242C;
 }
 
 .slick-dots {
