@@ -193,36 +193,39 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
                         <div class="tm-article-carousel">
-                            <article class="tm-bg-white mr-2 tm-carousel-item">
-                                <img src="{% static 'img/img-01.jpg' %}" alt="Image" class="img-fluid">
-                                <div class="tm-article-pad">
-                                    <header>
-                                        <h3 class="text-uppercase tm-article-title-2">Nunc in felis aliquet metus
-                                            luctus iaculis</h3>
-                                    </header>
-                                    <p>Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. Nullam
-                                        sollicitudin at augue venenatis eleifend. Nulla ligula ligula, egestas sit
-                                        amet viverra id, iaculis sit amet ligula.</p>
-                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary tm-color-white tm-border-radius-s">
-                                        Get More Info.
-                                    </a>
+
+                            <article class="tm-bg-white tm-carousel-item">
+                                <div class="reel-container">
+                                    <video class="reel" muted>
+                                        <source src="{% static 'video/reel_n_0.mov' %}" type="video/mp4">
+                                    </video>
+                                </div>
+                            </article >
+
+                            <article class="tm-bg-white tm-carousel-item">
+                                <div class="reel-container">
+                                    <video class="reel" muted>
+                                        <source src="{% static 'video/reel_n_1.mov' %}" type="video/mp4">
+                                    </video>
                                 </div>
                             </article>
-                            <article class="tm-bg-white mr-2 tm-carousel-item">
-                                <img src="{% static 'img/img-02.jpg' %}" alt="Image" class="img-fluid">
-                                <div class="tm-article-pad">
-                                    <header>
-                                        <h3 class="text-uppercase tm-article-title-2">Sed cursus dictum nunc quis
-                                            molestie</h3>
-                                    </header>
-                                    <p>Pellentesque quis dui sit amet purus scelerisque eleifend sed ut eros. Morbi
-                                        viverra blandit massa in varius. Sed nec ex eu ex tincidunt iaculis.
-                                        Curabitur eget turpis gravida.</p>
-                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary tm-color-white tm-border-radius-s">
-                                        View Detail
-                                    </a>
+
+                            <article class="tm-bg-white tm-carousel-item">
+                                <div class="reel-container">
+                                    <video class="reel" muted>
+                                        <source src="{% static 'video/reel_n_2.mov' %}" type="video/mp4">
+                                    </video>
                                 </div>
                             </article>
+
+                            <article class="tm-bg-white tm-carousel-item">
+                                <div class="reel-container">
+                                    <video class="reel" muted>
+                                        <source src="{% static 'video/reel_n_3.mov' %}" type="video/mp4">
+                                    </video>
+                                </div>
+                            </article>
+
                             <!-- Repite el patrón para las demás imágenes -->
                         </div>
                     </div>
