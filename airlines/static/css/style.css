@@ -93,7 +93,13 @@ body::-webkit-scrollbar-thumb:hover {
 /* carrousel */
 .tm-article-carousel {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    gap: 20px;
+}
+
+.tm-carousel-item {
+    border-radius: 0.25rem;
 }
 
 .carousel-indicators li {
@@ -119,6 +125,13 @@ body::-webkit-scrollbar-thumb:hover {
     margin-left: 2em;
     color: white;
     font-size: 2em;
+}
+
+.reel {
+    display: flex;
+    height: 500px;
+    border-radius: 0.25rem;
+    z-index: 2;
 }
 
 @media screen {
