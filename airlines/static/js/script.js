@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const choicesDivs = [emailChoice, whatsappChoice]
     
     inputs.forEach(function(input, index) {
-        input.addEventListener('click', function() {
+        input.addEventListener('keydown', function() {
             if (index >= 0) {
                 warnings[index].style.display = 'none'
             }
