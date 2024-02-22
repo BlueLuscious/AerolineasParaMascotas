@@ -95,11 +95,11 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .tm-carousel-item {
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
 }
 
 .carousel-indicators li {
@@ -130,7 +130,7 @@ body::-webkit-scrollbar-thumb:hover {
 .reel {
     display: flex;
     height: 500px;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     z-index: 2;
 }
 
