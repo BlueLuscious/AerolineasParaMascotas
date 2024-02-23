@@ -107,6 +107,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const reels = Array.from(document.getElementsByClassName('reel'))
 
     reels.forEach((reel, index) => {
+        reel.volume = 0.5
+
         reel.addEventListener('mouseover', () => {
             if (index >= 0) {
                 reel.play()
