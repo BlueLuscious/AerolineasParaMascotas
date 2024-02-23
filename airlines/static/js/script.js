@@ -102,4 +102,25 @@ document.addEventListener('DOMContentLoaded', function() {
         choiceDiv_1.className = 'choice_contact_bar_alt'
     }
     /* change clases to fake an active mode */
+
+    /* reels */
+    const reels = Array.from(document.getElementsByClassName('reel'))
+
+    reels.forEach((reel, index) => {
+        reel.addEventListener('mouseover', () => {
+            if (index >= 0) {
+                reel.play()
+                reel.muted = false
+            }
+        })
+
+        reel.addEventListener('mouseout', () => {
+            if (index >= 0) {
+                reel.currentTime = 0
+                reel.pause()
+            }
+        })
+    })
+    /*  reel */
+
 })
