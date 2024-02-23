@@ -95,7 +95,8 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
+    gap: 60px;
 }
 
 .tm-carousel-item {
@@ -127,11 +128,28 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 2em;
 }
 
+.socials h1 span a {
+    color: #ff444a;
+}
+
+.socials h1 span a:hover {
+    padding: 0.5rem;
+    color: #ffffff;
+    background-color: #d92127;
+    border-radius: 0.5rem;
+}
+
 .reel {
     display: flex;
     height: 500px;
     border-radius: 0.5rem;
     z-index: 2;
+    transition: height 0.5s ease;
+}
+
+.reel:hover {
+    height: 525px;
+    box-shadow: 0px 0px 20px 0px rgba(214, 214, 214, 1);
 }
 
 @media screen {
