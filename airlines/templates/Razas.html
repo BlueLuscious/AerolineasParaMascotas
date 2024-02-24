@@ -1,9 +1,26 @@
 {% extends "Base.html" %}
 {% block content %}
-Servicio de entrega puerta a puerta con vehículos 0km. equipados para el confort de tu mascota.
-Incluye
-Traslado de la mascota desde el lugar de retiro hasta destino
-Jaulas transportadoras del tamaño necesario para tu mascota
-Todos los productos necesarios para el traslado
-Seguro de vida para tu mascota
+
+
+<div class="tm-section-2">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="tm-color-white tm-section-title">Aceptamos a todas las razas </h2>
+                <h4 class="tm-color-white tm-section-menortitle"> Deja a tu amigo peludo en las mejores manos </h4>
+                <p class="tm-color-white tm-section-subtitle">Servicio de entrega puerta a puerta con vehículos 0km. equipados para el confort de tu mascota.</p><br>
+                <p class="tm-color-white tm-section-subtitle">Incluye
+                    Traslado de la mascota desde el lugar de retiro hasta destino
+                    Jaulas transportadoras del tamaño necesario para tu mascota
+                    Todos los productos necesarios para el traslado
+                    Seguro de vida para tu mascota
+                </p>
+                <a href="{% url 'index' %}"
+                    class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered">
+                    Volver
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}
