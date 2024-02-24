@@ -7,3 +7,7 @@ class CategoryView(View):
             return render(request, 'Razas.html')
         elif boton_id == 2:
             return render(request, 'Paises.html')
+        elif boton_id == 3:
+            return render(request, 'Viaja_tranquilo.html')
+        elif boton_id == 4:
+            return render(request, 'Requisitos.html')
