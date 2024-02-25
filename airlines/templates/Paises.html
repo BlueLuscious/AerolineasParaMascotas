@@ -1,23 +1,102 @@
-{% extends "Base.html" %}
-{% block content %}
+{% extends "Base.html" %} {% block content %} {% load static %}
+<style>
+  .container-flex {
+    display: flex;
+    border: 1px solid #000000;
+    box-shadow: #000000 0px 0px 10px;
+    flex-direction: row;
+    background-color: #28489d;
+  }
+  .img-container {
+    order: 1;
+  }
+  .text-container {
+    order: 2;
+  }
+  .container-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .img-container,
+  .text-container {
+    flex: 1;
+  }
+  @media (max-width: 700px) {
+    .container-flex {
+      display: row;
+      flex-direction: column;
+    }
+    .text-container {
+      order: 1;
+    }
+    .img-container {
+      order: 2;
+    }
+  }
+</style>
 
-
-<div class="tm-section-2">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <br><br><br><br>
-                <h4 class="tm-color-white tm-section-menortitle">TENEMOS UNA AMPLIA RED DE PAISES  </h4>
-                <p class="tm-color-white tm-section-subtitle"></p><br>
-                <p class="tm-color-white tm-section-subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <a href="{% url 'index' %}"
-                    class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered">
-                    Volver
-                </a>
-            </div>
-        </div>
+<div class="tm-section-category">
+  <br /><br /><br /><br /><br />
+  <div class="container-flex">
+    <div class="img-container">
+      <img
+        src="{% static 'img/drive/SITIO-EN-CONSTRUCCION.jpg' %}"
+        alt="Razas"
+        style="width: 100%"
+      />
     </div>
+    <div class="text-container col text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <br />
+            <h4 class="tm-color-white tm-section-menortitle">
+              Amplia red de paises
+            </h4>
+            <p class="tm-color-white tm-section-subtitle">
+              Descubre un nuevo estándar en el traslado de mascotas con nuestra
+              exclusiva red global de servicios vía aérea. Desde las bulliciosas
+              calles de Nueva York hasta las exóticas playas de Tailandia,
+              estamos aquí para hacer que tu mascota te acompañe en cada
+              aventura, sin importar el destino.
+            </p>
+            <br />
+            <p class="tm-color-white tm-section-subtitle">
+              Nuestra red de servicios se extiende por múltiples países en todo
+              el mundo, brindándote la tranquilidad de saber que tu amigo peludo
+              estará contigo dondequiera que vayas. Con conexiones en América
+              del Norte, Europa, Asia, Oceanía y más, ofrecemos traslados
+              internacionales que cumplen con los más altos estándares de
+              seguridad y bienestar animal.
+            </p>
+            <p class="tm-color-white tm-section-subtitle">
+              En nuestro compromiso por ofrecerte lo mejor, y para garantizar un
+              viaje sin contratiempos, nos encargamos desde la coordinación de
+              documentos hasta la atención personalizada durante el vuelo,
+              estamos para hacer que el proceso sea lo más suave posible para ti
+              y tu mascota.
+            </p>
+            <p class="tm-color-white tm-section-subtitle">
+              Ya sea que estés planeando una mudanza, unas vacaciones o un viaje
+              de negocios, nuestra amplia red de países te ofrece la
+              flexibilidad y la comodidad que necesitas. No importa si tienes un
+              perro, un gato o cualquier otra mascota, estamos aquí para cuidar
+              de ellos y garantizar que lleguen a su destino final felices y
+              saludables.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<div class="text-container col text-center">
+  <br /><br />
+  <a
+    href="{% url 'index' %}"
+    class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered"
+    >Volver</a
+  >
+</div>
+
 {% endblock content %}
