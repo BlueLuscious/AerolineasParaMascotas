@@ -4,6 +4,8 @@
 <style>
     .container-flex {
       display: flex;
+      border: 1px solid #000000;
+      box-shadow: #000000 0px 0px 10px;
       flex-direction: row;
     }
     
@@ -12,6 +14,7 @@
     }
     
     .text-container {
+
       order: 2;
     }
     .container-flex {
@@ -22,17 +25,32 @@
       .img-container, .text-container {
         flex: 1;
       }
+      @media (max-width: 700px) {
+        .container-flex {
+            display: row;
+          flex-direction: column;
+        }
+      
+        .text-container {
+          order: 1;
+        }
+      
+        .img-container {
+          order: 2;
+        }
+      }
     </style>
 <div class="tm-section-2">
     <br><br><br><br><br>
     <div class="container-flex">
         <div class="img-container">
-          <img src="{% static 'img/drive/IMG_9133.jpg' %}" alt="Razas" style="width:100%;">
+          <img src="{% static 'img/drive/IMG_9133_reduc.jpg' %}" alt="Razas" style="width:100%;">
         </div>
         <div class="text-container col text-center">
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
+                        <br>
                         <h4 class="tm-color-white tm-section-menortitle"> Sin distincion de raza </h4>
                         <p class="tm-color-white tm-section-subtitle">En nuestra empresa, nos dedicamos apasionadamente a garantizar que tus fieles amigos peludos viajen cómodos y
                         seguros, sin importar su raza. Sabemos que cada mascota es única y especial para su familia, por lo que tratamos a cada una
@@ -43,9 +61,7 @@
                         <p class="tm-color-white tm-section-subtitle">Nuestro equipo altamente capacitado está dedicado a cuidar de cada detalle, desde el momento en que recibimos
                             a tu mascota hasta que la entregamos a salvo en su destino final. Trabajamos en estrecha colaboración con aerolíneas de renombre y cumplimos con los más
                             altos estándares de seguridad y bienestar animal para garantizar un viaje sin contratiempos.</p>
-                            <p class="tm-color-white tm-section-subtitle">Ya sea que estés mudándote a una nueva ciudad, planeando unas vacaciones o simplemente necesitando que tu 
-                                mascota te siga en un viaje de negocios, estamos aquí para hacer que el proceso sea lo más suave posible.</p>
-
+                            
                     </div>
                 </div>
             </div>
@@ -53,6 +69,7 @@
       </div>
 </div>
 <div class="text-container col text-center">
+    <br><br>
 <a href="{% url 'index' %}"class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered">Volver</a>
 </div>
 
