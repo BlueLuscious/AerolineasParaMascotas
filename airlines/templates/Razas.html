@@ -1,27 +1,69 @@
 {% extends "Base.html" %}
 {% block content %}
-
-
+{% load static %}
+<style>
+    .container-flex {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .img-container {
+      order: 1;
+    }
+    
+    .text-container {
+      order: 2;
+    }
+    .container-flex {
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .img-container, .text-container {
+        flex: 1;
+      }
+    </style>
 <div class="tm-section-2">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                
-                <h2 class="tm-color-white tm-section-title">Aceptamos a todas las razas </h2>
-                <h4 class="tm-color-white tm-section-menortitle"> Deja a tu amigo peludo en las mejores manos </h4>
-                <p class="tm-color-white tm-section-subtitle">Servicio de entrega puerta a puerta con vehículos 0km. equipados para el confort de tu mascota.</p><br>
-                <p class="tm-color-white tm-section-subtitle">Incluye
-                    Traslado de la mascota desde el lugar de retiro hasta destino
-                    Jaulas transportadoras del tamaño necesario para tu mascota
-                    Todos los productos necesarios para el traslado
-                    Seguro de vida para tu mascota
-                </p>
-                <a href="{% url 'index' %}"
-                    class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered">
-                    Volver
-                </a>
+    <br><br><br><br><br>
+    <div class="container-flex">
+        <div class="img-container">
+          <img src="{% static 'img/drive/IMG_9133.jpg' %}" alt="Razas" style="width:100%;">
+        </div>
+        <div class="text-container col text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4 class="tm-color-white tm-section-menortitle"> Sin distincion de raza </h4>
+                        <p class="tm-color-white tm-section-subtitle">En nuestra empresa, nos dedicamos apasionadamente a garantizar que tus fieles amigos peludos viajen cómodos y
+                        seguros, sin importar su raza. Sabemos que cada mascota es única y especial para su familia, por lo que tratamos a cada una
+                        con el amor y el cuidado que se merecen</p><br>
+                        <p class="tm-color-white tm-section-subtitle">Nos comprometemos a brindar una experiencia tranquila y libre de estrés tanto para las mascotas como para sus
+                        dueños. Entendemos lo difícil que puede ser separarse de tu compañero de cuatro patas durante un viaje, por eso nos esforzamos por proporcionar un ambiente
+                        acogedor y seguro desde el momento en que nos confías a tu mascota.</p>
+                        <p class="tm-color-white tm-section-subtitle">Nuestro equipo altamente capacitado está dedicado a cuidar de cada detalle, desde el momento en que recibimos
+                            a tu mascota hasta que la entregamos a salvo en su destino final. Trabajamos en estrecha colaboración con aerolíneas de renombre y cumplimos con los más
+                            altos estándares de seguridad y bienestar animal para garantizar un viaje sin contratiempos.</p>
+                            <p class="tm-color-white tm-section-subtitle">Ya sea que estés mudándote a una nueva ciudad, planeando unas vacaciones o simplemente necesitando que tu 
+                                mascota te siga en un viaje de negocios, estamos aquí para hacer que el proceso sea lo más suave posible.</p>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+      </div>
 </div>
+<div class="text-container col text-center">
+<a href="{% url 'index' %}"class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered">Volver</a>
+</div>
+
+
 {% endblock content %}
+
+
+
+
+
+
+
+
+

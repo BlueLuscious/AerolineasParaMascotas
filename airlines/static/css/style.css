@@ -89,7 +89,16 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100px;
     border-radius: 5em;
 }
-
+/* images generics */
+.tm-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+.img-generic {
+    width: 10px;
+}
 /* carrousel */
 .tm-article-carousel {
     display: flex;
@@ -152,6 +161,66 @@ body::-webkit-scrollbar-thumb:hover {
     box-shadow: 0px 0px 20px 0px rgba(214, 214, 214, 1);
 }
 
+
+
+
+#grid img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+.sales_divs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-sales-content {
+    flex: 1;
+    background-color: #512421;
+    padding: 2%;
+    box-sizing: border-box; 
+  }
+  
+  .gen-program {
+    display: flex;
+    flex: 1;
+    max-height: 100vh;
+    margin-left: 0%;
+    margin-right:0%;
+    overflow: hidden;
+  }
+  .programa-genetico-img{
+    width: 800px;
+  }
+  img.programa-genetico-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 50%;
+    object-fit: cover;
+  }
+  .container-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .img-container {
+    order: 1;
+  }
+  
+  .text-container {
+    order: 2;
+  }
+  .container-flex {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .img-container, .text-container {
+      flex: 1;
+    }
+  
 @media screen {
 
     @media (max-width: 1200px) {
