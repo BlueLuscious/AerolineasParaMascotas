@@ -1,53 +1,98 @@
-{% extends "Base.html" %}
-{% block content %}
+{% extends "Base.html" %} {% block content %} {% load static %}
 
+<style>
+  .container-flex {
+    display: flex;
+    border: 1px solid #000000;
+    box-shadow: #000000 0px 0px 10px;
+    flex-direction: row;
+    background-color: #28489d;
+  }
+  .img-container {
+    order: 1;
+  }
+  .text-container {
+    display: flex;
+    order: 2;
+  }
+  .text-container-button {
+    order: 1;
+  }
+  .container-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .img-container,
+  .text-container {
+    flex: 1;
+  }
+  @media (max-width: 700px) {
+    .container-flex {
+      display: row;
+      flex-direction: column;
+    }
+    .text-container {
+      order: 1;
+    }
+    .img-container {
+      order: 2;
+    }
+  }
+</style>
 
-<div class="tm-section-2">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-
-                <br><br><br><br>
-
-                <h4 class="tm-color-white tm-section-title"> REQUISITOS DE PAISES TENER EN CUENTA </h4>
-                <br>
-                <p class="tm-color-white tm-section-subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <a href="{% url 'index' %}"
-                    class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered">
-                    Volver
-                </a>
-            </div>
-        </div>
+<div class="tm-section-category">
+  <br /><br /><br /><br /><br />
+  <div class="container-flex">
+    <div class="img-container">
+      <img
+        src="{% static 'img/mapas/america/estados_unidos-canada-recortado.png' %}"
+        style="width: 80%"
+      />
     </div>
+    <div class="text-container tm-flex-align-center col text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <br />
+            <h4 class="tm-color-white tm-section-title">Canada</h4>
+            <p class="tm-color-white tm-section-subtitle">
+                <ol  class="tm-color-white tm-section-subtitle">
+                    <li>Restricciones de temporada de invierno para el ingreso de animales vivos</li>
+                    <li>Certificado de Salud</li>
+                    <li>Certificado de Vacunación antirrábica</li>
+                </ol>
+            </p>
+            <br />
+            <h4 class="tm-color-white tm-section-title">Estados Unidos</h4>
+            <p class="tm-color-white tm-section-subtitle">
+              <ol class="tm-color-white tm-section-subtitle">
+                <li>Restricciones de temporada de invierno para el ingreso de animales vivos</li>
+                <li>Restricciones de temporada de verano para el ingreso de animales vivos</li>
+                </ol>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-{% endblock content %}
-América del Sur
-1. Brasil, Paraguay y Uruguay
-Certificado de Salud
-Certificado de Vacunación antirrábica
-Certificado de desparasitación interna y externa
-
-Uruguay posee requisitos adicionales para caninos
-Certificado libre de Leishmaniasis
-Identificación por Microchip
-2. Chile
-Certificado de Salud
-Certificado de Salud para Leishmaniasis
-Certificado de Vacunación antirrábica
-Certificado de desparasitación interna y externa
-3. Perú
-Certificado de Salud
-Certificado de Vacunación antirrábica
-Certificado de desparasitación interna y externa
-Requisito adicional sólo para perros
-Constancia de vacunación séxtuple
-Requisito adicional sólo para gatos
-Constancia de vacunación triple
-
-
-América Central
-1. Honduras, Guatemala, Haití, Nicaragua, Jamaica, El Salvador, Costa Rica y Rep. Dominicana
-Certificado de Salud
-Certificado de Vacunación antirrábica
+<div class="text-container-button col text-center">
+  <br /><br />
+  <a
+    href="{% url 'index' %}"
+    class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered"
+    >Volver</a
+  >
+</div>
+{% endblock content %} América del Sur 1. Brasil, Paraguay y Uruguay Certificado
+de Salud Certificado de Vacunación antirrábica Certificado de desparasitación
+interna y externa Uruguay posee requisitos adicionales para caninos Certificado
+libre de Leishmaniasis Identificación por Microchip 2. Chile Certificado de
+Salud Certificado de Salud para Leishmaniasis Certificado de Vacunación
+antirrábica Certificado de desparasitación interna y externa 3. Perú Certificado
+de Salud Certificado de Vacunación antirrábica Certificado de desparasitación
+interna y externa Requisito adicional sólo para perros Constancia de vacunación
+séxtuple Requisito adicional sólo para gatos Constancia de vacunación triple
+América Central 1. Honduras, Guatemala, Haití, Nicaragua, Jamaica, El Salvador,
+Costa Rica y Rep. Dominicana Certificado de Salud Certificado de Vacunación
+antirrábica
