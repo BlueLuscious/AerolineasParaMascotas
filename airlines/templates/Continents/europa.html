@@ -1,0 +1,171 @@
+{% extends "Base.html" %} {% block content %} {% load static %}
+
+<style>
+  .container-flex {
+    display: flex;
+    border: 1px solid #000000;
+    box-shadow: #000000 0px 0px 10px;
+    flex-direction: row;
+    background-color: #28489d;
+  }
+  
+  .img-container {
+    order: 1;
+  }
+  .text-container {
+    display: flex;
+    order: 2;
+  }
+  .text-container-button {
+    order: 1;
+  }
+  .container-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .img-container,
+  .text-container {
+    flex: 1;
+  }
+  
+#tabs {
+	float:left;
+	width:100%;
+	background:#212529;
+	font-size:93%;
+	line-height:normal;
+	}
+	
+#tabs ul {
+	margin:0;
+	padding:10px 10px 0 50px;
+	list-style:none;
+	}
+	
+#tabs li {
+	display:inline;
+	margin:0;
+	padding:0;
+	}
+	
+#tabs a {
+	float:left;
+	background:url("{% static 'img/tab/tableft2.gif' %}") no-repeat left top;
+	margin:0;
+	padding:0 0 0 4px;
+	text-decoration:none;
+	}
+	
+#tabs a span {
+	float:left;
+	display:block;
+	background:url("{% static 'img/tab/tabright2.gif' %}") no-repeat right top;
+	padding:5px 15px 4px 6px;
+	color:#FFF;
+	}
+	
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs a span {float:none;}
+
+/* End IE5-Mac hack */
+#tabs a:hover span {
+	color:#FFF;
+	}
+	
+#tabs a:hover {
+	background-position:0% -42px;
+	}
+	
+#tabs a:hover span {
+	background-position:100% -42px;
+	}
+  @media (max-width: 700px) {
+    .container-flex {
+      display: row;
+      flex-direction: column;
+    }
+    .text-container {
+      order: 1;
+    }
+    .img-container {
+      order: 2;
+    }
+  }
+</style>
+
+<div class="tm-section-category">
+
+  <br /><br /><br /><br /><br />
+  <div id="tabs">
+    <ul>
+        <li><a href="{% url 'Subcategory' boton_id=1 %}"  class="tm-color-white tm-section-subtitle"><span>America</span></a></li>
+        <li><a href="{% url 'Subcategory' boton_id=2 %}" class="tm-color-white tm-section-subtitle"><span>Comunidad Europea</span></a></li>
+      <li><a href="" class="tm-color-white tm-section-subtitle"><span>Inglaterra</span></a></li>
+      <li><a href="" class="tm-color-white tm-section-subtitle"><span>Dubai</span></a></li>
+      <li><a href="" class="tm-color-white tm-section-subtitle"><span>Japon</span></a></li>
+    </ul>
+  </div>
+  <div class="container-flex">
+    <div class="img-container">
+      <img
+        src="{% static 'img/mapas/europa/Union europea.png' %}"
+        style="width: 80%"
+      />
+    </div>
+
+    <div class="text-container tm-flex-align-center col text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <br />
+            <h4 class="tm-color-white tm-section-title">UNION EUROPEA</h4>
+            <p class="tm-color-white tm-section-subtitle">
+                <ol  class="tm-color-white tm-section-subtitle">
+                    <li>Restricciones de razas caninas: consulta previamente la normativa vigente en el Estado miembro de destino relativa a razas caninas consideradas peligrosas</li>
+                    <li>Identificación por Microchip</li>
+                    <li>Certificado de Salud</li>
+                    <li>Certificado de Vacunación antirrábica</li>
+                    <li>Constancia de tratamiento contra Echinococcus Multilocularis (solo caninos)</li>
+                </ol>
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tm-section-category">
+    <br /><br /><br /><br /><br />
+    <div class="container-flex">
+      <div class="img-container">
+        <img
+          src="{% static 'img/mapas/europa/inglaterra.png' %}"
+          style="width: 80%"
+        />
+      </div>
+      <div class="text-container tm-flex-align-center col text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <br />
+              <h4 class="tm-color-white tm-section-title">REINO UNIDO
+              </h4>
+              <p class="tm-color-white tm-section-subtitle">
+                  <ol  class="tm-color-white tm-section-subtitle">
+                    <li>Identificación por Microchip</li>
+                    <li>Constancia de tratamiento contra Echinococcus Multilocularis (caninos)</li>
+                    <li>Certificado de Salud</li>
+                    <li>Certificado de Vacunación antirrábica</li>
+
+                  </ol>
+              </p>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %} 
