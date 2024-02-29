@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* body scrollbar color design */
 body::-webkit-scrollbar {
     background-color: rgb(30, 30, 30);
@@ -6,10 +10,15 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     background-color: #28489D;
+    cursor: grab;
 }
 
 body::-webkit-scrollbar-thumb:hover {
     background-color: #2B72B6;
+}
+
+body::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
 }
 /* body scrollbar color design */
 
@@ -89,16 +98,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100px;
     border-radius: 5em;
 }
-/* images generics */
-.tm-img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2em 0;
-}
-.img-generic {
-    width: 10px;
-}
+
 /* carrousel */
 .tm-article-carousel {
     display: flex;
@@ -161,72 +161,130 @@ body::-webkit-scrollbar-thumb:hover {
     box-shadow: 0px 0px 20px 0px rgba(214, 214, 214, 1);
 }
 
-
-
-
 #grid img {
     display: block;
     max-width: 100%;
     height: auto;
-  }
+}
 
 .sales_divs {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .text-sales-content {
+}
+
+.text-sales-content {
     flex: 1;
     background-color: #512421;
     padding: 2%;
     box-sizing: border-box; 
-  }
+}
   
-  .gen-program {
+.gen-program {
     display: flex;
     flex: 1;
     max-height: 100vh;
     margin-left: 0%;
     margin-right:0%;
     overflow: hidden;
-  }
-  .programa-genetico-img{
+}
+
+.programa-genetico-img{
     width: 800px;
-  }
-  img.programa-genetico-img {
+}
+
+img.programa-genetico-img {
     max-width: 100%;
     max-height: 100%;
     width: 50%;
     object-fit: cover;
-  }
-  .container-flex {
+}
+
+.container-flex {
     display: flex;
     flex-direction: row;
-  }
+}
   
-  .img-container {
+.img-container {
     order: 1;
-  }
+}
   
-  .text-container {
+.text-container {
     order: 2;
-  }
-  .container-flex {
-      display: flex;
-      flex-direction: row;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-container, .text-container {
+    flex: 1;
+}
+
+/* SCROLLTOP BTN */
+.scroll_to_top {
+    position: fixed;
+    bottom: 2.5vh;
+    right: 2.5vh;
+    z-index: 10;
+
+    & button {
+        display: none;
+        width: 6vh;
+        height: 5.5vh;
+        border: transparent;
+        border-radius: 0.5vh;
+        background-color: #ffffff;
+        opacity: 0;
+        outline: none;
+        transition: opacity 0.5s ease-in-out;
+        cursor: default;
+        
+        &:hover {
+            box-shadow: 0px 0px 20px 0px #a1c8de;
+        }
     }
-    
-    .img-container, .text-container {
-      flex: 1;
+
+    & .bi {
+        color: #28489D;
+        background-color: #ffffff;
+        font-size: 3.5vh;
     }
-  
+}
+
+.scroll_to_top button.active {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.scroll_to_top button {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.scroll_to_top button.active {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/* SCROLLTOP BTN */
+
 @media screen {
+
+    @media (max-width: 1400px) {
+        .tm-article-carousel {
+            flex-wrap: wrap;
+        }
+    }
 
     @media (max-width: 1200px) {
         .company-name {
             font-size: 1.8em;
-            margin-left: 0;
+            margin-left: 15px;
         }
 
         .logotipo{
