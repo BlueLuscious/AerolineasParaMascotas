@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mainBanner = document.getElementById('tm-section-1')
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 120) {
+        if (window.scrollY > 1) {
             navbar.style.position = 'fixed'
             mainBanner.style.marginTop = '100px'
         }
