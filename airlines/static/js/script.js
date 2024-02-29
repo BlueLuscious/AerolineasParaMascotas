@@ -133,6 +133,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.scrollY > 1) {
             navbar.style.position = 'fixed'
             mainBanner.style.marginTop = '100px'
+
+            if (window.innerWidth <= 1200) {
+                mainBanner.style.marginTop = '70px'
+            }
+
+            if (window.innerWidth <= 991) {
+                mainBanner.style.marginTop = '50px'
+            }
         }
 
         if (window.scrollY <= 0) {
