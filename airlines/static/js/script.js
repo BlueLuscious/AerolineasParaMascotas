@@ -125,4 +125,35 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     /*  reel */
 
+    /* scroll events */
+    const navbar = document.getElementById('tm-top-bar')
+    const mainBanner = document.getElementById('tm-section-1')
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 120) {
+            navbar.style.position = 'fixed'
+            mainBanner.style.marginTop = '100px'
+        }
+
+        if (window.scrollY <= 0) {
+            navbar.style.position = 'relative'
+            mainBanner.style.marginTop = '0'
+        }
+    })
+
+    const scrollToTopBtn = document.getElementById('scrollToTop')
+
+    window.addEventListener('scroll', () => {
+        const shouldShowButton = window.scrollY > 650
+        scrollToTopBtn.disabled = !shouldShowButton
+        scrollToTopBtn.style.display = shouldShowButton ? 'block' : false
+        scrollToTopBtn.classList.toggle('active', shouldShowButton)
+    })
+
+    scrollToTopBtn.addEventListener('click', () => {
+        document.body.scrollTop = 0
+        document.documentElement.scrollTop = 0
+    })
+    /* scroll events */
+
 })
