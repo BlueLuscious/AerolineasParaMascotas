@@ -258,7 +258,10 @@ select.tm-select::-ms-expand { display: none; }
 	padding-top: 50px;
 	position: relative;
 }
-
+.tm-section-category {
+	background: #fc8014;
+	position: relative;
+}
 .tm-section-title {
     color: rgb(30, 30, 30);
 	font-size: 3rem;

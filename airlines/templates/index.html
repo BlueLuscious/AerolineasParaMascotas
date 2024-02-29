@@ -27,7 +27,10 @@
     <meta http-equiv="Last-Modified" content="0">
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
-    
+
+    {% comment %} <link rel="icon" href="{% static 'img/logotipo.ico' %}" /> {% endcomment %}
+    <link rel="icon" href="{% static 'img/logotipo_favicon/favicon-32x32.png' %}">
+
     {% load humanize %}
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,7 +52,7 @@
                             <a class="navbar-brand mr-auto" href="#">
                                 <img src="{% static 'img/logotipo.png' %}" class="logotipo">
                             </a>
-                            <div class="company-name navbar-brand mr-auto">Aerolinea para mascotas</div>
+                            <div class="company-name navbar-brand mr-auto">Aerolineas para mascotas</div>
                             <div class="navbar-brand mr-auto"></div>
                             <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -61,10 +64,10 @@
                                     <a class="nav-link" href="#top">Inicio <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-4">Quienes somos</a>
+                                    <a class="nav-link"  href="#tm-section-4">Quienes somos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-5">Opiniones</a>
+                                    <a class="nav-link" href="#tm-section-5">Requisitos</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#tm-section-6">Contactanos</a>
@@ -82,7 +85,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
-                        <h2 class="tm-color-white tm-section-title">¿A donde vas hoy? </h2>
+                        <h2 class="tm-color-white tm-section-title">¿A donde vas? </h2>
 <!--                         <h4 class="tm-color-white tm-section-menortitle"> Deja a tu amigo peludo en las mejores manos </h4>
                         <p class="tm-color-white tm-section-subtitle">Especialistas en traslado de mascotas</p> -->
                         <a href="#"
@@ -104,16 +107,17 @@
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-paw tm-color-primary tm-margin-b-20"></i>
                         <h3 class="tm-color-primary tm-article-title-1">Sin distincion de raza</h3>
-                        <p>En AerolineasParaMascotas no hacemos distincion de raza, todas las mascotas son bienvenidas.
+                        <p>En Aerolineas Para Mascotas no hacemos distincion de raza, todas las mascotas son bienvenidas.
                         </p>
-                        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                        <a href="{% url 'Category' boton_id=1 %}" id="boton1" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-plane tm-color-primary tm-margin-b-20"></i>
                         <h3 class="tm-color-primary tm-article-title-1">Amplia red de paises</h3>
-                        <p>Contamos con un amplio catalogo de destinos, para que puedas viajar a donde quieras.
+                        <p>Contamos con una amplia red de paises, para que puedas viajar a donde quieras sabiendo que tu mascota queda en buenas manos.
                         </p>
-                        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                        <a href="{% url 'Category' boton_id=2 %}" id="boton1" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-life-saver tm-color-primary tm-margin-b-20"></i>
@@ -121,15 +125,15 @@
                         <p>El bienestar de tu mascota es nuestra prioridad, por lo que nos aseguramos de que
                             viaje segura y comoda.
                         </p>
-                        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                        <a href="{% url 'Category' boton_id=3 %}" id="boton1" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-gavel tm-color-primary tm-margin-b-20"></i>
                         <h3 class="tm-color-primary tm-article-title-1">Requisitos</h3>
                         <p>Cada pais tiene sus propios requisitos para el ingreso de mascotas, por lo que es importante
-                            que te informes de los requisitos del pais al que viajaras. </p>
+                            que te informes de los requerimientos de tu proximo destino. </p>
                         </p>
-                        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                        <a href="{% url 'Category' boton_id=4 %}" id="boton1" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
                     </article>
                 </div>
             </div>
@@ -139,7 +143,7 @@
                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
                     <div class="tm-bg-white">
                         <div class="tm-bg-secondary tm-sidebar-pad">
-                            <h3 class="tm-color-white tm-sidebar-title">Te acompañamos a todos lados!</h3>
+                            <h3 class="tm-color-white tm-sidebar-title"></h3>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
                                 data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

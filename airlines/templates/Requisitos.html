@@ -1,0 +1,267 @@
+{% extends "Base.html" %} {% block content %} {% load static %}
+
+<style>
+  .container-flex {
+    display: flex;
+    border: 1px solid #000000;
+    box-shadow: #000000 0px 0px 10px;
+    flex-direction: row;
+    background-color: #28489d;
+  }
+  
+  .img-container {
+    order: 1;
+  }
+  .text-container {
+    display: flex;
+    order: 2;
+  }
+  .text-container-button {
+    order: 1;
+  }
+  .container-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .img-container,
+  .text-container {
+    flex: 1;
+  }
+  .country-img{
+    width: 100%;
+  }
+#tabs {
+	float:left;
+	width:100%;
+	background:#212529;
+	font-size:93%;
+	line-height:normal;
+	}
+	
+#tabs ul {
+	margin:0;
+	padding:10px 10px 0 50px;
+	list-style:none;
+	}
+	
+#tabs li {
+	display:inline;
+	margin:0;
+	padding:0;
+	}
+	
+#tabs a {
+	float:left;
+	background:url("{% static 'img/tab/tableft2.gif' %}") no-repeat left top;
+	margin:0;
+	padding:0 0 0 4px;
+	text-decoration:none;
+	}
+	
+#tabs a span {
+	float:left;
+	display:block;
+	background:url("{% static 'img/tab/tabright2.gif' %}") no-repeat right top;
+	padding:5px 15px 4px 6px;
+	color:#FFF;
+	}
+	
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs a span {float:none;}
+
+/* End IE5-Mac hack */
+#tabs a:hover span {
+	color:#FFF;
+	}
+	
+#tabs a:hover {
+	background-position:0% -42px;
+	}
+	
+#tabs a:hover span {
+	background-position:100% -42px;
+	}
+  @media (max-width: 700px) {
+    .container-flex {
+      display: row;
+      flex-direction: column;
+    }
+    .text-container {
+      order: 1;
+    }
+    .img-container {
+      order: 2;
+    }
+  }
+</style>
+
+<div class="tm-section-category">
+
+  <div id="tabs">
+    <ul>
+      <li><a href="{% url 'Subcategory' boton_id=1 %}"  class="tm-color-white tm-section-subtitle"><span>America</span></a></li>
+      <li><a href="{% url 'Subcategory' boton_id=2 %}" class="tm-color-white tm-section-subtitle"><span>Union Europea</span></a></li>
+      <li><a href="{% url 'Subcategory' boton_id=3 %}" class="tm-color-white tm-section-subtitle"><span>Reino Unido</span></a></li>
+      <!-- <li><a href="" class="tm-color-white tm-section-subtitle"><span>Dubai</span></a></li>
+      <li><a href="" class="tm-color-white tm-section-subtitle"><span>Japon</span></a></li> -->
+    </ul>
+  </div>
+  <div class="container-flex">
+    <div class="img-container">
+      <img
+        src="{% static 'img/mapas/america/estados_unidos-canada-recortado.png' %}"
+       class="country-img"
+      />
+    </div>
+
+    <div class="text-container tm-flex-align-center col text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <br />
+            <h4 class="tm-color-white tm-section-title">Canada</h4>
+            <p class="tm-color-white tm-section-subtitle">
+                <!-- <ol  class="tm-color-white tm-section-subtitle">
+                    <li>Restricciones de temporada de invierno para el ingreso de animales vivos</li>
+                    <li>Certificado de Salud</li>
+                    <li>Certificado de Vacunación antirrábica</li>
+                </ol> -->
+                - Restricciones de temporada de invierno para el ingreso de animales vivos <br>
+                - Certificado de Salud <br>
+                - Certificado de Vacunación antirrábica
+
+            </p>
+            <br />
+            <h4 class="tm-color-white tm-section-title">Estados Unidos</h4>
+            <p class="tm-color-white tm-section-subtitle">
+              <!-- <ol class="tm-color-white tm-section-subtitle">
+
+                <li>Certificado de Salud</li>
+                <li>Certificado de Vacunación antirrábica</li>
+                <li>Certificado de libre de MIASIS</li>                
+                </ol> -->
+                - Certificado de Salud <br>
+                - Certificado de Vacunación antirrábica <br>
+                - Certificado de libre de MIASIS
+                <h6 class="tm-color-white tm-menor-title">EEUU: Se sugiere consultar los requisitos propios del estado de destino dado que puede haber requisitos particulares independientemente del resto del país.
+                </h6>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tm-section-category">
+  <br /><br /><br /><br /><br />
+  <div class="container-flex">
+    <div class="img-container">
+      <img
+        src="{% static 'img/mapas/america/Honduras-guatem-haiti-etc.png' %}"
+        class="country-img"
+      />
+    </div>
+    <div class="text-container tm-flex-align-center col text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <br />
+            <h4 class="tm-color-white tm-section-title">Honduras, Guatemala, Haití, Nicaragua, Jamaica, El Salvador, Costa Rica y Rep. Dominicana
+            </h4>
+            <p class="tm-color-white tm-section-subtitle">
+                <!-- <ol  class="tm-color-white tm-section-subtitle">
+                  <li>Certificado de Salud</li>
+                  <li>Certificado de Vacunación antirrábica</li>
+                </ol> -->
+                - Certificado de Salud <br>
+                - Certificado de Vacunación antirrábica
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tm-section-category">
+  <br /><br /><br /><br /><br />
+  <div class="container-flex">
+    <div class="img-container">
+      <img
+        src="{% static 'img/mapas/america/sudamerica-recortado.png' %}"
+        class="country-img"
+      />
+    </div>
+    <div class="text-container tm-flex-align-center col text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <br />
+            <h4 class="tm-color-white tm-section-title"> Uruguay, Brasil y Paraguay 
+            </h4>
+            <p class="tm-color-white tm-section-subtitle">
+                <!-- <ul  class="tm-color-white tm-section-subtitle">
+                  <li>Certificado de Salud</li>
+                  <li>Certificado de Vacunación antirrábica</li>
+                  <li>Certificado de desparasitación interna y externa</li>
+                  <li>Certificado libre de Leishmaniasis (solo Uruguay)</li>
+                  <li>Identificación por Microchip (solo Uruguay)</li>
+                </ul> -->
+                - Certificado de Salud <br>
+                - Certificado de Vacunación antirrábica <br>
+                - Certificado de desparasitación interna y externa <br>
+                - Certificado libre de Leishmaniasis (solo Uruguay) <br>
+                - Identificación por Microchip (solo Uruguay)
+            </p>
+            <h4 class="tm-color-white tm-section-title"> Chile
+            </h4>
+            <p class="tm-color-white tm-section-subtitle">
+                <!-- <ul  class="tm-color-white tm-section-subtitle">
+                  <li>Certificado de Salud</li>
+                  <li>Certificado de Salud para Leishmaniasis</li>
+                  <li>Certificado de Vacunación antirrábica</li>
+                  <li>Certificado de desparasitación interna y externa</li>
+                </ul> -->
+
+                - Certificado de Salud <br>
+                - Certificado de Salud para Leishmaniasis <br>
+                - Certificado de Vacunación antirrábica <br>
+                - Certificado de desparasitación interna y externa
+
+            </p>
+            <h4 class="tm-color-white tm-section-title"> Perú
+            </h4>
+            <!-- <p class="tm-color-white tm-section-subtitle">
+                <ul  class="tm-color-white tm-section-subtitle">
+                  <li>Certificado de Salud</li>
+                  <li>Certificado de Vacunación antirrábica</li>
+                  <li>Certificado de desparasitación interna y externa</li>
+                  <li>Requisito adicional sólo para perros</li>
+                  <li>Constancia de vacunación séxtuple</li>
+                  <li>Requisito adicional sólo para gatos</li>
+                  <li>Constancia de vacunación triple</li>
+                </ul>
+            </p> -->
+            <p class="tm-color-white tm-section-subtitle">
+              - Certificado de Salud <br>
+              - Certificado de Vacunación antirrábica <br>
+              - Certificado de desparasitación interna y externa <br>
+              - Requisito adicional sólo para perros <br> 
+              - Constancia de vacunación séxtuple <br> 
+              - Requisito adicional sólo para gatos <br>
+              - Constancia de vacunación triple
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-container-button col text-center">
+  <br /><br />
+  <a href="{% url 'index' %}" class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered">Volver</a>
+  </div>
+{% endblock content %} 
