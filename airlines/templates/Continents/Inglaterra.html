@@ -12,6 +12,9 @@
   .img-container {
     order: 1;
   }
+  .country-img{
+    width: 100%;
+  }
   .text-container {
     display: flex;
     order: 2;
@@ -95,53 +98,20 @@
 
 <div class="tm-section-category">
 
-  <br /><br /><br /><br /><br />
   <div id="tabs">
     <ul>
         <li><a href="{% url 'Subcategory' boton_id=1 %}"  class="tm-color-white tm-section-subtitle"><span>America</span></a></li>
-        <li><a href="{% url 'Subcategory' boton_id=2 %}" class="tm-color-white tm-section-subtitle "><span>Comunidad Europea</span></a></li>
-      <li><a href="" class="tm-color-white tm-section-subtitle"><span>Inglaterra</span></a></li>
-      <li><a href="" class="tm-color-white tm-section-subtitle"><span>Dubai</span></a></li>
-      <li><a href="" class="tm-color-white tm-section-subtitle"><span>Japon</span></a></li>
+        <li><a href="{% url 'Subcategory' boton_id=2 %}" class="tm-color-white tm-section-subtitle"><span>Union Europea</span></a></li>
+        <li><a href="{% url 'Subcategory' boton_id=3 %}" class="tm-color-white tm-section-subtitle"><span>Reino Unido</span></a></li>
+        <!-- <li><a href="" class="tm-color-white tm-section-subtitle"><span>Dubai</span></a></li>
+        <li><a href="" class="tm-color-white tm-section-subtitle"><span>Japon</span></a></li> -->
     </ul>
   </div>
-  <div class="container-flex">
-    <div class="img-container">
-      <img
-        src="{% static 'img/mapas/europa/Union europea.png' %}"
-        style="width: 80%"
-      />
-    </div>
-
-    <div class="text-container tm-flex-align-center col text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <br />
-            <h4 class="tm-color-white tm-section-title">UNION EUROPEA</h4>
-            <p class="tm-color-white tm-section-subtitle">
-                <ol  class="tm-color-white tm-section-subtitle">
-                    <li>Restricciones de razas caninas: consulta previamente la normativa vigente en el Estado miembro de destino relativa a razas caninas consideradas peligrosas</li>
-                    <li>Identificación por Microchip</li>
-                    <li>Certificado de Salud</li>
-                    <li>Certificado de Vacunación antirrábica</li>
-                    <li>Constancia de tratamiento contra Echinococcus Multilocularis (solo caninos)</li>
-                </ol>
-            </p>
-            <br />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="tm-section-category">
-    <br /><br /><br /><br /><br />
     <div class="container-flex">
       <div class="img-container">
         <img
           src="{% static 'img/mapas/europa/inglaterra.png' %}"
-          style="width: 80%"
+          class="country-img"
         />
       </div>
       <div class="text-container tm-flex-align-center col text-center">
@@ -152,13 +122,18 @@
               <h4 class="tm-color-white tm-section-title">REINO UNIDO
               </h4>
               <p class="tm-color-white tm-section-subtitle">
-                  <ol  class="tm-color-white tm-section-subtitle">
+                  <!-- <ol  class="tm-color-white tm-section-subtitle">
                     <li>Identificación por Microchip</li>
                     <li>Constancia de tratamiento contra Echinococcus Multilocularis (caninos)</li>
                     <li>Certificado de Salud</li>
                     <li>Certificado de Vacunación antirrábica</li>
 
-                  </ol>
+                  </ol> -->
+                  -Identificación por Microchip<br>
+                    -Constancia de tratamiento contra Echinococcus Multilocularis (caninos)<br>
+                    -Certificado de Salud<br>
+                    -Certificado de Vacunación antirrábica
+                    
               </p>
               <br />
             </div>
@@ -167,5 +142,9 @@
       </div>
     </div>
   </div>
+  <div class="text-container-button col text-center">
+    <br /><br />
+    <a href="{% url 'index' %}" class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered">Volver</a>
+    </div>
 
 {% endblock content %} 

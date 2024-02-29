@@ -27,7 +27,9 @@
   .text-container {
     flex: 1;
   }
-  
+  .country-img{
+    width: 100%;
+  }
 #tabs {
 	float:left;
 	width:100%;
@@ -50,7 +52,7 @@
 	
 #tabs a {
 	float:left;
-	background:url("{% static 'img/tab/tableft.gif' %}") no-repeat left top;
+	background:url("{% static 'img/tab/tableft2.gif' %}") no-repeat left top;
 	margin:0;
 	padding:0 0 0 4px;
 	text-decoration:none;
@@ -95,21 +97,20 @@
 
 <div class="tm-section-category">
 
-  <br /><br /><br /><br /><br />
   <div id="tabs">
     <ul>
       <li><a href="{% url 'Subcategory' boton_id=1 %}"  class="tm-color-white tm-section-subtitle"><span>America</span></a></li>
-      <li><a href="{% url 'Subcategory' boton_id=2 %}" class="tm-color-white tm-section-subtitle"><span>Comunidad Europea</span></a></li>
-      <li><a href="" class="tm-color-white tm-section-subtitle"><span>Inglaterra</span></a></li>
-      <li><a href="" class="tm-color-white tm-section-subtitle"><span>Dubai</span></a></li>
-      <li><a href="" class="tm-color-white tm-section-subtitle"><span>Japon</span></a></li>
+      <li><a href="{% url 'Subcategory' boton_id=2 %}" class="tm-color-white tm-section-subtitle"><span>Union Europea</span></a></li>
+      <li><a href="{% url 'Subcategory' boton_id=3 %}" class="tm-color-white tm-section-subtitle"><span>Reino Unido</span></a></li>
+      <!-- <li><a href="" class="tm-color-white tm-section-subtitle"><span>Dubai</span></a></li>
+      <li><a href="" class="tm-color-white tm-section-subtitle"><span>Japon</span></a></li> -->
     </ul>
   </div>
   <div class="container-flex">
     <div class="img-container">
       <img
         src="{% static 'img/mapas/america/estados_unidos-canada-recortado.png' %}"
-        style="width: 80%"
+       class="country-img"
       />
     </div>
 
@@ -120,21 +121,28 @@
             <br />
             <h4 class="tm-color-white tm-section-title">Canada</h4>
             <p class="tm-color-white tm-section-subtitle">
-                <ol  class="tm-color-white tm-section-subtitle">
+                <!-- <ol  class="tm-color-white tm-section-subtitle">
                     <li>Restricciones de temporada de invierno para el ingreso de animales vivos</li>
                     <li>Certificado de Salud</li>
                     <li>Certificado de Vacunación antirrábica</li>
-                </ol>
+                </ol> -->
+                - Restricciones de temporada de invierno para el ingreso de animales vivos <br>
+                - Certificado de Salud <br>
+                - Certificado de Vacunación antirrábica
+
             </p>
             <br />
             <h4 class="tm-color-white tm-section-title">Estados Unidos</h4>
             <p class="tm-color-white tm-section-subtitle">
-              <ol class="tm-color-white tm-section-subtitle">
+              <!-- <ol class="tm-color-white tm-section-subtitle">
 
                 <li>Certificado de Salud</li>
                 <li>Certificado de Vacunación antirrábica</li>
                 <li>Certificado de libre de MIASIS</li>                
-                </ol>
+                </ol> -->
+                - Certificado de Salud <br>
+                - Certificado de Vacunación antirrábica <br>
+                - Certificado de libre de MIASIS
                 <h6 class="tm-color-white tm-menor-title">EEUU: Se sugiere consultar los requisitos propios del estado de destino dado que puede haber requisitos particulares independientemente del resto del país.
                 </h6>
             </p>
@@ -151,7 +159,7 @@
     <div class="img-container">
       <img
         src="{% static 'img/mapas/america/Honduras-guatem-haiti-etc.png' %}"
-        style="width: 80%"
+        class="country-img"
       />
     </div>
     <div class="text-container tm-flex-align-center col text-center">
@@ -162,10 +170,12 @@
             <h4 class="tm-color-white tm-section-title">Honduras, Guatemala, Haití, Nicaragua, Jamaica, El Salvador, Costa Rica y Rep. Dominicana
             </h4>
             <p class="tm-color-white tm-section-subtitle">
-                <ol  class="tm-color-white tm-section-subtitle">
+                <!-- <ol  class="tm-color-white tm-section-subtitle">
                   <li>Certificado de Salud</li>
                   <li>Certificado de Vacunación antirrábica</li>
-                </ol>
+                </ol> -->
+                - Certificado de Salud <br>
+                - Certificado de Vacunación antirrábica
             </p>
             <br />
           </div>
@@ -181,7 +191,7 @@
     <div class="img-container">
       <img
         src="{% static 'img/mapas/america/sudamerica-recortado.png' %}"
-        style="width: 80%"
+        class="country-img"
       />
     </div>
     <div class="text-container tm-flex-align-center col text-center">
@@ -192,23 +202,34 @@
             <h4 class="tm-color-white tm-section-title"> Uruguay, Brasil y Paraguay 
             </h4>
             <p class="tm-color-white tm-section-subtitle">
-                <ul  class="tm-color-white tm-section-subtitle">
+                <!-- <ul  class="tm-color-white tm-section-subtitle">
                   <li>Certificado de Salud</li>
                   <li>Certificado de Vacunación antirrábica</li>
                   <li>Certificado de desparasitación interna y externa</li>
                   <li>Certificado libre de Leishmaniasis (solo Uruguay)</li>
                   <li>Identificación por Microchip (solo Uruguay)</li>
-                </ul>
+                </ul> -->
+                - Certificado de Salud <br>
+                - Certificado de Vacunación antirrábica <br>
+                - Certificado de desparasitación interna y externa <br>
+                - Certificado libre de Leishmaniasis (solo Uruguay) <br>
+                - Identificación por Microchip (solo Uruguay)
             </p>
             <h4 class="tm-color-white tm-section-title"> Chile
             </h4>
             <p class="tm-color-white tm-section-subtitle">
-                <ul  class="tm-color-white tm-section-subtitle">
+                <!-- <ul  class="tm-color-white tm-section-subtitle">
                   <li>Certificado de Salud</li>
                   <li>Certificado de Salud para Leishmaniasis</li>
                   <li>Certificado de Vacunación antirrábica</li>
                   <li>Certificado de desparasitación interna y externa</li>
-                </ul>
+                </ul> -->
+
+                - Certificado de Salud <br>
+                - Certificado de Salud para Leishmaniasis <br>
+                - Certificado de Vacunación antirrábica <br>
+                - Certificado de desparasitación interna y externa
+
             </p>
             <h4 class="tm-color-white tm-section-title"> Perú
             </h4>

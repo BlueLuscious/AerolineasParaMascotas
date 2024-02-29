@@ -8,6 +8,6 @@ class SubcategoryView(View):
         elif boton_id == 2:
             return render(request, 'Continents/Europa.html')
         elif boton_id == 3:
-            return render(request, 'Viaja_tranquilo.html')
+            return render(request, 'Continents/Inglaterra.html')
         elif boton_id == 4:
             return render(request, 'Requisitos.html')
