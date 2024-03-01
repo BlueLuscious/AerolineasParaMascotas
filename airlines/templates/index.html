@@ -64,10 +64,10 @@
                                     <a class="nav-link" href="#top">Inicio <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link"  href="#tm-section-4">Quienes somos</a>
+                                    <a class="nav-link"  href="{% url 'Category' boton_id=5 %}">Quienes somos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-5">Requisitos</a>
+                                    <a class="nav-link" href="{% url 'Category' boton_id=4 %}">Requisitos</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#tm-section-6">Contactanos</a>
@@ -125,7 +125,7 @@
                         <p>El bienestar de tu mascota es nuestra prioridad, por lo que nos aseguramos de que
                             viaje segura y comoda.
                         </p>
-                        <a href="{% url 'Category' boton_id=3 %}" id="boton1" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                        <a href="{% url 'Category' boton_id=5 %}" id="boton1" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-gavel tm-color-primary tm-margin-b-20"></i>
