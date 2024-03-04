@@ -55,16 +55,17 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             
+                               
                             <div id="mainNav" class="collapse navbar-collapse tm-bg-primary">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'index' %}">Inicio <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="#top">Inicio <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-4">Quienes somos</a>
+                                    <a class="nav-link"  href="{% url 'Category' boton_id=5 %}">Quienes somos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-5">Requisitos</a>
+                                    <a class="nav-link" href="{% url 'Category' boton_id=4 %}">Requisitos</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#tm-section-6">Contactanos</a>
@@ -92,29 +93,26 @@
 
 
 
-    <footer class="tm-bg-black">
-        <div class="container">
-            <div class="row">
-                <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
-                    AerolineasParaMascotas &copy; <span class="tm-current-year">2023</span>
-            </div>
-            <div class="row">
-                <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
-                Telefonos: <br>
-                +54 9 11 1111-1111
-            </p></div>
-            <div class="row">
-                <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
-                Email de contacto: <br>
-                ejemplo@gmail.com
-            </p>
-            </div>
-            <div class="row">
-                <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
-                </p>
-            </div>
-        </div>
-    </footer> {% endcomment %}
+<footer class="example-2">
+    <div class="content site-footer--content">
+      <div class="footer-left">
+        <img src="./img/logo-example-2.png" alt="logo">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat necessitatibus a pariatur, quibusdam dolorem impedit assumenda laborum modi nam, rem odit, doloremque commodi in consectetur vitae nisi. Nostrum, voluptatum quibusdam. Rpsum dolor sit amet consectetur adipisicing elit. Repellat necessitatibus a pariatur, quibusdam dolorem impedit assumenda laborum modi nam, rem odit, doloremque commodi in consectetur vitae nisi. Nostrum, voluptatum quibusdam</p>
+      </div>
+      <div class="footer-right">
+        <address>
+          <p>Email Me: <a href="mailto:hello@shihabiiuc.com">hello@shihabiiuc.com</a></p>
+          <p></p>Call me: <a href="tel:+8801947888197">+8801947888197</a></p>
+          <p>Office address: 1st floor, Main road<br>
+            Birampur, Dinajpur, BD.</p>
+        </address>
+      </div>
+    </div>
+    <div class="copyright-notice">
+      <p>© <time datetime="2023">2023,</time> All rights reserved by your_name</p>
+    </div>
+  </footer>
+  {% endcomment %}
     </div>
 
     <!-- load JS files -->

@@ -64,10 +64,10 @@
                                     <a class="nav-link" href="#top">Inicio <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link"  href="#tm-section-4">Quienes somos</a>
+                                    <a class="nav-link"  href="{% url 'Category' boton_id=5 %}">Quienes somos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-5">Requisitos</a>
+                                    <a class="nav-link" href="{% url 'Category' boton_id=4 %}">Requisitos</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#tm-section-6">Contactanos</a>
@@ -125,7 +125,7 @@
                         <p>El bienestar de tu mascota es nuestra prioridad, por lo que nos aseguramos de que
                             viaje segura y comoda.
                         </p>
-                        <a href="{% url 'Category' boton_id=3 %}" id="boton1" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                        <a href="{% url 'Category' boton_id=5 %}" id="boton1" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-gavel tm-color-primary tm-margin-b-20"></i>
@@ -290,30 +290,104 @@
         </div>
     </div>
 
-    <footer class="tm-bg-black">
+    <footer class="footer-section">
         <div class="container">
-            <div class="row">
-                <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
-                    AerolineasParaMascotas &copy; <span class="tm-current-year">2023</span>
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Direccion</h4>
+                                <span>avenida x, Buenos Aires, Argentina</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Telefono</h4>
+                                <span>2131232131</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Email de Contacto</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
-                Telefonos: <br>
-                +54 9 11 1111-1111
-            </p></div>
-            <div class="row">
-                <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
-                Email de contacto: <br>
-                ejemplo@gmail.com
-            </p>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="{% static 'img/logotipo.png' %}" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Aerolineas Para Mascotas</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Expertos en el Traslado Internacional de Mascotas</h3>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Links de interes</h3>
+                                <ul>
+                                    <li><a href="#">INSTAGRAM</a></li>
+                                    <li><a href="#">FACEBOOK</a></li>
+                                    <li><a href="#">CONTACTO</a></li>
+                                    <li><a href="#">SOBRE NOSOTROS</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p></p>
+                            </div>
+                            <!-- <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
-                </p>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>2024 &copy;BFB</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-    </div>
 
     <div class="scroll_to_top">
         <button type="button" id="scrollToTop">
