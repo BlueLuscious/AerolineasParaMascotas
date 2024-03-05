@@ -125,7 +125,7 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
-STATICFILES_DIRS = [BASE_DIR / "globalstatic"]
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 ## Levanta servidor whitenoise de statics files cuando corre en docker (sino no llegarian los statics)
 if ENVIRONMENT == "local":
