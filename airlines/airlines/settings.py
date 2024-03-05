@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-b6h+co$+erktq+w_5-fv4&vze^#(*tv3np9s@6w$tp0ux@@%8^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", True)
 
-ALLOWED_HOSTS = ["aerolineasparamascotas-va4k.onrender.com"]
+ALLOWED_HOSTS = ["aerolineasparamascotas-va4k.onrender.com", "127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    "django_db_prefix",
     'destination', 
     'web',
 ]
@@ -83,7 +82,7 @@ WSGI_APPLICATION = 'airlines.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default=os.environ.get("DATABASE_URL"),
+        default="postgres://barba:SjknZs6dMBBCPesEmzavxJCrBD3xgv6W@dpg-cmisc15a73kc739ngnlg-a.oregon-postgres.render.com/mydb_v8l1",
         conn_max_age=600
     )
 }
@@ -151,4 +150,5 @@ IMAGES = {
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+INSTALLED_APPS = ['django_db_prefix',] + INSTALLED_APPS
 DB_PREFIX = "airlines_"
