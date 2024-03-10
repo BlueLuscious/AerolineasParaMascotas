@@ -499,6 +499,7 @@ video {
 	#tm-section-1 {
 		padding-left: 15px;
 		padding-right: 15px;
+		height: 400px;
 	}
 
 	.tm-media-container,
@@ -549,7 +550,7 @@ video {
 
 	.tm-fx-col-xs { flex-direction: column; }
 	.tm-section-pad { padding: 25px 15px; }
-	#tm-section-1 { height: 600px; }
+	#tm-section-1 { height: 300px; }
 }
 
 /* IE Fixes */
