@@ -778,7 +778,9 @@ video {
 	.tm-top-bar .navbar-expand-lg .navbar-nav .nav-link {
 		padding: 12px 15px;
 	}
-
+	.carousel-control-next, .carousel-control-prev {
+		display:none;
+	 }
 	#mainNav {
 		width: 180px;
 		position: absolute;
@@ -858,6 +860,9 @@ video {
 	.overlay {
 		height: 255px;
 	}
+	.carousel-control-next, .carousel-control-prev {
+		display:none;
+	 }
 }
 
 @media screen and (max-width: 767px) and (min-width: 524px) {
@@ -869,6 +874,9 @@ video {
 	.tm-search-form .tm-form-element-50 {
 		width: 50%;
 	}
+	.carousel-control-next, .carousel-control-prev {
+		display:none;
+	 }
 }
 
 @media screen and (max-width: 524px) {
@@ -892,6 +900,9 @@ video {
 	#tm-section-1 {
 		height: 173px;
 	}
+	.carousel-control-next, .carousel-control-prev {
+		display:none;
+	 }
 }
 
 /* IE Fixes */
