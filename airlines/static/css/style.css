@@ -314,6 +314,13 @@ img.programa-genetico-img {
         }
     }
 
+    @media (max-width: 575px) {
+        .choice_contact_bar button, 
+        .choice_contact_bar_alt button {
+            width: 175px;
+        }
+    }
+
     @media (max-width: 475px) {
         .company-name {
             font-size: 1.25em;
