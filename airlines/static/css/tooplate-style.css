@@ -393,7 +393,24 @@ select.tm-select::-ms-expand {
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 3rem;
 }
-
+.tm-section-title-red {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 3rem;
+	color: #EF242C;
+}
+.tm-section-title-parag {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 2rem;
+}
+.tm-section-title-parag-red {
+	color: #EF242C;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 2.5rem;
+}
+.tm-section-title-content {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 1.7rem;
+}
 .tm-section-menortitle {
 	font-family: 'Pacifico', cursive;
 	font-size: 1.9rem;
@@ -404,7 +421,14 @@ select.tm-select::-ms-expand {
 	font-size: 3.2rem;
 	font-weight: 600;
 }
-
+.tm-section-subtitle-parag {
+	/* font-family: 'Martian Mono', monospace;
+	font-family: 'Noto Serif Makasar', serif; */
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
 .tm-section-subtitle {
 	/* font-family: 'Martian Mono', monospace;
 	font-family: 'Noto Serif Makasar', serif; */

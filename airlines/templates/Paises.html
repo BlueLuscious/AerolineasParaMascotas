@@ -1,4 +1,6 @@
+
 {% extends "Base.html" %} {% block content %} {% load static %}
+
 <style>
   .container-flex {
     display: flex;
@@ -7,11 +9,19 @@
     flex-direction: row;
     background-color: #28489d;
   }
+  
   .img-container {
     order: 1;
   }
+  .country-img{
+    width: 100%;
+  }
   .text-container {
+    display: flex;
     order: 2;
+  }
+  .text-container-button {
+    order: 1;
   }
   .container-flex {
     display: flex;
@@ -21,6 +31,58 @@
   .text-container {
     flex: 1;
   }
+  
+#tabs {
+	float:left;
+	width:100%;
+	background:#212529;
+	font-size:93%;
+	line-height:normal;
+	}
+	
+#tabs ul {
+	margin:0;
+	padding:10px 10px 0 50px;
+	list-style:none;
+	}
+	
+#tabs li {
+	display:inline;
+	margin:0;
+	padding:0;
+	}
+	
+#tabs a {
+	float:left;
+	background:url("{% static 'img/tab/tableft2.gif' %}") no-repeat left top;
+	margin:0;
+	padding:0 0 0 4px;
+	text-decoration:none;
+	}
+	
+#tabs a span {
+	float:left;
+	display:block;
+	background:url("{% static 'img/tab/tabright2.gif' %}") no-repeat right top;
+	padding:5px 15px 4px 6px;
+	color:#FFF;
+	}
+	
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs a span {float:none;}
+
+/* End IE5-Mac hack */
+#tabs a:hover span {
+	color:#FFF;
+	}
+	
+#tabs a:hover {
+	background-position:0% -42px;
+	}
+	
+#tabs a:hover span {
+	background-position:100% -42px;
+	}
   @media (max-width: 700px) {
     .container-flex {
       display: row;
@@ -36,67 +98,115 @@
 </style>
 
 <div class="tm-section-category" id="tm-section-cat">
+
+  <div class="text-container-button col text-center">
+    <br /><br />
+    <h4 class="tm-color-white tm-section-title">
+      Restricciones de viaje aéreo para <span class="tm-section-title-red"> braquiocefálos </span>
+    </h4> </div>
+    <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <p class="tm-color-white tm-section-subtitle">  
+    El traslado de animales de razas braquiocefálicas mediante transporte aéreo conlleva un alto riesgo para su salud respiratoria y bienestar térmico, derivado del estrés ocasionado durante el vuelo.  </p>
+          </div>
+      </div>
+  </div>
+
+    <div class="container-flex">
+      <div class="img-container">
+        <img
+          src="{% static 'img/razas-restricciones/French-Bulldog-1.jpg' %}"
+          style="max-width: 900px; max-height: 700px;"
+          class="country-img"
+        />
+      </div>
+      <div class="text-container tm-flex-align-center col text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <br />
+              <h4 class="tm-color-white tm-section-title-parag">Razas de <span class="tm-section-title-parag-red"> perros </span> clasificadas como braquiocefálicas:</h4>
+              <br>
+              <div class="row">
+                <div class="col-md-4">
+                  <p class="tm-color-white tm-section-subtitle-parag">
+                    - Affenpinscher <br>
+                    - American Bully <br>
+                    - Boston Terrier <br>
+                    - Boxer (todas las razas) <br>
+                    - Bulldog (todas las razas) <br>
+                    - Cane corso <br>
+                    - Carlino <br>
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <p class="tm-color-white tm-section-subtitle-parag">
+                    - Chow Chow <br>
+                    - Dogo (todas las razas) <br>
+                    - Grifón de Bruselas (pequeño brabanzón) <br>
+                    - Lhasa Apso <br>
+                    - Mastín (todas las razas) <br>
+                    - Pequinés <br>
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <p class="tm-color-white tm-section-subtitle-parag">
+                    - Pitbull <br>
+                    - Shar-Pei <br>
+                    - Shih Tzu <br>
+                    - Cocker/Spaniel (todas las razas) <br>
+                    - Staffordshire bull terrier
+                  </p>
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="tm-section-category">
   <br /><br /><br /><br /><br />
   <div class="container-flex">
     <div class="img-container">
       <img
-        src="{% static 'img/drive/SITIO-EN-CONSTRUCCION.jpg' %}"
-        alt="Razas"
-        style="width: 100%"
+        src="{% static 'img/razas-restricciones/Sagrado-de-Birmania.jpg' %}"
+        style="max-width: 900px; max-height: 700px;"
+        class="country-img"
       />
     </div>
-    <div class="text-container col text-center">
+    <div class="text-container tm-flex-align-center col text-center">
       <div class="container">
         <div class="row">
           <div class="col text-center">
             <br />
-            <h4 class="tm-color-white tm-section-title">
-              Amplia red de paises
+            <h4 class="tm-color-white tm-section-title-parag"> Razas de <span class="tm-section-title-parag-red"> gatos </span> clasificadas como braquiocefálicas:
             </h4>
-            <p class="tm-color-white tm-section-subtitle">
-              Descubre un nuevo estándar en el traslado de mascotas con nuestra
-              exclusiva red global de servicios vía aérea. Desde las bulliciosas
-              calles de Nueva York hasta las exóticas playas de Tailandia,
-              estamos aquí para hacer que tu mascota te acompañe en cada
-              aventura, sin importar el destino.
+            <br>
+            <p class="tm-color-white tm-section-subtitle-parag">
+              
+              Birmano <br>
+              Gato exótico <br>
+               Himalayo <br>
+                Persa <br>
+                 Británico de pelo corto
+
+
             </p>
             <br />
-            <p class="tm-color-white tm-section-subtitle">
-              Nuestra red de servicios se extiende por múltiples países en todo
-              el mundo, brindándote la tranquilidad de saber que tu amigo peludo
-              estará contigo dondequiera que vayas. Con conexiones en América
-              del Norte, Europa, Asia, Oceanía y más, ofrecemos traslados
-              internacionales que cumplen con los más altos estándares de
-              seguridad y bienestar animal.
-            </p>
-            <p class="tm-color-white tm-section-subtitle">
-              En nuestro compromiso por ofrecerte lo mejor, y para garantizar un
-              viaje sin contratiempos, nos encargamos desde la coordinación de
-              documentos hasta la atención personalizada durante el vuelo,
-              estamos para hacer que el proceso sea lo más suave posible para ti
-              y tu mascota.
-            </p>
-            <p class="tm-color-white tm-section-subtitle">
-              Ya sea que estés planeando una mudanza, unas vacaciones o un viaje
-              de negocios, nuestra amplia red de países te ofrece la
-              flexibilidad y la comodidad que necesitas. No importa si tienes un
-              perro, un gato o cualquier otra mascota, estamos aquí para cuidar
-              de ellos y garantizar que lleguen a su destino final felices y
-              saludables.
-            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="text-container col text-center">
-  <br /><br />
-  <a
-    href="{% url 'index' %}"
-    class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered"
-    >Volver</a
-  >
-</div>
 
-{% endblock content %}
+  <div class="text-container-button col text-center">
+    <br /><br />
+    <a href="{% url 'index' %}" class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered">Volver</a>
+    </div>
+
+{% endblock content %} 

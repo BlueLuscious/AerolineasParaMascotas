@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Martian+Mono:wght@700&family=Noto+Serif+Makasar&family=Oswald:wght@500&family=Overlock+SC&family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Martian+Mono:wght@700&family=Noto+Serif+Makasar&family=Oswald:wght@500&family=Overlock+SC&family=Pacifico&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
     <!-- Google web font "Open Sans" -->
@@ -28,7 +30,8 @@
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
 
-    {% comment %} <link rel="icon" href="{% static 'img/logotipo.ico' %}" /> {% endcomment %}
+    {% comment %}
+    <link rel="icon" href="{% static 'img/logotipo.ico' %}" /> {% endcomment %}
     <link rel="icon" href="{% static 'img/logotipo_favicon/favicon-32x32.png' %}">
 
     {% load humanize %}
@@ -40,31 +43,32 @@
           <![endif]-->
 </head>
 
-    <body>
-        <div class="tm-main-content" id="top">
-            <div class="tm-top-bar-bg"></div>
-            <div class="tm-top-bar tm-bg-primary" id="tm-top-bar">
-                <!-- Top Navbar -->
-                <div class="container">
-                    <div class="row">
-                        
-                        <nav class="navbar navbar-expand-lg narbar-light">
-                            <a class="navbar-brand mr-auto" href="#">
-                                <img src="{% static 'img/logotipo.png' %}" class="logotipo">
-                            </a>
-                            <div class="company-name navbar-brand mr-auto">Aerolineas para mascotas</div>
-                            <div class="navbar-brand mr-auto"></div>
-                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            
-                            <div id="mainNav" class="collapse navbar-collapse tm-bg-primary">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item">
+<body>
+    <div class="tm-main-content" id="top">
+        <div class="tm-top-bar-bg"></div>
+        <div class="tm-top-bar tm-bg-primary" id="tm-top-bar">
+            <!-- Top Navbar -->
+            <div class="container">
+                <div class="row">
+
+                    <nav class="navbar navbar-expand-lg narbar-light">
+                        <a class="navbar-brand mr-auto" href="#">
+                            <img src="{% static 'img/logotipo.png' %}" class="logotipo">
+                        </a>
+                        <div class="company-name navbar-brand mr-auto">Aerolineas para mascotas</div>
+                        <div class="navbar-brand mr-auto"></div>
+                        <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+                            data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div id="mainNav" class="collapse navbar-collapse tm-bg-primary">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
                                     <a class="nav-link" href="#top">Inicio <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link"  href="{% url 'Category' boton_id=5 %}">Quienes somos</a>
+                                    <a class="nav-link" href="{% url 'Category' boton_id=5 %}">Quienes somos</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{% url 'Category' boton_id=4 %}">Requisitos</a>
@@ -78,7 +82,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="tm-section tm-bg-img" id="tm-section-1"></div>
 
         <div class="tm-section-2">
@@ -86,7 +90,7 @@
                 <div class="row">
                     <div class="col text-center">
                         <h2 class="tm-color-white tm-section-title">¿A donde vas? </h2>
-<!--                         <h4 class="tm-color-white tm-section-menortitle"> Deja a tu amigo peludo en las mejores manos </h4>
+                        <!--                         <h4 class="tm-color-white tm-section-menortitle"> Deja a tu amigo peludo en las mejores manos </h4>
                         <p class="tm-color-white tm-section-subtitle">Especialistas en traslado de mascotas</p> -->
                         <a href="{% url 'Category' boton_id=4 %}"
                             class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered">
@@ -107,17 +111,21 @@
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-paw tm-color-primary tm-margin-b-20"></i>
                         <h3 class="tm-color-primary tm-article-title-1">Sin distincion de raza</h3>
-                        <p>En Aerolineas Para Mascotas no hacemos distincion de raza, todas las mascotas son bienvenidas.
+                        <p>En Aerolineas Para Mascotas no hacemos distincion de raza, todas las mascotas son
+                            bienvenidas.
                         </p>
-                        <a href="{% url 'Category' boton_id=1 %}" id="boton1" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                        <a href="{% url 'Category' boton_id=1 %}" id="boton1"
+                            class="text-uppercase tm-color-primary tm-font-semibold">Seguir leyendo...</a>
 
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-plane tm-color-primary tm-margin-b-20"></i>
-                        <h3 class="tm-color-primary tm-article-title-1">Amplia red de paises</h3>
-                        <p>Contamos con una amplia red de paises, para que puedas viajar a donde quieras sabiendo que tu mascota queda en buenas manos.
+                        <h3 class="tm-color-primary tm-article-title-1">Requisitos de viaje aereo por raza</h3>
+                        <p> Algunas razas pueden necesitar cuidados especiales de cara al viaje en altura, es importante que sepas si tu 
+                            mascota pertenece a alguna de estas.
                         </p>
-                        <a href="{% url 'Category' boton_id=2 %}" id="boton1" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                        <a href="{% url 'Category' boton_id=2 %}" id="boton1"
+                            class="text-uppercase tm-color-primary tm-font-semibold">Seguir leyendo...</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-life-saver tm-color-primary tm-margin-b-20"></i>
@@ -125,15 +133,17 @@
                         <p>El bienestar de tu mascota es nuestra prioridad, por lo que nos aseguramos de que
                             viaje segura y comoda.
                         </p>
-                        <a href="{% url 'Category' boton_id=5 %}" id="boton1" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                        <a href="{% url 'Category' boton_id=5 %}" id="boton1"
+                            class="text-uppercase tm-color-primary tm-font-semibold">Seguir leyendo...</a>
                     </article>
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-gavel tm-color-primary tm-margin-b-20"></i>
-                        <h3 class="tm-color-primary tm-article-title-1">Requisitos</h3>
+                        <h3 class="tm-color-primary tm-article-title-1">Requisitos de ingreso por pais</h3>
                         <p>Cada pais tiene sus propios requisitos para el ingreso de mascotas, por lo que es importante
                             que te informes de los requerimientos de tu proximo destino. </p>
                         </p>
-                        <a href="{% url 'Category' boton_id=4 %}" id="boton1" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                        <a href="{% url 'Category' boton_id=4 %}" id="boton1"
+                            class="text-uppercase tm-color-primary tm-font-semibold">Seguir leyendo...</a>
                     </article>
                 </div>
             </div>
@@ -182,15 +192,16 @@
         </div>
 
         <br><br><br><br><br><br><br>
-       
+
         <div class="tm-section tm-section-pad tm-bg-primary" id="tm-section-4">
             <div class="container">
                 <div class="row">
                     <div class="socials col-sm-12 col-md-12 col-lg-8 col-xl-8">
                         <h1 class="tm-color-white tm-text-align-center">
-                            Seguinos en nuestro 
+                            Seguinos en nuestro
                             <span>
-                                <a href="https://www.instagram.com/aerolineasparamascotas/" target="_blank">Instagram</a>
+                                <a href="https://www.instagram.com/aerolineasparamascotas/"
+                                    target="_blank">Instagram</a>
                             </span>
                         </h1>
                         <br><br><br>
@@ -269,18 +280,19 @@
                                     placeholder="Teléfono" required />
                             </div>
                             <div class="warning"></div>
-<!--                             <div class="form-group">
+                            <!--                             <div class="form-group">
                                 <textarea id="contact_message" name="contact_message" class="form-control" rows="9"
                                     placeholder="Comentarios"></textarea>
                             </div> -->
-                            <button type="submit" id="send_contact_form" class="btn btn-primary tm-btn-primary tm-color-white">Enviar</button>
+                            <button type="submit" id="send_contact_form"
+                                class="btn btn-primary tm-btn-primary tm-color-white">Enviar</button>
                         </form>
                     </div>
                 </div>
             </div>
             <br>
             <div class="row">
-                <div class="choice_contact_bar_alt" id="email_choice" >
+                <div class="choice_contact_bar_alt" id="email_choice">
                     <button type="button" class="choices_contact_bar"><i class="bi bi-envelope"></i></button>
                 </div>
                 <div class="choice_contact_bar" id="whatsapp_choice">
@@ -328,7 +340,8 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="{% static 'img/logotipo.png' %}" class="img-fluid" alt="logo"></a>
+                                <a href="index.html"><img src="{% static 'img/logotipo.png' %}" class="img-fluid"
+                                        alt="logo"></a>
                             </div>
                             <div class="footer-text">
                                 <p>Aerolineas Para Mascotas</p>

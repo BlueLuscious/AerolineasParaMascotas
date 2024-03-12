@@ -279,7 +279,10 @@ select.tm-select::-ms-expand { display: none; }
 	margin-bottom: 25px;
 }
 
-.tm-section-subtitle-2 { font-size: 1.8rem; }
+.tm-section-subtitle-2 { 
+	font-size: 1.8rem; 
+	font-weight: 300;
+	margin-bottom: 25px;}
 
 .tm-btn-white-bordered {
 	display: inline-block;
