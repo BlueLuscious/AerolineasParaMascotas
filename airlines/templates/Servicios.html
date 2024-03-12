@@ -181,15 +181,19 @@
 
     <div class="container-flex">
         <div class="img-container-2">
-            <img src="{% static 'img/servicios/perro1.jpeg' %}"
-                style="height:100% ;max-width: 1200px; max-height: 1200px;" class="country-img" />
+            <!-- <img src="{% static 'img/servicios/perro1.jpeg' %}"
+                style="height:100% ;max-width: 1200px; max-height: 1200px;" class="country-img" /> -->
+                <video class="service" autoplay muted >
+                    <source src="{% static 'img/servicios/vuelo-carga-viva.mp4' %}" style=" max-width: 900px; max-height: 900px;"type="video/mp4">
+                </video>
+                
         </div>
         <div class="text-container-2 tm-flex-align-center col text-center">
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
-                        <br />
-                        <h4 class="tm-color-white tm-section-title-parag">Vuelo Acompañado</h4>
+                        <br><br><br> <br>
+                        <h4 class="tm-color-white tm-section-title-parag">Vuelos de Carga Viva</h4>
                         <br>
                         <div class="row">
                             <div>
@@ -250,40 +254,78 @@
     </h4>
 </div>
 
-<div class="tm-section-2">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-
-                <p class="tm-color-white tm-section-subtitle-parag">
-                    El servicio consiste en el asesoramiento
-                    y gestión de todos los trámites de tu mascota para que viaje en el mismo vuelo que vos desde Argentina a
-                    cualquier parte del mundo.
-                </p>
-                <p class="tm-color-white tm-section-subtitle-parag">
-                    Incluye: <br>
-                    - Trámites y certificados sanitarios <br>
-                    - Permisos aduaneros de Argentina para salir del país con la mascota <br>
-                    - Permisos aduaneros para el ingreso de la mascota en el destino <br>
-                    - Microchip y certificado de implantación <br>
-                    - Certificaciones veterinarias <br>
-                    - Certificado de Buena Salud <br>
-                    - Exámenes y Vacunas <br>
-                    - Asesoria de reserva aérea con mascotas.
-                </p>
-                <p class="tm-color-white tm-section-subtitle-parag">
-                    <span class="tm-section-subtitle-parag-red">NO</span> Incluye: <br>
-                    -Tarifa de embarque de la aerolínea <br>
-                    - Jaulas transportadoras <br>
-                    - Transfer al aeropuerto ni Permiso de embarque
-                </p>
 
 
-                <br><br><br><br>
+
+
+<div class="container-flex">
+    <div class="img-container">
+        <img src="{% static 'img/servicios/perro1.jpeg' %}"
+        style="height:100% ;max-width: 1200px; max-height: 1200px;" class="country-img" />
+    </div>
+    <div class="text-container tm-flex-align-center col text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <!-- <h4 class="tm-color-white tm-section-title-parag">Vuelo Acompañado</h4>
+                    <br> -->
+                    <div class="row">
+                        <div>
+                            <p class="tm-color-white tm-section-subtitle-parag">
+                                El servicio consiste en el asesoramiento
+                                y gestión de todos los trámites de tu mascota para que viaje en el mismo vuelo que vos desde Argentina a
+                                cualquier parte del mundo.</p>
+                                <br>
+                                <h4 class="tm-color-white tm-section-title-parag">Incluye: </h4>
+                            <div class="row">
+                                
+                                <div class="col-md-4">
+                                    
+                                    <p class="tm-color-white tm-section-subtitle-parag">
+                                        - Trámites y certificados sanitarios <br>
+                                        - Permisos aduaneros de Argentina para salir del país con la mascota <br>
+                                        - Permisos aduaneros para el ingreso de la mascota en el destino <br>
+                                        - Microchip y certificado de implantación <br>
+                                        
+                                    </p>
+                                </div>
+                                <div class="col-md-4 ">
+                                    <p class="tm-color-white tm-section-subtitle-parag">
+                                        - Certificaciones veterinarias <br>
+                                        - Certificado de Buena Salud <br>
+                                        - Exámenes y Vacunas <br>
+                                        - Asesoria de reserva aérea con mascotas.
+                                    </p>
+                                </div>
+                                <p class="tm-color-white tm-section-subtitle-parag">
+                                    <span class="tm-section-subtitle-parag-red">NO</span> Incluye: <br>
+                                    - Tarifa de embarque de la aerolínea <br>
+                                    - Jaulas transportadoras <br>
+                                    - Transfer al aeropuerto ni Permiso de embarque
+                                </p>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <br />
             </div>
         </div>
     </div>
 </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <div class="text-container-button col text-center">
     <br /><br />
     <a href="{% url 'index' %}"
