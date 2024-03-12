@@ -429,6 +429,15 @@ select.tm-select::-ms-expand {
 	font-weight: 300;
 	margin-bottom: 40px;
 }
+.tm-section-subtitle-parag-red {
+	/* font-family: 'Martian Mono', monospace;
+	font-family: 'Noto Serif Makasar', serif; */
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin-bottom: 40px;
+	color: #EF242C;
+}
 .tm-section-subtitle {
 	/* font-family: 'Martian Mono', monospace;
 	font-family: 'Noto Serif Makasar', serif; */

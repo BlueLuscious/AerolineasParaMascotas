@@ -209,9 +209,14 @@ img.programa-genetico-img {
 .img-container {
     order: 1;
 }
-  
+.img-container-2 {
+    order: 2;
+}
 .text-container {
     order: 2;
+}
+.text-container-2 {
+    order: 1;
 }
 
 .container-flex {
@@ -220,6 +225,9 @@ img.programa-genetico-img {
 }
 
 .img-container, .text-container {
+    flex: 1;
+}
+.img-container-2, .text-container-2 {
     flex: 1;
 }
 
