@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'airlines.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default="postgres://luscious_user:xX1vGyK81N4Mkn3koK0DUlcIocXrUTxB@dpg-cnjmqjuv3ddc739ero50-a.oregon-postgres.render.com/luscious",
+        default="postgres://santi:nq02952JGCXRh10so1UQjGXYK6US6sTc@dpg-cnjnacv109ks73epd0lg-a/test_nt4v",
         conn_max_age=600
     )
 }
