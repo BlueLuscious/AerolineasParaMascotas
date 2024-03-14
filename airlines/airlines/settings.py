@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-b6h+co$+erktq+w_5-fv4&vze^#(*tv3np9s@6w$tp0ux@@%8^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", True)
 
-ALLOWED_HOSTS = ["aerolineasparamascotas-va4k.onrender.com", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["aerolineasparamascotas-rd0i.onrender.com", "127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'airlines.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default="postgres://barba:SjknZs6dMBBCPesEmzavxJCrBD3xgv6W@dpg-cmisc15a73kc739ngnlg-a.oregon-postgres.render.com/mydb_v8l1",
+        default="postgres://luscious_user:xX1vGyK81N4Mkn3koK0DUlcIocXrUTxB@dpg-cnjmqjuv3ddc739ero50-a.oregon-postgres.render.com/luscious",
         conn_max_age=600
     )
 }

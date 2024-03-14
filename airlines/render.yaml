@@ -1,19 +1,20 @@
 databases:
-  - name: listenerdb
-    databaseName: listnerdb
-    user: listenerdb
+  - name: mysitedb
+    plan: free
+    databaseName: mysite
+    user: mysite
 
 services:
   - type: web
     plan: free
-    name: airlines
+    name: mysite
     runtime: python
     buildCommand: "./build.sh"
-    startCommand: "python -m gunicorn airlines.asgi:application -k uvicorn.workers.UvicornWorker"
+    startCommand: "python -m gunicorn mysite.asgi:application -k uvicorn.workers.UvicornWorker"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: listenerdb
+          name: mysitedb
           property: connectionString
       - key: SECRET_KEY
         generateValue: true
