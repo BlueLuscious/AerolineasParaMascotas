@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-b6h+co$+erktq+w_5-fv4&vze^#(*tv3np9s@6w$tp0ux@@%8^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", True)
 
-ALLOWED_HOSTS = ["aerolineasparamascotas-va4k.onrender.com", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["aerolineasparamascotas-1.onrender.com", "127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -87,6 +87,7 @@ WSGI_APPLICATION = 'airlines.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
+
         default=cloudinary.uploader.upload("https://upload.wikimedia.org/wikipedia/commons/a/ae/Olympic_flag.jpg", public_id="olympic_flag"),
         conn_max_age=600
     )
