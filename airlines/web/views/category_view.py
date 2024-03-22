@@ -13,3 +13,7 @@ class CategoryView(View):
             return render(request, 'Requisitos.html')
         elif boton_id == 5:
             return render(request, 'About_us.html')
+        # elif boton_id == 6:
+        #     return render(request, 'Contacto.html')
+        elif boton_id == 7:
+            return render(request, 'Servicios.html')
