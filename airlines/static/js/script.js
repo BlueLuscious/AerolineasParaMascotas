@@ -74,11 +74,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /* open emailWin */
     function openEmail(fullName, email, phone) {
+        const danielEmail = "servicios@aerolineasparamascotas.com.ar"
         const body = `Nombre completo: ${fullName}.
         Correo Electronico: ${email}.
         Teléfono: ${phone}.`
     
-        win=window.open(`mailto:santamarialucio01@gmail.com?subject=Datos de contacto&body=${encodeURIComponent(body)}`,'emailWin')
+        win=window.open(`mailto:${danielEmail}?subject=Datos de contacto&body=${encodeURIComponent(body)}`,'emailWin')
     }
     /* open emailWin */
 

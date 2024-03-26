@@ -209,9 +209,14 @@ img.programa-genetico-img {
 .img-container {
     order: 1;
 }
-  
+.img-container-2 {
+    order: 2;
+}
 .text-container {
     order: 2;
+}
+.text-container-2 {
+    order: 1;
 }
 
 .container-flex {
@@ -222,7 +227,17 @@ img.programa-genetico-img {
 .img-container, .text-container {
     flex: 1;
 }
-
+.img-container-2, .text-container-2 {
+    flex: 1;
+}
+.service{
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    height: auto;
+    max-width: 700px;
+    max-height: 700px;
+}
 /* SCROLLTOP BTN */
 .scroll_to_top {
     position: fixed;
@@ -311,6 +326,13 @@ img.programa-genetico-img {
 
         .navbar-toggler-icon {
             height: 2em;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .choice_contact_bar button, 
+        .choice_contact_bar_alt button {
+            width: 175px;
         }
     }
 
