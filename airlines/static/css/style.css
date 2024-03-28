@@ -34,65 +34,6 @@ body::-webkit-scrollbar-thumb:active {
     justify-content: center;
 }
 
-/* contact form choices */
-.choice_contact_bar button {
-    width: 225px;
-    border: 0.2em solid #2B72B6;
-    outline: transparent;
-    background-color: rgb(30, 30, 30);
-    cursor: pointer;
-}
-
-.choice_contact_bar button:hover {
-    border: 0.2em solid white;
-}
-
-.choice_contact_bar_alt button {
-    width: 225px;
-    border: 0.2em solid white;
-    outline: transparent;
-    color: white;
-}
-
-.choice_contact_bar:first-of-type button {
-    border-radius: 2em 0em 0em 2em;
-}
-
-.choice_contact_bar_alt:first-of-type button {
-    border-radius: 2em 0em 0em 2em;
-    background-color: #db4a39;
-}
-
-.choice_contact_bar:first-of-type button:hover {
-    background-color: #db6659;
-}
-
-.choice_contact_bar:last-of-type button {
-    border-radius: 0em 2em 2em 0em;
-}
-
-.choice_contact_bar_alt:last-of-type button {
-    border-radius: 0em 2em 2em 0em;
-    background-color: #00bb2d;
-}
-
-.choice_contact_bar:last-of-type button:hover {
-    background-color: #43ba5f;
-}
-
-.bi {
-    color: #2B72B6;
-    font-size: 2.5em;
-}
-
-.choice_contact_bar_alt button .bi {
-    color: white;
-}
-
-.choice_contact_bar button:hover .bi {
-    color: white;
-}
-/* contact form choices */
 
 .logotipo{
     width: 100px;
