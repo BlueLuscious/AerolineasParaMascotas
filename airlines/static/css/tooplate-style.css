@@ -219,7 +219,7 @@ p {
 }
 
 .tm-section {
-	min-height: 515px;
+	min-height: 115px;
 }
 
 .tm-section-pad {
@@ -230,7 +230,7 @@ p {
 #tm-section-1 {
 	background-image: url('../img/main-banner-arreglado.jpg');
 	background-position: center top;
-	height: 600px;
+	height: 800px;
 }
 
 #tm-section-5 {
@@ -369,6 +369,7 @@ select.tm-select::-ms-expand {
 /* https://css-tricks.com/creating-non-rectangular-headers/ */
 .tm-section-down-arrow {
 	position: absolute;
+	left:0;
 	top: -1px;
 	width: 100%;
 	height: 100px;
@@ -392,7 +393,24 @@ select.tm-select::-ms-expand {
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 3rem;
 }
-
+.tm-section-title-red {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 3rem;
+	color: #EF242C;
+}
+.tm-section-title-parag {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 2rem;
+}
+.tm-section-title-parag-red {
+	color: #EF242C;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 2.5rem;
+}
+.tm-section-title-content {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 1.7rem;
+}
 .tm-section-menortitle {
 	font-family: 'Pacifico', cursive;
 	font-size: 1.9rem;
@@ -403,7 +421,23 @@ select.tm-select::-ms-expand {
 	font-size: 3.2rem;
 	font-weight: 600;
 }
-
+.tm-section-subtitle-parag {
+	/* font-family: 'Martian Mono', monospace;
+	font-family: 'Noto Serif Makasar', serif; */
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+.tm-section-subtitle-parag-red {
+	/* font-family: 'Martian Mono', monospace;
+	font-family: 'Noto Serif Makasar', serif; */
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin-bottom: 40px;
+	color: #EF242C;
+}
 .tm-section-subtitle {
 	/* font-family: 'Martian Mono', monospace;
 	font-family: 'Noto Serif Makasar', serif; */
@@ -778,7 +812,9 @@ video {
 	.tm-top-bar .navbar-expand-lg .navbar-nav .nav-link {
 		padding: 12px 15px;
 	}
-
+	.carousel-control-next, .carousel-control-prev {
+		display:none;
+	 }
 	#mainNav {
 		width: 180px;
 		position: absolute;
@@ -823,6 +859,7 @@ video {
 	#tm-section-1 {
 		padding-left: 15px;
 		padding-right: 15px;
+		height: 27em;
 	}
 
 	.tm-media-container,
@@ -857,6 +894,9 @@ video {
 	.overlay {
 		height: 255px;
 	}
+	.carousel-control-next, .carousel-control-prev {
+		display:none;
+	 }
 }
 
 @media screen and (max-width: 767px) and (min-width: 524px) {
@@ -868,6 +908,9 @@ video {
 	.tm-search-form .tm-form-element-50 {
 		width: 50%;
 	}
+	.carousel-control-next, .carousel-control-prev {
+		display:none;
+	 }
 }
 
 @media screen and (max-width: 524px) {
@@ -889,8 +932,11 @@ video {
 	}
 
 	#tm-section-1 {
-		height: 600px;
+		height: 173px;
 	}
+	.carousel-control-next, .carousel-control-prev {
+		display:none;
+	 }
 }
 
 /* IE Fixes */
@@ -941,4 +987,58 @@ video {
 		max-width: 530px;
 		width: 100%;
 	}
+}
+
+
+
+
+.tm-section {
+    height: auto; /* Altura automática para adaptarse al contenido */
+    background-size: cover; /* La imagen de fondo se escala para ser tan grande como sea posible mientras se mantiene su aspecto (proporción ancho/altura) */
+    background-position: center; /* La posición de la imagen de fondo se centra */
+}
+
+/* Para pantallas de 991px o menos */
+@media (max-width: 991px) {
+    .tm-section-1 {
+        padding: 20px;
+        margin: 10px;
+        height: 27em; /* Sobrescribe la altura definida en la línea 230 */
+    }
+    .tm-bg-img {
+        background-size: cover;
+        display: block;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+/* Para pantallas de 767px o menos */
+@media (max-width: 767px) {
+    .tm-section-1 {
+        padding: 15px;
+        margin: 5px;
+        height: 25em; /* Sobrescribe la altura definida en la línea 230 */
+    }
+    .tm-bg-img {
+        background-size: cover;
+        display: block;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+/* Para pantallas de 542px o menos */
+@media (max-width: 542px) {
+    .tm-section-1 {
+        padding: 10px;
+        margin: 2px;
+        height: auto; /* Sobrescribe la altura definida en la línea 230 */
+    }
+    .tm-bg-img {
+        background-size: cover;
+        display: block;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 }
