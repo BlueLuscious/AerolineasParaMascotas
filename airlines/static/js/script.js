@@ -65,9 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function openWhatsApp() {
         const danielPhoneNumber = 5491150599636
         const messageWA = `Hola, completa con tus datos. Te atenderemos a la brevedad.
-        Nombre completo:
-        Correo Electronico:
-        Teléfono:`
+
+    Nombre completo:
+    Correo Electronico:
+    Teléfono:`
 
         window.location.href = `https://wa.me/${danielPhoneNumber}/?text=${encodeURIComponent(messageWA)}`
     }
