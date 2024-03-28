@@ -239,23 +239,22 @@ img.programa-genetico-img {
     max-height: 700px;
 }
 /* SCROLLTOP BTN */
-.scroll_to_top {
+.whatsapp_button {
     position: fixed;
     bottom: 2.5vh;
     right: 2.5vh;
+    border-radius: 3rem;
     z-index: 10;
 
     & button {
-        display: none;
-        width: 6vh;
-        height: 5.5vh;
+        width: 4.5rem;
+        height: 4.5rem;
         border: transparent;
-        border-radius: 0.5vh;
-        background-color: #ffffff;
-        opacity: 0;
+        border-radius: 3rem;
+        background-color: #00bb2d;
         outline: none;
         transition: opacity 0.5s ease-in-out;
-        cursor: default;
+        cursor: pointer;
         
         &:hover {
             box-shadow: 0px 0px 20px 0px #a1c8de;
@@ -263,9 +262,9 @@ img.programa-genetico-img {
     }
 
     & .bi {
-        color: #28489D;
-        background-color: #ffffff;
-        font-size: 3.5vh;
+        color: #ffffff;
+        background-color: #00bb2d;
+        font-size: 2.5rem;
     }
 }
 
