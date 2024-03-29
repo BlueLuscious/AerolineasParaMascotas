@@ -28,53 +28,12 @@
   }
 
 </style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-<div class="container-grid">
+<script src="{% static 'mapa/mapdata.js'%}"></script>
+<script src="{% static 'mapa/worldmap.js'%}"></script>
+<h2 class="tm-color-white tm-section-title">Mapa de Requisitos</h2>
 
-  <div class="tm-section-category">
-    <div class="img-container">
-      <img src="{% static 'img/mapas/mapa_generico.png' %}" class="country-img" />
-    </div>
-    <div class="text-container tm-flex-align-center col text-center">
-      <h4 class="tm-color-white tm-section-title">Pais 1</h4>
-      <p class="tm-color-white tm-section-subtitle">
-        -Requisito 1 <br>
-        -Requisito 2
-      </p>
-    </div>
-  </div>
+<div id="map"></div>
 
-  <div class="tm-section-category">
-    <div class="img-container">
-      <img src="{% static 'img/mapas/mapa_generico.png' %}" class="country-img" />
-    </div>
-    <div class="text-container tm-flex-align-center col text-center">
-      <h4 class="tm-color-white tm-section-title">Pais 2</h4>
-      <p class="tm-color-white tm-section-subtitle">
-        -Requisito 1 <br>
-        -Requisito 2
-      </p>
-    </div>
-    
-  </div>
-  <div class="tm-section-category">
-    <div class="img-container">
-      <img src="{% static 'img/mapas/mapa_generico.png' %}" class="country-img" />
-    </div>
-    <div class="text-container tm-flex-align-center col text-center">
-      <h4 class="tm-color-white tm-section-title">Pais 3</h4>
-      <p class="tm-color-white tm-section-subtitle">
-        -Requisito 1 <br>
-        -Requisito 2
-      </p>
-    </div>
-  </div>
-  <!-- Repite el mismo patrón para las otras secciones -->
-
-</div>
-
-<div class="text-container-button col text-center">
-  <br /><br />
-  <a href="{% url 'index' %}" class="tm-bg-secondary tm-color-white tm-font-semibold tm-border-radius-s tm-margin-b-5 tm-btn-white-bordered">Volver</a>
-</div>
 {% endblock content %}
