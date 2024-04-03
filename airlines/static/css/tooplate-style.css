@@ -1,6 +1,13 @@
 /* Tooplate 2095 Level
 https://www.tooplate.com/view/2095-level */
 
+:root {
+	--principal: #87c9ce;
+	--secundario: #e59393;
+	--footer: #333;
+	--parrafos: #666;
+}
+
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
@@ -61,11 +68,11 @@ a:focus {
 }
 
 .tm-color-primary {
-	color: #28489D;
+	color:var(--principal);
 }
 
 .tm-bg-primary {
-	background: #28489D;
+	background: var(--principal);
 }
 
 .tm-bg-secondary {
@@ -122,7 +129,7 @@ a:focus {
 
 a.tm-color-primary:hover,
 a.tm-color-primary:active {
-	color: #28489D;
+	color: var(--principal);
 }
 
 .tm-font-light {
@@ -190,7 +197,7 @@ p {
 
 .nav-link.active,
 .nav-link:hover {
-	color: #EF242C;
+	color: var(--secundario);
 	background: #ffffff;
 }
 
@@ -279,8 +286,8 @@ p {
 
 .btn-primary {
 	border: 1.5px solid;
-	background-color: #EF242C;
-	border-color: #EF242C;
+	background-color:var(--secundario);
+	border-color: var(--secundario);
 	cursor: pointer;
 	font-size: 0.7rem;
 	font-weight: 600;
@@ -291,9 +298,9 @@ p {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-	color: #EF242C;
+	color: var(--secundario);
 	background-color: #ffffff;
-	border-color: #EF242C;
+	border-color: var(--secundario);
 }
 
 .tm-search-form .tm-form-element {
@@ -384,7 +391,7 @@ select.tm-select::-ms-expand {
 }
 
 .tm-section-2 {
-	background: #28489D;
+	background: var(--principal);
 	padding-top: 50px;
 	position: relative;
 }
@@ -396,14 +403,14 @@ select.tm-select::-ms-expand {
 .tm-section-title-red {
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 3rem;
-	color: #EF242C;
+	color: var(--secundario);
 }
 .tm-section-title-parag {
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 2rem;
 }
 .tm-section-title-parag-red {
-	color: #EF242C;
+	color: var(--secundario);
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 2.5rem;
 }
@@ -436,7 +443,7 @@ select.tm-select::-ms-expand {
 	font-size: 1.4rem;
 	font-weight: 300;
 	margin-bottom: 40px;
-	color: #EF242C;
+	color: var(--secundario);
 }
 .tm-section-subtitle {
 	/* font-family: 'Martian Mono', monospace;
@@ -455,13 +462,13 @@ select.tm-select::-ms-expand {
 	display: inline-block;
 	padding: 10px 25px;
 	border: 1.5px solid;
-	border-color: #EF242C;
+	border-color: var(--secundario);
 	text-transform: uppercase;
 }
 
 .tm-btn-white-bordered:hover,
 .tm-btn-white-bordered:focus {
-	color: #EF242C;
+	color: var(--secundario);
 	background: #ffffff;
 }
 
@@ -626,7 +633,7 @@ video {
 
 .contact-form .form-control {
 	background-color: #131313da;
-	border: 2px solid #28489D;
+	border: 2px solid var(--principal);
 	font-size: 0.8rem;
 	font-weight: 300;
 }
@@ -641,14 +648,14 @@ video {
 }
 /* footer */
 .footer-section {
-	background: #151414;
+	background: var(--footer);
 	position: relative;
   }
   .footer-cta {
 	border-bottom: 1px solid #373636;
   }
   .single-cta i {
-	color: #28489D;
+	color: var(--principal);
 	font-size: 30px;
 	float: left;
 	margin-top: 8px;
@@ -734,7 +741,7 @@ video {
 	bottom: -15px;
 	height: 2px;
 	width: 50px;
-	background: #28489D;
+	background: var(--principal);
   }
   .footer-widget ul li {
 	display: inline-block;
@@ -743,7 +750,7 @@ video {
 	margin-bottom: 12px;
   }
   .footer-widget ul li a:hover{
-	color: #28489D;
+	color: var(--principal);
   }
   .footer-widget ul li a {
 	color: #878787;
@@ -763,7 +770,7 @@ video {
   .subscribe-form button {
 	  position: absolute;
 	  right: 0;
-	  background: #28489D;
+	  background: var(--principal);
 	  padding: 13px 20px;
 	  border: 1px solid #ff5e14;
 	  top: 0;
@@ -783,14 +790,14 @@ video {
 	color: #878787;
   }
   .copyright-text p a{
-	color: #28489D;
+	color: var(--principal);
   }
   .footer-menu li {
 	display: inline-block;
 	margin-left: 20px;
   }
   .footer-menu li:hover a{
-	color: #28489D;
+	color: var(--principal);
   }
   .footer-menu li a {
 	font-size: 14px;
