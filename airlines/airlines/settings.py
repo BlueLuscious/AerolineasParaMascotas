@@ -30,13 +30,16 @@ DEBUG = os.environ.get("DEBUG", True)
 ALLOWED_HOSTS = ["*.aerolineasparamascotas.store",
                  "*.aerolineasparamascotas.online",
                  "*.aerolineasparamascotas.com",
-                 "aerolineasparamascotas.store",
-                 "aerolineasparamascotas.online",
-                 "aerolineasparamascotas.com",
+                 "www.aerolineasparamascotas.store",
+                 "www.aerolineasparamascotas.online",
+                 "www.aerolineasparamascotas.com",
                  "aerolineasparamascotas-va4k.onrender.com",
+                 "www.aerolineasparamascotas-va4k.onrender.com",
                  "127.0.0.1",
                  "localhost",
-                 "aerolineasparamascotas.com.ar"]
+                 "aerolineasparamascotas.com.ar",
+                 "www.aerolineasparamascotas.com.ar",
+                 ]
 
 
 # Application definition
