@@ -35,6 +35,8 @@ https://www.tooplate.com/view/2095-level */
     --azul-3: #0c0c88;
     --azul-4: #0472de;
     --azul-5: #91f2fa;
+
+	--principal : var(--azul-1);
 }
 
 body {
