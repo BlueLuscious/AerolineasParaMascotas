@@ -1,11 +1,40 @@
 /* Tooplate 2095 Level
 https://www.tooplate.com/view/2095-level */
 
+/* Tooplate 2095 Level
+https://www.tooplate.com/view/2095-level */
+/* 
+	Paleta ROSA (de izq a derecha)
+	1 #542d58
+	2 #7f3766
+	3 #b84879
+	4 #ff698c
+	5 #ffa19f
+
+	Paleta Azul/Amarillo (izq a derecha)
+	1 #fee661
+	2 #fff492
+	3 #0c0c88
+	4 #0472de
+	5 #91f2fa
+*
+/* 
+    Paleta ROSA
+*/
 :root {
-	--principal: #87c9ce;
-	--secundario: #e59393;
-	--footer: #333;
-	--parrafos: #666;
+    --rosa-1: #542d58;
+    --rosa-2: #7f3766;
+    --rosa-3: #b84879;
+    --rosa-4: #ff698c;
+    --rosa-5: #ffa19f;
+/* 
+    Paleta Azul/Amarillo
+*/
+    --azul-1: #fee661;
+    --azul-2: #fff492;
+    --azul-3: #0c0c88;
+    --azul-4: #0472de;
+    --azul-5: #91f2fa;
 }
 
 body {
