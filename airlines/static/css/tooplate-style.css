@@ -147,7 +147,13 @@ https://www.tooplate.com/view/2095-level */
 	font-weight: 900;
 	font-style: italic;
   }
-  
+  .kanit-light-description {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: var(--rosa-2);
+}
 
 
 
@@ -634,6 +640,11 @@ select.tm-select::-ms-expand {
 
 .tm-article-title-1 {
 	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.tm-subtitles-index {
+	font-size: 1.5rem;
 	font-weight: 600;
 	margin-bottom: 20px;
 }
