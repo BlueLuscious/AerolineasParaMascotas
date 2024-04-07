@@ -47,7 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /* open emailWin */
     function openEmail(fullName, email, phone) {
-        const danielEmail = "servicios@aerolineasparamascotas.com.ar"
+        // const danielEmail = "servicios@aerolineasparamascotas.com.ar"
+        const danielEmail = "contacto@aerolineasparamascotas.com.ar"
         const body = `Nombre completo: ${fullName}.
         Correo Electronico: ${email}.
         Teléfono: ${phone}.`
@@ -57,19 +58,26 @@ document.addEventListener('DOMContentLoaded', function() {
     /* open emailWin */
 
     /* open whatsapp */
-
     sendWA.addEventListener('click', () => {
         openWhatsApp()
     })
 
     function openWhatsApp() {
-        const danielPhoneNumber = 5491150599636
+        const phoneNumbers = [5491150599636, 5491127142401]
         const messageWA = `Hola, completa con tus datos. Te atenderemos a la brevedad.
         Nombre completo:
         Correo Electronico:
         Teléfono:`
 
-        window.location.href = `https://wa.me/${danielPhoneNumber}/?text=${encodeURIComponent(messageWA)}`
+        const seconds = new Date().getSeconds()
+        if (seconds >= 0 && seconds <= 9 || seconds >= 20 && seconds <= 29 || seconds >= 40 && seconds <= 49) {
+            const currentPhoneNumber = phoneNumbers[0]
+            window.location.href = `https://wa.me/${currentPhoneNumber}/?text=${encodeURIComponent(messageWA)}`
+        } else if (seconds >= 10 && seconds <= 19 || seconds >= 30 && seconds <= 39 || seconds >= 50 && seconds <= 59) {
+            const currentPhoneNumber = phoneNumbers[1]
+            window.location.href = `https://wa.me/${currentPhoneNumber}/?text=${encodeURIComponent(messageWA)}`
+        }
+    
     }
     /* open whatsapp */
 
