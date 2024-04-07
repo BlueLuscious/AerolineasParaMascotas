@@ -63,21 +63,23 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     function openWhatsApp() {
-        const phoneNumbers = [5491150599636, 5491127142401]
+        const phoneNumbers = [5491150599636, 5491127142401, 34663418545]
         const messageWA = `Hola, completa con tus datos. Te atenderemos a la brevedad.
         Nombre completo:
         Correo Electronico:
         Teléfono:`
 
         const seconds = new Date().getSeconds()
-        if (seconds >= 0 && seconds <= 9 || seconds >= 20 && seconds <= 29 || seconds >= 40 && seconds <= 49) {
+        if (seconds >= 0 && seconds <= 9 || seconds >= 30 && seconds <= 39) {
             const currentPhoneNumber = phoneNumbers[0]
             window.location.href = `https://wa.me/${currentPhoneNumber}/?text=${encodeURIComponent(messageWA)}`
-        } else if (seconds >= 10 && seconds <= 19 || seconds >= 30 && seconds <= 39 || seconds >= 50 && seconds <= 59) {
+        } else if (seconds >= 10 && seconds <= 19 || seconds >= 40 && seconds <= 49) {
             const currentPhoneNumber = phoneNumbers[1]
             window.location.href = `https://wa.me/${currentPhoneNumber}/?text=${encodeURIComponent(messageWA)}`
+        } else if (seconds >= 20 && seconds <= 29 || seconds >= 50 && seconds <= 59) {
+            const currentPhoneNumber = phoneNumbers[2]
+            window.location.href = `https://wa.me/${currentPhoneNumber}/?text=${encodeURIComponent(messageWA)}`
         }
-    
     }
     /* open whatsapp */
 
