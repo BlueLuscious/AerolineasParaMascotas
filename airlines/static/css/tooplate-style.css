@@ -226,7 +226,7 @@ a:focus {
 }
 
 .tm-bg-secondary {
-	background: #D52B2D;
+	/* background: #D52B2D; */
 }
 
 .tm-bg-gray {
@@ -436,8 +436,8 @@ p {
 
 .btn-primary {
 	border: 1.5px solid;
-	background-color:var(--secundario);
-	border-color: var(--secundario);
+	background-color:var(--rosa-3);
+	border-color: var(--rosa-2);
 	cursor: pointer;
 	font-size: 0.7rem;
 	font-weight: 600;
@@ -448,9 +448,9 @@ p {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-	color: var(--secundario);
-	background-color: #ffffff;
-	border-color: var(--secundario);
+	/* color: var(--secundario); */
+    background-color: var(--rosa-4);
+    border-color: var(--rosa-2);
 }
 
 .tm-search-form .tm-form-element {
