@@ -38,13 +38,126 @@ https://www.tooplate.com/view/2095-level */
 
 	--principal : var(--rosa-1);
 }
+/* Fuente */
+
+.kanit-thin {
+	font-family: "Kanit", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+  }
+  
+  .kanit-thin-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+  }
+  
+  .kanit-extralight {
+	font-family: "Kanit", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+  }
+  
+  .kanit-extralight-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 200;
+	font-style: italic;
+  }
+  
+  .kanit-light {
+	font-family: "Kanit", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+  }
+  
+  .kanit-light-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+  }
+  
+  .kanit-regular {
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  .kanit-regular-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+  }
+  
+  .kanit-medium {
+	font-family: "Kanit", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  }
+  
+  .kanit-medium-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+  }
+  
+  .kanit-semibold {
+	font-family: "Kanit", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+  }
+  
+  .kanit-semibold-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 600;
+	font-style: italic;
+  }
+  
+  .kanit-bold {
+	font-family: "Kanit", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+  }
+  
+  .kanit-bold-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+  }
+  
+  .kanit-extrabold {
+	font-family: "Kanit", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+  }
+  
+  .kanit-extrabold-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 800;
+	font-style: italic;
+  }
+  
+  .kanit-black {
+	font-family: "Kanit", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+  }
+  
+  .kanit-black-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+  }
+  
+
+
+
 
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	overflow-x: hidden;
-	background-color: rgb(35, 35, 35);
+	background-color: var(--rosa-2);
 }
 
 a,
@@ -515,7 +628,7 @@ select.tm-select::-ms-expand {
 .tm-article:hover {
 	-webkit-box-shadow: 0px 0px 7px 0px rgba(214, 214, 214, 1);
 	-moz-box-shadow: 0px 0px 7px 0px rgba(214, 214, 214, 1);
-	box-shadow: 0px 0px 7px 0px rgba(214, 214, 214, 1);
+	box-shadow:0px 0px 14px 2px var(--azul-3);
 	transform: scale(1.1);
 }
 
@@ -1034,6 +1147,7 @@ video {
     height: auto; /* Altura automática para adaptarse al contenido */
     background-size: cover; /* La imagen de fondo se escala para ser tan grande como sea posible mientras se mantiene su aspecto (proporción ancho/altura) */
     background-position: center; /* La posición de la imagen de fondo se centra */
+	background-color: var(--azul-2);
 }
 
 /* Para pantallas de 991px o menos */

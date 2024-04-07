@@ -25,6 +25,16 @@
     <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
     <meta http-equiv="Expires" content="0">
     <meta http-equiv="Last-Modified" content="0">
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
@@ -53,9 +63,9 @@
 
                     <nav class="navbar navbar-expand-lg narbar-light">
                         <a class="navbar-brand mr-auto" href="#">
-                            <img src="{% static 'img/logo-minimalista.png' %}" class="logotipo">
+                            <img src="{% static 'img/logo-minimalista.png' %}" style="-webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);" class="logotipo">
                         </a>
-                        <div class="company-name navbar-brand mr-auto">Aerolineas para mascotas</div>
+                        <div class="company-name kanit-light-italic  mr-auto">Aerolineas para mascotas</div>
                         <div class="navbar-brand mr-auto"></div>
                         <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
                             data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,16 +75,16 @@
                         <div id="mainNav" class="collapse navbar-collapse tm-bg-primary">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#top">Inicio <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link kanit-medium-italic" href="#top">Inicio <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'Category' boton_id=5 %}">Quienes somos</a>
+                                    <a class="nav-link kanit-medium-italic" href="{% url 'Category' boton_id=5 %}">Quienes somos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'Category' boton_id=7 %}">Servicios</a>
+                                    <a class="nav-link kanit-medium-italic" href="{% url 'Category' boton_id=7 %}">Servicios</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-6">Contactanos</a>
+                                    <a class="nav-link kanit-medium-italic" href="#tm-section-6">Contactanos</a>
                                 </li>
                             </ul>
                         </div>
@@ -121,7 +131,8 @@
                     <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">
                         <i class="fa tm-fa-6x fa-plane tm-color-primary tm-margin-b-20"></i>
                         <h3 class="tm-color-primary tm-article-title-1">Requisitos de viaje aereo por raza</h3>
-                        <p> Algunas razas pueden necesitar cuidados especiales de cara al viaje en altura, es importante que sepas si tu 
+                        <p> Algunas razas pueden necesitar cuidados especiales de cara al viaje en altura, es importante
+                            que sepas si tu
                             mascota pertenece a alguna de estas.
                         </p>
                         <a href="{% url 'Category' boton_id=2 %}" id="boton1"
@@ -189,14 +200,13 @@
             </div> -->
             <!-- Bloody Carrousel -->
         </div>
-
-        <br><br><br><br><br><br><br>
+<br><br>
 
         <div class="tm-section tm-section-pad tm-bg-primary" id="tm-section-4">
             <div class="container">
                 <div class="row">
                     <div class="socials col-sm-12 col-md-12 col-lg-8 col-xl-8">
-                        <h1 class="tm-color-white tm-text-align-center">
+                        <h1 class="tm-color-white tm-text-align-center kanit-semibold" style="color : var(--rosa-3)">
                             Seguinos en nuestro
                             <span>
                                 <a href="https://www.instagram.com/aerolineasparamascotas/"
@@ -256,7 +266,7 @@
     <div class="tm-section tm-section-pad tm-bg-img tm-position-relative" id="tm-section-6">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"
             class="tm-section-down-arrow">
-            <polygon fill="var(--principal)" points="0,0  100,0  50,60"></polygon>
+            <polygon fill="var(--azul-2)" points="0,0  100,0  50,60"></polygon>
         </svg>
         <div class="container ie-h-align-center-fix">
             <div class="row">
@@ -301,7 +311,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
                                 <h4>Aerolineas Para Mascotas</h4>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -311,10 +321,10 @@
                             <div class="cta-text">
                                 <h4>Telefonos de contacto</h4>
                                 <span> +5491127142401
-                                    </span> <br>
-                                    <span> +5491150599636
-                                    </span>
-                                    
+                                </span> <br>
+                                <span> +5491150599636
+                                </span>
+
                             </div>
                         </div>
                     </div>
@@ -357,7 +367,9 @@
                             <div class="footer-widget-heading">
                                 <h3>Links de interes</h3>
                                 <ul>
-                                    <li><a href="https://www.instagram.com/aerolineasparamascotas?igsh=MThtZ3licnRrY3J4ag%3D%3D&utm_source=qr">INSTAGRAM</a></li>
+                                    <li><a
+                                            href="https://www.instagram.com/aerolineasparamascotas?igsh=MThtZ3licnRrY3J4ag%3D%3D&utm_source=qr">INSTAGRAM</a>
+                                    </li>
                                     <li><a href="#">FACEBOOK</a></li>
                                     <li><a href="#">CONTACTO</a></li>
                                     <li><a href="#">SOBRE NOSOTROS</a></li>
