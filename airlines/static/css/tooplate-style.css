@@ -1,12 +1,169 @@
 /* Tooplate 2095 Level
 https://www.tooplate.com/view/2095-level */
 
+/* Tooplate 2095 Level
+https://www.tooplate.com/view/2095-level */
+/* 
+	Paleta ROSA (de izq a derecha)
+	1 #542d58
+	2 #7f3766
+	3 #b84879
+	4 #ff698c
+	5 #ffa19f
+
+	Paleta Azul/Amarillo (izq a derecha)
+	1 #fee661
+	2 #fff492
+	3 #0c0c88
+	4 #0472de
+	5 #91f2fa
+*
+/* 
+    Paleta ROSA
+*/
+:root {
+    --rosa-1: #542d58;
+    --rosa-2: #7f3766;
+    --rosa-3: #b84879;
+    --rosa-4: #ff698c;
+    --rosa-5: #ffa19f;
+/* 
+    Paleta Azul/Amarillo
+*/
+    --azul-1: #fee661;
+    --azul-2: #fff492;
+    --azul-3: #0c0c88;
+    --azul-4: #0472de;
+    --azul-5: #91f2fa;
+
+	--principal : var(--rosa-1);
+}
+/* Fuente */
+
+.kanit-thin {
+	font-family: "Kanit", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+  }
+  
+  .kanit-thin-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+  }
+  
+  .kanit-extralight {
+	font-family: "Kanit", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+  }
+  
+  .kanit-extralight-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 200;
+	font-style: italic;
+  }
+  
+  .kanit-light {
+	font-family: "Kanit", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+  }
+  
+  .kanit-light-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+  }
+  
+  .kanit-regular {
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  .kanit-regular-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+  }
+  
+  .kanit-medium {
+	font-family: "Kanit", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  }
+  
+  .kanit-medium-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+  }
+  
+  .kanit-semibold {
+	font-family: "Kanit", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+  }
+  
+  .kanit-semibold-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 600;
+	font-style: italic;
+  }
+  
+  .kanit-bold {
+	font-family: "Kanit", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+  }
+  
+  .kanit-bold-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+  }
+  
+  .kanit-extrabold {
+	font-family: "Kanit", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+  }
+  
+  .kanit-extrabold-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 800;
+	font-style: italic;
+  }
+  
+  .kanit-black {
+	font-family: "Kanit", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+  }
+  
+  .kanit-black-italic {
+	font-family: "Kanit", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+  }
+  .kanit-light-description {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: var(--rosa-2);
+}
+
+
+
+
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	overflow-x: hidden;
-	background-color: rgb(35, 35, 35);
+	background-color: var(--rosa-2);
 }
 
 a,
@@ -61,15 +218,15 @@ a:focus {
 }
 
 .tm-color-primary {
-	color: #28489D;
+	color:var(--principal);
 }
 
 .tm-bg-primary {
-	background: #28489D;
+	background: var(--principal);
 }
 
 .tm-bg-secondary {
-	background: #D52B2D;
+	/* background: #D52B2D; */
 }
 
 .tm-bg-gray {
@@ -122,7 +279,7 @@ a:focus {
 
 a.tm-color-primary:hover,
 a.tm-color-primary:active {
-	color: #28489D;
+	color: var(--principal);
 }
 
 .tm-font-light {
@@ -190,7 +347,7 @@ p {
 
 .nav-link.active,
 .nav-link:hover {
-	color: #EF242C;
+	color: var(--secundario);
 	background: #ffffff;
 }
 
@@ -279,8 +436,8 @@ p {
 
 .btn-primary {
 	border: 1.5px solid;
-	background-color: #EF242C;
-	border-color: #EF242C;
+	background-color:var(--rosa-3);
+	border-color: var(--rosa-2);
 	cursor: pointer;
 	font-size: 0.7rem;
 	font-weight: 600;
@@ -291,9 +448,9 @@ p {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-	color: #EF242C;
-	background-color: #ffffff;
-	border-color: #EF242C;
+	/* color: var(--secundario); */
+    background-color: var(--rosa-4);
+    border-color: var(--rosa-2);
 }
 
 .tm-search-form .tm-form-element {
@@ -384,7 +541,7 @@ select.tm-select::-ms-expand {
 }
 
 .tm-section-2 {
-	background: #28489D;
+	background: var(--principal);
 	padding-top: 50px;
 	position: relative;
 }
@@ -396,14 +553,14 @@ select.tm-select::-ms-expand {
 .tm-section-title-red {
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 3rem;
-	color: #EF242C;
+	color: var(--secundario);
 }
 .tm-section-title-parag {
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 2rem;
 }
 .tm-section-title-parag-red {
-	color: #EF242C;
+	color: var(--secundario);
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 2.5rem;
 }
@@ -436,7 +593,7 @@ select.tm-select::-ms-expand {
 	font-size: 1.4rem;
 	font-weight: 300;
 	margin-bottom: 40px;
-	color: #EF242C;
+	color: var(--secundario);
 }
 .tm-section-subtitle {
 	/* font-family: 'Martian Mono', monospace;
@@ -455,13 +612,13 @@ select.tm-select::-ms-expand {
 	display: inline-block;
 	padding: 10px 25px;
 	border: 1.5px solid;
-	border-color: #EF242C;
+	border-color: var(--secundario);
 	text-transform: uppercase;
 }
 
 .tm-btn-white-bordered:hover,
 .tm-btn-white-bordered:focus {
-	color: #EF242C;
+	color: var(--secundario);
 	background: #ffffff;
 }
 
@@ -477,12 +634,17 @@ select.tm-select::-ms-expand {
 .tm-article:hover {
 	-webkit-box-shadow: 0px 0px 7px 0px rgba(214, 214, 214, 1);
 	-moz-box-shadow: 0px 0px 7px 0px rgba(214, 214, 214, 1);
-	box-shadow: 0px 0px 7px 0px rgba(214, 214, 214, 1);
+	box-shadow:0px 0px 14px 2px var(--azul-3);
 	transform: scale(1.1);
 }
 
 .tm-article-title-1 {
 	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.tm-subtitles-index {
+	font-size: 1.5rem;
 	font-weight: 600;
 	margin-bottom: 20px;
 }
@@ -626,7 +788,7 @@ video {
 
 .contact-form .form-control {
 	background-color: #131313da;
-	border: 2px solid #28489D;
+	border: 2px solid var(--principal);
 	font-size: 0.8rem;
 	font-weight: 300;
 }
@@ -641,14 +803,14 @@ video {
 }
 /* footer */
 .footer-section {
-	background: #151414;
+	background: var(--footer);
 	position: relative;
   }
   .footer-cta {
 	border-bottom: 1px solid #373636;
   }
   .single-cta i {
-	color: #28489D;
+	color: var(--principal);
 	font-size: 30px;
 	float: left;
 	margin-top: 8px;
@@ -734,7 +896,7 @@ video {
 	bottom: -15px;
 	height: 2px;
 	width: 50px;
-	background: #28489D;
+	background: var(--principal);
   }
   .footer-widget ul li {
 	display: inline-block;
@@ -743,7 +905,7 @@ video {
 	margin-bottom: 12px;
   }
   .footer-widget ul li a:hover{
-	color: #28489D;
+	color: var(--principal);
   }
   .footer-widget ul li a {
 	color: #878787;
@@ -763,7 +925,7 @@ video {
   .subscribe-form button {
 	  position: absolute;
 	  right: 0;
-	  background: #28489D;
+	  background: var(--principal);
 	  padding: 13px 20px;
 	  border: 1px solid #ff5e14;
 	  top: 0;
@@ -783,14 +945,14 @@ video {
 	color: #878787;
   }
   .copyright-text p a{
-	color: #28489D;
+	color: var(--principal);
   }
   .footer-menu li {
 	display: inline-block;
 	margin-left: 20px;
   }
   .footer-menu li:hover a{
-	color: #28489D;
+	color: var(--principal);
   }
   .footer-menu li a {
 	font-size: 14px;
@@ -996,6 +1158,7 @@ video {
     height: auto; /* Altura automática para adaptarse al contenido */
     background-size: cover; /* La imagen de fondo se escala para ser tan grande como sea posible mientras se mantiene su aspecto (proporción ancho/altura) */
     background-position: center; /* La posición de la imagen de fondo se centra */
+	background-color: var(--azul-2);
 }
 
 /* Para pantallas de 991px o menos */

@@ -65,9 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function openWhatsApp() {
         const phoneNumbers = [5491150599636, 5491127142401, 34663418545]
         const messageWA = `Hola, completa con tus datos. Te atenderemos a la brevedad.
-        Nombre completo:
-        Correo Electronico:
-        Teléfono:`
+
+Nombre completo:
+Correo Electronico:
+Teléfono:`
 
         const seconds = new Date().getSeconds()
         if (seconds >= 0 && seconds <= 9 || seconds >= 30 && seconds <= 39) {
