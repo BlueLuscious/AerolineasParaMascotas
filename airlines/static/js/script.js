@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const inputs = Array.from(document.getElementsByClassName('form-control'))
     const sendForm = document.getElementById('send_contact_form')
     const sendWA = document.getElementById('whatsappButton')
+    const phoneNumbersRedirects = Array.from(document.getElementsByClassName('phone_number'))
     const warnings = Array.from(document.getElementsByClassName('warning'))
 
     inputs.forEach(function(input, index) {
@@ -58,28 +59,32 @@ document.addEventListener('DOMContentLoaded', function() {
     /* open emailWin */
 
     /* open whatsapp */
-    sendWA.addEventListener('click', () => {
-        openWhatsApp()
-    })
-
-    function openWhatsApp() {
-        const phoneNumbers = [5491150599636, 5491127142401, 34663418545]
-        const messageWA = `Hola, completa con tus datos. Te atenderemos a la brevedad.
+    const phoneNumbers = [5491150599636, 5491127142401, 34663418545]
+    const messageWA = `Hola, completa con tus datos. Te atenderemos a la brevedad.
 
 Nombre completo:
 Correo Electronico:
 Teléfono:`
 
+    phoneNumbersRedirects.forEach((phone, index) => {
+        phone.style.cursor = "pointer"
+        phone.addEventListener('click', () => {
+            window.location.href = `https://wa.me/${phoneNumbers[index]}/?text=${encodeURIComponent(messageWA)}`
+        })
+    })
+
+    sendWA.addEventListener('click', () => {
+        openWhatsApp()
+    })
+
+    function openWhatsApp() {
         const seconds = new Date().getSeconds()
         if (seconds >= 0 && seconds <= 9 || seconds >= 30 && seconds <= 39) {
-            const currentPhoneNumber = phoneNumbers[0]
-            window.location.href = `https://wa.me/${currentPhoneNumber}/?text=${encodeURIComponent(messageWA)}`
+            window.location.href = `https://wa.me/${phoneNumbers[0]}/?text=${encodeURIComponent(messageWA)}`
         } else if (seconds >= 10 && seconds <= 19 || seconds >= 40 && seconds <= 49) {
-            const currentPhoneNumber = phoneNumbers[1]
-            window.location.href = `https://wa.me/${currentPhoneNumber}/?text=${encodeURIComponent(messageWA)}`
+            window.location.href = `https://wa.me/${phoneNumbers[1]}/?text=${encodeURIComponent(messageWA)}`
         } else if (seconds >= 20 && seconds <= 29 || seconds >= 50 && seconds <= 59) {
-            const currentPhoneNumber = phoneNumbers[2]
-            window.location.href = `https://wa.me/${currentPhoneNumber}/?text=${encodeURIComponent(messageWA)}`
+            window.location.href = `https://wa.me/${phoneNumbers[2]}/?text=${encodeURIComponent(messageWA)}`
         }
     }
     /* open whatsapp */
