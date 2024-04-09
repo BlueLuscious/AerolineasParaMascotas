@@ -22,21 +22,26 @@ https://www.tooplate.com/view/2095-level */
     Paleta ROSA
 */
 :root {
+	/* Permutar los siguientes colores para los principales */
+	--color-1: #0573DF ; 
+	--color-2: #FF9F9E ;
+	--footer: #7f3766 ; /*Footer*/
+
     --rosa-1: #542d58;
     --rosa-2: #7f3766;
     --rosa-3: #b84879;
     --rosa-4: #ff698c;
-    --rosa-5: #ffa19f;
+    --rosa-5: var(--color-1);
 /* 
     Paleta Azul/Amarillo
 */
     --azul-1: #fee661;
     --azul-2: #fff492;
     --azul-3: #0c0c88;
-    --azul-4: #0472de;
+    --azul-4: var(--color-2); 
     --azul-5: #91f2fa;
 
-	--principal : var(--rosa-1);
+	--principal : var(--color-1);
 }
 /* Fuente */
 
@@ -152,7 +157,7 @@ https://www.tooplate.com/view/2095-level */
     font-weight: 300;
     font-style: normal;
     font-size: 1.1rem;
-    color: var(--rosa-2);
+    color: var(--rosa-5);
 }
 
 
@@ -163,7 +168,7 @@ body {
 	font-size: 13px;
 	font-weight: 400;
 	overflow-x: hidden;
-	background-color: var(--rosa-2);
+	background-color: var(--rosa-5);
 }
 
 a,
@@ -450,7 +455,7 @@ p {
 .btn-primary:active {
 	/* color: var(--secundario); */
     background-color: var(--rosa-4);
-    border-color: var(--rosa-2);
+    border-color: var(--rosa-5);
 }
 
 .tm-search-form .tm-form-element {
@@ -1158,7 +1163,7 @@ video {
     height: auto; /* Altura automática para adaptarse al contenido */
     background-size: cover; /* La imagen de fondo se escala para ser tan grande como sea posible mientras se mantiene su aspecto (proporción ancho/altura) */
     background-position: center; /* La posición de la imagen de fondo se centra */
-	background-color: var(--azul-2);
+	background-color: var(--azul-4);
 }
 
 /* Para pantallas de 991px o menos */
