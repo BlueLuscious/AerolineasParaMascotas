@@ -25,6 +25,7 @@ https://www.tooplate.com/view/2095-level */
 	/* Permutar los siguientes colores para los principales */
 	--color-1: #0573DF ; 
 	--color-2: #FF9F9E ;
+	--footer: #7f3766 ; /*Footer*/
 
     --rosa-1: #542d58;
     --rosa-2: #7f3766;
@@ -40,7 +41,7 @@ https://www.tooplate.com/view/2095-level */
     --azul-4: var(--color-2); 
     --azul-5: #91f2fa;
 
-	--principal : var(--rosa-5);
+	--principal : var(--color-1);
 }
 /* Fuente */
 
