@@ -35,7 +35,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .logotipo{
-    width: 100px;
+    width: 120px;
     border-radius: 5em;
 }
 
@@ -242,11 +242,11 @@ img.programa-genetico-img {
         }
 
         .logotipo{
-            width: 60px;
+            width: 100px;
         }
 
         .tm-top-bar {
-            height: 67.5px;
+            height: 105px;
         }
     }
 
@@ -256,7 +256,11 @@ img.programa-genetico-img {
         }
 
         .logotipo{
-            width: 50px;
+            width: 80px;
+        }
+
+        .tm-top-bar {
+            height: 85px;
         }
 
         .navbar-toggler {
@@ -278,6 +282,14 @@ img.programa-genetico-img {
     @media (max-width: 475px) {
         .company-name {
             font-size: 1.25em;
+        }
+
+        .logotipo{
+            width: 60px;
+        }
+
+        .tm-top-bar {
+            height: 65px;
         }
     }
     

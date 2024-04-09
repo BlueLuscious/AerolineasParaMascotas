@@ -25,7 +25,7 @@ https://www.tooplate.com/view/2095-level */
 	/* Permutar los siguientes colores para los principales */
 	--color-1: #0573DF ; 
 	--color-2: #FF9F9E ;
-	--footer: #7f3766 ; /*Footer*/
+	--footer: #0573DF ; /*Footer*/
 
     --rosa-1: #542d58;
     --rosa-2: #7f3766;
@@ -812,10 +812,10 @@ video {
 	position: relative;
   }
   .footer-cta {
-	border-bottom: 1px solid #373636;
+	border-bottom: 1px solid var(--color-2);
   }
   .single-cta i {
-	color: var(--principal);
+	color: var(--color-2);
 	font-size: 30px;
 	float: left;
 	margin-top: 8px;
@@ -825,13 +825,14 @@ video {
 	display: inline-block;
   }
   .cta-text h4 {
-	color: #fff;
-	font-size: 20px;
+	color: #ffffff;
+	font-size: 22.5px;
 	font-weight: 600;
 	margin-bottom: 2px;
   }
-  .cta-text span {
-	color: #757575;
+  .cta-text span,
+  .cta-text ul {
+	color: #ffffff;
 	font-size: 15px;
   }
   .footer-content {
@@ -913,7 +914,7 @@ video {
 	color: var(--principal);
   }
   .footer-widget ul li a {
-	color: #878787;
+	color: #ffffff;
 	text-transform: capitalize;
   }
   .subscribe-form {
