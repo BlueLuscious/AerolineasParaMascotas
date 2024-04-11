@@ -48,8 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /* open emailWin */
     function openEmail(fullName, email, phone) {
-        // const danielEmail = "servicios@aerolineasparamascotas.com.ar"
-        const danielEmail = "contacto@aerolineasparamascotas.com.ar"
+        const danielEmail = "contacto@aerolineasparamascotas.com"
         const body = `Nombre completo: ${fullName}.
         Correo Electronico: ${email}.
         Teléfono: ${phone}.`
