@@ -94,13 +94,13 @@ WSGI_APPLICATION = 'airlines.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default="postgres://barba:SjknZs6dMBBCPesEmzavxJCrBD3xgv6W@dpg-cmisc15a73kc739ngnlg-a.oregon-postgres.render.com/mydb_v8l1",
-        conn_max_age=600
-    )
-}
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         # Replace this value with your local database's connection string.
+#         default="postgres://kmdmkhns:A7hEnJw2bIUwbjzHlb_yHdID8R4TvbZ2@salt.db.elephantsql.com/kmdmkhns",
+#         conn_max_age=600
+#     )
+# }
 
 
 # Password validation
