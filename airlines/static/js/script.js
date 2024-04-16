@@ -65,26 +65,26 @@ Nombre completo:
 Correo Electronico:
 Teléfono:`
 
-    phoneNumbersRedirects.forEach((phone, index) => {
-        phone.style.cursor = "pointer"
-        phone.addEventListener('click', () => {
-            window.location.href = `https://wa.me/${phoneNumbers[index]}/?text=${encodeURIComponent(messageWA)}`
-        })
-    })
+    // phoneNumbersRedirects.forEach((phone, index) => {
+    //     phone.style.cursor = "pointer"
+    //     phone.addEventListener('click', () => {
+    //         window.location.href = `https://wa.me/${phoneNumbers[index]}/?text=${encodeURIComponent(messageWA)}`
+    //     })
+    // })
 
     sendWA.addEventListener('click', () => {
         openWhatsApp()
     })
 
     function openWhatsApp() {
-        const seconds = new Date().getSeconds()
-        if (seconds >= 0 && seconds <= 9 || seconds >= 30 && seconds <= 39) {
-            window.location.href = `https://wa.me/${phoneNumbers[0]}/?text=${encodeURIComponent(messageWA)}`
-        } else if (seconds >= 10 && seconds <= 19 || seconds >= 40 && seconds <= 49) {
-            window.location.href = `https://wa.me/${phoneNumbers[1]}/?text=${encodeURIComponent(messageWA)}`
-        } else if (seconds >= 20 && seconds <= 29 || seconds >= 50 && seconds <= 59) {
+        // const seconds = new Date().getSeconds()
+        // if (seconds >= 0 && seconds <= 9 || seconds >= 30 && seconds <= 39) {
+        //     window.location.href = `https://wa.me/${phoneNumbers[0]}/?text=${encodeURIComponent(messageWA)}`
+        // } else if (seconds >= 10 && seconds <= 19 || seconds >= 40 && seconds <= 49) {
+        //     window.location.href = `https://wa.me/${phoneNumbers[1]}/?text=${encodeURIComponent(messageWA)}`
+        // } else if (seconds >= 20 && seconds <= 29 || seconds >= 50 && seconds <= 59) {
             window.location.href = `https://wa.me/${phoneNumbers[2]}/?text=${encodeURIComponent(messageWA)}`
-        }
+        // }
     }
     /* open whatsapp */
 
