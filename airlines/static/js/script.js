@@ -58,33 +58,60 @@ document.addEventListener('DOMContentLoaded', function() {
     /* open emailWin */
 
     /* open whatsapp */
-    const phoneNumbers = [5491150599636, 5491127142401, 34663418545]
+    const phoneNumbers = [5491160375662, 34663418545] // 5491150599636, 5491127142401 --> otros numeros
     const messageWA = `Hola, completa con tus datos. Te atenderemos a la brevedad.
 
 Nombre completo:
 Correo Electronico:
 Teléfono:`
 
-    // phoneNumbersRedirects.forEach((phone, index) => {
-    //     phone.style.cursor = "pointer"
-    //     phone.addEventListener('click', () => {
-    //         window.location.href = `https://wa.me/${phoneNumbers[index]}/?text=${encodeURIComponent(messageWA)}`
-    //     })
-    // })
-
-    sendWA.addEventListener('click', () => {
-        openWhatsApp()
+    phoneNumbersRedirects.forEach((phone, index) => {
+        phone.style.cursor = "pointer"
+        phone.addEventListener('click', () => {
+            window.location.href = `https://wa.me/${phoneNumbers[index]}/?text=${encodeURIComponent(messageWA)}`
+        })
     })
 
-    function openWhatsApp() {
-        // const seconds = new Date().getSeconds()
-        // if (seconds >= 0 && seconds <= 9 || seconds >= 30 && seconds <= 39) {
-        //     window.location.href = `https://wa.me/${phoneNumbers[0]}/?text=${encodeURIComponent(messageWA)}`
-        // } else if (seconds >= 10 && seconds <= 19 || seconds >= 40 && seconds <= 49) {
-        //     window.location.href = `https://wa.me/${phoneNumbers[1]}/?text=${encodeURIComponent(messageWA)}`
-        // } else if (seconds >= 20 && seconds <= 29 || seconds >= 50 && seconds <= 59) {
-            window.location.href = `https://wa.me/${phoneNumbers[2]}/?text=${encodeURIComponent(messageWA)}`
-        // }
+    sendWA.addEventListener('click', () => {
+        getCountryCode()
+    })
+    
+    function getCountryCode() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                let latitud = position.coords.latitude;
+                let longitud = position.coords.longitude;
+    
+                let apiURL = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude='${latitud}&longitude=${longitud}&localityLanguage=es`;
+                
+                fetch(apiURL)
+                    .then(response => response.json())
+                    .then(data => {
+                        let countryCode = data.countryCode;
+                        console.log(`Country Code: ${countryCode}`);
+                        redirectWhatsApp(countryCode);
+                    })
+                    .catch(error => {
+                        console.error("Error getting country code:", error);
+                        redirectWhatsApp("default");
+                    });
+            });
+        } else {
+            console.error("Geolocation isn't available in this browser.");
+            redirectWhatsApp("default");
+        }
+    }
+    
+    function redirectWhatsApp(countryCode) {
+        let whatsappNumbers = {
+            "ES": "34663418545", // Número de España
+            "AR": "5491160375662", // Número de Argentina
+            "default": "5491160375662"
+        };
+    
+        let whatsappNumber = whatsappNumbers[countryCode] || whatsappNumbers["default"];
+        console.log(whatsappNumber)
+        window.location.href = `https://wa.me/${whatsappNumber}/?text=${encodeURIComponent(messageWA)}`;
     }
     /* open whatsapp */
 
