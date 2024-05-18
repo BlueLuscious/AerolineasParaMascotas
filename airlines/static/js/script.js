@@ -73,46 +73,47 @@ Teléfono:`
     })
 
     sendWA.addEventListener('click', () => {
-        getCountryCode()
+        // getCountryCode()
+        window.location.href = `https://wa.me/${phoneNumbers[0]}/?text=${encodeURIComponent(messageWA)}`;
     })
     
-    function getCountryCode() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                let latitud = position.coords.latitude;
-                let longitud = position.coords.longitude;
+    // function getCountryCode() {
+    //     if (navigator.geolocation) {
+    //         navigator.geolocation.getCurrentPosition(function(position) {
+    //             let latitud = position.coords.latitude;
+    //             let longitud = position.coords.longitude;
     
-                let apiURL = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude='${latitud}&longitude=${longitud}&localityLanguage=es`;
+    //             let apiURL = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude='${latitud}&longitude=${longitud}&localityLanguage=es`;
                 
-                fetch(apiURL)
-                    .then(response => response.json())
-                    .then(data => {
-                        let countryCode = data.countryCode;
-                        console.log(`Country Code: ${countryCode}`);
-                        redirectWhatsApp(countryCode);
-                    })
-                    .catch(error => {
-                        console.error("Error getting country code:", error);
-                        redirectWhatsApp("default");
-                    });
-            });
-        } else {
-            console.error("Geolocation isn't available in this browser.");
-            redirectWhatsApp("default");
-        }
-    }
+    //             fetch(apiURL)
+    //                 .then(response => response.json())
+    //                 .then(data => {
+    //                     let countryCode = data.countryCode;
+    //                     console.log(`Country Code: ${countryCode}`);
+    //                     redirectWhatsApp(countryCode);
+    //                 })
+    //                 .catch(error => {
+    //                     console.error("Error getting country code:", error);
+    //                     redirectWhatsApp("default");
+    //                 });
+    //         });
+    //     } else {
+    //         console.error("Geolocation isn't available in this browser.");
+    //         redirectWhatsApp("default");
+    //     }
+    // }
     
-    function redirectWhatsApp(countryCode) {
-        let whatsappNumbers = {
-            "ES": "34663418545", // Número de España
-            "AR": "5491160375662", // Número de Argentina
-            "default": "5491160375662"
-        };
+    // function redirectWhatsApp(countryCode) {
+    //     let whatsappNumbers = {
+    //         "ES": "34663418545", // Número de España
+    //         "AR": "5491160375662", // Número de Argentina
+    //         "default": "5491160375662"
+    //     };
     
-        let whatsappNumber = whatsappNumbers[countryCode] || whatsappNumbers["default"];
-        console.log(whatsappNumber)
-        window.location.href = `https://wa.me/${whatsappNumber}/?text=${encodeURIComponent(messageWA)}`;
-    }
+    //     let whatsappNumber = whatsappNumbers[countryCode];
+    //     console.log(whatsappNumber)
+    //     window.location.href = `https://wa.me/${whatsappNumber}/?text=${encodeURIComponent(messageWA)}`;
+    // }
     /* open whatsapp */
 
     /* reels */
