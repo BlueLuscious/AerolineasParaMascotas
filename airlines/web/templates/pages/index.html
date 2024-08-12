@@ -1,6 +1,19 @@
 {% extends "base.html" %}
-
+{% load static %}
 
 {% block content %}
+<section class="pt-20">
+{% static '/img/DANI/familia_recortada.png' as url_img %}
+{% include 'components/landscape.html' with url_img=url_img %}
+</section>
+<br><br><br><br><br>
+<section >
+    <div class="grid grid-cols-1 sm:grid-cols-3 w-full justify-items-center">
+{% include "components/review.html" with param='hola' %}
+{% include "components/review.html" with param='hola' %}
+{% include "components/review.html" with param='hola' %}
+</div>
+</section>
+
 
 {% endblock content %}
