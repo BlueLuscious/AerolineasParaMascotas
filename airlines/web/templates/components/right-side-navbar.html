@@ -14,16 +14,21 @@
     </div>
 
     <div class="md:hidden flex flex-col items-center gap-y-6 w-full h-full p-12 text-black">
-        <div>
+        <div class="
+            {% if request.path == '/' %} 
+            border-b-2 border-black 
+            {% else %}
+            cursor-pointer
+            {% endif %}">
             Inicio
         </div>
-        <div>
+        <div class="cursor-pointer">
             Quienes somos
         </div>
-        <div>
+        <div class="cursor-pointer">
             Servicios
         </div>
-        <div>
+        <div class="cursor-pointer">
             Contactanos
         </div>
     </div>
