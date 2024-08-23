@@ -8,15 +8,15 @@
 </section>
 
 {% static 'img/bg-img-3-copy2.jpg' as bg_review %}
-<section class="mt-12 bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('{{ bg_review }}')">
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full justify-items-center">
+<section class="w-full mt-12 bg-cover bg-center flex items-center justify-center" style="background-image: url('{{ bg_review }}')">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center">
         {% static 'img/DANI/FliaAlonzo.jpg' as flia1 %}
         {% static 'img/DANI/FliaBER.jpg' as flia2 %}
         {% static 'img/DANI/FliaCuevas.jpg' as flia3 %}
 
-        {% include "components/review.html" with destino='Buenos Aires - Paris' perfil=flia1 reseña='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' %}
-        {% include "components/review.html" with destino='Viña del mar - Tucuman' perfil=flia2 reseña='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' %}
-        {% include "components/review.html" with destino='Uruguay - Grecia' perfil=flia3 reseña='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' %}
+        {% include "components/review.html" with destino='Buenos Aires - Paris' perfil=flia1 reseña='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' %}
+        {% include "components/review.html" with destino='Viña del mar - Tucuman' perfil=flia2 reseña='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' %}
+        {% include "components/review.html" with destino='Uruguay - Grecia' perfil=flia3 reseña='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' %}
     </div>
 </section>
 

@@ -13,3 +13,4 @@ class IndexView(View):
     
     def post(self, request):
         return HttpResponse(template.render(None, request))
+    
