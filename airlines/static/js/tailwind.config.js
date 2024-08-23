@@ -2,7 +2,9 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        blue_: '#',
+        tertiary: {
+            whatsapp_green_tone: "#00bb2d",
+        },
       }
     }
   }
