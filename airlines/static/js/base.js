@@ -15,15 +15,23 @@ document.addEventListener("DOMContentLoaded", () => {
     wa_service.redirectToWA(whatsappButton, 0)
     
     
-    /* SubMenu Servicios */
-    const navItemServices = document.getElementById("nav_item_services")
-    const navItemServicesContent = navItemServices.querySelector(".item_content")
-    const sub_menu = navItemServices.querySelector(".sub_menu")
+    /* SubMenu Previo a volar */
+    const navItemBeforeFly = document.getElementById("nav_item_before_fly")
+    const navItemBeforeFlyContent = navItemBeforeFly.querySelector(".item_content")
+    const subMenu = navItemBeforeFly.querySelector(".sub_menu")
     const closeSubMenu = document.getElementById("btn_close_sub_menu")
+    
+    toggleElementByClick(navItemBeforeFlyContent, subMenu, "hidden")
+    toggleElementByClick(closeSubMenu, subMenu, "hidden")
+    
+    /* SubMenu Previo a volar Mobile */
+    const navItemBeforeFlyMobile = document.getElementById("nav_item_before_fly_mobile")
+    const navItemBeforeFlyContentMobile = navItemBeforeFlyMobile.querySelector(".item_content")
+    const subMenuMobile = navItemBeforeFlyMobile.querySelector(".sub_menu")
+    const navItemBeforeFlyContentArrow = navItemBeforeFlyContentMobile.querySelector(".arrow")
 
-    toggleElementByClick(navItemServicesContent, sub_menu, "hidden")
-    toggleElementByClick(closeSubMenu, sub_menu, "hidden")
-
+    toggleElementByClick(navItemBeforeFlyContentArrow, subMenuMobile, "hidden")
+    toggleElementByClick(navItemBeforeFlyContentArrow, navItemBeforeFlyContentArrow, "rotate-180")
 
 })
 

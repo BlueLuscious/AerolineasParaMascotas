@@ -9,7 +9,8 @@
 
 {% static 'img/bg-img-3-copy2.jpg' as bg_review %}
 <section class="w-full mt-12 bg-cover bg-center flex items-center justify-center" style="background-image: url('{{ bg_review }}')">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center w-full gap-6
+        p-8">
         {% static 'img/DANI/FliaAlonzo.jpg' as flia1 %}
         {% static 'img/DANI/FliaBER.jpg' as flia2 %}
         {% static 'img/DANI/FliaCuevas.jpg' as flia3 %}
@@ -21,5 +22,3 @@
 </section>
 
 {% endblock content %}
-
-
