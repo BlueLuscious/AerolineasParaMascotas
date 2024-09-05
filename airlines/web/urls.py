@@ -1,10 +1,9 @@
 from django.urls import path
 from web.views.index_view import IndexView
-from web.views.category_view import CategoryView
+from web.views.race_distintion_view import RaceDistintionView
 from web.views.subcategory_view import SubcategoryView
 
 urlpatterns = [
     path('', IndexView.as_view(), name="index"),
-    path('Category/<int:boton_id>/', CategoryView.as_view(), name="Category"),
-    path('Subcategory/<int:boton_id>/', SubcategoryView.as_view(), name="Subcategory"),
+    path('sin-distincion-de-raza/', RaceDistintionView.as_view(), name="race-distintion"),
 ]

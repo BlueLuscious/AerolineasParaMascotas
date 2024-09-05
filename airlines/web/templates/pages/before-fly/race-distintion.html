@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<section class="w-full p-4 pt-24 md:p-8 md:pt-32 mt-20">
+    <div class="relative flex flex-col items-center w-full rounded-lg shadow-lg">
+        <div class="absolute top-0 right-0 flex justify-end w-full
+            transform translate-x-4 -translate-y-[6.1rem] md:-translate-y-[8.35rem]">
+            <img src="{% static 'img/over-image/dog-cocker.png' %}" alt=""
+                class="w-32 md:w-44">
+        </div>
+        <div class="w-full p-4 bg-blue-500 rounded-t-lg">
+            <div class="text-xl md:text-2xl text-left sm:text-center text-white">
+                Sin distinción de raza
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full items-center p-4 text-xl md:text-lg lg:text-2xl 
+            text-center lg:text-justify">
+            <div class="w-full">
+                <img src="{% static 'img/race-distintion/race-distintion-0.webp' %}" alt=""
+                    class="rounded-lg">
+            </div>
+            <div class="w-full p-4 leading-relaxed lg:leading-loose">
+                En nuestra empresa, nos dedicamos apasionadamente a garantizar que tus fieles amigos peludos 
+                viajen cómodos y seguros, sin importar su raza. Sabemos que cada mascota es única y especial 
+                para su familia, por lo que tratamos a cada una con el amor y el cuidado que se merecen.
+            </div>
+            <div class="w-full p-4 leading-relaxed lg:leading-loose">
+                Nos comprometemos a brindar una experiencia tranquila y libre de estrés tanto para las mascotas 
+                como para sus dueños. Entendemos lo difícil que puede ser separarse de tu compañero de cuatro 
+                patas durante un viaje, por eso nos esforzamos por proporcionar un ambiente acogedor y seguro desde 
+                el momento en que nos confías a tu mascota.
+            </div>
+            <div class="w-full row-span-2">
+                <img src="{% static 'img/race-distintion/race-distintion-1.JPG' %}" alt=""
+                    class="rounded-lg">
+            </div>
+            <div class="w-full p-4 leading-relaxed lg:leading-loose">
+                Nuestro equipo altamente capacitado está dedicado a cuidar de cada detalle, desde el momento 
+                en que recibimos a tu mascota hasta que la entregamos a salvo en su destino final. Trabajamos 
+                en estrecha colaboración con aerolíneas de renombre y cumplimos con los más altos estándares 
+                de seguridad y bienestar animal para garantizar un viaje sin contratiempos.
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
