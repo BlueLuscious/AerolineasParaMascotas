@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<section class="w-full p-4 pt-24 md:p-8 md:pt-32 mt-20">
+    <div class="relative flex flex-col items-center w-full rounded-lg shadow-lg">
+        <div class="absolute top-0 right-0 flex justify-end w-full
+            transform -translate-x-4 -translate-y-[5rem] md:-translate-y-[6.7rem]">
+            <img src="{% static 'img/over-image/dog-beagle.png' %}" alt=""
+                class="w-36 md:w-48">
+        </div>
+        <div class="w-full p-4 bg-blue-500 rounded-t-lg">
+            <div class="text-xl md:text-2xl text-left sm:text-center text-white font-semibold">
+                Restricciones de viaje aéreo para braquiocefalos
+            </div>
+        </div>
+        <div class="w-full p-8">
+            <div class="text-lg md:text-xl text-center text-white text-zinc-600">
+                El traslado de animales de razas braquiocefálicas mediante transporte aéreo conlleva un alto 
+                riesgo para su salud respiratoria y bienestar térmico, derivado del estrés ocasionado durante el vuelo.
+            </div>
+        </div>
+        <div class="flex flex-col items-center w-full p-8">
+            <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-x-6 w-fit p-2 md:px-6 bg-pink-400 rounded-md">
+                <div class="sm:text-lg md:text-2xl text-center text-white">
+                    Razas de perros clasificadas como braquiocefálicas
+                </div>
+                <div>
+                    <img src="{% static 'img/dog-footprint.png' %}" alt="dog-footprint"
+                        class="w-8 sm:w-12 md:w-16">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 w-full pt-8">
+                <div class="flex justify-center w-full">
+                    <img src="{% static 'img/travel-restriction/french-bulldog.jpg' %}" alt=""
+                        class="rounded-lg">
+                </div>
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-y-4 md:gap-y-2 
+                    text-center">
+                    <li>Affenpinscher</li>
+                    <li>American Bully</li>
+                    <li>Boston Terrier</li>
+                    <li>Boxer (Todas las razas)</li>
+                    <li>Bulldog (Todas las razas)</li>
+                    <li>Cane corso</li>
+                    <li>Carlino</li>
+                    <li>Chow Chow</li>
+                    <li>Dogo (Todas las razas)</li>
+                    <li>Grifón de Bruselas (Pequeño brabanzón)</li>
+                    <li>Lhasa Apso</li>
+                    <li>Mastín (Todas las razas)</li>
+                    <li>Pequinés</li>
+                    <li>Pitbull</li>
+                    <li>Shar-Pei</li>
+                    <li>Shih Tzu</li>
+                    <li>Cocker/Spaniel (Todas las razas)</li>
+                    <li>Staffordshire bull terrier</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="flex flex-col items-center w-full p-8">
+            <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-x-6 w-fit p-2 md:px-6 bg-pink-400 rounded-md">
+                <div class="sm:text-lg md:text-2xl text-center text-white">
+                    Razas de gatos clasificadas como braquiocefálicas
+                </div>
+                <div>
+                    <img src="{% static 'img/dog-footprint.png' %}" alt="dog-footprint"
+                        class="w-8 sm:w-12 md:w-16">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 w-full pt-8">
+                <div class="flex justify-center w-full">
+                    <img src="{% static 'img/travel-restriction/sacred-cat-of-burma.jpg' %}" alt=""
+                        class="rounded-lg">
+                </div>
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-y-4 md:gap-y-2 
+                    text-center">
+                    <li>Birmano</li>
+                    <li>Británico de pelo corto</li>
+                    <li>Gato exótico</li>
+                    <li>Himalayo</li>
+                    <li>Persa</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+{% endblock content %}
