@@ -7,8 +7,9 @@
     {% include 'components/landscape.html' with url_img=url_img %}
 </section>
 
-{% static 'img/bg-img-3-copy2.jpg' as bg_review %}
-<section class="w-full mt-12 bg-cover bg-center flex items-center justify-center" style="background-image: url('{{ bg_review }}')">
+{% static 'img/Usables/bg-img-3-copy2.jpg' as bg_review %}
+<section class="w-full mt-12 flex items-center justify-center bg-[url('{{ bg_review }}')]
+    bg-center bg-no-repeat bg-cover">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center w-full gap-6
         p-8">
         {% static 'img/DANI/FliaAlonzo.jpg' as flia1 %}
