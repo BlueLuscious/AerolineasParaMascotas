@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<section class="flex flex-col items-center gap-y-4 md:gap-y-8 w-full p-4 md:p-8 mt-20 bg-pink-100">
+
+    <div class="relative flex flex-col items-center gap-y-2 w-full bg-blue-500 rounded-lg shadow-lg
+        overflow-hidden">
+        <div class="flex flex-col items-center gap-y-4 md:gap-y-6 w-full p-4 md:p-8 rounded-t-lg">
+            <div class="text-xl md:text-3xl lg:text-5xl text-center text-white font-semibold">
+                {{ "Requisitos de ingreso por pais"|upper }}
+            </div>
+            <div class="w-3/4 text-lg md:text-xl lg:text-3xl text-center text-white font-regular">
+                Cada país tiene sus propios requisitos para el ingreso de mascotas, por lo que 
+                es importante que te informes de los requerimientos de tu próximo destino.
+            </div>
+        </div>
+
+        {% static 'img/Usables/bg-img-3-copy2.jpg' as bg_review %}
+        <div class="w-full h-[16rem] md:h-[20rem] lg:h-[24rem] bg-[url('{{ bg_review }}')] 
+            bg-center bg-no-repeat bg-cover bg-white rounded-t-[100%]">
+        </div>
+    </div>
+
+    <div class="relative grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+
+        <div class="flex flex-col gap-y-8 p-2 md:p-4 bg-white text-lg md:text-xl
+            text-center text-white text-zinc-600 rounded-lg shadow-lg">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-y-2 md:gap-x-4 w-full
+                p-2 md:p-4 bg-blue-400 rounded-md">
+                <img src="{% static 'img/country-requirement/flags/canada.png' %}" alt=""
+                    class="w-12">
+                <div class="lg:text-2xl text-white">Canada</div>
+            </div>
+            <ol class="flex flex-col items-center justify-center gap-y-4 h-full text-center">
+                <li>Certificado de Salud</li>
+                <li>Certificado de Vacunación antirrábica</li>
+            </ol>
+            <div class="font-semibold">Restricciones de temporada de invierno para el ingreso de animales vivos</div>
+        </div>
+
+        <div class="flex flex-col gap-y-8 p-2 md:p-4 bg-white text-lg md:text-xl
+            text-center text-white text-zinc-600 rounded-lg shadow-lg">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-y-2 md:gap-x-4 w-full
+                p-2 md:p-4 bg-blue-400 rounded-md">
+                <img src="{% static 'img/country-requirement/flags/united-states.png' %}" alt=""
+                    class="w-12">
+                <div class="lg:text-2xl text-white">Estados Unidos</div>
+            </div>
+            <ol class="flex flex-col items-centerjustify-center gap-y-4 h-full text-center">
+                <li>Certificado de Salud</li>
+                <li>Certificado de Vacunación antirrábica</li>
+                <li>Certificado de libre de MIASIS</li>
+                <li>Formulario CDC para ingreso de perros provenientes de paises con 
+                    bajo o nulo riesgo de rabia: <!-- agregar redireccion a https://www.cdc.gov/importation/dogs/rabies-free-low-risk-countries.html -->
+                </li>
+            </ol>
+            <div class="text-red-500 font-semibold">
+                Se sugiere consultar los requisitos propios del estado de destino dado que puede haber 
+                requisitos particulares independientemente del resto del país.
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="flex justify-center w-full">
+        <a href="{% url 'index' %}">
+            <button class="p-2 px-4 bg-pink-400 text-lg md:text-2xl text-white rounded-md">
+                Volver al Inicio
+            </button>
+        </a>
+    </div>
+
+</section>
+
+{% endblock content %}
