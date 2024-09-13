@@ -56,9 +56,16 @@
                         Requisitos de viaje aereo por raza
                     </div>
                 </a>
-                <div class="p-1 text-center text-blue-500 hover:text-pink-400">
-                    Viaje tranquilo
-                </div>
+                <a {% if request.path != '/viaje-tranquilo/' %} href="{% url 'travel-quietly' %}" {% endif %}>
+                    <div class="p-1 text-center hover:text-pink-400
+                        {% if request.path == '/viaje-tranquilo/' %} 
+                        text-pink-500 
+                        {% else %} 
+                        text-blue-500 
+                        {% endif %}">
+                        Viaje tranquilo
+                    </div>
+                </a>
                 <div class="p-1 text-center text-blue-500 hover:text-pink-400">
                     Requisitos de ingreso por pais
                 </div>
