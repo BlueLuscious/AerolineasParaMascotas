@@ -55,14 +55,14 @@
                             Requisitos de viaje aereo por raza
                         </div>
                     </a>
-                    <a {% if request.path != '/viaja-tranquilo/' %} href="{% url 'travel-quietly' %}" {% endif %}>
+                    <a {% if request.path != '/viaje-tranquilo/' %} href="{% url 'travel-quietly' %}" {% endif %}>
                         <div class="p-1 text-right hover:text-pink-400
-                            {% if request.path == '/viaja-tranquilo/' %} 
+                            {% if request.path == '/viaje-tranquilo/' %} 
                             text-pink-500 
                             {% else %} 
                             text-blue-500 
                             {% endif %}">
-                            Viaja tranquilo
+                            Viaje tranquilo
                         </div>
                     </a>
                     <div class="p-1 text-right text-blue-500 hover:text-pink-400">
