@@ -27,8 +27,8 @@
 
 </section>
 
-{% static 'img/Usables/bg-img-3-copy2.jpg' as bg_review %}
-<section class="w-full mt-12 flex items-center justify-center bg-[url('{{ bg_review }}')]
+{% static 'img/fondo-reviews.png' as bg_review %}
+<section class="w-full mt-12 flex items-center justify-center bg-[url('{{ bg_review }}')] h-[50rem]
     bg-center bg-no-repeat bg-cover">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center w-full gap-6
         p-8">
@@ -41,5 +41,4 @@
         {% include "components/review.html" with destino='Uruguay - Grecia' perfil=flia3 reseña='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' %}
     </div>
 </section>
-
 {% endblock content %}
