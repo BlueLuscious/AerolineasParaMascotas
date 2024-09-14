@@ -1,0 +1,16 @@
+{% load static %}
+
+<div class="relative flex flex-col items-center gap-y-2 w-full bg-blue-500 shadow-lg overflow-hidden">
+    <div class="flex flex-col items-center gap-y-4 md:gap-y-6 w-full p-4 md:p-8 rounded-t-lg">
+        <div class="text-xl md:text-3xl lg:text-5xl text-center text-white font-semibold">
+            {{ "Requisitos de ingreso por pais"|upper }}
+        </div>
+        <div class="w-3/4 text-lg md:text-xl lg:text-3xl text-center text-white font-regular">
+            Cada país tiene sus propios requisitos para el ingreso de mascotas, por lo que 
+            es importante que te informes de los requerimientos de tu próximo destino.
+        </div>
+    </div>
+    <div class="w-full h-[16rem] md:h-[20rem] lg:h-[24rem] bg-[url('{{ bg_travel }}')] 
+        bg-center bg-no-repeat bg-cover bg-white rounded-t-[100%]">
+    </div>
+</div>

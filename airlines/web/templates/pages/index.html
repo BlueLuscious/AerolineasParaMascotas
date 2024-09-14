@@ -1,10 +1,30 @@
 {% extends "base.html" %}
 {% load static %}
 
+
 {% block content %}
-<section class="pt-20">
-    {% static '/img/DANI/familia_recortada.png' as url_img %}
-    {% include 'components/landscape.html' with url_img=url_img %}
+<section class="flex flex-col w-full">
+
+    <!-- Main Banner -->
+    <div class="z-40 w-full h-screen">
+        {% static '/img/DANI/familia_recortada.jpg' as url_img %}
+        {% include 'components/landscape.html' with url_img=url_img %}
+    </div>
+
+    <!-- Sin distinción de raza  -->
+    {% include './components-index/race-distintion-section.html' %}
+
+    <!-- Requisitos de viaje aeroe por raza  -->
+    {% static 'img/plane.jpg' as bg_plane %}
+    {% include './components-index/travel-restriction-section.html' with bg_plane=bg_plane %}
+
+    <!-- Viaje tranquilo -->
+    {% include './components-index/travel-quietly-section.html' %}
+
+    <!-- Begin - Requisitos de ingreso por pais -->
+    {% static 'img/Usables/bg-img-3-copy2.jpg' as bg_travel %}
+    {% include './components-index/country-requirement-section.html' with bg_travel=bg_travel %}
+
 </section>
 
 {% static 'img/Usables/bg-img-3-copy2.jpg' as bg_review %}
