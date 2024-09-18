@@ -1,3 +1,7 @@
+{% load static %}
+{% load inclusiontag.nav_item_tag %}
+
+
 <div id="side_navbar_menu" class="md:hidden fixed z-50 right-0 top-0 flex flex-col w-full h-full 
     px-5 bg-white transform translate-x-full transition-transform duration-300 ease-in-out">
 
@@ -40,30 +44,17 @@
                 </div>
             </div>
             <div class="sub_menu hidden flex flex-col gap-y-3 p-2 bg-white rounded-sm shadow-lg">
-                <a {% if request.path != '/sin-distincion-de-raza/' %} href="{% url 'race-distintion' %}" {% endif %}>
-                    <div class="p-2 text-center 
-                        {% if request.path == '/sin-distincion-de-raza/' %} bg-blue-500 text-white rounded-sm {% endif %}">
-                        Sin dintincion de raza
-                    </div>
-                </a>
-                <a {% if request.path != '/restricciones-por-raza/' %} href="{% url 'travel-restriction' %}" {% endif %}>
-                    <div class="p-2 text-center 
-                        {% if request.path == '/restricciones-por-raza/' %} bg-blue-500 text-white rounded-sm {% endif %}">
-                        Requisitos de viaje aereo por raza
-                    </div>
-                </a>
-                <a {% if request.path != '/viaje-tranquilo/' %} href="{% url 'travel-quietly' %}" {% endif %}>
-                    <div class="p-2 text-center 
-                        {% if request.path == '/viaje-tranquilo/' %} bg-blue-500 text-white rounded-sm {% endif %}">
-                        Viaje tranquilo
-                    </div>
-                </a>
-                <a {% if request.path != '/requisitos-de-ingreso-por-pais/' %} href="{% url 'country-requirement' %}" {% endif %}>
-                    <div class="p-2 text-center 
-                        {% if request.path == '/requisitos-de-ingreso-por-pais/' %} bg-blue-500 text-white rounded-sm {% endif %}">
-                        Requisitos de ingreso por pais
-                    </div>
-                </a>
+                {% url 'race-distintion' as rd_url %}
+                {% right_nav_item request.path "/sin-distincion-de-raza/" rd_url "Sin dintincion de raza" %}
+
+                {% url 'travel-restriction' as tr_url %}
+                {% right_nav_item request.path "/restricciones-por-raza/" tr_url "Requisitos de viaje aereo por raza" %}
+                
+                {% url 'travel-quietly' as tq_url %}
+                {% right_nav_item request.path "/viaje-tranquilo/" tq_url "Viaje tranquilo" %}
+
+                {% url 'country-requirement' as cr_url %}
+                {% right_nav_item request.path "/requisitos-de-ingreso-por-pais/" cr_url "Requisitos de ingreso por pais" %}
             </div>
         </div>
         <div class="cursor-pointer">

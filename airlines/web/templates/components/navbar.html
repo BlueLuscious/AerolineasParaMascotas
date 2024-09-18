@@ -1,4 +1,6 @@
 {% load static %}
+{% load inclusiontag.nav_item_tag %}
+
 
 <div class="fixed z-50 left-0 top-0 w-full p-2 bg-blue-500 shadow-lg">
     <div class="flex flex-row justify-between px-6">
@@ -37,44 +39,24 @@
                 </div>
                 <div class="sub_menu hidden absolute -bottom-100 right-0 w-[18rem] flex flex-col gap-y-3 
                     p-3 bg-white rounded-sm shadow-md">
-                    <div id="btn_close_sub_menu" class="flex items-center w-fit text-left text-black">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                    <div class="flex justify-end w-full text-black">
+                        <svg id="btn_close_sub_menu" xmlns="http://www.w3.org/2000/svg" fill="none" 
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
                             class="size-4 cursor-pointer transition-transform hover:-rotate-90">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                         </svg>          
                     </div>
-                    <a {% if request.path != '/sin-distincion-de-raza/' %} href="{% url 'race-distintion' %}" {% endif %}>
-                        <div class="p-2 text-right 
-                            {% if request.path == '/sin-distincion-de-raza/' %} bg-blue-500 text-white rounded-sm
-                            {% else %} text-blue-500 hover:bg-blue-500 hover:text-white hover:rounded-sm
-                            {% endif %}">
-                            Sin dintincion de raza
-                        </div>
-                    </a>
-                    <a {% if request.path != '/restricciones-por-raza/' %} href="{% url 'travel-restriction' %}" {% endif %}>
-                        <div class="p-2 text-right 
-                            {% if request.path == '/restricciones-por-raza/' %} bg-blue-500 text-white rounded-sm
-                            {% else %} text-blue-500 hover:bg-blue-500 hover:text-white hover:rounded-sm
-                            {% endif %}">
-                            Requisitos de viaje aereo por raza
-                        </div>
-                    </a>
-                    <a {% if request.path != '/viaje-tranquilo/' %} href="{% url 'travel-quietly' %}" {% endif %}>
-                        <div class="p-2 text-right 
-                            {% if request.path == '/viaje-tranquilo/' %} bg-blue-500 text-white rounded-sm
-                            {% else %} text-blue-500 hover:bg-blue-500 hover:text-white hover:rounded-sm
-                            {% endif %}">
-                            Viaje tranquilo
-                        </div>
-                    </a>
-                    <a {% if request.path != '/requisitos-de-ingreso-por-pais/' %} href="{% url 'country-requirement' %}" {% endif %}>
-                        <div class="p-2 text-right 
-                            {% if request.path == '/requisitos-de-ingreso-por-pais/' %} bg-blue-500 text-white rounded-sm
-                            {% else %} text-blue-500 hover:bg-blue-500 hover:text-white hover:rounded-sm
-                            {% endif %}">
-                            Requisitos de ingreso por pais
-                        </div>
-                    </a>
+                    {% url 'race-distintion' as rd_url %}
+                    {% nav_item request.path "/sin-distincion-de-raza/" rd_url "Sin dintincion de raza" %}
+
+                    {% url 'travel-restriction' as tr_url %}
+                    {% nav_item request.path "/restricciones-por-raza/" tr_url "Requisitos de viaje aereo por raza" %}
+                    
+                    {% url 'travel-quietly' as tq_url %}
+                    {% nav_item request.path "/viaje-tranquilo/" tq_url "Viaje tranquilo" %}
+
+                    {% url 'country-requirement' as cr_url %}
+                    {% nav_item request.path "/requisitos-de-ingreso-por-pais/" cr_url "Requisitos de ingreso por pais" %}
                 </div>
             </div>
             <div class="cursor-pointer">

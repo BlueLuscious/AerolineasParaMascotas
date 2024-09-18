@@ -1,0 +1,6 @@
+<a {% if request_path != the_path %} href="{{ the_url }}" {% endif %}>
+    <div class="p-2 text-center 
+        {% if request_path == the_path %} bg-blue-500 text-white rounded-sm {% endif %}">
+        {{ nav_item_content }}
+    </div>
+</a>
