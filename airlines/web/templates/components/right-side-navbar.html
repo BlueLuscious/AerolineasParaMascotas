@@ -13,14 +13,18 @@
         </div>
     </div>
 
-    <div class="md:hidden flex flex-col items-center gap-y-6 w-full h-full p-12 text-black">
-        <a {% if request.path != '/' %} href="{% url 'index' %}" {% endif %}>
-            <div class="{% if request.path == '/' %} border-b-2 border-black {% endif %}">
+    <div class="md:hidden flex flex-col items-center gap-y-6 w-full h-full p-2 py-12 text-black text-center">
+        <a class="w-full" {% if request.path != '/' %} href="{% url 'index' %}" {% endif %}>
+            <div class="p-2
+                {% if request.path == '/' %} bg-blue-500 text-white rounded-sm {% endif %}">
                 Inicio
             </div>
         </a>
         <div class="cursor-pointer">
-            Quienes somos
+            <div class="p-2 
+                {% if request.path == '/quienes-somos/' %} bg-blue-500 text-white rounded-sm {% endif %}">
+                Quienes somos
+            </div>
         </div>
         <div id="nav_item_before_fly_mobile" class="relative flex flex-col items-center cursor-pointer">
             <div class="flex flex-row gap-x-4 h-full p-2">
@@ -35,44 +39,28 @@
                     </svg>      
                 </div>
             </div>
-            <div class="sub_menu hidden flex flex-col gap-y-3 p-3 bg-white rounded-sm shadow-md">
+            <div class="sub_menu hidden flex flex-col gap-y-3 p-2 bg-white rounded-sm shadow-lg">
                 <a {% if request.path != '/sin-distincion-de-raza/' %} href="{% url 'race-distintion' %}" {% endif %}>
-                    <div class="p-1 text-center hover:text-pink-400
-                        {% if request.path == '/sin-distincion-de-raza/' %} 
-                        text-pink-500 
-                        {% else %} 
-                        text-blue-500 
-                        {% endif %}">
+                    <div class="p-2 text-center 
+                        {% if request.path == '/sin-distincion-de-raza/' %} bg-blue-500 text-white rounded-sm {% endif %}">
                         Sin dintincion de raza
                     </div>
                 </a>
                 <a {% if request.path != '/restricciones-por-raza/' %} href="{% url 'travel-restriction' %}" {% endif %}>
-                    <div class="p-1 text-center hover:text-pink-400
-                        {% if request.path == '/restricciones-por-raza/' %} 
-                        text-pink-500 
-                        {% else %} 
-                        text-blue-500 
-                        {% endif %}">
+                    <div class="p-2 text-center 
+                        {% if request.path == '/restricciones-por-raza/' %} bg-blue-500 text-white rounded-sm {% endif %}">
                         Requisitos de viaje aereo por raza
                     </div>
                 </a>
                 <a {% if request.path != '/viaje-tranquilo/' %} href="{% url 'travel-quietly' %}" {% endif %}>
-                    <div class="p-1 text-center hover:text-pink-400
-                        {% if request.path == '/viaje-tranquilo/' %} 
-                        text-pink-500 
-                        {% else %} 
-                        text-blue-500 
-                        {% endif %}">
+                    <div class="p-2 text-center 
+                        {% if request.path == '/viaje-tranquilo/' %} bg-blue-500 text-white rounded-sm {% endif %}">
                         Viaje tranquilo
                     </div>
                 </a>
                 <a {% if request.path != '/requisitos-de-ingreso-por-pais/' %} href="{% url 'country-requirement' %}" {% endif %}>
-                    <div class="p-1 text-center hover:text-pink-400
-                        {% if request.path == '/requisitos-de-ingreso-por-pais/' %} 
-                        text-pink-500 
-                        {% else %} 
-                        text-blue-500 
-                        {% endif %}">
+                    <div class="p-2 text-center 
+                        {% if request.path == '/requisitos-de-ingreso-por-pais/' %} bg-blue-500 text-white rounded-sm {% endif %}">
                         Requisitos de ingreso por pais
                     </div>
                 </a>

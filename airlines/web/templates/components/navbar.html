@@ -14,14 +14,22 @@
               </svg>                      
         </div>
 
-        <div class="hidden md:flex flex-row items-center gap-x-6 text-white">
+        <div class="hidden md:flex flex-row items-center gap-x-4 text-white">
             <a {% if request.path != '/' %} href="{% url 'index' %}" {% endif %}>
-                <div class="{% if request.path == '/' %} border-b-2 border-white {% endif %}">
+                <div class="p-2
+                    {% if request.path == '/' %} bg-white text-blue-500 rounded-sm
+                    {% else %} hover:bg-white hover:text-blue-500 hover:rounded-sm
+                    {% endif %}">
                     Inicio
                 </div>
             </a>
             <div class="cursor-pointer">
-                Quienes somos
+                <div class="p-2
+                    {% if request.path == '/quienes-somos/' %} bg-white text-blue-500 rounded-sm
+                    {% else %} hover:bg-white hover:text-blue-500 hover:rounded-sm
+                    {% endif %}">
+                    Quienes somos
+                </div>
             </div>
             <div id="nav_item_before_fly" class="relative cursor-pointer">
                 <div class="item_content h-full p-2 hover:bg-white hover:text-blue-500 hover:rounded-sm">
@@ -36,41 +44,33 @@
                         </svg>          
                     </div>
                     <a {% if request.path != '/sin-distincion-de-raza/' %} href="{% url 'race-distintion' %}" {% endif %}>
-                        <div class="p-1 text-right hover:text-pink-400
-                            {% if request.path == '/sin-distincion-de-raza/' %} 
-                            text-pink-500 
-                            {% else %} 
-                            text-blue-500 
+                        <div class="p-2 text-right 
+                            {% if request.path == '/sin-distincion-de-raza/' %} bg-blue-500 text-white rounded-sm
+                            {% else %} text-blue-500 hover:bg-blue-500 hover:text-white hover:rounded-sm
                             {% endif %}">
                             Sin dintincion de raza
                         </div>
                     </a>
                     <a {% if request.path != '/restricciones-por-raza/' %} href="{% url 'travel-restriction' %}" {% endif %}>
-                        <div class="p-1 text-right hover:text-pink-400
-                            {% if request.path == '/restricciones-por-raza/' %} 
-                            text-pink-500 
-                            {% else %} 
-                            text-blue-500 
+                        <div class="p-2 text-right 
+                            {% if request.path == '/restricciones-por-raza/' %} bg-blue-500 text-white rounded-sm
+                            {% else %} text-blue-500 hover:bg-blue-500 hover:text-white hover:rounded-sm
                             {% endif %}">
                             Requisitos de viaje aereo por raza
                         </div>
                     </a>
                     <a {% if request.path != '/viaje-tranquilo/' %} href="{% url 'travel-quietly' %}" {% endif %}>
-                        <div class="p-1 text-right hover:text-pink-400
-                            {% if request.path == '/viaje-tranquilo/' %} 
-                            text-pink-500 
-                            {% else %} 
-                            text-blue-500 
+                        <div class="p-2 text-right 
+                            {% if request.path == '/viaje-tranquilo/' %} bg-blue-500 text-white rounded-sm
+                            {% else %} text-blue-500 hover:bg-blue-500 hover:text-white hover:rounded-sm
                             {% endif %}">
                             Viaje tranquilo
                         </div>
                     </a>
                     <a {% if request.path != '/requisitos-de-ingreso-por-pais/' %} href="{% url 'country-requirement' %}" {% endif %}>
-                        <div class="p-1 text-right hover:text-pink-400
-                            {% if request.path == '/requisitos-de-ingreso-por-pais/' %} 
-                            text-pink-500 
-                            {% else %} 
-                            text-blue-500 
+                        <div class="p-2 text-right 
+                            {% if request.path == '/requisitos-de-ingreso-por-pais/' %} bg-blue-500 text-white rounded-sm
+                            {% else %} text-blue-500 hover:bg-blue-500 hover:text-white hover:rounded-sm
                             {% endif %}">
                             Requisitos de ingreso por pais
                         </div>
@@ -78,7 +78,12 @@
                 </div>
             </div>
             <div class="cursor-pointer">
-                Contactanos
+                <div class="p-2
+                    {% if request.path == '/contactanos/' %} bg-white text-blue-500 rounded-sm
+                    {% else %} hover:bg-white hover:text-blue-500 hover:rounded-sm
+                    {% endif %}">
+                    Contactanos
+                </div>
             </div>
         </div>
     </div>
