@@ -58,7 +58,10 @@
             </div>
         </div>
         <div class="cursor-pointer">
-            Contactanos
+            <div class="p-2 
+                {% if request.path == '/contactanos/' %} bg-blue-500 text-white rounded-sm {% endif %}">
+                Contactanos
+            </div>
         </div>
     </div>
 </div>
