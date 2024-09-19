@@ -2,23 +2,22 @@
 
 <div class="flex flex-col items-center gap-y-2 w-full pb-12 md:pb-20 bg-blue-500">
     <div class="flex flex-col items-center gap-y-4 md:gap-y-6 w-full p-4 md:p-8 rounded-t-lg">
-        <div class="text-xl md:text-3xl lg:text-5xl text-center text-white font-semibold">
+        <div class="text-xl md:text-3xl lg:text-5xl text-center text-white font-semibold titles">
             {{ "Requisitos de ingreso por pais"|upper }}
         </div>
-        <div class="w-full md:w-3/4 text-lg md:text-xl lg:text-3xl text-center text-white font-regular">
-            Cada país tiene sus propios requisitos para el ingreso de mascotas, por lo que 
+        <div class="w-full md:w-3/4 text-lg md:text-xl lg:text-3xl text-center text-white font-regular ">
+            Cada país tiene sus propios requisitos para el ingreso de mascotas, por lo que
             es importante que te informes de los requerimientos de tu próximo destino.
         </div>
     </div>
     <div class="group w-full md:w-3/4 text-center">
         <a href="{% url 'country-requirement' %}">
-        <button type="button" 
-            class="relative inline-block p-2 text-lg md:text-xl lg:text-3xl text-white">
-            Seguir leyendo
-            <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-        </button>
-    </a>
+            <button type="button" class="relative inline-block p-2 text-lg md:text-xl lg:text-3xl text-white">
+                Seguir leyendo
+                <span
+                    class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </button>
+        </a>
     </div>
-    <img src="{% static 'img/country-requirement/world-map.png' %}" alt=""
-        class="w-3/4 md:w-1/2">
+    <img src="{% static 'img/country-requirement/world-map.png' %}" alt="" class="w-3/4 md:w-1/2">
 </div>

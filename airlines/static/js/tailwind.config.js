@@ -6,9 +6,6 @@ tailwind.config = {
             whatsapp_green_tone: "#00bb2d",
         },
       },
-      fontFamily: {
-        sans: ['Noto Sans HK', 'sans-serif'],
-      },
     }
   }
 }
