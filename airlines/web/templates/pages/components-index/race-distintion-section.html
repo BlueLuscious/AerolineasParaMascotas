@@ -4,7 +4,7 @@
     <div class="w-full h-28 md:h-32 lg:h-40 bg-blue-500 rounded-bl-[10%] rounded-br-[60%] 
         -rotate-1 md:-rotate-3 transform -translate-x-4 -translate-y-[2.5rem]">
         <div class="w-full pt-[3.5rem] lg:pt-16 pl-8 sm:pl-0 text-lg md:text-3xl lg:text-5xl 
-            text-left sm:text-center text-white font-semibold rotate-1 md:rotate-3">
+            text-left sm:text-center text-white font-semibold rotate-1 md:rotate-3 titles">
             {{ "Sin distinción de raza"|upper }}
         </div>
     </div>
@@ -14,25 +14,28 @@
                 font-semibold">
                 En Aerolineas para mascotas no hacemos distinción de raza, todas las mascotas son Bienvenidas.
             </div>
-            <button type="button" 
-                class="w-full md:w-3/4 p-2 text-lg md:text-xl lg:text-3xl text-center text-blue-500">
-                Seguir leyendo
-            </button>
+            <div class="group w-full md:w-3/4 text-center">
+                <a href="{% url 'race-distintion' %}">
+                    <button type="button"
+                        class="relative inline-block p-2 text-lg md:text-xl lg:text-3xl text-blue-500">
+                        Seguir leyendo
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                    </button>
+                </a>
+            </div>
         </div>
         <div class="flex items-center justify-start w-full transform -translate-x-6 sm:translate-x-0">
-            <img src="{% static 'img/over-image/dog-pitbull.png' %}" alt=""
-                class="w-[14rem] sm:w-[17rem] md:w-[18rem]">
+            <img src="{% static 'img/over-image/dog-pitbull.png' %}" alt="" class="w-[14rem] sm:w-[17rem] md:w-[18rem]">
         </div>
     </div>
     <div class="absolute top-0 right-0 flex justify-end w-full">
-        <img src="{% static 'img/over-image/cat-0.png' %}" alt=""
-            class="w-24 sm:w-32 md:w-48 lg:w-64">
+        <img src="{% static 'img/over-image/cat-0.png' %}" alt="" class="w-24 sm:w-32 md:w-48 lg:w-64">
     </div>
     <div class="absolute inset-x-0 bottom-0 w-full h-8 bg-blue-500">
         <div class="flex justify-end w-full transform -translate-x-2 sm:-translate-x-6 md:-translate-x-8 
             -translate-y-[11.1rem] sm:-translate-y-[13.8rem] md:-translate-y-[14.8rem]">
-            <img src="{% static 'img/over-image/dog-cocker.png' %}" alt=""
-                class="w-[12rem] sm:w-[15rem] md:w-[16rem]">
+            <img src="{% static 'img/over-image/dog-cocker.png' %}" alt="" class="w-[12rem] sm:w-[15rem] md:w-[16rem]">
         </div>
     </div>
 </div>

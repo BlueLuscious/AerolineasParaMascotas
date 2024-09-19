@@ -1,0 +1,34 @@
+{% load static %}
+
+<div class="pt-12 sm:pt-20" style="background: linear-gradient(to bottom, #3b82f6, #ffecd4);">
+  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="text-3xl font-extrabold leading-9 text-gray-900 sm:text-4xl sm:leading-10 dark:text-[#ffffff]">Maxima <span class="text-gray-900 dark:text-white">confianza</span></h2>
+      <p class="text-xl font-extrabold leading-9 text-gray-900 sm:text-xl sm:leading-10 dark:text-white">En Aerolineas para mascotas tenemos</p>
+    </div>
+  </div>
+  <div class="mt-10 pb-12 sm:pb-16">
+    <div class="relative">
+      <div class="relative mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-4xl">
+          <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3 dark:bg-[#f472b6]" id="statsSection">
+            <div class="border-white-100 dark:border-white-100 flex flex-col border-b p-6 text-center sm:border-0 sm:border-r">
+              <dt class="order-2 mt-2 text-lg font-medium leading-6 text-gray-500 dark:text-white" id="item-1">Paises recorridos</dt>
+              <dd class="order-1 text-5xl font-extrabold leading-none text-indigo-600 dark:text-indigo-100" aria-describedby="item-1" id="countries">0</dd>
+            </div>
+            <div class="border-white-100 flex flex-col border-b border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
+              <dt class="order-2 mt-2 text-lg font-medium leading-6 text-gray-500 dark:text-white">Animales acompañados</dt>
+              <dd class="order-1 text-5xl font-extrabold leading-none text-indigo-600 dark:text-indigo-100" id="pets">0</dd>
+            </div>
+            <div class="border-white-100 flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
+              <dt class="text-white-500 order-2 mt-2 text-lg font-medium leading-6 dark:text-white">Años de experiencia</dt>
+              <dd class="order-1 text-5xl font-extrabold leading-none text-indigo-600 dark:text-indigo-100" id="years">0</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="{% static 'js/analytics.js' %}"></script>

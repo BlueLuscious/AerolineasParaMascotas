@@ -12,10 +12,10 @@
         rounded-lg shadow-lg overflow-hidden">
         <div class="z-20 flex flex-col items-center justify-end gap-y-6 sm:gap-y-12 w-full h-full p-6 md:p-12">
             <div class="w-full text-lg md:text-3xl lg:text-5xl text-center text-white font-semibold">
-                {{ "Requisitos de viaje aeroe por raza"|upper }}
+                {{ "Requisitos de viaje aereo por raza"|upper }}
             </div>
             <div class="w-full md:w-3/4 text-md md:text-xl lg:text-3xl text-center text-white font-regular">
-                Algunas razas pueden necesitar cuidados especiales de cara al viaje en altura, 
+                Algunas razas pueden necesitar cuidados especiales de cara al viaje en altura,
                 es importante que sepas si tu mascota pertenece a alguna de estas.
             </div>
         </div>
@@ -26,8 +26,7 @@
     <div class="relative flex flex-col items-center w-full mt-20 bg-white rounded-lg shadow-lg">
         <div class="absolute top-0 right-0 flex justify-end w-full
             transform -translate-x-4 -translate-y-[5rem] md:-translate-y-[6.7rem]">
-            <img src="{% static 'img/over-image/dog-beagle.png' %}" alt=""
-                class="w-36 md:w-48">
+            <img src="{% static 'img/over-image/dog-beagle.png' %}" alt="" class="w-36 md:w-48">
         </div>
         <div class="w-full p-4 bg-blue-500 rounded-t-lg">
             <div class="text-xl md:text-2xl text-left sm:text-center text-white font-semibold">
@@ -36,72 +35,84 @@
         </div>
         <div class="w-full p-8">
             <div class="text-lg md:text-xl text-center text-white text-zinc-600">
-                El traslado de animales de razas braquiocefálicas mediante transporte aéreo conlleva un alto 
+                El traslado de animales de razas braquiocefálicas mediante transporte aéreo conlleva un alto
                 riesgo para su salud respiratoria y bienestar térmico, derivado del estrés ocasionado durante el vuelo.
             </div>
         </div>
 
         <div class="flex flex-col items-center w-full p-8">
-            <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-x-6 w-fit p-2 md:px-6 bg-pink-400 rounded-md">
+            <div
+                class="flex flex-col sm:flex-row items-center gap-2 sm:gap-x-6 w-fit p-2 md:px-6 bg-pink-400 rounded-md">
                 <div class="sm:text-lg md:text-2xl text-center text-white">
                     Razas de perros clasificadas como braquiocefálicas
                 </div>
                 <div>
-                    <img src="{% static 'img/dog-footprint.png' %}" alt="dog-footprint"
-                        class="w-8 sm:w-12 md:w-16">
+                    <img src="{% static 'img/dog-footprint.png' %}" alt="dog-footprint" class="w-8 sm:w-12 md:w-16">
                 </div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 w-full pt-8">
                 <div class="flex justify-center w-full">
-                    <img src="{% static 'img/travel-restriction/french-bulldog.jpg' %}" alt=""
-                        class="rounded-lg">
+                    <img src="{% static 'img/travel-restriction/french-bulldog.jpg' %}" alt="" class="rounded-lg">
                 </div>
-                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-y-4 md:gap-y-2 
-                    text-center">
-                    <li>Affenpinscher</li>
-                    <li>American Bully</li>
-                    <li>Boston Terrier</li>
-                    <li>Boxer (Todas las razas)</li>
-                    <li>Bulldog (Todas las razas)</li>
-                    <li>Cane corso</li>
-                    <li>Carlino</li>
-                    <li>Chow Chow</li>
-                    <li>Dogo (Todas las razas)</li>
-                    <li>Grifón de Bruselas (Pequeño brabanzón)</li>
-                    <li>Lhasa Apso</li>
-                    <li>Mastín (Todas las razas)</li>
-                    <li>Pequinés</li>
-                    <li>Pitbull</li>
-                    <li>Shar-Pei</li>
-                    <li>Shih Tzu</li>
-                    <li>Cocker/Spaniel (Todas las razas)</li>
-                    <li>Staffordshire bull terrier</li>
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-y-4 md:gap-y-2 text-center">
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Affenpinscher
+                    </li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">American
+                        Bully</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Boston
+                        Terrier</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Boxer (Todas
+                        las razas)</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Bulldog
+                        (Todas las razas)</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Cane corso
+                    </li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Carlino</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Chow Chow
+                    </li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Dogo (Todas
+                        las razas)</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Grifón de
+                        Bruselas (Pequeño brabanzón)</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Lhasa Apso
+                    </li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Mastín (Todas
+                        las razas)</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Pequinés</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Pitbull</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Shar-Pei</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Shih Tzu</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">
+                        Cocker/Spaniel (Todas las razas)</li>
+                    <li class="bg-[#f472b67a] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-slate-200">Staffordshire
+                        bull terrier</li>
                 </ul>
             </div>
         </div>
 
         <div class="flex flex-col items-center w-full p-8">
-            <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-x-6 w-fit p-2 md:px-6 bg-pink-400 rounded-md">
+            <div
+                class="flex flex-col sm:flex-row items-center gap-2 sm:gap-x-6 w-fit p-2 md:px-6 bg-pink-400 rounded-md">
                 <div class="sm:text-lg md:text-2xl text-center text-white">
                     Razas de gatos clasificadas como braquiocefálicas
                 </div>
                 <div>
-                    <img src="{% static 'img/dog-footprint.png' %}" alt="dog-footprint"
-                        class="w-8 sm:w-12 md:w-16">
+                    <img src="{% static 'img/dog-footprint.png' %}" alt="dog-footprint" class="w-8 sm:w-12 md:w-16">
                 </div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 w-full pt-8">
                 <div class="flex justify-center w-full">
-                    <img src="{% static 'img/travel-restriction/sacred-cat-of-burma.jpg' %}" alt=""
-                        class="rounded-lg">
+                    <img src="{% static 'img/travel-restriction/sacred-cat-of-burma.jpg' %}" alt="" class="rounded-lg">
                 </div>
                 <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-y-4 md:gap-y-2 
                     text-center">
-                    <li>Birmano</li>
-                    <li>Británico de pelo corto</li>
-                    <li>Gato exótico</li>
-                    <li>Himalayo</li>
-                    <li>Persa</li>
+                    <li class="bg-[#3b82f670] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-gray-200">Birmano</li>
+                    <li class="bg-[#3b82f670] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-gray-200">Británico de
+                        pelo corto</li>
+                    <li class="bg-[#3b82f670] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-gray-200">Gato exótico
+                    </li>
+                    <li class="bg-[#3b82f670] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-gray-200">Himalayo</li>
+                    <li class="bg-[#3b82f670] rounded-lg p-2 m-1 text-lg font-semibold hover:bg-gray-200">Persa</li>
                 </ul>
             </div>
         </div>

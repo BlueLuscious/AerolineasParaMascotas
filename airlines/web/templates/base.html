@@ -2,14 +2,24 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aerolineas para Mascotas</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Cinzel:wght@400..900&family=Permanent+Marker&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Alike+Angular&family=Castoro+Titling&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+
+
+<body class="belleza-regular ">
+
     <section>
         {% include "components/navbar.html" %}
         {% include "components/right-side-navbar.html" %}
@@ -23,9 +33,8 @@
     <section>
         {% include "components/footer.html" %}
     </section>
-    
-    <div id="whatsapp_button" 
-        class="z-40 fixed bottom-3 right-3 sm:bottom-5 sm:right-5 p-3 pt-4 bg-tertiary-whatsapp_green_tone
+
+    <div id="whatsapp_button" class="z-40 fixed bottom-3 right-3 sm:bottom-5 sm:right-5 p-3 pt-4 bg-tertiary-whatsapp_green_tone
         rounded-full shadow-xl cursor-pointer scale-80">
         <button type="button">
             {% include "icons/whatsapp.html" with tailwind_class="w-10 h-8 text-white" %}
@@ -35,4 +44,5 @@
 </body>
 <script type="module" src="{% static 'js/base.js' %}"></script>
 <script src="{% static 'js/tailwind.config.js' %}"></script>
+
 </html>
