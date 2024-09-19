@@ -24,7 +24,7 @@
     <!-- Requisitos de ingreso por pais -->
     {% include './components-index/country-requirement-section.html' %}
 
-    {% include './components-index/analytics.html' %}
+    {% include './components-index/analytics-section.html' %}
     <!-- Testimonios -->
     {% static 'img/fondo-reviews.png' as bg_review %}
     <section class="w-full flex items-center justify-center bg-[url('{{ bg_review }}')] h-full 
@@ -35,9 +35,9 @@
             {% static 'img/DANI/FliaBER.jpg' as flia2 %}
             {% static 'img/DANI/FliaCuevas.jpg' as flia3 %}
 
-            {% include "components/review.html" with destino='Buenos Aires - Paris' perfil=flia1 reseña='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' %}
-            {% include "components/review.html" with destino='Viña del mar - Tucuman' perfil=flia2 reseña='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' %}
-            {% include "components/review.html" with destino='Uruguay - Grecia' perfil=flia3 reseña='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' %}
+            {% include "components/review.html" with destino='Uruguay - Grecia' perfil=flia1 reseña='Tuvimos que enviar a nuestro perro, Bruno, a casa de un familiar y Aerolineas para Mascotas hizo que el proceso fuera sencillo y seguro. Agradecemos el profesionalismo y el cuidado que mostraron en todo momento.' %}
+            {% include "components/review.html" with destino='Buenos Aires - Paris' perfil=flia2 reseña='Estamos muy agradecidos con el servicio de Aerolineas para Mascotas. Nuestro perro Max llegó sano y salvo despues de un largo vuelo. El personal fue muy atento y se aseguro de que Max estuviera comodo en todo momento.' %}
+            {% include "components/review.html" with destino='Viña del mar - Tucuman' perfil=flia3 reseña='Aerolineas para Mascotas hizo que el traslado de nuestro gato, Momo, fuera una experencia sin estrés. Desde la recogida en casa hasta la entrega en nuestro destino, todo fue impecable. ¡Recomendamos sus servicios al 100%!' %}
         </div>
     </section>
 
