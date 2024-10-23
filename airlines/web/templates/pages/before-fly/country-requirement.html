@@ -4,140 +4,29 @@
 
 {% block content %}
 
-<section class="flex flex-col items-center gap-y-4 md:gap-y-8 w-full p-4 md:p-8 mt-20 bg-yellow-50">
+<section class="flex flex-col h-screen items-center justify-evenly gap-y-8 w-full p-4 md:p-8 pt-24 md:pt-28 
+    bg-blue-50">
 
-    <div class="relative flex flex-col items-center gap-y-2 w-full py-4 bg-blue-500 rounded-lg shadow-lg
-        overflow-hidden">
-        <div class="flex flex-col items-center gap-y-4 md:gap-y-6 w-full p-2 md:p-6 rounded-t-lg">
-            <div class="text-xl md:text-3xl lg:text-5xl text-center text-white font-semibold">
-                {{ "Requisitos de ingreso por pais"|upper }}
-            </div>
-            <div class="w-3/4 text-lg md:text-xl lg:text-3xl text-center text-white font-regular">
-                Cada país tiene sus propios requisitos para el ingreso de mascotas, por lo que
-                es importante que te informes de los requerimientos de tu próximo destino.
-            </div>
-        </div>
-        <img src="{% static 'img/country-requirement/world-map.png' %}" alt="" class="w-3/4 md:w-1/3">
-    </div>
-
-    <div class="relative grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-
-        <div class="flex flex-col gap-y-8 p-2 md:p-4 bg-white text-lg md:text-xl
-            text-center text-white text-zinc-600 rounded-lg shadow-lg">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-y-2 md:gap-x-4 w-full
-                p-2 md:p-4 bg-blue-400 rounded-md">
-                <img src="{% static 'img/country-requirement/flags/canada.png' %}" alt="" class="w-12">
-                <div class="lg:text-2xl text-white">Canada</div>
-            </div>
-            <ol class="flex flex-col items-center justify-center gap-y-4 h-full text-center">
-                <li>Certificado de Salud</li>
-                <li>Certificado de Vacunación antirrábica</li>
-            </ol>
-            <div class="font-semibold">Restricciones de temporada de invierno para el ingreso de animales vivos</div>
-        </div>
-
-        <div class="flex flex-col gap-y-8 p-2 md:p-4 bg-white text-lg md:text-xl
-            text-center text-white text-zinc-600 rounded-lg shadow-lg">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-y-2 md:gap-x-4 w-full
-                p-2 md:p-4 bg-blue-400 rounded-md">
-                <img src="{% static 'img/country-requirement/flags/united-states.png' %}" alt="" class="w-12">
-                <div class="lg:text-2xl text-white">Estados Unidos</div>
-            </div>
-            <ol class="flex flex-col items-centerjustify-center gap-y-4 h-full text-center">
-                <li>Certificado de Salud</li>
-                <li>Certificado de Vacunación antirrábica</li>
-                <li>Certificado de libre de MIASIS</li>
-                <li>Formulario CDC para ingreso de perros provenientes de paises con
-                    bajo o nulo riesgo de rabia:
-                    <!-- agregar redireccion a https://www.cdc.gov/importation/dogs/rabies-free-low-risk-countries.html -->
-                </li>
-            </ol>
-            <div class="text-red-500 font-semibold">
-                Se sugiere consultar los requisitos propios del estado de destino dado que puede haber
-                requisitos particulares independientemente del resto del país.
-            </div>
-        </div>
-
-        <div class="flex flex-col gap-y-8 p-2 md:p-4 bg-white text-lg md:text-xl
-        text-center text-white text-zinc-600 rounded-lg shadow-lg">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-y-2 md:gap-x-4 w-full
-            p-2 md:p-4 bg-blue-400 rounded-md">
-                <img src="{% static 'img/country-requirement/flags/centroamerica.png' %}" alt="" class="w-16">
-                <div class="lg:text-2xl text-white">Honduras, Nicaragua, Jamaica, El Salvador, Costa Rica, Republica
-                    Dominicana</div>
-            </div>
-            <ol class="flex flex-col items-center justify-center gap-y-4 h-full text-center">
-                <li>Certificado de Salud</li>
-                <li>Certificado de Vacunación antirrábica</li>
-            </ol>
-        </div>
-
-        <div class="flex flex-col gap-y-8 p-2 md:p-4 bg-white text-lg md:text-xl
-        text-center text-white text-zinc-600 rounded-lg shadow-lg">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-y-2 md:gap-x-4 w-full
-            p-2 md:p-4 bg-blue-400 rounded-md">
-            <div class="flex flex-wrap gap-2">
-                <div class="w-12 h-12">
-                    <img src="{% static 'img/country-requirement/flags/brasil.png' %}" alt="Bandera de Brasil" class="w-full h-full object-cover rounded-full">
-                </div>
-                <div class="w-12 h-12">
-                    <img src="{% static 'img/country-requirement/flags/uruguay.png' %}" alt="Bandera de Uruguay" class="w-full h-full object-cover rounded-full">
-                </div>
-                <div class="w-12 h-12">
-                    <img src="{% static 'img/country-requirement/flags/paraguay.png' %}" alt="Bandera de Paraguay" class="w-full h-full object-cover rounded-full">
-                </div>
-            </div>
-                <div class="lg:text-2xl text-white"> Brasil, Uruguay, Paraguay</div>
-            </div>
-            <ol class="flex flex-col items-centerjustify-center gap-y-4 h-full text-center">
-                <li> Certificado de Salud </li>
-                <li> Certificado de Vacunación antirrábica </li>
-                <li> Certificado de desparasitación interna y externa </li>
-                <li> Certificado libre de Leishmaniasis (solo Uruguay) </li>
-                <li> Identificación por Microchip (solo Uruguay) </li>
-            </ol>
-        </div>
-
-
-        <div class="flex flex-col gap-y-8 p-2 md:p-4 bg-white text-lg md:text-xl
-    text-center text-white text-zinc-600 rounded-lg shadow-lg">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-y-2 md:gap-x-4 w-full
-        p-2 md:p-4 bg-blue-400 rounded-md">
-                <img src="{% static 'img/country-requirement/flags/chile.png' %}" alt="" class="w-12">
-                <div class="lg:text-2xl text-white">Chile</div>
-            </div>
-            <ol class="flex flex-col items-center justify-center gap-y-4 h-full text-center">
-                <li>Certificado de Salud</li>
-                <li> Certificado de Salud para Leishmaniasis </li>
-                <li> Certificado de Vacunación antirrábica</li>
-                <li> Certificado de desparasitación interna y externa</li>
-            </ol>
-        </div>
-
-        <div class="flex flex-col gap-y-8 p-2 md:p-4 bg-white text-lg md:text-xl
-    text-center text-white text-zinc-600 rounded-lg shadow-lg">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-y-2 md:gap-x-4 w-full
-        p-2 md:p-4 bg-blue-400 rounded-md">
-                <img src="{% static 'img/country-requirement/flags/peru.png' %}" alt="" class="w-12">
-                <div class="lg:text-2xl text-white"> Peru </div>
-            </div>
-            <ol class="flex flex-col items-centerjustify-center gap-y-4 h-full text-center">
-                <li> Certificado de Salud</li>
-                <li> Certificado de Vacunación antirrábica</li>
-                <li> Certificado de desparasitación interna y externa</li>
-                <li> Requisito adicional sólo para perros</li>
-                <li> Constancia de vacunación séxtuple</li>
-                <li> Requisito adicional sólo para gatos</li>
-                <li> Constancia de vacunación triple</li>
-            </ol>
-        </div>
-
-
+    <div class="relative flex flex-col items-center gap-y-12 w-full px-4 py-12 bg-blue-800 rounded-lg shadow-lg">
+        <img src="{% static 'img/country-requirement/logo_senasa.png' %}" alt="logo_senasa">
+        <p class="text-xl sm:text-2xl text-white text-center">
+            Para mas información y asesoramiento ir a la pagina de Senasa.
+        </p>
+        <a href="https://www.argentina.gob.ar/senasa/portal-de-informacion-para-traslado-de-mascotas-perros-gatos-yo-mascotas-no-tradicionales?tca=XlPkFUmZwX1u1GGp9lU_fzeBjNqkZ2UecdgTwF7ZGM8"
+            target="_blank">
+            <button class="p-2 px-4 bg-white text-lg md:text-2xl text-red-600 border-2 border-red-600 rounded-md 
+                transform transition-transform duration-300 ease-in-out hover:bg-red-600 hover:text-white 
+                hover:scale-110">
+                Ir a Senasa
+            </button>
+        </a>
     </div>
 
     <div class="flex justify-center w-full">
         <a href="{% url 'index' %}">
-            <button class="p-2 px-4 bg-pink-400 text-lg md:text-2xl text-white rounded-md">
+            <button class="p-2 px-4 bg-white text-lg md:text-2xl text-red-600 border-2 border-red-600 rounded-md 
+                transform transition-transform duration-300 ease-in-out hover:bg-red-600 hover:text-white 
+                hover:scale-110">
                 Volver al Inicio
             </button>
         </a>
