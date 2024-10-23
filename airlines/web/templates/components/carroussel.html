@@ -1,0 +1,11 @@
+{% load static %}
+
+<div class="w-full flex items-center justify-center bg-[url('{{ bg_carroussel }}')] h-full p-2
+    bg-center bg-no-repeat bg-cover">
+    <div class="carousel-container relative w-full overflow-hidden">
+        <div class="carousel-track flex transition-transform duration-500 ease-out">
+            {% block carrossel_content %}
+            {% endblock carrossel_content %}
+        </div>
+    </div>
+</div>
