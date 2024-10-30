@@ -4,74 +4,64 @@
 
 {% block content %}
 
-<section class="flex flex-col items-center gap-y-4 md:gap-y-8 w-full p-4 md:p-8 mt-20 bg-yellow-50">
+<section class="flex flex-col gap-y-4 md:gap-y-8 w-full p-4 sm:p-8 mt-20 bg-blue-50">
 
-    <div class="flex flex-col items-center w-full bg-yellow-100 rounded-lg shadow-lg
-        overflow-hidden">
-        <div class="w-full h-28 md:h-32 lg:h-40 bg-blue-500 rounded-bl-[10%] rounded-br-[60%] 
-            -rotate-1 md:-rotate-3 transform -translate-x-4 -translate-y-[2.5rem]">
-            <div class="w-full pt-[3.5rem] lg:pt-16 text-lg md:text-3xl lg:text-5xl text-center 
-                text-white font-semibold rotate-1 md:rotate-3">
-                {{ "Sin distinción de raza"|upper }}
+    <div class="flex flex-col items-center gap-y-8 w-full bg-blue-800 p-8 md:py-16
+        text-white rounded-lg shadow-lg">
+        <div class="w-full">
+            <div class="text-2xl md:text-3xl text-left text-center font-semibold">
+                Restricciones de viaje aéreo para braquiocefalos
             </div>
         </div>
-        <div class="flex flex-col items-center w-full">
-            <div class="flex justify-center w-full">
-                <div class="w-full md:w-3/4 p-2 text-lg md:text-xl lg:text-3xl text-center text-blue-500 
-                    font-semibold">
-                    En Aerolineas para mascotas no hacemos distinción de raza, todas las mascotas son Bienvenidas.
-                </div>
-            </div>
-            <div class="flex items-center w-3/5 sm:w-2/5 md:w-1/5">
-                <img src="{% static 'img/over-image/dog-pitbull.png' %}" alt="">
+        <div class="w-full sm:w-3/4 md:w-3/5">
+            <div class="text-lg md:text-xl text-center">
+                El traslado de animales de razas braquiocefálicas mediante transporte aéreo conlleva un alto
+                riesgo para su salud respiratoria y bienestar térmico, derivado del estrés ocasionado durante el vuelo.
             </div>
         </div>
     </div>
-    {% static 'img/DANI/huellas.png' as race_distintion %}
 
-    <div class="relative flex flex-col items-center w-full mt-28 md:mt-32 rounded-lg shadow-lg bg-white bg-[url('{{ race_distintion }}')] h-full 
-        bg-center bg-no-repeat bg-cover">
-        <div class="absolute top-0 right-0 flex justify-end w-full
-            transform -translate-y-[7.3rem] md:-translate-y-[10.1rem]">
-            <img src="{% static 'img/over-image/dog-cocker.png' %}" alt="" class="w-32 md:w-44">
+    <div class="flex flex-col items-center gap-y-2 w-full p-4 sm:p-8 bg-white rounded-lg shadow-lg">
+        <div class="flex flex-col items-left gap-y-6 w-full p-4 text-lg md:text-xl">
+            <div>
+                <span class="font-semibold">Perros: </span>
+                Affenpinscher, American Bully, Boston Terrier, Boxer (Todas las razas), Bulldog (Todas las razas), 
+                Cane corso, Carlino, Chow Chow, Dogo (Todas las razas), Grifón de Bruselas (Pequeño brabanzón), Lhasa Apso, 
+                Mastín (Todas las razas), Pequinés, Pitbull, Shar-Pei, Shih Tzu, Cocker/Spaniel (Todas las razas), 
+                Staffordshire bull terrier.
+            </div>
+            <div>
+                <span class="font-semibold">Gatos: </span>
+                Birmano, Británico de pelo corto, Gato Europeo, Himalayo, Persa.
+            </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 w-full p-4 text-xl md:text-lg lg:text-2xl
-        text-center lg:text-justify">
-            <div class="w-full">
-                <img src="{% static 'img/race-distintion/race-distintion-0.webp' %}" alt="" class="rounded-lg">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-y-8 md:gap-x-12 w-full p-4">
+            <div class="flex flex-col items-center justify-center gap-y-2 w-full">
+                <img src="{% static 'img/race-distintion/bulldog-frances.jpg' %}" alt="" class="w-full lg:w-3/4 rounded-lg">
+                <div class="text-lg md:text-xl text-start">
+                    <span class="font-semibold">Imagen ilustrativa</span> - Bulldog Frances
+                </div>
             </div>
-            <div class="w-full p-4 leading-relaxed lg:leading-loose border-r border-b border-gray-300 shadow-md bg-white rounded-lg">
-                En nuestra empresa, nos dedicamos apasionadamente a garantizar que tus fieles amigos peludos
-                viajen cómodos y seguros, sin importar su raza. Sabemos que cada mascota es única y especial
-                para su familia, por lo que tratamos a cada una con el amor y el cuidado que se merecen.
-            </div>
-            <div class="w-full p-4 leading-relaxed lg:leading-loose border-r border-b border-gray-300 shadow-md bg-white rounded-lg">
-                Nos comprometemos a brindar una experiencia tranquila y libre de estrés tanto para las mascotas
-                como para sus dueños. Entendemos lo difícil que puede ser separarse de tu compañero de cuatro
-                patas durante un viaje, por eso nos esforzamos por proporcionar un ambiente acogedor y seguro desde
-                el momento en que nos confías a tu mascota.
-            </div>
-            <div class="w-full row-span-2">
-                <img src="{% static 'img/race-distintion/race-distintion-1.JPG' %}" alt=""
-                    class="rounded-lg w-full h-auto">
-            </div>
-            <div class="w-full p-4 leading-relaxed lg:leading-loose border-r border-b border-gray-300 shadow-md bg-white rounded-lg">
-                Nuestro equipo altamente capacitado está dedicado a cuidar de cada detalle, desde el momento
-                en que recibimos a tu mascota hasta que la entregamos a salvo en su destino final. Trabajamos
-                en estrecha colaboración con aerolíneas de renombre y cumplimos con los más altos estándares
-                de seguridad y bienestar animal para garantizar un viaje sin contratiempos.
+            <div class="flex flex-col items-center justify-center gap-y-2 w-full">
+                <img src="{% static 'img/race-distintion/persian-cat.jpg' %}" alt="" class="w-full lg:w-3/4 rounded-lg">
+                <div class="text-lg md:text-xl text-start">
+                    <span class="font-semibold">Imagen ilustrativa</span> - Gato Persa
+                </div>
             </div>
         </div>
     </div>
 
     <div class="flex justify-center w-full">
         <a href="{% url 'index' %}">
-            <button class="p-2 px-4 bg-pink-400 text-lg md:text-2xl text-white rounded-md">
+            <button class="p-2 px-4 bg-white text-lg md:text-2xl text-red-600 border-2 border-red-600 rounded-md 
+                transform transition-transform duration-300 ease-in-out hover:bg-red-600 hover:text-white 
+                hover:scale-110">
                 Volver al Inicio
             </button>
         </a>
     </div>
-    
+
 </section>
 
 {% endblock content %}
