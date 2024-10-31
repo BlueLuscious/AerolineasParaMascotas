@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'destination', 
     'web',
     'review',
+    'store',
 ]
 
 MIDDLEWARE = [ 
