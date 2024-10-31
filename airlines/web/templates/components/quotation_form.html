@@ -1,6 +1,6 @@
 {% load static %}
 
-<div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg text-lg">
+<div class="w-full md:max-w-2xl bg-white p-8 rounded-lg shadow-lg text-lg">
     <h2 class="text-3xl font-bold mb-6">Solicitud de Cotización</h2>
     <form action="mailto: contacto@aerolineasparamascotas.com" method="post" enctype="multipart/form-data">
         <div class="mb-4">
@@ -51,7 +51,7 @@
             <label class="block text-gray-700">Subí la foto actual de tu mascota a trasladar</label>
             <input type="file" name="pet_photo" class="w-full px-3 py-2 border rounded-lg" required>
         </div>
-        <div class="mb-4">
+        <div class="w-full mb-4">
             <label class="block text-gray-700">Productos: </label>
             {% include "components/products.html" %}
         </div>
