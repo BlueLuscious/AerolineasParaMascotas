@@ -1,68 +1,68 @@
 {% load static %}
 
-<div class="w-full md:max-w-2xl bg-white p-8 rounded-lg shadow-lg text-lg">
-    <h2 class="text-3xl font-bold mb-6">Solicitud de Cotización</h2>
+<div class="w-full md:max-w-2xl bg-blue-400 p-8 rounded-2xl shadow-2xl text-lg text-white">
+    <h2 class="text-4xl font-extrabold mb-6 text-center">Solicitud de Cotización</h2>
     <form action="mailto: contacto@aerolineasparamascotas.com" method="post" enctype="multipart/form-data">
         <div class="mb-4">
-            <label class="block text-gray-700">Nombre del propietario</label>
-            <input type="text" name="owner_name" class="w-full px-3 py-2 border rounded-lg" required>
+            <label class="block text-white font-semibold">Nombre del propietario</label>
+            <input type="text" name="owner_name" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700">Email</label>
-            <input type="email" name="email" class="w-full px-3 py-2 border rounded-lg" required>
+            <label class="block text-white font-semibold">Email</label>
+            <input type="email" name="email" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700">Teléfono</label>
-            <input type="tel" name="phone" class="w-full px-3 py-2 border rounded-lg" required>
+            <label class="block text-white font-semibold">Teléfono</label>
+            <input type="tel" name="phone" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700">Nombre de su mascota</label>
-            <input type="text" name="pet_name" class="w-full px-3 py-2 border rounded-lg" required>
+            <label class="block text-white font-semibold">Nombre de su mascota</label>
+            <input type="text" name="pet_name" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700">Edad de su mascota</label>
-            <input type="number" name="pet_age" class="w-full px-3 py-2 border rounded-lg" required>
+            <label class="block text-white font-semibold">Edad de su mascota</label>
+            <input type="number" name="pet_age" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700">Peso de su mascota</label>
-            <input type="number" name="pet_weight" class="w-full px-3 py-2 border rounded-lg" required>
+            <label class="block text-white font-semibold">Peso de su mascota</label>
+            <input type="number" name="pet_weight" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700">Raza de su mascota</label>
-            <input type="text" name="pet_breed" class="w-full px-3 py-2 border rounded-lg" required>
+            <label class="block text-white font-semibold">Raza de su mascota</label>
+            <input type="text" name="pet_breed" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700">Fecha del viaje</label>
-            <input type="date" name="travel_date" class="w-full px-3 py-2 border rounded-lg" required>
+            <label class="block text-white font-semibold">Fecha del viaje</label>
+            <input type="date" name="travel_date" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700">Ciudad de Origen</label>
-            <input type="text" name="origin_city" class="w-full px-3 py-2 border rounded-lg" required>
+            <label class="block text-white font-semibold">Ciudad de Origen</label>
+            <input type="text" name="origin_city" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700">Ciudad de Destino</label>
-            <input type="text" name="destination_city" class="w-full px-3 py-2 border rounded-lg" required>
+            <label class="block text-white font-semibold">Ciudad de Destino</label>
+            <input type="text" name="destination_city" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700">Comentarios</label>
-            <textarea name="comments" class="w-full px-3 py-2 border rounded-lg"></textarea>
+            <label class="block text-white font-semibold">Comentarios</label>
+            <textarea name="comments" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700">Subí la foto actual de tu mascota a trasladar</label>
-            <input type="file" name="pet_photo" class="w-full px-3 py-2 border rounded-lg" required>
+            <label class="block text-white font-semibold">Subí la foto actual de tu mascota a trasladar</label>
+            <input type="file" name="pet_photo" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
         </div>
         <div class="w-full mb-4">
-            <label class="block text-gray-700">Productos: </label>
+            <label class="block text-white font-semibold">Productos: </label>
             {% include "components/products.html" %}
         </div>
         <div class="mb-4">
-            <label class="inline-flex items-center">
-                <input type="checkbox" name="terms" class="form-checkbox" required>
+            <label class="inline-flex items-center text-white font-semibold">
+                <input type="checkbox" name="terms" class="form-checkbox text-blue-500 focus:ring-2 focus:ring-blue-300" required>
                 <span class="ml-2">He leído y Acepto los términos y condiciones</span>
             </label>
         </div>
         <div>
-            <button type="submit" class="w-full bg-blue-500 text-white px-3 py-2 rounded-lg">Enviar</button>
+            <button type="submit" class="w-full bg-[#f472b6] hover:bg-[#eb429bfa] text-white font-bold px-4 py-2 rounded-lg shadow-lg transition duration-300">Enviar</button>
         </div>
     </form>
 </div>
