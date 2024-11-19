@@ -1,6 +1,14 @@
 {% load unicorn %}
 
 <div>
-    <input unicorn:model="name" type="text" id="text" /><br />
-    Hello {{ name|title }}
-  </div>
+<h2>productos seleccionados: </h2>
+<br>
+<ul>
+  {% for product in selected_products %}
+  
+  <li>
+    {{ product.name }} - {{product.price}} 
+  </li>
+  {% endfor %}
+</ul>
+</div>
