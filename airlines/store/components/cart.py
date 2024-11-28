@@ -23,3 +23,14 @@ class CartView(UnicornView):
     def remove_product(self, product_id):
         self.selected_products = [product for product in self.selected_products if product['id'] != product_id]
 
+    def update_quantity(self, product_id, quantity):
+        try:
+            quantity = int(quantity) 
+        except ValueError:
+            return
+
+        for product in self.selected_products:
+            if product['id'] == product_id:
+                if 1 <= quantity <= product['stock']:
+                    product['quantity'] = quantity
+                return
