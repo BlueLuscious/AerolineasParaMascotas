@@ -1,5 +1,4 @@
 from django_unicorn.components import UnicornView
-
 from store.models import ProductModel
 
 
@@ -17,6 +16,10 @@ class CartView(UnicornView):
             'id': instance.id,
             'name': instance.name,
             'price':instance.price,
+            'image_url': instance.image.url,
             'quantity':1,
         })
+
+    def remove_product(self, product_id):
+        self.selected_products = [product for product in self.selected_products if product['id'] != product_id]
 
