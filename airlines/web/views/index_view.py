@@ -8,8 +8,8 @@ class IndexView(View):
     
     def get(self, request):
         template = loader.get_template("pages/index.html")
-        context = {
-            "reviews": ReviewModel.objects.all().order_by("-created_at")[:6]
-        }
-        return HttpResponse(template.render(context, request))
+        # context = {
+        #     "reviews": ReviewModel.objects.all().order_by("-created_at")[:6]
+        # }
+        return HttpResponse(template.render(None, request))
     
