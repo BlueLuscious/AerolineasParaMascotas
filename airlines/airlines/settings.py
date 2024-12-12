@@ -187,11 +187,5 @@ INSTALLED_APPS = ['django_db_prefix',] + INSTALLED_APPS
 DB_PREFIX = "airlines_"
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'santidinos@gmail.com'
-EMAIL_HOST_PASSWORD = 'zeflqiwpdvehqvaj'
-DEFAULT_FROM_EMAIL = '2502cc08-3dbf-4fed-a9df-4696641e0439@emailhook.site'
+
 
