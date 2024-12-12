@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'django_unicorn',
     'destination', 
     'web',
+    'django_q',
     'review',
     'store',
     'config',
@@ -95,6 +96,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'airlines.wsgi.application'
 
+Q_CLUSTER = {
+    "timeout": 120,
+    "retry": 150,
+    "workers": 4,
+    "orm": "default",
+}
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -185,6 +192,6 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'santidinos@gmail.com'
-EMAIL_HOST_PASSWORD = 'zefl qiwp dveh qvaj'
+EMAIL_HOST_PASSWORD = 'zeflqiwpdvehqvaj'
 DEFAULT_FROM_EMAIL = '2502cc08-3dbf-4fed-a9df-4696641e0439@emailhook.site'
 
