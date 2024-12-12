@@ -23,6 +23,10 @@ class QuotationView(View):
         return HttpResponse(template.render(context, request))
 
     def post(self, request: HttpRequest) -> HttpResponse:
+        if request.POST.get('honeypot'):
+            logger.warning("Honeypot field filled, possible bot detected.")
+            return HttpResponse("Error: Bot detected", status=400)
+
         config = ConfigModel.objects.get(active=True)
         email_contact = config.email_contact if config else 'default@example.com'
 
