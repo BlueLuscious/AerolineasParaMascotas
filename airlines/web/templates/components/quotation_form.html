@@ -2,7 +2,8 @@
 {% load unicorn %}
 <div class="w-full md:max-w-2xl bg-blue-400 p-8 rounded-2xl shadow-2xl text-lg text-white">
     <h2 class="text-4xl font-extrabold mb-6 text-center">Solicitud de Cotización</h2>
-    <form action="mailto: contacto@aerolineasparamascotas.com" method="post" enctype="multipart/form-data">
+    <form action="{% url 'quotation' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
         <div class="mb-4">
             <label class="block text-white font-semibold">Nombre del propietario</label>
             <input type="text" name="owner_name" class="w-full px-4 py-2 border border-transparent rounded-lg bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300" required>
