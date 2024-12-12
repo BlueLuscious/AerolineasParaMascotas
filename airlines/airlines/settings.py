@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'web',
     'review',
     'store',
+    'config',
 ]
 
 MIDDLEWARE = [ 
