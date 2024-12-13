@@ -1,8 +1,7 @@
 from django.contrib import admin
+from config.models.models import ConfigModel
 
-from config.models import ConfigModel
 
-# Register your models here.
 @admin.register(ConfigModel)
 class ConfigAdmin(admin.ModelAdmin):
     list_display = (

@@ -7,11 +7,13 @@ class ConfigConfig(AppConfig):
     name = 'config'
 
     def ready(self) -> None:
-        from .admin import (
-            ConfigAdmin,
+        from .admins import (
+            admin,
+            palette_admin,
         )
 
         from .models import (
-            ConfigModel,
+            models,
+            palette_model,
         )
         
