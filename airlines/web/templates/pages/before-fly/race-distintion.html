@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 {% load static %}
+{% load inclusiontag.custom_button %}
 
 
 {% block content %}
 
 <section class="flex flex-col gap-y-4 md:gap-y-8 w-full p-4 sm:p-8 mt-20 bg-blue-50">
 
-    <div class="flex flex-col items-center gap-y-8 w-full bg-blue-800 p-8 md:py-16
+    <div class="flex flex-col items-center gap-y-4 md:gap-y-8 w-full bg-blue-900 p-4 md:p-8 md:py-16
         text-white rounded-lg shadow-lg">
-        <div class="w-full">
-            <div class="text-2xl md:text-3xl text-left text-center font-semibold">
-                Sin distinción de raza
-            </div>
+        <div class="p-1 md:p-3 text-lg md:text-2xl lg:text-4xl text-left text-center 
+            border-b-4 border-red-600 rounded-b-lg font-semibold">
+            {{ "Sin distinción de raza"|upper }}
         </div>
-        <div class="w-full sm:w-3/4 md:w-3/5">
-            <div class="text-lg md:text-xl text-center">
+        <div class="w-full sm:w-3/4 lg:w-3/5">
+            <div class="text-md md:text-lg lg:text-2xl text-center font-regular">
                 El traslado de animales de razas braquiocefálicas mediante transporte aéreo conlleva un alto
                 riesgo para su salud respiratoria y bienestar térmico, derivado del estrés ocasionado durante el vuelo.
             </div>
@@ -52,15 +52,8 @@
         </div>
     </div>
 
-    <div class="flex justify-center w-full">
-        <a href="{% url 'index' %}">
-            <button class="p-2 px-4 bg-white text-lg md:text-2xl text-red-600 border-2 border-red-600 rounded-md 
-                transform transition-transform duration-300 ease-in-out hover:bg-red-600 hover:text-white 
-                hover:scale-110">
-                Volver al Inicio
-            </button>
-        </a>
-    </div>
+    {% url "index" as my_url %}
+    {% custom_button my_url none "Volver al Inicio" %}
 
 </section>
 

@@ -14,8 +14,8 @@
     {% include './components-index/race-distintion-section.html' %}
 
     <!-- Requisitos de viaje aereo por raza  -->
-    {% static 'img/DANI/familia_recortada_superior.png' as bg_plane %}
-    {% include './components-index/travel-restriction-section.html' with bg_plane=bg_plane %}
+    {% comment %} {% static 'img/plane.jpg' as bg_plane %}
+    {% include './components-index/travel-restriction-section.html' with bg_plane=bg_plane %} {% endcomment %}
 
     <!-- Viaje tranquilo -->
     {% include './components-index/travel-quietly-section.html' %}
@@ -26,9 +26,10 @@
     {% include './components-index/analytics-section.html' %}
 
     <!-- Reviews Carroussel -->
+    {% if reviews %}
     {% static 'img/fondo-reviews.png' as bg_review %}
-    {% comment %} {% include "components/review.html" with bg_carroussel=bg_review %} {% endcomment %}
-    <!-- TODO: DESCOMENTAR INCLUDE -->
+    {% include "components/review.html" with bg_carroussel=bg_review %}
+    {% endif %}
     
 </section>
 <script src="{% static 'js/carroussel.js' %}" ></script>
