@@ -43,9 +43,7 @@ class QuotationView(View):
         origin_city = request.POST.get('origin_city')
         destination_city = request.POST.get('destination_city')
         comments = request.POST.get('comments')
-
-        selected_products = request.POST.get('selected_products', '[]')
-        selected_products = json.loads(selected_products)
+        selected_products = request.POST.getlist('selected_products', [])
         
         subject = 'Nueva Solicitud de Cotización'
         message = f"""
@@ -61,6 +59,7 @@ class QuotationView(View):
         Ciudad de Origen: {origin_city}
         Ciudad de Destino: {destination_city}
         Comentarios: {comments}
+        Productos seleccionados: {selected_products}
         """
 
         try:
@@ -70,3 +69,4 @@ class QuotationView(View):
             return HttpResponse("Error sending email", status=500)
 
         return redirect('index')
+    
