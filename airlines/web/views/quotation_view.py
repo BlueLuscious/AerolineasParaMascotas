@@ -1,3 +1,4 @@
+import json
 from django.http import HttpRequest, HttpResponse
 from django.template import loader
 from django.views import View
@@ -37,16 +38,21 @@ class QuotationView(View):
         pet_age = request.POST.get('pet_age')
         pet_weight = request.POST.get('pet_weight')
         pet_breed = request.POST.get('pet_breed')
+        pet_photo = request.FILES.get('pet_photo')
         travel_date = request.POST.get('travel_date')
         origin_city = request.POST.get('origin_city')
         destination_city = request.POST.get('destination_city')
         comments = request.POST.get('comments')
 
+        selected_products = request.POST.get('selected_products', '[]')
+        selected_products = json.loads(selected_products)
+        
         subject = 'Nueva Solicitud de Cotización'
         message = f"""
         Nombre del propietario: {owner_name}
         Email: {email}
         Teléfono: {phone}
+        Foto de la mascota: {pet_photo}
         Nombre de la mascota: {pet_name}
         Edad de la mascota: {pet_age}
         Peso de la mascota: {pet_weight}

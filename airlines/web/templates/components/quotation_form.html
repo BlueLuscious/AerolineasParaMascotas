@@ -61,16 +61,17 @@
             <label class="block text-white font-semibold">Productos: </label>
             {% include "components/products.html" %}
         </div>
+        <input type="hidden" name="selected_products" id="selected_products">
         <div class="mb-4">
             <label class="inline-flex items-center text-white font-semibold">
                 <input type="checkbox" name="terms" class="form-checkbox text-blue-500 focus:ring-2 focus:ring-blue-300" required>
-                <span class="ml-2">He leído y Acepto 
-                    <a href="{{ config.terms_and_conditions.url }}" >términos y condiciones</a>
+                <span class="ml-2">He leído y Acepto los
+                    <a href="{{ config.terms_and_conditions.url }}" > términos y condiciones</a>
                 </span>            
             </label>
         </div>
         <div>
-            <button type="submit" class="w-full bg-[#f472b6] hover:bg-[#eb429bfa] text-white font-bold px-4 py-2 rounded-lg shadow-lg transition duration-300">Enviar</button>
+            <button type="submit" class="w-full bg-[#f472b6] hover:bg-[#eb429bfa] text-white font-bold px-4 py-2 rounded-lg shadow-lg transition duration-300" onclick="document.getElementById('selected_products').value = JSON.stringify(selectedProducts)">Enviar</button>
         </div>
     </form>
 </div>
