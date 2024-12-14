@@ -1,15 +1,15 @@
-import json
+import json, logging
+from django.core.mail import send_mail
 from django.http import HttpRequest, HttpResponse
+from django.shortcuts import redirect
 from django.template import loader
 from django.views import View
-from store.models import ProductModel
-from config.models import ConfigModel
-from django.core.mail import send_mail
-from django.shortcuts import redirect
 from django_q.tasks import async_task
-import logging
+from config.models.models import ConfigModel
+from store.models import ProductModel
 
 logger = logging.getLogger(__name__)
+
 
 class QuotationView(View):
     
