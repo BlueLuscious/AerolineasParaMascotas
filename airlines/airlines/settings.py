@@ -56,9 +56,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'django_unicorn',
+    'colorfield',
     'destination', 
     'web',
+    'django_q',
     'review',
+    'store',
+    'config',
 ]
 
 MIDDLEWARE = [ 
@@ -92,6 +97,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'airlines.wsgi.application'
 
+Q_CLUSTER = {
+    "timeout": 120,
+    "retry": 150,
+    "workers": 4,
+    "orm": "default",
+}
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -175,3 +186,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 INSTALLED_APPS = ['django_db_prefix',] + INSTALLED_APPS
 DB_PREFIX = "airlines_"
+
+
+
+

@@ -1,0 +1,11 @@
+<div class="relative grid grid-cols-1 items-center justify-items-stretch w-3/5 h-full">
+    {% comment %} <img src="{% static '/img/DANI/familia_circular_dos.png' %}" alt=""> {% endcomment %}
+    <div class="absolute top-0 -left-16 justify-self-start w-fit p-2 bg-pink-400 border border-4 border-white rounded-full">
+        <img src="{% static '/img/DANI/FliaAlonzo.jpg' %}" alt=""
+            class="w-64 rounded-full aspect-square object-cover">
+    </div>
+    <div class="absolute top-40 left-16 justify-self-end w-fit p-2 bg-pink-400 border border-4 border-white rounded-full">
+        <img src="{% static '/img/DANI/FliaCuevas.jpg' %}" alt=""
+            class="w-64 rounded-full aspect-square object-cover">
+    </div>
+</div>

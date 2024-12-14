@@ -19,9 +19,27 @@
   font-style: normal;
 }
 
-/* Titulo del landscape */
+ /* Titulo del landscape */
 .main-title{
   font-family: "Aboreto", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+#slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+#slider::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+#slider::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+#slider::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

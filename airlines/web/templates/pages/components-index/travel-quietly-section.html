@@ -1,6 +1,6 @@
 {% load static %}
 
-<div class="relative flex flex-col sm:flex-row items-center w-full pt-12 py-6 
+<div class="relative flex flex-col lg:flex-row items-center w-full h-screen pt-12 py-6 
     bg-pink-400 overflow-hidden">
     <div class="flex flex-col items-center gap-y-6 lg:gap-y-8 w-full p-4 rounded-t-lg">
         <div class="text-xl md:text-3xl lg:text-5xl text-center text-white font-semibold titles">
@@ -20,8 +20,20 @@
             </a>
         </div>
     </div>
-    <div class="flex items-center w-3/5">
-        <img src="{% static 'img/travel-quietly/bull-dog.png' %}" alt="">
+    <div class="relative flex flex-col items-center justify-center w-3/5 h-full scale-50">
+        {% comment %} <img src="{% static '/img/DANI/familia_circular_dos.png' %}" alt=""> {% endcomment %}
+
+        <div class="aboslute top-0 left-0 w-96 md:w-[400px] lg:w-[475px] p-2 bg-pink-400 
+            border border-4 border-white rounded-full transform -translate-y-32 -translate-x-32 lg:translate-y-32 lg:-translate-x-32">
+            <img src="{% static '/img/DANI/FliaAlonzo.jpg' %}" alt=""
+                class="w-full rounded-full aspect-square object-cover">
+        </div>
+        <div class="aboslute top-0 left-0 w-96 md:w-[400px] lg:w-[475px] p-2 bg-pink-400 
+            border border-4 border-white rounded-full transform -translate-y-80 translate-x-32 lg:-translate-y-32 lg:translate-x-32">
+            <img src="{% static '/img/DANI/FliaCuevas.jpg' %}" alt=""
+                class="w-full rounded-full aspect-square object-cover">
+        </div>
+        
     </div>
     <div class="absolute -bottom-10 lg:-bottom-16 left-0 w-full 
         h-20 lg:h-32 bg-blue-500 rounded-[100%]">
