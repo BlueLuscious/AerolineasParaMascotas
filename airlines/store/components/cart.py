@@ -1,8 +1,10 @@
+import json
 from django_unicorn.components import UnicornView
 from store.models import ProductModel
 
 class CartView(UnicornView):
     selected_products = []
+    selected_products_string = ""
     total_gral = 0.0
 
     def add_product(self, instance: ProductModel):
@@ -22,10 +24,12 @@ class CartView(UnicornView):
             'stock': instance.stock,
             'total': float(instance.price),  
         })
+        self.selected_products_string = json.dumps(self.selected_products)
         self.calculate_total_gral()
 
     def remove_product(self, product_id):
         self.selected_products = [product for product in self.selected_products if product['id'] != product_id]
+        self.selected_products_string = json.dumps(self.selected_products)
         self.calculate_total_gral()
 
     def update_quantity(self, product_id, quantity):
@@ -44,3 +48,4 @@ class CartView(UnicornView):
 
     def calculate_total_gral(self):
         self.total_gral = sum(float(product['total']) for product in self.selected_products)
+        
