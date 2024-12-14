@@ -47,8 +47,8 @@
                 {% url 'race-distintion' as rd_url %}
                 {% right_nav_item request.path "/sin-distincion-de-raza/" rd_url "Sin dintincion de raza" %}
 
-                {% url 'travel-restriction' as tr_url %}
-                {% right_nav_item request.path "/restricciones-por-raza/" tr_url "Requisitos de viaje aereo por raza" %}
+                {% comment %} {% url 'travel-restriction' as tr_url %}
+                {% right_nav_item request.path "/restricciones-por-raza/" tr_url "Requisitos de viaje aereo por raza" %} {% endcomment %}
                 
                 {% url 'travel-quietly' as tq_url %}
                 {% right_nav_item request.path "/viaje-tranquilo/" tq_url "Viaje tranquilo" %}
