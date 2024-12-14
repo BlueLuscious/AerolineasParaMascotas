@@ -37,6 +37,8 @@ class PaletteModel(models.Model):
     )
 
     class Meta:
+        verbose_name = "Paleta de Colores"
+        verbose_name_plural = "Paletas de Colores"
         constraints = [
             models.UniqueConstraint(
                 fields=["name", "primary_colour", "secondary_colour", "terciary_colour", ],
