@@ -3,11 +3,11 @@
 
 {% static "img/country-requirement/world-map-2.png" as map_img %}
 <div class="relative flex flex-col lg:flex-row items-center justify-center lg:justify-end gap-y-6 lg:gap-y-12 
-    w-full h-screen p-4 bg-[url('{{ map_img }}')] bg-cover bg-no-repeat bg-center">
+    w-full h-[30rem] lg:h-screen p-4 bg-[url('{{ map_img }}')] bg-cover bg-no-repeat bg-center">
 
     <!-- Difuminado -->
     <div class="absolute bottom-0 left-0 w-full h-full 
-        bg-gradient-to-l from-blue-900/95 from-45% via-blue-900/90 via-55% to-blue-100/90 to-100%">
+        bg-gradient-to-b lg:bg-gradient-to-l from-blue-900/95 from-45% via-blue-900/90 via-55% to-blue-50 to-100%">
     </div>
 
     <!-- Textos-->
@@ -22,7 +22,7 @@
 
         <!-- Boton -->
         {% url "country-requirement" as my_url %}
-        {% custom_button my_url none "Seguir leyendo" %}
+        {% custom_button label="Seguir leyendo" url=my_url btn_tailwind="hover:scale-110" %}
     </div>
 
 </div>

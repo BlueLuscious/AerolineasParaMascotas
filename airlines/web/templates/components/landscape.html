@@ -12,6 +12,6 @@
             {{ "¿A donde vas?"|upper }}
         </div>
         {% url "quotation" as my_url %}
-        {% custom_button my_url none "Cotizar mi translado" %}
+        {% custom_button label="Cotizar mi translado" url=my_url btn_tailwind="hover:scale-110" %}
     </div>
 </div>
