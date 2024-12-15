@@ -10,22 +10,24 @@ class CartView(UnicornView):
     def add_product(self, instance: ProductModel):
         for product in self.selected_products:
             if product['id'] == instance.id:
-                product['quantity'] += 1
-                product['total'] = product['quantity'] * float(product['price'])
-                self.calculate_total_gral()
+                if product['quantity'] < product['stock']:
+                    product['quantity'] += 1
+                    product['total'] = product['quantity'] * float(product['price'])
+                    self.calculate_total_gral()
                 return
 
-        self.selected_products.append({
-            'id': instance.id,
-            'name': instance.name,
-            'price': float(instance.price),  
-            'image_url': instance.image.url,
-            'quantity': 1,
-            'stock': instance.stock,
-            'total': float(instance.price),  
-        })
-        self.selected_products_string = json.dumps(self.selected_products)
-        self.calculate_total_gral()
+        if instance.stock > 0:
+            self.selected_products.append({
+                'id': instance.id,
+                'name': instance.name,
+                'price': float(instance.price),  
+                'image_url': instance.image.url,
+                'quantity': 1,
+                'stock': instance.stock,
+                'total': float(instance.price),  
+            })
+            self.selected_products_string = json.dumps(self.selected_products)
+            self.calculate_total_gral()
 
     def remove_product(self, product_id):
         self.selected_products = [product for product in self.selected_products if product['id'] != product_id]
