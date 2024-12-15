@@ -2,8 +2,8 @@
 {% load inclusiontag.custom_button %}
 
 {% static "img/country-requirement/world-map-2.png" as map_img %}
-<div class="relative flex flex-col lg:flex-row items-center justify-end gap-y-6 lg:gap-y-12 
-    w-full h-full lg:h-screen p-4 bg-[url('{{ map_img }}')] bg-cover bg-no-repeat bg-center">
+<div class="relative flex flex-col lg:flex-row items-center justify-center lg:justify-end gap-y-6 lg:gap-y-12 
+    w-full h-screen p-4 bg-[url('{{ map_img }}')] bg-cover bg-no-repeat bg-center">
 
     <!-- Difuminado -->
     <div class="absolute bottom-0 left-0 w-full h-full 
@@ -11,7 +11,7 @@
     </div>
 
     <!-- Textos-->
-    <div class="z-0 flex flex-col items-center gap-y-6 lg:gap-y-8 w-full lg:w-1/2 rounded-t-lg">
+    <div class="z-0 flex flex-col items-center justify-evenly gap-y-6 lg:gap-y-8 w-full lg:w-1/2 h-full rounded-t-lg">
         <div class="p-4 text-xl md:text-3xl lg:text-5xl text-center text-white font-semibold titles">
             {{ "Requisitos de ingreso por pais"|upper }}
         </div>
