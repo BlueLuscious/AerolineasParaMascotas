@@ -1,14 +1,13 @@
 {% load static %}
 {% load inclusiontag.custom_button %}
 
-<div class="relative w-full h-full bg-[url('{{ url_img }}')] bg-cover bg-no-repeat 
-    bg-[position:-350px_center] sm:bg-center">
+<div class="relative w-full h-full bg-[url('{{ url_img }}')] bg-cover bg-no-repeat bg-center">
     <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-blue-900 to-transparent"></div>
-    <div class="absolute bottom-3 left-0 right-0 flex flex-col items-center gap-y-2 lg:gap-y-4
+    <div class="absolute bottom-12 left-0 right-0 flex flex-col items-center gap-y-2 lg:gap-y-4
         p-2 text-white">
-        <div class="text-lg md:text-2xl lg:text-4xl text-center font-semibold main-title">
+        {% comment %} <div class="text-lg md:text-2xl lg:text-4xl text-center font-semibold main-title">
             {{ "Translado internacional de mascotas"|upper }}
-        </div>
+        </div> {% endcomment %}
         <div class="text-lg md:text-2xl lg:text-4xl">
             {{ "¿A donde vas?"|upper }}
         </div>

@@ -1,26 +1,35 @@
 {% load static %}
+{% load inclusiontag.custom_button %}
 
-<div class="z-30 relative flex flex-col items-center w-full h-screen bg-blue-50">
-    <div class="w-full p-4 md:p-8 bg-red-600 text-lg md:text-3xl lg:text-5xl 
-        text-center text-white font-semibold rounded-b-3xl titles">
-        {{ "Sin distinción de raza"|upper }}
+<div class="relative flex flex-col lg:flex-row-reverse items-center gap-y-6 lg:gap-y-12 
+    w-full h-full lg:h-screen p-4 bg-blue-50">
+
+    <!-- Textos -->
+    <div class="flex flex-col items-center justify-center gap-y-6 lg:gap-y-8 w-full h-full rounded-t-lg">
+        <div class="p-4 bg-blue-900 text-xl md:text-3xl lg:text-5xl text-center text-white font-semibold rounded-sm titles">
+            {{ "Sin distinción de raza"|upper }}
+        </div>
+        <div class="w-full text-lg md:text-2xl lg:text-3xl text-center text-blue-900 font-regular">
+            En Aerolineas para mascotas no hacemos distinción de raza, todas las mascotas son Bienvenidas.
+        </div>
+
+        <!-- Boton -->
+        {% url "race-distintion" as my_url %}
+        {% custom_button my_url none "Seguir leyendo" %}
     </div>
-    <div class="flex flex-col items-center justify-center w-full h-full">
-        <div class="flex flex-col items-center justify-center gap-y-4 w-full">
-            <div class="w-full md:w-3/4 p-2 text-lg md:text-xl lg:text-3xl text-center text-blue-500 
-                font-semibold">
-                En Aerolineas para mascotas no hacemos distinción de raza, todas las mascotas son Bienvenidas.
+
+    <!-- Imagenes -->
+    <div class="flex items-center w-full lg:w-3/4 h-full">
+        <div class="relative flex flex-col lg:flex-col mx-auto">
+            {% static "/img/race-distintion/boxer.webp" as boxer_img %}
+            <div class="w-40 md:w-52 lg:w-64 h-40 md:h-52 lg:h-64 bg-[url('{{ boxer_img }}')] bg-cover bg-no-repeat bg-center 
+                -translate-x-8 translate-y-4 rounded-lg ring ring-blue-900 ring-offset-2 skew-y-3">
             </div>
-            <div class="group w-full md:w-3/4 text-center">
-                <a href="{% url 'race-distintion' %}">
-                    <button type="button"
-                        class="relative inline-block p-2 text-lg md:text-xl lg:text-3xl text-blue-500">
-                        Seguir leyendo
-                        <span
-                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-                    </button>
-                </a>
+            {% static "/img/race-distintion/birmano-cat.png" as birmano_img %}
+            <div class="w-40 md:w-52 lg:w-64 h-40 md:h-52 lg:h-64 bg-[url('{{ birmano_img }}')] bg-cover bg-no-repeat bg-center 
+                translate-x-8 -translate-y-4 rounded-lg ring ring-blue-900 ring-offset-2 -skew-y-3">
             </div>
         </div>
     </div>
+    
 </div>
