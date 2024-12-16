@@ -46,37 +46,37 @@ class ProductDTO:
 
         return self.__dict__
 
-    @classmethod
-    def get_by_id(cls, product_id: int) -> Optional["ProductDTO"] | None:
+    # @classmethod
+    # def get_by_id(cls, product_id: int) -> Optional["ProductDTO"] | None:
 
-        """
-        Busca y retorna una instancia de ProductoDto registrada en la clase por su ID.
+    #     """
+    #     Busca y retorna una instancia de ProductoDto registrada en la clase por su ID.
 
-        Args:
-            product_id (int): ID de la instancia.
+    #     Args:
+    #         product_id (int): ID de la instancia.
 
-        Returns:
-            ProductDTO | None: Instancia del objeto.
-        """
+    #     Returns:
+    #         ProductDTO | None: Instancia del objeto.
+    #     """
 
-        return next((dto for dto in cls._instances if dto.id == product_id), None)
+    #     return next((dto for dto in cls._instances if dto.id == product_id), None)
 
-    @classmethod
-    def remove_instance(cls, product_id: int) -> Optional["ProductDTO"] | bool:
+    # @classmethod
+    # def remove_instance(cls, product_id: int) -> Optional["ProductDTO"] | bool:
         
-        """
-        Elimina una instancia de ProductoDto de la lista _instances por su ID.
+    #     """
+    #     Elimina una instancia de ProductoDto de la lista _instances por su ID.
 
-        Args:
-            product_id (int): ID de la instancia.
+    #     Args:
+    #         product_id (int): ID de la instancia.
         
-        Returns:
-            ProductDTO | bool: Retorna la instancia eliminada, de lo contrario `False`.
-        """
+    #     Returns:
+    #         ProductDTO | bool: Retorna la instancia eliminada, de lo contrario `False`.
+    #     """
 
-        instance: "ProductDTO" = cls.get_by_id(product_id)
-        if instance:
-            instance = cls._instances.pop(instance)
-            return instance
-        return False
+    #     instance: "ProductDTO" = cls.get_by_id(product_id)
+    #     if instance:
+    #         instance = cls._instances.pop(instance)
+    #         return instance
+    #     return False
     
