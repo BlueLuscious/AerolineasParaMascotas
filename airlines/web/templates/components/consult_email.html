@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #333333;
+        }
+        .content p {
+            color: #555555;
+            line-height: 1.6;
+        }
+        .content .field {
+            margin-bottom: 15px;
+        }
+        .content .field span {
+            font-weight: bold;
+            color: #333333;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            color: #777777;
+            font-size: 12px;
+        }
+        .pet-image {
+            width: 100%;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    
+        .product-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 260px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s ease-in-out;
+        }
+    
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+    
+        .product-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+    
+        .product-info {
+            padding: 15px;
+        }
+    
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0 5px;
+        }
+    
+        .product-price {
+            font-size: 16px;
+            color: #007bff;
+            margin: 5px 0;
+        }
+    
+        .product-quantity {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Nueva Solicitud de Cotización</h1>
+        </div>
+        <div class="content">
+            <h2>Detalles del Propietario</h2>
+            <div class="field"><span>Nombre del propietario:</span> {{ email_data.owner_name }}</div>
+            <div class="field"><span>Email:</span> {{ email_data.email }}</div>
+            <div class="field"><span>Teléfono:</span> {{ email_data.phone }}</div>
+
+            <h2>Detalles de la Mascota</h2>
+            <div class="field"><span>Nombre de la mascota:</span> {{ email_data.pet_name }}</div>
+            <div class="field"><span>Edad de la mascota:</span> {{ email_data.pet_age }}</div>
+            <div class="field"><span>Peso de la mascota:</span> {{ email_data.pet_weight }}</div>
+            <div class="field"><span>Raza de la mascota:</span> {{ email_data.pet_breed }}</div>
+            <div class="field"><span>Foto de la mascota:</span>
+                <img src="cid:{{ email_data.image_cid }}" alt="pet_photo" class="pet-image">
+            </div>
+
+            <h2>Detalles del Viaje</h2>
+            <div class="field"><span>Fecha del viaje:</span> {{ email_data.travel_date }}</div>
+            <div class="field"><span>Ciudad de Origen:</span> {{ email_data.origin_city }}</div>
+            <div class="field"><span>Ciudad de Destino:</span> {{ email_data.destination_city }}</div>
+
+            <h2>Comentarios</h2>
+            <div class="field">{{ email_data.comments }}</div>
+
+            <h2>Productos Seleccionados</h2>
+            {% if email_data.selected_products %}
+            <div class="product-container">
+                {% for product in email_data.selected_products %}
+                <div class="product-card">
+                    <img src="cid:{{ product.image_cid }}" alt="product_image" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">{{ product.name }}</h3>
+                        <p class="product-price">Precio: ${{ product.price }}</p>
+                        <p class="product-quantity">Cantidad: {{ product.quantity }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        <div class="footer">
+            <p>Este es un correo generado automáticamente, por favor no responda a este mensaje.</p>
+        </div>
+    </div>
+</body>
+</html>
