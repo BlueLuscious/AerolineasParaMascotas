@@ -13,11 +13,11 @@
         <p class="text-xl sm:text-2xl text-white text-center">
             Para mas información y asesoramiento ir a la pagina de Senasa.
         </p>
-        {% custom_button "https://www.argentina.gob.ar/senasa/portal-de-informacion-para-traslado-de-mascotas-perros-gatos-yo-mascotas-no-tradicionales?tca=XlPkFUmZwX1u1GGp9lU_fzeBjNqkZ2UecdgTwF7ZGM8" "_blank" "Ir a Senasa" %}
+        {% custom_button label="Ir a Senasa" url="https://www.argentina.gob.ar/senasa/portal-de-informacion-para-traslado-de-mascotas-perros-gatos-yo-mascotas-no-tradicionales?tca=XlPkFUmZwX1u1GGp9lU_fzeBjNqkZ2UecdgTwF7ZGM8" target="_blank" btn_tailwind="hover:scale-110" %}
     </div>
 
     {% url "index" as my_url %}
-    {% custom_button my_url none "Volver al Inicio" %}
+    {% custom_button label="Volver al Inicio" url=my_url btn_tailwind="hover:scale-110" %}
 
 </section>
 
