@@ -3,39 +3,49 @@
 
 
 <div id="side_navbar_menu" class="md:hidden fixed z-50 right-0 top-0 flex flex-col w-full h-full 
-    px-5 bg-white transform translate-x-full transition-transform duration-300 ease-in-out">
+    px-5 bg-blue-50 text-blue-900 transform translate-x-full transition-transform duration-300 ease-in-out">
 
-    <div class="flex flex-row items-center justify-between border-b-2 border-gray-300">
-        <div class="text-xl">
+    <div class="flex flex-row items-center justify-between border-b-2 border-blue-900/70">
+        <div class="text-2xl font-semibold">
             Menú
         </div>
         <div id="btn_close_menu" class="flex items-center h-20">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
-                stroke-width="1.5" stroke="currentColor" class="size-7 cursor-pointer">
+                stroke-width="1.5" stroke="currentColor" class="size-7 text-red-700 cursor-pointer">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>          
         </div>
     </div>
 
-    <div class="md:hidden flex flex-col items-center gap-y-6 w-full h-full p-2 py-12 text-black text-center">
-        <a class="w-full" {% if request.path != '/' %} href="{% url 'index' %}" {% endif %}>
-            <div class="p-2
-                {% if request.path == '/' %} bg-blue-500 text-white rounded-sm {% endif %}">
+    <div class="md:hidden flex flex-col items-center gap-y-6 w-full h-full p-2 py-12 text-lg text-center font-medium">
+        <a class="w-full" 
+            {% if request.path != '/' %} href="{% url 'index' %}" {% endif %}>
+            <div class="p-2 rounded-sm
+                {% if request.path == '/' %} bg-red-600 text-white ring-1 ring-red-600 
+                {% else %} ring-1 ring-blue-900
+                {% endif %}">
                 Inicio
             </div>
         </a>
-        <div class="cursor-pointer">
-            <div class="p-2 
-                {% if request.path == '/quienes-somos/' %} bg-blue-500 text-white rounded-sm {% endif %}">
+        <div class="w-full">
+            <div class="p-2 rounded-sm
+                {% if request.path == '/quienes-somos/' %} bg-red-600 text-white ring-1 ring-red-600 
+                {% else %} ring-1 ring-blue-900
+                {% endif %}">
                 Quienes somos
             </div>
         </div>
-        <div id="nav_item_before_fly_mobile" class="relative flex flex-col items-center cursor-pointer">
-            <div class="flex flex-row gap-x-4 h-full p-2">
+        <div id="nav_item_before_fly_mobile" class="z-20 relative flex flex-col items-center w-full cursor-pointer">
+            <div class="flex flex-row justify-center gap-x-4 w-full h-full p-2 rounded-sm
+                {% if request.path == '/sin-distincion-de-raza/' or request.path == '/viaje-tranquilo/' or request.path == '/requisitos-de-ingreso-por-pais/' %}
+                bg-red-600 text-white ring-1 ring-red-600 
+                {% else %}
+                ring-1 ring-blue-900
+                {% endif %}">
                 <div>
                     Previo a volar
                 </div>
-                <div class="item_content flex items-center w-fit text-center text-black">
+                <div class="item_content flex items-center w-fit text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
                         stroke="currentColor" 
                         class="arrow size-5 transition-transform duration-300 ease-in-out rotate-0">
@@ -43,7 +53,7 @@
                     </svg>      
                 </div>
             </div>
-            <div class="sub_menu hidden flex flex-col gap-y-3 p-2 bg-white rounded-sm shadow-lg">
+            <div class="z-10 relative sub_menu hidden flex flex-col gap-y-3 w-full p-2 ring-1 ring-blue-900 rounded-sm shadow-lg">
                 {% url 'race-distintion' as rd_url %}
                 {% right_nav_item request.path "/sin-distincion-de-raza/" rd_url "Sin dintincion de raza" %}
 
@@ -57,11 +67,14 @@
                 {% right_nav_item request.path "/requisitos-de-ingreso-por-pais/" cr_url "Requisitos de ingreso por pais" %}
             </div>
         </div>
-        <div class="cursor-pointer">
-            <div id="contact_us_mobile" class="p-2 
-                {% if request.path == '/contactanos/' %} bg-blue-500 text-white rounded-sm {% endif %}">
+        <a class="w-full" 
+            {% if request.path != '/cotizar-traslado/' %} href="{% url 'quotation' %}" {% endif %}>
+            <div id="contact_us_mobile" class="p-2 rounded-sm
+                {% if request.path == '/cotizar-traslado/' %} bg-red-600 text-white ring-1 ring-red-600 
+                {% else %} ring-1 ring-blue-900
+                {% endif %}">
                 Contactanos
             </div>
-        </div>
+        </a>
     </div>
 </div>

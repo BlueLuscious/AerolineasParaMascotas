@@ -13,13 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const whatsappButton = document.getElementById("whatsapp_button")
     wa_service.redirectToWA(whatsappButton, 0)
-
-    const contactUsButton = document.getElementById("contact_us")
-    wa_service.redirectToWA(contactUsButton, 0)
-
-    const contactUsMobileButton = document.getElementById("contact_us_mobile")
-    wa_service.redirectToWA(contactUsMobileButton, 0)
-    
     
     /* SubMenu Previo a volar */
     const navItemBeforeFly = document.getElementById("nav_item_before_fly")

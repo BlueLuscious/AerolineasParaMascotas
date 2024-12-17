@@ -59,14 +59,14 @@
                     {% nav_item request.path "/requisitos-de-ingreso-por-pais/" cr_url "Requisitos de ingreso por pais" %}
                 </div>
             </div>
-            <div class="cursor-pointer">
+            <a {% if request.path != '/cotizar-traslado/' %} href="{% url 'quotation' %}" {% endif %}>
                 <div id="contact_us" class="p-2
-                    {% if request.path == '/contactanos/' %} bg-white text-blue-900 rounded-sm
-                    {% else %} hover:bg-white hover:text-blue-900 hover:rounded-sm
+                    {% if request.path == '/cotizar-traslado/' %} bg-white text-blue-900 rounded-sm
+                    {% else %} cursor-pointer hover:bg-white hover:text-blue-900 hover:rounded-sm
                     {% endif %}">
                     Contactanos
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </div>
