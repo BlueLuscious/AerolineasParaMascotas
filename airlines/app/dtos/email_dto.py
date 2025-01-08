@@ -1,5 +1,5 @@
 import json, logging
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import List, Optional, Any
 from django.http import HttpRequest
 from app.dtos.product_dto import ProductDTO
@@ -12,10 +12,10 @@ class EmailDataDTO:
 
     """
     Properies:
-        owner_name: str
-        email: str
-        phone: str
-        pet_name: str
+        owner_name: str = "
+        email: str = ""
+        phone: str = ""
+        pet_name: str = ""
         pet_age: Optional[int] = None
         pet_weight: Optional[float] = None
         pet_breed: Optional[str] = None
@@ -28,10 +28,10 @@ class EmailDataDTO:
         selected_products: List[ProductDTO] = field(default_factory=list)
     """
 
-    owner_name: str
-    email: str
-    phone: str
-    pet_name: str
+    owner_name: str = ""
+    email: str = ""
+    phone: str = ""
+    pet_name: str = ""
     pet_age: Optional[int] = None
     pet_weight: Optional[float] = None
     pet_breed: Optional[str] = None
@@ -41,11 +41,10 @@ class EmailDataDTO:
     origin_city: Optional[str] = None
     destination_city: Optional[str] = None
     comments: Optional[str] = None
-    selected_products: List[ProductDTO] = field(default_factory=list)
+    selected_products: list[ProductDTO] = None
 
 
-    @classmethod
-    def from_request(cls, request: HttpRequest) -> "EmailDataDTO":
+    def from_request(self, request: HttpRequest) -> "EmailDataDTO":
 
         """
         Crea una instancia del DTO a partir de una solicitud HTTP.
@@ -58,24 +57,26 @@ class EmailDataDTO:
         """
 
         products_data = request.POST.getlist("selected_products", [])
-        product_list: list[dict] = json.loads(products_data[0])
         products = []
-        for product in product_list:
-            try:
-                product = ProductDTO(
-                    id=product.get("id"),
-                    name=product.get("name"),
-                    price=float(product.get("price")),
-                    quantity=int(product.get("quantity")),
-                    stock=int(product.get("stock")),
-                    total=float(product.get("total")),
-                    image_url=product.get("image_url"),
-                )
-                products.append(product)
-            except (ValueError, KeyError) as e:
-                logger.error(f"Error al procesar producto: {e}")
 
-        return cls(
+        if products_data:
+            product_list: list[dict] = json.loads(products_data[0])
+            for product in product_list:
+                try:
+                    product = ProductDTO(
+                        id=product.get("id"),
+                        name=product.get("name"),
+                        price=float(product.get("price")),
+                        quantity=int(product.get("quantity")),
+                        stock=int(product.get("stock")),
+                        total=float(product.get("total")),
+                        image_url=product.get("image_url"),
+                    )
+                    products.append(product)
+                except (ValueError, KeyError) as e:
+                    logger.error(f"Error al procesar producto: {e}")
+
+        dto = EmailDataDTO(
             owner_name=request.POST.get("owner_name", "").strip(),
             email=request.POST.get("email", "").strip(),
             phone=request.POST.get("phone", "").strip(),
@@ -90,4 +91,6 @@ class EmailDataDTO:
             comments=request.POST.get("comments", "").strip(),
             selected_products=products,
         )
+
+        return dto
     

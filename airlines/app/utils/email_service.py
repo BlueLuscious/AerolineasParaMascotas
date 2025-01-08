@@ -49,19 +49,20 @@ class EmailService:
             self.email_data.image_cid = cid
 
         # Carga imagenes de los productos
-        for index, product in enumerate(self.email_data.selected_products):
-            try:
-                product: ProductDTO
-                product_by_id = ProductModel.objects.get(pk=product.id)
-                with open(product_by_id.image.path, "rb") as image_file:
-                    mime_image = MIMEImage(image_file.read(), _subtype=product_by_id.image.name.split(".")[-1])
-                    cid = f"product_image_{index}"
-                    mime_image.add_header("Content-ID", f"<{cid}>")
-                    mime_image.add_header("Content-Disposition", "inline", filename=product_by_id.image.name)
-                    msg.attach(mime_image)
-                    product.image_cid = cid
-            except FileNotFoundError:
-                logger.info(f"Image not found: {product_by_id.image.path}")
+        if self.email_data.selected_products:
+            for index, product in enumerate(self.email_data.selected_products):
+                try:
+                    product: ProductDTO
+                    product_by_id = ProductModel.objects.get(pk=product.id)
+                    with open(product_by_id.image.path, "rb") as image_file:
+                        mime_image = MIMEImage(image_file.read(), _subtype=product_by_id.image.name.split(".")[-1])
+                        cid = f"product_image_{index}"
+                        mime_image.add_header("Content-ID", f"<{cid}>")
+                        mime_image.add_header("Content-Disposition", "inline", filename=product_by_id.image.name)
+                        msg.attach(mime_image)
+                        product.image_cid = cid
+                except FileNotFoundError:
+                    logger.info(f"Image not found: {product_by_id.image.path}")
 
         # Renderiza el template a string
         html_content = render_to_string("components/consult_email.html", {"email_data": self.email_data})

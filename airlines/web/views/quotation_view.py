@@ -30,7 +30,7 @@ class QuotationView(View):
             return HttpResponse("Error: Bot detected", status=400)
 
         try:
-            email_data = EmailDataDTO.from_request(request)
+            email_data = EmailDataDTO().from_request(request)
             async_task(EmailService(email_data).send_email_with_template)
         except Exception as e:
             logger.error(f"Error sending email: {e}")
