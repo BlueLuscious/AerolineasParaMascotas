@@ -172,9 +172,6 @@ if ENVIRONMENT == "local":
     # and creating unique names for each version so they can safely be cached forever.
     # STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage" 
 
-MEDIA_URL ='/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-
 LOGOUT_REDIRECT_URL = '/web/'#tengo que meter esto pq sino me tira al admin
 
 IMAGES = {
@@ -203,26 +200,9 @@ AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
 AWS_S3_ENDPOINT_URL = os.getenv('AWS_S3_ENDPOINT_URL')
 
-STORAGES = {
-    "default": {
-        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
-        "OPTIONS": {
-            "access_key": AWS_ACCESS_KEY_ID,
-            "secret_key": AWS_SECRET_ACCESS_KEY,
-            "bucket_name": AWS_STORAGE_BUCKET_NAME,
-            "endpoint_url": AWS_S3_ENDPOINT_URL,
-        },
-    },
-    "staticfiles": {
-        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
-        "OPTIONS": {
-            "access_key": AWS_ACCESS_KEY_ID,
-            "secret_key": AWS_SECRET_ACCESS_KEY,
-            "bucket_name": AWS_STORAGE_BUCKET_NAME,
-            "endpoint_url": AWS_S3_ENDPOINT_URL,
-        },
-    },
-}
+DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 
 MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'
-STATIC_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/static/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+
