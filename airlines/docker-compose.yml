@@ -1,0 +1,26 @@
+version: '3.5'
+
+services:
+      
+  postgres:
+    container_name: postgres_container
+    image: postgres:15
+    environment:
+      POSTGRES_USER: barba
+      POSTGRES_PASSWORD: barba
+      POSTGRES_DB: aerolineasparamascotas_db # TODO: CAMBIAR DB
+      PGDATA: /data/postgres
+    volumes:
+       - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+    postgres:

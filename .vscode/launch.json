@@ -6,17 +6,59 @@
     "configurations": [
         {
             "name": "Python: Django",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/airlines/manage.py",
             "args": [
                 "runserver"
             ],
             "env": {
-                "DATABASE_URL":"postgres://barba:barba@127.0.0.1:5432/mydb"
+                "DATABASE_URL":"postgres://barba:barba@127.0.0.1:5432/aerolineasparamascotas_db" // TODO: CAMBIAR DB
             },
             "django": true,
-            "justMyCode": true
+            "justMyCode": true,
+            "program": "${workspaceFolder}/airlines/manage.py",
+        },
+        {
+            "name": "Python: Create Superuser",
+            "type": "debugpy",
+            "request": "launch",
+            "args": [
+                "createsuperuser"
+            ],
+            "env": {
+                "DATABASE_URL":"postgres://barba:barba@127.0.0.1:5432/aerolineasparamascotas_db" // TODO: CAMBIAR DB
+            },
+            "django": true,
+            "justMyCode": true,
+            "program": "${workspaceFolder}/airlines/manage.py",
+        },
+        {
+            "name": "Python: Make Migrations",
+            "type": "debugpy",
+            "request": "launch",
+            "args": [
+                "makemigrations"
+            ],
+            "env": {
+                "DATABASE_URL":"postgres://barba:barba@127.0.0.1:5432/aerolineasparamascotas_db" // TODO: CAMBIAR DB
+            },
+            "django": true,
+            "justMyCode": true,
+            "program": "${workspaceFolder}/airlines/manage.py",
+        },
+        {
+            "name": "Python: Migrate",
+            "type": "debugpy",
+            "request": "launch",
+            "args": [
+                "migrate"
+            ],
+            "env": {
+                "DATABASE_URL":"postgres://barba:barba@127.0.0.1:5432/aerolineasparamascotas_db" // TODO: CAMBIAR DB
+            },
+            "django": true,
+            "justMyCode": true,
+            "program": "${workspaceFolder}/airlines/manage.py",
         }
     ]
 }
