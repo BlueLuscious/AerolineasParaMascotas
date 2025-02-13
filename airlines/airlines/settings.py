@@ -110,20 +110,23 @@ Q_CLUSTER = {
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': dj_database_url.config(
-#         # Replace this value with your local database's connection string.
-#         default="postgres://kmdmkhns:A7hEnJw2bIUwbjzHlb_yHdID8R4TvbZ2@salt.db.elephantsql.com/kmdmkhns",
-#         conn_max_age=600
-#     )
-# }
-if DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+DATABASES = {
+    'default': dj_database_url.config(
+        default=os.environ.get(
+            "DATABASE_URL_CONNECTION", "postgres://barba:barba@127.0.0.1:5432/aerolineasparamascotas_db"
+        ),
+        conn_max_age=600,
+        conn_health_checks=True,
+    )
+}
+
+# if DEBUG:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
