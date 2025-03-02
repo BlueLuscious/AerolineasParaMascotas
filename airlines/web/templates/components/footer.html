@@ -12,8 +12,8 @@
         <img src="{% static 'img/logo-minimalista.png' %}" alt="Logo Aerolíneas para Mascotas"
           class="h-28 w-28 rounded-full shadow-lg " />
       </div>
-      <div class="flex flex-col lg:flex-row items-center lg:justify-between gap-6 p-2">
 
+      <div class="flex flex-col lg:flex-row items-center lg:justify-between gap-6 p-2">
         <!-- Social Networks -->
         <div class="flex flex-col gap-y-4">
           <div class="text-lg">Redes Sociales</div>
@@ -52,9 +52,11 @@
             <img src="{% static 'img/sponsors/aero-arg-2000-logo.png' %}" alt="" class="w-20 bg-white rounded-lg">
           </div>
         </div>
-
       </div>
+
     </div>
+
+
     <!-- #TODO AJUSTAR ESTOS DATOS! -->
     <div class="mt-20 flex flex-col items-center text-gray-300 md:flex-row md:justify-between">
       <p class="text-sm md:order-1">Email: contacto@aerolineasparamascotas.com</p>
@@ -64,5 +66,19 @@
           de 9:00 AM - 16:00 PM</a>
       </div>
     </div>
+
+    <!-- Copyright -->
+    <div id="copyright" class="flex flex-col md:flex-row items-center justify-center gap-3 
+      p-6 text-white text-sm"
+    >
+      <div class="flex flex-row items-center gap-x-3">
+        {% include "icons/copyright.html" %}
+        <div class="text-center">{{ current_year }}, Aerolineas para Mascotas.</div>
+      </div>
+      <div class="text-center">Todos los derechos reservados.</div>
+      <div>|</div>
+      <div class="text-center">Powered by Quinoto</div>
+    </div>
+
   </div>
 </div>
