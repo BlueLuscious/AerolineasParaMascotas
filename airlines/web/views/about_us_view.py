@@ -6,6 +6,6 @@ from django.views import View
 class AboutUsView(View):
     
     def get(self, request: HttpRequest) -> HttpResponse:
-        template = loader.get_template("pages/about-us/about-us.html")
+        template = loader.get_template("pages/about-us.html")
         return HttpResponse(template.render(None, request))
     

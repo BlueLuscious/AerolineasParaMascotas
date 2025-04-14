@@ -17,24 +17,19 @@
         </div>
 
         <div class="hidden md:flex flex-row items-center gap-x-4 text-white">
-            <a {% if request.path != '/' %} href="{% url 'index' %}" {% endif %}>
-                <div class="p-2
-                    {% if request.path == '/' %} bg-white text-blue-900 rounded-sm
-                    {% else %} hover:bg-white hover:text-blue-900 hover:rounded-sm
-                    {% endif %}">
-                    Inicio
-                </div>
-            </a>
-            <div class="cursor-pointer">
-                <div class="p-2
-                    {% if request.path == '/quienes-somos/' %} bg-white text-blue-900 rounded-sm
-                    {% else %} hover:bg-white hover:text-blue-900 hover:rounded-sm
-                    {% endif %}">
-                    Quienes somos
-                </div>
-            </div>
+
+            {% url 'index' as index_url %}
+            {% nav_item request.path "/" index_url "Inicio" %}
+
+            {% url 'about-us' as au_url %}
+            {% nav_item request.path "/quienes-somos/" au_url "Quienes somos" %}
+
             <div id="nav_item_before_fly" class="relative cursor-pointer">
-                <div class="item_content h-full p-2 hover:bg-white hover:text-blue-900 hover:rounded-sm">
+                <div class="item_content h-full p-2 hover:bg-white hover:text-blue-900 hover:rounded-sm
+                    {% if request.path == '/sin-distincion-de-raza/' or request.path == '/viaje-tranquilo/' or request.path == '/requisitos-de-ingreso-por-pais/' %}
+                    bg-white text-blue-900
+                    {% endif %}
+                ">
                     Previo a volar
                 </div>
                 <div class="sub_menu hidden absolute -bottom-100 right-0 w-[18rem] flex flex-col gap-y-3 

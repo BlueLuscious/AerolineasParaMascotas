@@ -1,5 +1,5 @@
 from django.urls import path
-from store.views import product_list
+from web.views.about_us_view import AboutUsView
 from web.views.index_view import IndexView
 from web.views.country_requirement import CountryRequirementView
 from web.views.quotation_view import QuotationView
@@ -9,6 +9,7 @@ from web.views.travel_quietly_view import TravelQuietlyView
 
 urlpatterns = [
     path("", IndexView.as_view(), name="index"),
+    path("quienes-somos/", AboutUsView.as_view(), name="about-us"),
     path("requisitos-de-ingreso-por-pais/", CountryRequirementView.as_view(), name="country-requirement"),
     path("sin-distincion-de-raza/", RaceDistintionView.as_view(), name="race-distintion"),
     path("viaje-tranquilo/", TravelQuietlyView.as_view(), name="travel-quietly"),
