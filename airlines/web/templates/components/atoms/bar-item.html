@@ -1,0 +1,7 @@
+<a id="{{ nav_item_id }}" {% if request_path != the_path %} href="{{ the_url }}" {% endif %}>
+    <div class="py-2 px-6 text-primary-blue_dark rounded-lg transition-all ease-out duration-300
+        {% if request_path == the_path %} bg-primary-blue_light 
+        {% else %} hover:bg-primary-blue_light hover:animate-mini_bounce_fast
+        {% endif %}"
+    >{{ nav_item_content }}</div>
+</a>

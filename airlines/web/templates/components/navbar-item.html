@@ -1,8 +1,0 @@
-<a {% if request_path != the_path %} href="{{ the_url }}" {% endif %}>
-    <div class="p-2 
-        {% if request_path == the_path %} bg-white text-blue-900 rounded-sm
-        {% else %} hover:bg-white hover:text-blue-900 hover:rounded-sm
-        {% endif %}">
-        {{ nav_item_content }}
-    </div>
-</a>
