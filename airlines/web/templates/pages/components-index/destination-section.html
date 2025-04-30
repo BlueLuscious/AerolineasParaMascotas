@@ -1,26 +1,41 @@
-{% load inclusiontag.custom_button %}
 {% load inclusiontag.custom_grid_card %}
 
 
-<section id="destination_section" class="relative flex flex-col items-center gap-y-6 lg:gap-y-12 
-	size-full min-h-screen px-8 py-12 text-secondary-grey_dark scroll-mt-20 lg:scroll-mt-12"
+<section id="destination_section" class="flex flex-col items-center justify-center gap-y-12 size-full 
+	min-h-screen px-8 py-12 bg-gradient-to-b from-primary-blue_light/95 from-10% to-white to-100% 
+	text-secondary-grey_dark scroll-mt-20"
 >
-    <!-- Difuminado -->
-    <div class="absolute bottom-0 left-0 size-full bg-gradient-to-b from-primary-blue_light/95 from-10% to-white to-100%"></div>
 
-	<div class="relative size-full space-y-12">
+	<div class="flex flex-col gap-y-12 size-full">
 		<h1 class="text-3xl md:text-4xl md:text-center text-secondary-grey_dark 
 			font-secondary_font font-black tracking-wide"
 		>Destinos Frecuentes</h1>
 
-		<div class="relative flex flex-col gap-6 lg:gap-y-24 w-full">
-			<div class="space-y-4">
-				<h1>Europa</h1>
-				<div class="grid md:grid-cols-2 lg:grid-cols-7 lg:grid-rows-1 gap-12 size-full group/card-stack">
-					{% for d in european_destinations %}
-					{% grid_card d.container_classes d.classes d.country.airport_image d.country.flag_image d.country.name d.label_classes %}
-					{% endfor %}
-				</div>
+		<div class="flex flex-col gap-y-12 font-primary_font font-black text-secondary-grey_semidark">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 lg:grid-rows-2 gap-12 size-full group/card-stack">
+				{% for destination in european_destinations %}
+				{% grid_card destination.container_classes destination.classes destination.country.airport_image destination.country.flag_image destination.country.name destination.label_classes %}
+				{% endfor %}
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 lg:grid-rows-2 gap-12 size-full group/card-stack">
+				{% for destination in american_destinations %}
+				{% grid_card destination.container_classes destination.classes destination.country.airport_image destination.country.flag_image destination.country.name destination.label_classes %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	<div class="flex flex-col gap-y-12 size-full">
+		<h1 class="text-3xl md:text-4xl md:text-center text-secondary-grey_dark 
+			font-secondary_font font-black tracking-wide"
+		>Destinos Exoticos</h1>
+
+		<div class="font-primary_font font-black text-secondary-grey_semidark">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 lg:grid-rows-2 gap-12 size-full group/card-stack">
+				{% for destination in exotic_destinations %}
+				{% grid_card destination.container_classes destination.classes destination.country.airport_image destination.country.flag_image destination.country.name destination.label_classes %}
+				{% endfor %}
 			</div>
 		</div>
 	</div>
@@ -30,19 +45,19 @@
 <script>
 document.querySelectorAll('.card').forEach(card => {
 	card.addEventListener('mousemove', (e) => {
-		const rect = card.getBoundingClientRect();
-		const x = e.clientX - rect.left;
-		const y = e.clientY - rect.top;
-		const centerX = rect.width / 2;
-		const centerY = rect.height / 2;
-		const rotateX = -(y - centerY) / 10;
-		const rotateY = (x - centerX) / 10;
+		const rect = card.getBoundingClientRect()
+		const x = e.clientX - rect.left
+		const y = e.clientY - rect.top
+		const centerX = rect.width / 2
+		const centerY = rect.height / 2
+		const rotateX = -(y - centerY) / 10
+		const rotateY = (x - centerX) / 10
 
-		card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`;
-	});
+		card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`
+	})
 
 	card.addEventListener('mouseleave', () => {
-		card.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
-	});
-});
+		card.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)'
+	})
+})
 </script>
