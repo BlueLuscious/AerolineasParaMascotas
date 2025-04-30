@@ -6,13 +6,25 @@ register = template.Library()
 
 
 @register.inclusion_tag("components/atoms/bar-item.html")
-def nav_item(request_path: str, the_path: str, the_url: str, nav_item_content: str, nav_item_id: str = "") -> dict:
+def nav_item(
+    current_path: str, nav_item_url: str, nav_item_content: str, nav_item_ref: str = "", path_name: str = "", nav_item_id: str = ""
+) -> dict:
+    if nav_item_ref.startswith("#"):
+        if current_path == "/":
+            href = nav_item_ref
+        else:
+            href = f"/{nav_item_ref}"
+    elif nav_item_ref:
+        href = nav_item_ref
+    else:
+        href = nav_item_url
+
     context = dict(
-        request_path=request_path, 
-        the_path=the_path, 
-        the_url=the_url, 
+        current_path=current_path, 
+        path_name=path_name, 
         nav_item_id=nav_item_id, 
         nav_item_content=nav_item_content, 
+        href=href,
     )
     logger.info(f"category card context: {context}")
     return context

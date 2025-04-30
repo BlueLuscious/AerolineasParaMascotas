@@ -3,7 +3,9 @@ tailwind.config = {
     extend: {
       // Fonts
       fontFamily: {
-        primary_font: ["Fira Sans", 'sans-serif'],
+        primary_font: ["Fira Sans", "sans-serif"],
+        secondary_font: ["Archivo", "sans-serif"],
+        parisienne_font: ["Parisienne", "cursive"],
       },
       // Colours
       colors: {

@@ -2,23 +2,20 @@
 {% load static %}
 
 {% block content %}
-<section class="flex flex-col w-full">
+<main class="flex flex-col w-full">
 
     <!-- Main Banner -->
-    <div class="z-40 w-full h-screen">
+    <section id="" class="z-40 w-full h-screen">
         {% static '/img/Usables/main-banner.png' as url_img %}
         {% include 'components/landscape.html' with url_img=url_img %}
-    </div>
+    </section>
 
-    <!-- Sin distinción de raza  -->
-    {% include './components-index/race-distintion-section.html' %}
+    <!-- About Us Section -->
+    {% include './components-index/about-us-section.html' %}
 
-    <!-- Requisitos de viaje aereo por raza  -->
-    {% comment %} {% static 'img/plane.jpg' as bg_plane %}
-    {% include './components-index/travel-restriction-section.html' with bg_plane=bg_plane %} {% endcomment %}
 
-    <!-- Viaje tranquilo -->
-    {% include './components-index/travel-quietly-section.html' %}
+    <!-- Destination Section -->
+    {% include './components-index/destination-section.html' %}
 
     <!-- Requisitos de ingreso por pais -->
     {% include './components-index/country-requirement-section.html' %}
@@ -30,6 +27,6 @@
     {% include "components/review.html" %}
     {% endif %}
     
-</section>
+</main>
 <script src="{% static 'js/carroussel.js' %}" ></script>
 {% endblock content %}

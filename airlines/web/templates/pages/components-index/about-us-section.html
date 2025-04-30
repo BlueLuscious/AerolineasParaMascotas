@@ -1,0 +1,45 @@
+{% load static %}
+{% load inclusiontag.custom_button %}
+
+<section id="about_us_section" class="flex justify-center size-full min-h-screen px-8 py-12 bg-primary-blue_light 
+    scroll-mt-20 lg:scroll-mt-8"
+>
+    <!-- Main Article -->
+    <article class="grid lg:grid-cols-2 place-items-center gap-y-8 md:gap-x-12 w-full max-w-7xl">
+        <!-- Image -->
+        <div class="max-w-64 flex flex-col items-stretch animate-mini_bounce_medium">
+            <img src="{% static 'img/about-us/dani.jpg' %}" alt="main-img" 
+                class="ring-8 ring-offset-4 ring-blue-900 rounded-full shadow-lg"
+            />
+            <div class="self-end size-10 mr-5 bg-blue-900 rounded-full"></div>
+            <div class="self-end size-6 bg-blue-900 rounded-full"></div>
+        </div>
+  
+        <!-- Text -->
+        <div class="flex flex-col gap-y-6 size-fit max-w-4xl text-left">
+            <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark 
+                font-secondary_font font-black tracking-wide"
+            >Quienes somos</h1>
+            <div class="space-y-2 text-lg md:text-xl text-gray-700 leading-relaxed">
+                <p>
+                    En <span class="text-red-800 font-semibold">Aerolineas para Mascotas</span>, 
+                    volamos alto para que tengas cerca a tu amigo peludo.
+                </p>
+                <p>
+                    Somos una empresa joven que cuenta con bases operativas tanto en Argentina como España; 
+                    buscamos posicionarnos en el mercado, brindando a nuestros clientes un servicio de excelencia.
+                    Entendemos que el transporte de tu mascota y todo lo que conlleva esto, puede ser todo un desafio. 
+                </p>
+                </p>
+                    Es por eso que nuestro compromiso principal es brindarte ante todo seguridad, responsabilidad, 
+                    confianza y todo el amor que necesita tu mascota al momento de emprender un nuevo destino.
+                    Sabemos que son parte de tu familia, por eso deseamos que al momento que nos elijas sepas que 
+                    están en las mejores manos. Para su traslado contamos con personal altamente capacitado, 
+                    que entiende las necesidades de estas en cuanto al manejo de diversas razas. 
+                    Además, contamos con unidades equipadas con sistemas de ventilación y seguridad que garantizan 
+                    un viaje seguro y cómodo para su mascota.
+                </p>
+            </div>
+        </div>
+    </article>
+</section>

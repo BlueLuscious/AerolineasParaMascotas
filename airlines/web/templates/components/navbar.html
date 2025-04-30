@@ -18,21 +18,19 @@
         </button>
 
         <!-- Navbar Items --> <!-- TODO: Quienes Somos, Destinos, Servicios -> Check -->
-        <div class="hidden lg:flex flex-row gap-x-2 text-md text-white">
+        <div class="hidden lg:flex flex-row gap-x-2 text-md">
             {% url 'index' as index_url %}
-            {% nav_item request.path "/" index_url "Inicio" "nav_item_index" %}
+            {% nav_item request.path index_url "Inicio" "#" "/" "nav_item_index" %}
 
             {% url 'about-us' as about_us_url %}
-            {% nav_item request.path "/quienes-somos/" about_us_url "Quienes somos" "nav_item_about_us" %}
+            {% nav_item request.path about_us_url "Quienes somos" "#about_us_section" "/quienes-somos/" "nav_item_about_us" %}
 
-            {% url 'about-us' as about_us_url %}
-            {% nav_item request.path "/destinos/" about_us_url "Destinos" "nav_item_destination" %}
+            {% nav_item request.path about_us_url "Servicios" "" "/servicios/" "nav_item_services" %}
 
-            {% url 'about-us' as about_us_url %}
-            {% nav_item request.path "/servicios/" about_us_url "Servicios" "nav_item_services" %}
+            {% nav_item request.path about_us_url "Destinos" "#destination_section" "/destinos/" "nav_item_destination" %}
 
             {% url 'quotation' as quotation_url %}
-            {% nav_item request.path "/cotizar-traslado/" quotation_url "Contacto" "nav_item_quotation" %}
+            {% nav_item request.path quotation_url "Contacto" "" "/cotizar-traslado/" "nav_item_quotation" %}
         </div>
 
         <!-- Language Selector --> <!-- TODO: I18N with Django -->
