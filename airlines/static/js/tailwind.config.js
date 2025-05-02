@@ -20,7 +20,8 @@ tailwind.config = {
         },
         secondary: {
           grey: "#9ca3af",
-          grey_light: "#f9fafb",
+          grey_extralight: "#f9fafb",
+          grey_light: "#e5e7eb",
           grey_semidark: "#374151",
           grey_dark: "#1f2937",
         },
