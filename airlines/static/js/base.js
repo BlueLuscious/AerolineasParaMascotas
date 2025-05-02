@@ -3,8 +3,10 @@ const wa_service = new WhatsappService()
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const whatsappButton = document.getElementById("whatsapp_button")
-    wa_service.redirectToWA(whatsappButton, 0)
+    const whatsappButton = document.querySelectorAll(".whatsapp_button")
+    whatsappButton.forEach(btn => (
+        wa_service.redirectToWA(btn, 0)
+    ))
 
     // Nav-Link Styles & Interactivity
     const sections = document.querySelectorAll("section")

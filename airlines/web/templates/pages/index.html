@@ -5,10 +5,7 @@
 <main class="flex flex-col w-full">
 
     <!-- Main Banner -->
-    <section id="" class="z-40 w-full h-screen">
-        {% static '/img/Usables/main-banner.png' as url_img %}
-        {% include 'components/landscape.html' with url_img=url_img %}
-    </section>
+    {% include "./components-index/home-section.html" %}
 
     <!-- About Us Section -->
     {% include './components-index/about-us-section.html' %}
