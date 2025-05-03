@@ -24,15 +24,15 @@
             {% url 'index' as index_url %}
             {% nav_item request.path index_url "Inicio" "#" "/" "nav_item_index" %}
 
-            {% url 'about-us' as about_us_url %}
-            {% nav_item request.path about_us_url "Quienes somos" "#about_us_section" "/quienes-somos/" "nav_item_about_us" %}
+            {% nav_item request.path "" "Quienes somos" "#about_us_section" "/quienes-somos/" "nav_item_about_us" %}
 
-            {% nav_item request.path about_us_url "Servicios" "" "/servicios/" "nav_item_services" %}
+            {% nav_item request.path "" "Servicios" "" "/servicios/" "nav_item_services" %}
 
-            {% nav_item request.path about_us_url "Destinos" "#destination_section" "/destinos/" "nav_item_destination" %}
+            {% nav_item request.path "" "Destinos" "#destination_section" "/destinos/" "nav_item_destination" %}
 
-            {% url 'quotation' as quotation_url %}
-            {% nav_item request.path quotation_url "Contacto" "" "/cotizar-traslado/" "nav_item_quotation" %}
+            {% nav_item request.path "" "Contacto" "#quotation_section" "/cotizar-traslado/" "nav_item_quotation" %}
         </div>
+
+        <!-- Language Selector --> <!-- TODO: I18N with Django -->
     </div>
 </div>

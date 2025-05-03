@@ -14,12 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let current_link = ""
 
     activeNavLink(navLinks, current_link)
-
-    document.addEventListener("keypress", (event) => {
-        const key = parseInt(event.key)
-        const link = navLinks[key - 1]
-        if (link) link.click()
-    })
   
     window.addEventListener("scroll", () => {
         sections.forEach(section => {

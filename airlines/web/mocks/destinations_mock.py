@@ -4,17 +4,20 @@ from web.dtos.destination_o import DestinationO
 
 class DestinationMock:
 
+    def __init__(self) -> None:
+        self.airports_static_path = "img/destination/airport"
+        self.flags_static_path = "img/destination/flags"
+
+
     def mock_european_destinations(self) -> list["DestinationCardO"]:
-        airports_static_path = "img/destination/airport"
-        flags_static_path = "img/destination/flags"
         destinations: list[dict, str] = [
             {
                 "destination": {
                     "name": "España",
                     "category": "Frecuente",
                     "continent": "Europa",
-                    "flag_image": f"{flags_static_path}/spain-flag.png",
-                    "airport_image": f"{airports_static_path}/spain-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/spain-flag.png",
+                    "airport_image": f"{self.airports_static_path}/spain-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
@@ -27,8 +30,8 @@ class DestinationMock:
                     "name": "Italia",
                     "category": "Frecuente",
                     "continent": "Europa",
-                    "flag_image": f"{flags_static_path}/italy-flag.png",
-                    "airport_image": f"{airports_static_path}/italy-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/italy-flag.png",
+                    "airport_image": f"{self.airports_static_path}/italy-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
@@ -41,8 +44,8 @@ class DestinationMock:
                     "name": "Portugal",
                     "category": "Frecuente",
                     "continent": "Europa",
-                    "flag_image": f"{flags_static_path}/portugal-flag.png",
-                    "airport_image": f"{airports_static_path}/portugal-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/portugal-flag.png",
+                    "airport_image": f"{self.airports_static_path}/portugal-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
@@ -55,8 +58,8 @@ class DestinationMock:
                     "name": "Francia",
                     "category": "Frecuente",
                     "continent": "Europa",
-                    "flag_image": f"{flags_static_path}/france-flag.png",
-                    "airport_image": f"{airports_static_path}/france-airport.webp",
+                    "flag_image": f"{self.flags_static_path}/france-flag.png",
+                    "airport_image": f"{self.airports_static_path}/france-airport.webp",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
@@ -69,8 +72,8 @@ class DestinationMock:
                     "name": "Alemania",
                     "category": "Frecuente",
                     "continent": "Europa",
-                    "flag_image": f"{flags_static_path}/germany-flag.png",
-                    "airport_image": f"{airports_static_path}/germany-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/germany-flag.png",
+                    "airport_image": f"{self.airports_static_path}/germany-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-5 lg:col-end-7 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
@@ -83,8 +86,8 @@ class DestinationMock:
                     "name": "Austria",
                     "category": "Frecuente",
                     "continent": "Europa",
-                    "flag_image": f"{flags_static_path}/austria-flag.png",
-                    "airport_image": f"{airports_static_path}/austria-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/austria-flag.png",
+                    "airport_image": f"{self.airports_static_path}/austria-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
@@ -106,16 +109,14 @@ class DestinationMock:
 
 
     def mock_american_destinations(self) -> list["DestinationCardO"]:
-        airports_static_path = "img/destination/airport"
-        flags_static_path = "img/destination/flags"
         destinations: list[dict, str] = [
             {
                 "destination": {
                     "name": "Uruguay",
                     "category": "Frecuente",
                     "continent": "America",
-                    "flag_image": f"{flags_static_path}/uruguay-flag.png",
-                    "airport_image": f"{airports_static_path}/uruguay-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/uruguay-flag.png",
+                    "airport_image": f"{self.airports_static_path}/uruguay-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
@@ -128,8 +129,8 @@ class DestinationMock:
                     "name": "Chile",
                     "category": "Frecuente",
                     "continent": "America",
-                    "flag_image": f"{flags_static_path}/chile-flag.png",
-                    "airport_image": f"{airports_static_path}/chile-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/chile-flag.png",
+                    "airport_image": f"{self.airports_static_path}/chile-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
@@ -142,8 +143,8 @@ class DestinationMock:
                     "name": "Bolivia",
                     "category": "Frecuente",
                     "continent": "America",
-                    "flag_image": f"{flags_static_path}/bolivia-flag.png",
-                    "airport_image": f"{airports_static_path}/bolivia-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/bolivia-flag.png",
+                    "airport_image": f"{self.airports_static_path}/bolivia-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
@@ -156,8 +157,8 @@ class DestinationMock:
                     "name": "Paraguay",
                     "category": "Frecuente",
                     "continent": "America",
-                    "flag_image": f"{flags_static_path}/paraguay-flag.png",
-                    "airport_image": f"{airports_static_path}/paraguay-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/paraguay-flag.png",
+                    "airport_image": f"{self.airports_static_path}/paraguay-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
@@ -170,8 +171,8 @@ class DestinationMock:
                     "name": "Brasil",
                     "category": "Frecuente",
                     "continent": "America",
-                    "flag_image": f"{flags_static_path}/brazil-flag.png",
-                    "airport_image": f"{airports_static_path}/brazil-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/brazil-flag.png",
+                    "airport_image": f"{self.airports_static_path}/brazil-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-5 lg:col-end-7 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
@@ -184,8 +185,8 @@ class DestinationMock:
                     "name": "Colombia",
                     "category": "Frecuente",
                     "continent": "America",
-                    "flag_image": f"{flags_static_path}/colombia-flag.png",
-                    "airport_image": f"{airports_static_path}/colombia-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/colombia-flag.png",
+                    "airport_image": f"{self.airports_static_path}/colombia-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
@@ -198,8 +199,8 @@ class DestinationMock:
                     "name": "Perú",
                     "category": "Frecuente",
                     "continent": "America",
-                    "flag_image": f"{flags_static_path}/peru-flag.png",
-                    "airport_image": f"{airports_static_path}/peru-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/peru-flag.png",
+                    "airport_image": f"{self.airports_static_path}/peru-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-7 lg:col-end-9 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
@@ -218,19 +219,74 @@ class DestinationMock:
                 **item.get("destination_card")
             )
         return DestinationCardO.filter(continent="america")
+    
+
+    def mock_north_american_destinations(self) -> list["DestinationCardO"]:
+        destinations: list[dict, str] = [
+            {
+                "destination": {
+                    "name": "Estados Unidos",
+                    "category": "Frecuente",
+                    "continent": "Norte America",
+                    "flag_image": f"{self.flags_static_path}/usa-flag.png",
+                    "airport_image": f"{self.airports_static_path}/usa-airport.jpg",
+                },
+                "destination_card": {
+                    "container_classes": "lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
+                    "classes": "card",
+                    "label_classes": "-top-3 -right-3 rotate-6",
+                }
+            },
+            {
+                "destination": {
+                    "name": "Canada",
+                    "category": "Frecuente",
+                    "continent": "Norte America",
+                    "flag_image": f"{self.flags_static_path}/canada-flag.png",
+                    "airport_image": f"{self.airports_static_path}/canada-airport.jpg",
+                },
+                "destination_card": {
+                    "container_classes": "lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
+                    "classes": "card",
+                    "label_classes": "-top-3 -right-3 rotate-6 lg:top-auto lg:-bottom-3 lg:-rotate-6",
+                }
+            },
+            {
+                "destination": {
+                    "name": "Mexico",
+                    "category": "Frecuente",
+                    "continent": "Norte America",
+                    "flag_image": f"{self.flags_static_path}/mexico-flag.png",
+                    "airport_image": f"{self.airports_static_path}/mexico-airport.jpg",
+                },
+                "destination_card": {
+                    "container_classes": "lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
+                    "classes": "card",
+                    "label_classes": "-top-3 -right-3 rotate-6",
+                }
+            },
+        ]
+
+        DestinationO._destinations = []
+        DestinationCardO._destinations = []
+
+        for item in destinations:
+            DestinationCardO.create(
+                country=DestinationO.create(**item.get("destination")),
+                **item.get("destination_card")
+            )
+        return DestinationCardO.filter(continent="norte america")
 
 
     def mock_exotic_destinations(self) -> list["DestinationCardO"]:
-        airports_static_path = "img/destination/airport"
-        flags_static_path = "img/destination/flags"
         destinations: list[dict, str] = [
             {
                 "destination": {
                     "name": "Australia",
                     "category": "Exotico",
                     "continent": "Oceania",
-                    "flag_image": f"{flags_static_path}/australia-flag.png",
-                    "airport_image": f"{airports_static_path}/australia-airport.webp",
+                    "flag_image": f"{self.flags_static_path}/australia-flag.png",
+                    "airport_image": f"{self.airports_static_path}/australia-airport.webp",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
@@ -243,8 +299,8 @@ class DestinationMock:
                     "name": "Nueva Zelanda",
                     "category": "Exotico",
                     "continent": "Oceania",
-                    "flag_image": f"{flags_static_path}/new-zealand-flag.png",
-                    "airport_image": f"{airports_static_path}/new-zealand-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/new-zealand-flag.png",
+                    "airport_image": f"{self.airports_static_path}/new-zealand-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
@@ -257,8 +313,8 @@ class DestinationMock:
                     "name": "Israel",
                     "category": "Exotico",
                     "continent": "Asia",
-                    "flag_image": f"{flags_static_path}/israel-flag.png",
-                    "airport_image": f"{airports_static_path}/israel-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/israel-flag.png",
+                    "airport_image": f"{self.airports_static_path}/israel-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
@@ -271,8 +327,8 @@ class DestinationMock:
                     "name": "Turquia",
                     "category": "Exotico",
                     "continent": "Asia",
-                    "flag_image": f"{flags_static_path}/turkey-flag.png",
-                    "airport_image": f"{airports_static_path}/turkey-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/turkey-flag.png",
+                    "airport_image": f"{self.airports_static_path}/turkey-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
@@ -285,8 +341,8 @@ class DestinationMock:
                     "name": "Japon",
                     "category": "Exotico",
                     "continent": "Asia",
-                    "flag_image": f"{flags_static_path}/japan-flag.png",
-                    "airport_image": f"{airports_static_path}/japan-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/japan-flag.png",
+                    "airport_image": f"{self.airports_static_path}/japan-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-5 lg:col-end-7 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
@@ -299,8 +355,8 @@ class DestinationMock:
                     "name": "China",
                     "category": "Exotico",
                     "continent": "Asia",
-                    "flag_image": f"{flags_static_path}/china-flag.png",
-                    "airport_image": f"{airports_static_path}/china-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/china-flag.png",
+                    "airport_image": f"{self.airports_static_path}/china-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
@@ -313,8 +369,8 @@ class DestinationMock:
                     "name": "Corea del Sur",
                     "category": "Exotico",
                     "continent": "Asia",
-                    "flag_image": f"{flags_static_path}/south-korea-flag.png",
-                    "airport_image": f"{airports_static_path}/south-korea-airport.jpg",
+                    "flag_image": f"{self.flags_static_path}/south-korea-flag.png",
+                    "airport_image": f"{self.airports_static_path}/south-korea-airport.jpg",
                 },
                 "destination_card": {
                     "container_classes": "lg:col-start-7 lg:col-end-9 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",

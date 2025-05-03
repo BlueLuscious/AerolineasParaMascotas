@@ -8,19 +8,20 @@
     {% include "./components-index/home-section.html" %}
 
     <!-- About Us Section -->
-    {% include './components-index/about-us-section.html' %}
-
+    {% include "./components-index/about-us-section.html" %}
 
     <!-- Destination Section -->
-    {% include './components-index/destination-section.html' %}
+    {% include "./components-index/destination-section.html" %}
 
-    {% include './components-index/analytics-section.html' %}
+
+    <!-- Quotation Section -->
+    {% include "./components-index/quotation-section.html" %}
 
     <!-- Reviews Carroussel -->
-    {% if reviews %}
+    {% comment %} {% if reviews %}
     {% include "components/review.html" %}
-    {% endif %}
+    {% endif %} {% endcomment %}
     
 </main>
-<script src="{% static 'js/carroussel.js' %}" ></script>
+{% comment %} <script src="{% static 'js/carroussel.js' %}" ></script> {% endcomment %}
 {% endblock content %}
