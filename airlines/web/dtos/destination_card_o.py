@@ -1,4 +1,17 @@
+from app.utils.base_query_set import BaseQuerySet
 from web.dtos.destination_o import DestinationO
+
+class DestinationCardOQuerySet(BaseQuerySet["DestinationCardO"]):
+    def filter(self, name:str=None, category:str=None, continent:str=None) -> list["DestinationCardO"]:
+        result = self._data
+        if name:
+            result = [d for d in result if d.country.name.lower() == name.lower()]
+        if category:
+            result = [d for d in result if d.country.category.lower() == category.lower()]
+        if continent:
+            result = [d for d in result if d.country.continent.lower() == continent.lower()]
+        return DestinationCardOQuerySet(result)
+
 
 class DestinationCardO:
     _destinations: list["DestinationCardO"] = []
@@ -22,15 +35,6 @@ class DestinationCardO:
         return instance
 
     @classmethod
-    def all(cls) -> list["DestinationCardO"]:
-        return cls._destinations
-    
-    @classmethod
-    def filter(cls, category: str = None, continent: str = None) -> list["DestinationCardO"]:
-        results = cls._destinations
-        if category:
-            results = [d for d in results if d.country.category.lower() == category.lower()]
-        if continent:
-            results = [d for d in results if d.country.continent.lower() == continent.lower()]
-        return results
+    def all(cls) -> "DestinationCardOQuerySet":
+        return DestinationCardOQuerySet(cls._destinations)
     

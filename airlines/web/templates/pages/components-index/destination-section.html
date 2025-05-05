@@ -1,7 +1,10 @@
+{% load static %}
+{% load unicorn %}
 {% load inclusiontag.custom_grid_card %}
+{% load simpletag.destination_o_tag %}
 
 
-<section id="destination_section" class="flex flex-col items-center justify-center gap-y-16 size-full 
+<section id="destination_section" class="relative flex flex-col items-center justify-center gap-y-16 size-full 
 	min-h-screen px-8 py-12 bg-gradient-to-b from-primary-blue_extralight from-10% to-white to-100% 
 	text-secondary-grey_dark scroll-mt-20"
 >
@@ -12,19 +15,22 @@
 		>Destinos Frecuentes</h1>
 
 		<div class="flex flex-col items-center gap-y-12 font-primary_font font-black text-secondary-grey_semidark">
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-12 size-full md:max-w-4xl group/card-stack">
+			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-12 size-full md:max-w-4xl group/card-stack">
+				{% filter_destinations destinations continent="norte america" as north_american_destinations %}
 				{% for d in north_american_destinations %}
 				{% grid_card d.container_classes d.classes d.country.airport_image d.country.flag_image d.country.name d.label_classes %}
 				{% endfor %}
 			</div>
 
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 lg:grid-rows-2 gap-12 size-full group/card-stack">
+			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 lg:grid-rows-2 gap-12 size-full group/card-stack">
+				{% filter_destinations destinations continent="europa" as european_destinations %}
 				{% for d in european_destinations %}
 				{% grid_card d.container_classes d.classes d.country.airport_image d.country.flag_image d.country.name d.label_classes %}
 				{% endfor %}
 			</div>
 
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 lg:grid-rows-2 gap-12 size-full group/card-stack">
+			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 lg:grid-rows-2 gap-12 size-full group/card-stack">
+				{% filter_destinations destinations continent="america" as american_destinations %}
 				{% for d in american_destinations %}
 				{% grid_card d.container_classes d.classes d.country.airport_image d.country.flag_image d.country.name d.label_classes %}
 				{% endfor %}
@@ -39,7 +45,8 @@
 		>Destinos Exoticos</h1>
 
 		<div class="font-primary_font font-black text-secondary-grey_semidark">
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 lg:grid-rows-2 gap-12 size-full group/card-stack">
+			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 lg:grid-rows-2 gap-12 size-full group/card-stack">
+				{% filter_destinations destinations "exotico" as exotic_destinations %}
 				{% for d in exotic_destinations %}
 				{% grid_card d.container_classes d.classes d.country.airport_image d.country.flag_image d.country.name d.label_classes %}
 				{% endfor %}
@@ -47,24 +54,9 @@
 		</div>
 	</div>
 
+	<!-- Modal Country Description -->
+	{% unicorn "modal" %}
+
 </section>
 
-<script>
-document.querySelectorAll('.card').forEach(card => {
-	card.addEventListener('mousemove', (e) => {
-		const rect = card.getBoundingClientRect()
-		const x = e.clientX - rect.left
-		const y = e.clientY - rect.top
-		const centerX = rect.width / 2
-		const centerY = rect.height / 2
-		const rotateX = -(y - centerY) / 10
-		const rotateY = (x - centerX) / 10
-
-		card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`
-	})
-
-	card.addEventListener('mouseleave', () => {
-		card.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)'
-	})
-})
-</script>
+<script src="{% static 'js/destination.js' %}"></script>
