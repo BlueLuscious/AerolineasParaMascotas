@@ -1,7 +1,7 @@
 from app.utils.base_query_set import BaseQuerySet
 
 class DestinationOQuerySet(BaseQuerySet["DestinationO"]):
-    def filter(self, name:str=None, category:str=None, continent:str=None) -> list["DestinationO"]:
+    def filter(self, name:str=None, category:str=None, continent:str=None) -> "DestinationOQuerySet":
         result = self._data
         if name:
             result = [d for d in result if d.name.lower() == name.lower()]
@@ -37,6 +37,6 @@ class DestinationO:
         return DestinationOQuerySet(cls._destinations)
     
     @classmethod
-    def filter(cls, name:str=None, category:str=None, continent:str=None):
+    def filter(cls, name:str=None, category:str=None, continent:str=None) -> "DestinationOQuerySet":
         return DestinationOQuerySet(cls._destinations).filter(name, category, continent)
     

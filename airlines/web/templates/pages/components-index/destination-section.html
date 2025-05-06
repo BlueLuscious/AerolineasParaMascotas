@@ -15,24 +15,24 @@
 		>Destinos Frecuentes</h1>
 
 		<div class="flex flex-col items-center gap-y-12 font-primary_font font-black text-secondary-grey_semidark">
-			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-12 size-full md:max-w-4xl group/card-stack">
-				{% filter_destinations destinations continent="norte america" as north_american_destinations %}
+			{% filter_destinations destinations continent="norte america" as north_american_destinations %}
+			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ north_american_destinations|length|add:1 }} lg:grid-rows-2 gap-12 size-full md:max-w-4xl group/card-stack">
 				{% for d in north_american_destinations %}
-				{% grid_card d.container_classes d.classes d.country.airport_image d.country.flag_image d.country.name d.label_classes %}
+				{% grid_card forloop.counter "card" d.airport_image d.flag_image d.name %}
 				{% endfor %}
 			</div>
 
-			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 lg:grid-rows-2 gap-12 size-full group/card-stack">
-				{% filter_destinations destinations continent="europa" as european_destinations %}
+			{% filter_destinations destinations continent="europa" as european_destinations %}
+			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ european_destinations|length|add:1 }} lg:grid-rows-2 gap-12 size-full group/card-stack">
 				{% for d in european_destinations %}
-				{% grid_card d.container_classes d.classes d.country.airport_image d.country.flag_image d.country.name d.label_classes %}
+				{% grid_card forloop.counter "card" d.airport_image d.flag_image d.name %}
 				{% endfor %}
 			</div>
 
-			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 lg:grid-rows-2 gap-12 size-full group/card-stack">
-				{% filter_destinations destinations continent="america" as american_destinations %}
+			{% filter_destinations destinations continent="america" as american_destinations %}
+			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ american_destinations|length|add:1 }} lg:grid-rows-2 gap-12 size-full group/card-stack">
 				{% for d in american_destinations %}
-				{% grid_card d.container_classes d.classes d.country.airport_image d.country.flag_image d.country.name d.label_classes %}
+				{% grid_card forloop.counter "card" d.airport_image d.flag_image d.name %}
 				{% endfor %}
 			</div>
 		</div>
@@ -45,10 +45,10 @@
 		>Destinos Exoticos</h1>
 
 		<div class="font-primary_font font-black text-secondary-grey_semidark">
-			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 lg:grid-rows-2 gap-12 size-full group/card-stack">
-				{% filter_destinations destinations "exotico" as exotic_destinations %}
+			{% filter_destinations destinations "exotico" as exotic_destinations %}
+			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ exotic_destinations|length|add:1 }} lg:grid-rows-2 gap-12 size-full group/card-stack">
 				{% for d in exotic_destinations %}
-				{% grid_card d.container_classes d.classes d.country.airport_image d.country.flag_image d.country.name d.label_classes %}
+				{% grid_card forloop.counter "card" d.airport_image d.flag_image d.name %}
 				{% endfor %}
 			</div>
 		</div>

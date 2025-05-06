@@ -1,5 +1,5 @@
 from django_unicorn.components import UnicornView
-from web.dtos.destination_o import DestinationO
+from app.dtos.destination_o import DestinationO
 
 
 class ModalView(UnicornView):

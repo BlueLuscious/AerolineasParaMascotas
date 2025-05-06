@@ -1,5 +1,4 @@
-from web.dtos.destination_card_o import DestinationCardO
-from web.dtos.destination_o import DestinationO
+from app.dtos.destination_o import DestinationO
 
 
 class DestinationMock:
@@ -10,7 +9,7 @@ class DestinationMock:
 
 
     def mock_destinations(self) -> None:
-        destinations: list[dict, str] = [
+        destinations: list[dict] = [
             {
                 "destination": {
                     "name": "España",
@@ -20,11 +19,6 @@ class DestinationMock:
                     "airport_image": f"{self.airports_static_path}/spain-airport.jpg",
                     "airports": ["Aeropuerto Adolfo Suárez Madrid-Barajas", ],
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
             {
                 "destination": {
@@ -35,11 +29,6 @@ class DestinationMock:
                     "airport_image": f"{self.airports_static_path}/italy-airport.jpg",
                     "airports": ["Aeropuerto de Roma-Fiumicino Metropolitan", ],
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6 lg:top-auto lg:-bottom-3 lg:-rotate-6",
-                }
             },
             {
                 "destination": {
@@ -50,11 +39,6 @@ class DestinationMock:
                     "airport_image": f"{self.airports_static_path}/portugal-airport.jpg",
                     "airports": ["Aeropuerto de Lisboa", "Aeropuerto de Oporto-Francisco Sá Carneiro", "Faro International Airport", ],
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
             {
                 "destination": {
@@ -65,11 +49,6 @@ class DestinationMock:
                     "airport_image": f"{self.airports_static_path}/france-airport.webp",
                     "airports": ["Aeropuerto de París-Charles de Gaulle", ],
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6 lg:top-auto lg:-bottom-3 lg:-rotate-6",
-                }
             },
             {
                 "destination": {
@@ -80,11 +59,6 @@ class DestinationMock:
                     "airport_image": f"{self.airports_static_path}/germany-airport.jpg",
                     "airports": ["Aeropuerto de Frankfurt (FRA)", ],
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-5 lg:col-end-7 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
             {
                 "destination": {
@@ -95,11 +69,6 @@ class DestinationMock:
                     "airport_image": f"{self.airports_static_path}/austria-airport.jpg",
                     "airports": ["Aeropuerto de Viena-Schwechat", ],
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6 lg:top-auto lg:-bottom-3 lg:-rotate-6",
-                }
             },
             {
                 "destination": {
@@ -115,11 +84,6 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
             {
                 "destination": {
@@ -135,11 +99,6 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6 lg:top-auto lg:-bottom-3 lg:-rotate-6",
-                }
             },
             {
                 "destination": {
@@ -155,11 +114,6 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
             {
                 "destination": {
@@ -176,11 +130,6 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6 lg:top-auto lg:-bottom-3 lg:-rotate-6",
-                }
             },
             {
                 "destination": {
@@ -191,11 +140,6 @@ class DestinationMock:
                     "airport_image": f"{self.airports_static_path}/brazil-airport.jpg",
                     "airports": ["São Paulo (GRU)", "Río de Janeiro (GIG)", "Brasilia (BSB)", "Belo Horizonte (CNF)", "Recife (REC)", ],
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-5 lg:col-end-7 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
             {
                 "destination": {
@@ -214,11 +158,6 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6 lg:top-auto lg:-bottom-3 lg:-rotate-6",
-                }
             },
             {
                 "destination": {
@@ -236,11 +175,6 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-7 lg:col-end-9 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
             {
                 "destination": {
@@ -251,11 +185,6 @@ class DestinationMock:
                     "airport_image": f"{self.airports_static_path}/usa-airport.jpg",
                     "airports": [],
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
             {
                 "destination": {
@@ -266,11 +195,6 @@ class DestinationMock:
                     "airport_image": f"{self.airports_static_path}/canada-airport.jpg",
                     "airports": [],
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6 lg:top-auto lg:-bottom-3 lg:-rotate-6",
-                }
             },
             {
                 "destination": {
@@ -281,11 +205,6 @@ class DestinationMock:
                     "airport_image": f"{self.airports_static_path}/mexico-airport.jpg",
                     "airports": [],
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
             {
                 "destination": {
@@ -304,11 +223,6 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
             {
                 "destination": {
@@ -327,11 +241,6 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6 lg:top-auto lg:-bottom-3 lg:-rotate-6",
-                }
             },
             {
                 "destination": {
@@ -351,11 +260,6 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-3 lg:col-end-5 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
             {
                 "destination": {
@@ -373,11 +277,6 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-4 lg:col-end-6 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6 lg:top-auto lg:-bottom-3 lg:-rotate-6",
-                }
             },
             {
                 "destination": {
@@ -398,11 +297,6 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-5 lg:col-end-7 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
             {
                 "destination": {
@@ -419,11 +313,6 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:-translate-y-12 lg:hover:-rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6 lg:top-auto lg:-bottom-3 lg:-rotate-6",
-                }
             },
             {
                 "destination": {
@@ -441,19 +330,11 @@ class DestinationMock:
                         ],
                     },
                 },
-                "destination_card": {
-                    "container_classes": "lg:col-start-7 lg:col-end-9 lg:row-start-1 lg:translate-y-12 lg:hover:rotate-1",
-                    "classes": "card",
-                    "label_classes": "-top-3 -right-3 rotate-6",
-                }
             },
         ]
 
         DestinationO._destinations = []
-        DestinationCardO._destinations = []
 
         for item in destinations:
-            DestinationCardO.create(
-                country=DestinationO.create(**item.get("destination")),
-                **item.get("destination_card")
-            )
+            DestinationO.create(**item.get("destination"))
+            
