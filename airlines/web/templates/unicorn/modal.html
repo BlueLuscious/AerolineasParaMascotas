@@ -3,14 +3,14 @@
 
 <div id="modal" class="z-50 fixed inset-0 hidden bg-secondary-grey_dark/50 backdrop-blur-sm">
     <div id="bottom_sheet" class="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex flex-col 
-        items-center gap-y-4 w-full h-[90vh] max-w-2xl p-4 bg-secondary-grey_extralight rounded-t-xl 
-        transition-transform duration-200 ease-out translate-y-full" 
+        items-center gap-y-4 w-full h-[90vh] max-w-2xl p-4 bg-secondary-grey_extralight font-primary_font 
+        rounded-t-xl transition-transform duration-300 ease-out translate-y-full" 
         style="will-change: transform; touch-action: none;"
     >
-        <div id="slider_bar" class="sticky w-16 h-1.5 bg-secondary-grey rounded-full cursor-grab active:cursor-grabbing"></div>
+        <div id="slider_bar" class="sticky w-16 h-1.5 bg-primary-blue_dark rounded-full cursor-grab active:cursor-grabbing"></div>
 
-        <div id="content_modal" class="relative flex flex-col items-center gap-y-6 w-full max-w-2xl 
-            px-4 py-8 text-secondary-grey_dark border-t border-secondary-grey overflow-y-auto"
+        <div id="content_modal" class="relative flex-1 flex flex-col items-center gap-y-6 w-full max-w-2xl 
+            px-4 py-8 text-secondary-grey_dark border-y border-primary-blue_dark overflow-y-auto"
         >
             <div class="flex items-center justify-center gap-x-4">
 				<img src="{% static destination.flag_image %}" class="max-w-12 rounded-full" />
@@ -20,13 +20,13 @@
             {% if destination.airports %}
             <div class="space-y-2 text-center">
                 {% for airport in destination.airports %}
-                <p class="text-secondary-grey_semidark font-primary_font">{{ airport }}</p>
+                <p class="text-secondary-grey_semidark">{{ airport }}</p>
                 {% endfor %}
             </div>
             {% endif %}
             
             {% if destination.metadata %}
-            <div class="flex flex-col gap-y-2 text-secondary-grey_semidark font-primary_font">
+            <div class="flex flex-col gap-y-2 text-secondary-grey_semidark">
                 {% if destination.metadata.title %}
                 <h2 class="text-xl font-bold">{{ destination.metadata.title }}:</h2>
                 {% endif %}
@@ -47,6 +47,21 @@
                 {% endif %}
             </div>
             {% endif %}
+        </div>
+
+        <div id="footer_modal" class="flex justify-end gap-x-4 w-full text-secondary-grey_extralight">
+            <a id="modal_quotation_button" href="#quotation_section" class="flex items-center justify-center gap-x-4 
+                w-fit px-4 py-2 bg-primary-red rounded-md shadow-lg shadow-primary-red/70 hover:animate-pulse"
+            >
+                {% include "icons/envelope.html" with tailwind_class="size-8" %}
+                <span>Solicitá tu cotización</span>
+            </a>
+            <button class="whatsapp_button flex items-center gap-x-4 w-fit px-4 py-2 bg-tertiary-whatsapp_green_tone 
+                text-center rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse"
+            >
+                {% include "icons/whatsapp.html" with tailwind_class="size-7" %}
+                <span>Consultanos</span>
+            </button>
         </div>
 
     </div>

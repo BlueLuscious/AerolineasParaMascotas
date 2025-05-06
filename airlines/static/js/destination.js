@@ -2,6 +2,7 @@ const modal = document.getElementById("modal");
 const sheet = modal.querySelector("#bottom_sheet");
 const sliderBar = sheet.querySelector("#slider_bar")
 const modalContent = sheet.querySelector("#content_modal")
+const modalQuotationBtn = sheet.querySelector("#modal_quotation_button")
 const cards = document.querySelectorAll(".card");
 
 cards.forEach(card => {
@@ -26,8 +27,10 @@ function openModalWithData(name) {
 	Unicorn.call("modal", "select_destination", name)
 	setTimeout(() => {
 		openModal()
-	}, 200);
+	}, 300);
 }
+
+modalQuotationBtn.addEventListener("click", closeModal)
 
 document.addEventListener("click", (e) => {
 	const clickedInsideSheet = sheet.contains(e.target);
@@ -44,7 +47,7 @@ function openModal() {
 
 	setTimeout(() => {
 		sheet.classList.remove("translate-y-full");
-	}, 200);
+	}, 300);
 }
 
 function closeModal() {
@@ -53,7 +56,7 @@ function closeModal() {
 
 	setTimeout(() => {
 		modal.classList.add("hidden");
-	}, 200);
+	}, 300);
 }
 
 
@@ -87,7 +90,7 @@ sliderBar.addEventListener("pointerup", () => {
 		sheet.style.transform = "";
 		requestAnimationFrame(() => {
 			sheet.classList.add("translate-y-full");
-			setTimeout(() => closeModal(), 200);
+			setTimeout(() => closeModal(), 300);
 		});
 	} else {
 		sheet.style.transform = "";
