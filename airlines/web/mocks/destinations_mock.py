@@ -9,6 +9,41 @@ class DestinationMock:
 
 
     def mock_destinations(self) -> None:
+        description_european_union = [
+            {"no_key": [{"no_key": "La Unión Europea (UE) tiene regulaciones específicas para la entrada de mascotas desde terceros países. A continuación, te presentamos una descripción general de los requisitos necesarios:"}, ]},
+            {"Documentación": [
+                    {"Pasaporte para animales de compañía": "Es obligatorio un pasaporte que identifique a la mascota y contenga información sobre su salud y vacunación."},
+                    {"Certificado de salud veterinario": "Un certificado emitido por un veterinario autorizado que confirme la salud de la mascota y su aptitud para viajar."},
+                    {"Certificado de vacunación": "La mascota debe estar vacunada contra la rabia y otras enfermedades relevantes."},
+                ],
+            },
+            {"Vacunación y tratamientos": [
+                    {"Vacunación contra la rabia": "La mascota debe estar vacunada contra la rabia con una vacuna aprobada por la UE."},
+                    {"Tratamiento contra parásitos": "La mascota debe recibir un tratamiento contra parásitos (garrapatas, pulgas, etc.) antes de viajar."},
+                ],
+            },
+            {"Identificación": [{"Microchip": "La mascota debe tener un microchip ISO 11784/11785 que permita su identificación."}, ]},
+            {"Permisos y autorizaciones": [
+                    {"Permiso de importación": "En algunos casos, se requiere un permiso de importación emitido por la autoridad competente del país de destino."},
+                    {"Notificación a la autoridad competente": "Es posible que se requiera notificar a la autoridad competente del país de destino sobre la entrada de la mascota."},
+                ],
+            },
+            {"Condiciones de transporte": [
+                    {"Contenedor de transporte": "La mascota debe viajar en un contenedor adecuado que cumpla con los estándares internacionales."},
+                    {"Condiciones de viaje": "La mascota debe viajar en condiciones seguras y cómodas."},
+                ],
+            },
+            {"Importante": [
+                    {"Verificar requisitos específicos": "Los requisitos pueden variar dependiendo del país de destino dentro de la UE y del tipo de mascota. Es fundamental verificar los requisitos específicos para cada caso."},
+                    {"Consultar con las autoridades competentes": "Es recomendable consultar con las autoridades competentes del país de destino y con un veterinario autorizado para asegurarse de cumplir con todos los requisitos."},
+                ],
+            },
+            {"Aerolineas para Mascotas": [
+                    {"no_key": "En Aerolineas para Mascotas, nos comprometemos a ayudarte a navegar por los requisitos y regulaciones para el traslado internacional de mascotas. Nuestro equipo de expertos está aquí para asistirte en cada paso del proceso. ¡Contáctanos para obtener más información!"},
+                ],
+            },
+        ]
+
         destinations: list[dict] = [
             {
                 "destination": {
@@ -18,6 +53,10 @@ class DestinationMock:
                     "flag_image": f"{self.flags_static_path}/spain-flag.png",
                     "airport_image": f"{self.airports_static_path}/spain-airport.jpg",
                     "airports": ["Aeropuerto Adolfo Suárez Madrid-Barajas", ],
+                    "metadata": {
+                        "title": "Requisitos para Entrar con Mascotas a la Unión Europea",
+                        "description": description_european_union,
+                    },
                 },
             },
             {
@@ -28,6 +67,10 @@ class DestinationMock:
                     "flag_image": f"{self.flags_static_path}/italy-flag.png",
                     "airport_image": f"{self.airports_static_path}/italy-airport.jpg",
                     "airports": ["Aeropuerto de Roma-Fiumicino Metropolitan", ],
+                    "metadata": {
+                        "title": "Requisitos para Entrar con Mascotas a la Unión Europea",
+                        "description": description_european_union,
+                    },
                 },
             },
             {
@@ -38,6 +81,10 @@ class DestinationMock:
                     "flag_image": f"{self.flags_static_path}/portugal-flag.png",
                     "airport_image": f"{self.airports_static_path}/portugal-airport.jpg",
                     "airports": ["Aeropuerto de Lisboa", "Aeropuerto de Oporto-Francisco Sá Carneiro", "Faro International Airport", ],
+                    "metadata": {
+                        "title": "Requisitos para Entrar con Mascotas a la Unión Europea",
+                        "description": description_european_union,
+                    },
                 },
             },
             {
@@ -48,6 +95,10 @@ class DestinationMock:
                     "flag_image": f"{self.flags_static_path}/france-flag.png",
                     "airport_image": f"{self.airports_static_path}/france-airport.webp",
                     "airports": ["Aeropuerto de París-Charles de Gaulle", ],
+                    "metadata": {
+                        "title": "Requisitos para Entrar con Mascotas a la Unión Europea",
+                        "description": description_european_union,
+                    },
                 },
             },
             {
@@ -58,6 +109,10 @@ class DestinationMock:
                     "flag_image": f"{self.flags_static_path}/germany-flag.png",
                     "airport_image": f"{self.airports_static_path}/germany-airport.jpg",
                     "airports": ["Aeropuerto de Frankfurt (FRA)", ],
+                    "metadata": {
+                        "title": "Requisitos para Entrar con Mascotas a la Unión Europea",
+                        "description": description_european_union,
+                    },
                 },
             },
             {
@@ -68,6 +123,10 @@ class DestinationMock:
                     "flag_image": f"{self.flags_static_path}/austria-flag.png",
                     "airport_image": f"{self.airports_static_path}/austria-airport.jpg",
                     "airports": ["Aeropuerto de Viena-Schwechat", ],
+                    "metadata": {
+                        "title": "Requisitos para Entrar con Mascotas a la Unión Europea",
+                        "description": description_european_union,
+                    },
                 },
             },
             {
@@ -80,7 +139,7 @@ class DestinationMock:
                     "airports": [],
                     "metadata": {
                         "description": [
-                            {"no_key": "Entrega en domicilio y de manera Terrestre desde Argentina. Gestionamos toda la documentación sanitaria."},
+                            {"no_key": [{"no_key": "Entrega en domicilio y de manera Terrestre desde Argentina. Gestionamos toda la documentación sanitaria."}, ]},
                         ],
                     },
                 },
@@ -95,7 +154,7 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional Arturo Merino Benítez", ],
                     "metadata": {
                         "description": [
-                            {"Documentación": "Certificado sanitario, certificado de vacunación antirrábica y, en algunos casos, el Certificado Zoosanitario de Exportación."},
+                            {"Documentación": [{"no_key": "Certificado sanitario, certificado de vacunación antirrábica y, en algunos casos, el Certificado Zoosanitario de Exportación."}, ]},
                         ],
                     },
                 },
@@ -110,7 +169,7 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional Viru Viru (VVI)", ],
                     "metadata": {
                         "description": [
-                            {"no_key": "En Bolivia, los aeropuertos que permiten la entrada de mascotas generalmente son los aeropuertos internacionales, que incluyen La Paz (LPB), Santa Cruz (VVI) y Cochabamba (CBB). Sin embargo, es crucial verificar con la aerolínea y con el Ministerio de Desarrollo Rural y Tierras (MDRyT) los requisitos específicos para el transporte de mascotas, incluyendo la necesidad de un permiso de importación."},
+                            {"no_key": [{"no_key": "En Bolivia, los aeropuertos que permiten la entrada de mascotas generalmente son los aeropuertos internacionales, que incluyen La Paz (LPB), Santa Cruz (VVI) y Cochabamba (CBB). Sin embargo, es crucial verificar con la aerolínea y con el Ministerio de Desarrollo Rural y Tierras (MDRyT) los requisitos específicos para el transporte de mascotas, incluyendo la necesidad de un permiso de importación."}, ]},
                         ],
                     },
                 },
@@ -125,8 +184,8 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional Silvio Pettirossi-Luque", ],
                     "metadata": {
                         "description": [
-                            {"no_key": "En Paraguay, los aeropuertos que permiten la entrada de mascotas generalmente están sujetos a los requisitos de la línea aérea y las regulaciones sanitarias del país. La mayoría de las líneas aéreas que operan en Paraguay, como Paranair, Flybondi, y Air Europa, permiten el transporte de mascotas en cabina o en bodega, siempre y cuando se cumplan ciertos requisitos, como el peso, las dimensiones del transportín, la edad de la mascota y la documentación necesaria."},
-                            {"Documentación": "Certificado de salud veterinario, carnet de vacunación (especialmente antirrábica), certificado de desparasitación y en algunos casos, pasaporte o certificado internacional."}
+                            {"no_key": [{"no_key": "En Paraguay, los aeropuertos que permiten la entrada de mascotas generalmente están sujetos a los requisitos de la línea aérea y las regulaciones sanitarias del país. La mayoría de las líneas aéreas que operan en Paraguay, como Paranair, Flybondi, y Air Europa, permiten el transporte de mascotas en cabina o en bodega, siempre y cuando se cumplan ciertos requisitos, como el peso, las dimensiones del transportín, la edad de la mascota y la documentación necesaria."},]},
+                            {"Documentación": [{"no_key": "Certificado de salud veterinario, carnet de vacunación (especialmente antirrábica), certificado de desparasitación y en algunos casos, pasaporte o certificado internacional."}, ]},
                         ],
                     },
                 },
@@ -138,7 +197,16 @@ class DestinationMock:
                     "continent": "America",
                     "flag_image": f"{self.flags_static_path}/brazil-flag.png",
                     "airport_image": f"{self.airports_static_path}/brazil-airport.jpg",
-                    "airports": ["São Paulo (GRU)", "Río de Janeiro (GIG)", "Brasilia (BSB)", "Belo Horizonte (CNF)", "Recife (REC)", ],
+                    "airports": [],
+                    "metadata": {
+                        "title": "Aeropuertos internacionales en Brasil que reciben mascotas" ,
+                        "description": [
+                            {"São Paulo (GRU)": [{"no_key": "Es el aeropuerto más grande de Brasil y ofrece múltiples conexiones internacionales, lo que lo convierte en una excelente opción para viajes con mascotas."}, ]},
+                            {"Brasilia (BSB)": [{"no_key": "La capital de Brasil cuenta con servicios para viajeros con mascotas y ofrece una amplia gama de opciones para el transporte de animales."}, ]},
+                            {"Belo Horizonte (CNF)": [{"no_key": "La región metropolitana de Belo Horizonte también cuenta con buena infraestructura para el transporte de animales en vuelos internacionales."}, ]},
+                            {"Recife (REC)": [{"no_key": "Ubicado en el noreste de Brasil, Recife es otro aeropuerto popular que acepta mascotas en vuelos internacionales."}, ]},
+                        ],
+                    }
                 },
             },
             {
@@ -152,9 +220,9 @@ class DestinationMock:
                     "metadata": {
                         "title": "Ingreso a Colombia",
                         "description": [
-                            {"no_key": "Para ingresar al país con perros y gatos, se debe registrar previamente el ingreso a través del sitio web del ICA."},
-                            {"no_key": "Al llegar al aeropuerto, se deberá presentar la documentación requerida a la oficina del ICA para obtener el Certificado de Inspección Sanitaria (CIS)."},
-                            {"no_key": "Las mascotas deben tener vacunación vigente contra la rabia y estar desparasitadas."},
+                            {"no_key": [{"no_key": "Para ingresar al país con perros y gatos, se debe registrar previamente el ingreso a través del sitio web del ICA."}, ]},
+                            {"no_key": [{"no_key": "Al llegar al aeropuerto, se deberá presentar la documentación requerida a la oficina del ICA para obtener el Certificado de Inspección Sanitaria (CIS)."}, ]},
+                            {"no_key": [{"no_key": "Las mascotas deben tener vacunación vigente contra la rabia y estar desparasitadas."}, ]},
                         ],
                     },
                 },
@@ -170,8 +238,13 @@ class DestinationMock:
                     "metadata": {
                         "title": "Requisitos para viajar con mascotas en el Aeropuerto Jorge Chávez",
                         "description": [
-                            {"Certificado sanitario": "Es indispensable para el ingreso a Perú, debe ser emitido en el país de origen y demostrar que la mascota está vacunada contra las enfermedades relevantes."},
-                            {"Vacunas": "Los animales deben estar vacunados contra las enfermedades específicas según su especie (Perros: Distemper, Hepatitis canina, Leptosirosis, Parvovirosis, Rabia, Parainfluenza; Gatos: Panleucoopenia felina, Calicivirosis, Rinotraqueitis, Leucemia felina, Rabia"},
+                            {"Certificado sanitario": [{"no_key": "Es indispensable para el ingreso a Perú, debe ser emitido en el país de origen y demostrar que la mascota está vacunada contra las enfermedades relevantes."}, ]},
+                            {"Vacunas": [
+                                    {"no_key": "Los animales deben estar vacunados contra las enfermedades específicas según su especie."}, 
+                                    {"Perros": "Distemper, Hepatitis canina, Leptosirosis, Parvovirosis, Rabia, Parainfluenza."},
+                                    {"Gatos": "Panleucoopenia felina, Calicivirosis, Rinotraqueitis, Leucemia felina, Rabia."}, 
+                                ]
+                            },
                         ],
                     },
                 },
@@ -183,17 +256,22 @@ class DestinationMock:
                     "continent": "Norte America",
                     "flag_image": f"{self.flags_static_path}/usa-flag.png",
                     "airport_image": f"{self.airports_static_path}/usa-airport.jpg",
-                    "airports": [],
+                    "airports": ["Aeropuerto internacional en Florida", ],
+                    "metadata": {
+                        "description": [
+                            {"no_key": [{"no_key": "Para entrar con mascotas a Estados Unidos, es crucial seguir los requisitos de los Centers for Disease Control and Prevention (CDC). Los perros deben tener al menos 6 meses de edad, tener un microchip y estar vacunados contra la rabia. Además, deben tener un certificado de salud y de vacunación antirrábica válido. También se requiere un formulario de importación para perros, emitido por la CDC."}, ]},
+                        ],
+                    },
                 },
             },
             {
                 "destination": {
-                    "name": "Canada",
+                    "name": "Canadá",
                     "category": "Frecuente",
                     "continent": "Norte America",
                     "flag_image": f"{self.flags_static_path}/canada-flag.png",
                     "airport_image": f"{self.airports_static_path}/canada-airport.jpg",
-                    "airports": [],
+                    "airports": ["Aeropuerto Internacional Pearson de Toronto (YYZ)", "Aeropuerto Internacional Montreal-Trudeau (YUL)", ],
                 },
             },
             {
@@ -203,7 +281,13 @@ class DestinationMock:
                     "continent": "Norte America",
                     "flag_image": f"{self.flags_static_path}/mexico-flag.png",
                     "airport_image": f"{self.airports_static_path}/mexico-airport.jpg",
-                    "airports": [],
+                    "airports": ["Aeropuerto Internacional de la Ciudad de México (AICM)", ],
+                    "metadata": {
+                        "description": [
+                            {"no_key": [{"no_key": "Para ingresar con mascotas, es importante consultar con la aerolínea sobre los requisitos específicos para cada tipo de mascota y el tamaño del contenedor."}, ]},
+                            {"En resumen": [{"no_key": "El AICM es un aeropuerto pet-friendly, pero se deben cumplir con ciertos requisitos para viajar con mascotas, incluyendo el uso de contenedores/jaulas, el registro con la aerolínea y la consulta de los requisitos de SENASICA."}, ]},
+                        ],
+                    },
                 },
             },
             {
@@ -216,10 +300,10 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional de Melbourne", ],
                     "metadata": {
                         "description": [
-                            {"Cuarentena": "Una vez que la mascota llega a Melbourne, será trasladada al centro de cuarentena posterior a la entrada en Mickleham para un período de cuarentena, que varía según el país de origen de la mascota. Desde Argentina la cuarentena no supera los 30 días."},
-                            {"Viaje de bodega de carga": "Las mascotas deben viajar en la bodega de carga como carga declarada en un transportín aprobado por la IATA."},
-                            {"No se permiten traslados nacionales": "No se permite que las mascotas lleguen a otro aeropuerto australiano y luego viajen en un vuelo nacional a Melbourne."},
-                            {"Requisitos de cuarentena": "Se deben seguir los requisitos de cuarentena estrictos del Departamento de Agricultura, Pesca y Recursos Forestales (DAFF) de Australia"},
+                            {"Cuarentena": [{"no_key": "Una vez que la mascota llega a Melbourne, será trasladada al centro de cuarentena posterior a la entrada en Mickleham para un período de cuarentena, que varía según el país de origen de la mascota. Desde Argentina la cuarentena no supera los 30 días."}, ]},
+                            {"Viaje de bodega de carga": [{"no_key": "Las mascotas deben viajar en la bodega de carga como carga declarada en un transportín aprobado por la IATA."}, ]},
+                            {"No se permiten traslados nacionales": [{"no_key": "No se permite que las mascotas lleguen a otro aeropuerto australiano y luego viajen en un vuelo nacional a Melbourne."}, ]},
+                            {"Requisitos de cuarentena": [{"no_key": "Se deben seguir los requisitos de cuarentena estrictos del Departamento de Agricultura, Pesca y Recursos Forestales (DAFF) de Australia"}, ]},
                         ],
                     },
                 },
@@ -234,10 +318,10 @@ class DestinationMock:
                     "airports": ["Aeropuerto de Auckland", "Aeropuerto de Christchurc", ],
                     "metadata": {
                         "description": [
-                            {"no_key": "Para traer mascotas a Nueva Zelanda, es fundamental que se cumplan los estrictos requisitos sanitarios y veterinarios del país."},
-                            {"no_key": "El Ministerio de Industrias Primarias (MPI) solo permite la entrada de perros y gatos de países considerados libres o controlados de rabia."},
-                            {"no_key": "Las mascotas deben tener un microchip antes de cualquier tratamiento para la importación."},
-                            {"no_key": "Se necesita documentación que confirme que el microchip fue implantado y/o escaneado antes de la vacunación primaria contra la rabia y todos los tratamientos posteriores."},
+                            {"no_key": [{"no_key": "Para traer mascotas a Nueva Zelanda, es fundamental que se cumplan los estrictos requisitos sanitarios y veterinarios del país."}, ]},
+                            {"no_key": [{"no_key": "El Ministerio de Industrias Primarias (MPI) solo permite la entrada de perros y gatos de países considerados libres o controlados de rabia."}, ]},
+                            {"no_key": [{"no_key": "Las mascotas deben tener un microchip antes de cualquier tratamiento para la importación."}, ]},
+                            {"no_key": [{"no_key": "Se necesita documentación que confirme que el microchip fue implantado y/o escaneado antes de la vacunación primaria contra la rabia y todos los tratamientos posteriores."}, ]},
                         ],
                     },
                 },
@@ -252,18 +336,18 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional Ben Gurión en Lod", ],
                     "metadata": {
                         "description": [
-                            {"no_key": "El Aeropuerto Internacional Ben Gurión en Lod, cerca de Tel Aviv, es el principal aeropuerto internacional de Israel y permite la entrada de mascotas."},
-                            {"Mascotas en cabina": "Las mascotas pueden viajar en cabina si pesan hasta 8 kg, incluyendo el transportín, y si el transportín cumple con las dimensiones permitidas por la aerolínea."},
-                            {"Mascotas en bodega": "Las mascotas también pueden viajar como equipaje en bodega, pero deben estar en una jaula rígida y segura, según las regulaciones de la aerolínea."},
-                            {"Permiso de importación": "Es crucial obtener el permiso de importación antes de viajar a Israel con mascotas."},
-                            {"Otras consideraciones": "Es recomendable verificar las regulaciones específicas de cada aerolínea antes de reservar el vuelo, ya que pueden variar."},
+                            {"no_key": [{"no_key": "El Aeropuerto Internacional Ben Gurión en Lod, cerca de Tel Aviv, es el principal aeropuerto internacional de Israel y permite la entrada de mascotas."}, ]},
+                            {"Mascotas en cabina": [{"no_key": "Las mascotas pueden viajar en cabina si pesan hasta 8 kg, incluyendo el transportín, y si el transportín cumple con las dimensiones permitidas por la aerolínea."}, ]},
+                            {"Mascotas en bodega": [{"no_key": "Las mascotas también pueden viajar como equipaje en bodega, pero deben estar en una jaula rígida y segura, según las regulaciones de la aerolínea."}, ]},
+                            {"Permiso de importación": [{"no_key": "Es crucial obtener el permiso de importación antes de viajar a Israel con mascotas."}, ]},
+                            {"Otras consideraciones": [{"no_key": "Es recomendable verificar las regulaciones específicas de cada aerolínea antes de reservar el vuelo, ya que pueden variar."}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Turquia",
+                    "name": "Turquía",
                     "category": "Exotico",
                     "continent": "Asia",
                     "flag_image": f"{self.flags_static_path}/turkey-flag.png",
@@ -271,16 +355,16 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional de Estambul (IST)", ],
                     "metadata": {
                         "description": [
-                            {"no_key": "Además, algunas aerolíneas, como Turkish Airlines, tienen políticas específicas para el transporte de mascotas."},
-                            {"Turkish Airlines": "Tiene una política de mascotas que incluye la posibilidad de viajar en cabina o bodega, según el peso y tamaño de la mascota y su transportín."},
-                            {"Consideraciones": "Es importante verificar las políticas de cada aerolínea y cumplir con los requisitos de salud y documentación necesarios para viajar con mascotas a Turquía."},
+                            {"no_key": [{"no_key": "Además, algunas aerolíneas, como Turkish Airlines, tienen políticas específicas para el transporte de mascotas."}, ]},
+                            {"Turkish Airlines": [{"no_key": "Tiene una política de mascotas que incluye la posibilidad de viajar en cabina o bodega, según el peso y tamaño de la mascota y su transportín."}, ]},
+                            {"Consideraciones": [{"no_key": "Es importante verificar las políticas de cada aerolínea y cumplir con los requisitos de salud y documentación necesarios para viajar con mascotas a Turquía."}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Japon",
+                    "name": "Japón",
                     "category": "Exotico",
                     "continent": "Asia",
                     "flag_image": f"{self.flags_static_path}/japan-flag.png",
@@ -289,11 +373,11 @@ class DestinationMock:
                     "metadata": {
                         "title": "Requisitos para viajar con mascotas a Japón",
                         "description": [
-                            {"Microchip": "Las mascotas deben tener un microchip."},
-                            {"Vacunación contra la rabia": "La vacunación debe ser al menos 30 días antes de la entrada al país."},
-                            {"Prueba de titulación de rabia": "Se requiere una prueba para asegurar la efectividad de la vacuna contra la rabia."},
-                            {"Cuarentena": "Dependiendo de los requisitos cumplidos por la mascota, puede haber un período de cuarentena de 12 horas o más."},
-                            {"Documentación": "Se debe presentar la documentación requerida, como el certificado ASE-3293 y la solicitud de inspección de importación."},
+                            {"Microchip": [{"no_key": "Las mascotas deben tener un microchip."}, ]},
+                            {"Vacunación contra la rabia": [{"no_key": "La vacunación debe ser al menos 30 días antes de la entrada al país."}, ]},
+                            {"Prueba de titulación de rabia": [{"no_key": "Se requiere una prueba para asegurar la efectividad de la vacuna contra la rabia."}, ]},
+                            {"Cuarentena": [{"no_key": "Dependiendo de los requisitos cumplidos por la mascota, puede haber un período de cuarentena de 12 horas o más."}, ]},
+                            {"Documentación": [{"no_key": "Se debe presentar la documentación requerida, como el certificado ASE-3293 y la solicitud de inspección de importación."}, ]},
                         ],
                     },
                 },
@@ -308,8 +392,8 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional de Beijing", ],
                     "metadata": {
                         "description": [
-                            {"Cuarentena": "Las mascotas que ingresan a China pueden estar sujetas a cuarentena."},
-                            {"Restricciones": "Solo se permite una mascota por pasajero."},
+                            {"Cuarentena": [{"no_key": "Las mascotas que ingresan a China pueden estar sujetas a cuarentena."}, ]},
+                            {"Restricciones": [{"no_key": "Solo se permite una mascota por pasajero."}, ]},
                         ],
                     },
                 },
@@ -325,8 +409,8 @@ class DestinationMock:
                     "metadata": {
                         "title": "Requisitos para viajar con mascotas a Corea del Sur",
                         "description": [
-                            {"Documentación": "Es necesario tener la documentación de la mascota en regla, incluyendo el certificado de vacunación contra la rabia y otros requisitos que pueden variar según el país de origen de la mascota. Desde Argentina exigen test de anticuerpos de rabia."},
-                            {"Condiciones de transporte": "Las aerolíneas tienen sus propias políticas sobre el transporte de mascotas, por lo que es importante consultar con la aerolínea antes de viajar."},
+                            {"Documentación": [{"no_key": "Es necesario tener la documentación de la mascota en regla, incluyendo el certificado de vacunación contra la rabia y otros requisitos que pueden variar según el país de origen de la mascota. Desde Argentina exigen test de anticuerpos de rabia."}, ]},
+                            {"Condiciones de transporte": [{"no_key": "Las aerolíneas tienen sus propias políticas sobre el transporte de mascotas, por lo que es importante consultar con la aerolínea antes de viajar."}, ]},
                         ],
                     },
                 },

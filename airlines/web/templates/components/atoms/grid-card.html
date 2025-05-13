@@ -11,7 +11,7 @@
 >
     <div class="{{ classes }} relative p-4 rounded-l-[6rem] rounded-r-xl shadow-md shadow-secondary-grey_dark transition-all duration-100  
         bg-[url({% static bg_image %})] bg-cover bg-center bg-no-repeat cursor-pointer lg:hover:shadow-lg lg:hover:shadow-secondary-grey_dark" 
-        onclick="openModalWithData('{{ label_text }}')" 
+        onclick="updateDestination('{{ label_text }}')" 
     >
         <img src="{% static content_image %}" class="w-full max-w-32 ring-2 ring-primary-blue_light/50 rounded-full">
         <h1 class="absolute px-4 py-1 bg-secondary-grey_dark text-3xl text-secondary-grey_extralight font-parisienne_font font-regular 

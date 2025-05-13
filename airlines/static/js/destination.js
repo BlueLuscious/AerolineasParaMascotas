@@ -5,6 +5,7 @@ const modalContent = sheet.querySelector("#content_modal")
 const modalQuotationBtn = sheet.querySelector("#modal_quotation_button")
 const cards = document.querySelectorAll(".card");
 
+// Rotate Effect
 cards.forEach(card => {
 	card.addEventListener("mousemove", (e) => {
 		const rect = card.getBoundingClientRect();
@@ -23,24 +24,40 @@ cards.forEach(card => {
 	});
 });
 
-function openModalWithData(name) {
-	Unicorn.call("modal", "select_destination", name)
+
+// Open Modal when unicorn is updated.
+window.addEventListener("DOMContentLoaded", (event) => {
+    Unicorn.addEventListener("updated", (component) => {
+		console.log(component);
+		if (component.name === "modal" && component.data.destination && Object.keys(component.data.destination).length > 0) {
+			openModal();
+		}
+	});
+});
+
+function updateDestination(name="") {
 	setTimeout(() => {
-		openModal()
-	}, 300);
-}
+		Unicorn.call("modal", "select_destination", name);
+	}, 50);
+};
 
-modalQuotationBtn.addEventListener("click", closeModal)
 
+modalQuotationBtn.addEventListener("click", () => {
+	closeModal();
+	updateDestination();
+});
+
+// Close Modal by touching outside of it
 document.addEventListener("click", (e) => {
 	const clickedInsideSheet = sheet.contains(e.target);
 	const clickedOnCard = Array.from(cards).some(card => card.contains(e.target));
 	if (!clickedInsideSheet && !clickedOnCard) {
-		closeModal()
+		closeModal();
+		updateDestination();
 	}
 });
 
-
+// Open Modal
 function openModal() {
 	modal.classList.remove("hidden");
 	document.body.classList.add("overflow-hidden");
@@ -50,6 +67,8 @@ function openModal() {
 	}, 300);
 }
 
+
+// Close Modal
 function closeModal() {
 	sheet.classList.add("translate-y-full");
 	document.body.classList.remove("overflow-hidden");
@@ -60,7 +79,7 @@ function closeModal() {
 }
 
 
-// Pointer events
+// Pointer events (Slide modal)
 let startY = 0;
 let currentY = 0;
 let isDragging = false;
@@ -90,7 +109,10 @@ sliderBar.addEventListener("pointerup", () => {
 		sheet.style.transform = "";
 		requestAnimationFrame(() => {
 			sheet.classList.add("translate-y-full");
-			setTimeout(() => closeModal(), 300);
+			setTimeout(() => {
+				closeModal();
+				updateDestination();
+			}, 300);
 		});
 	} else {
 		sheet.style.transform = "";
