@@ -1,13 +1,11 @@
 import { WhatsappService } from "./services/whatsapp_service.js"
 const wa_service = new WhatsappService()
 
+window.redirectToWA = wa_service.redirectToWA.bind(wa_service)
+window.toggleElementByClick = toggleElementByClick
+
 
 document.addEventListener("DOMContentLoaded", () => {
-    const whatsappButton = document.querySelectorAll(".whatsapp_button")
-    whatsappButton.forEach(btn => (
-        wa_service.redirectToWA(btn, 0)
-    ))
-
     // Nav-Link Styles & Interactivity
     const sections = document.querySelectorAll("section")
     const navLinks = document.querySelectorAll(".nav_link")
@@ -48,14 +46,13 @@ function activeNavLink(nav_links, current_link) {
     })
 }
 
+// Toggle sidemenu
 function toggleElementByClick(element_id, tailwind_class) {
-    const element = document.getElementById(element_id)
-    element.classList.toggle(tailwind_class)
+    const element = document.getElementById(element_id);
+    element.classList.toggle(tailwind_class);
 
     const backdrop = document.getElementById(`${element_id}_backdrop`)
     if (backdrop) {
-        backdrop.classList.toggle(`-${tailwind_class}`)
+        backdrop.classList.toggle(`-${tailwind_class}`);
     }
 }
-
-window.toggleElementByClick = toggleElementByClick

@@ -68,8 +68,9 @@
                 {% include "icons/envelope.html" with tailwind_class="size-8" %}
                 <span>Solicitá tu cotización</span>
             </a>
-            <button class="whatsapp_button flex items-center gap-x-4 w-fit px-4 py-2 bg-tertiary-whatsapp_green_tone 
-                rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse"
+            <button id="modal_whatsapp_button" class="whatsapp_button flex items-center gap-x-4 w-fit px-4 py-2 
+                bg-tertiary-whatsapp_green_tone rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse" 
+                onclick="redirectToWA('{{ phone_map }}')"
             >
                 {% include "icons/whatsapp.html" with tailwind_class="size-7" %}
                 <span>Consultanos</span>

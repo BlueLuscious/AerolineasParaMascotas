@@ -60,14 +60,12 @@
         {% include "components/footer.html" %}
     </section>
 
-    <div id="whatsapp_button" class="whatsapp_button z-40 fixed bottom-3 right-3 sm:bottom-5 sm:right-5 p-3 pt-4 
-        bg-tertiary-whatsapp_green_tone rounded-full shadow-xl cursor-pointer scale-80 
-        hover:animate-mini_bounce_medium_fast"
+    <button id="whatsapp_button" class="z-40 fixed bottom-3 right-3 sm:bottom-5 sm:right-5 
+        flex items-center p-3.5 bg-tertiary-whatsapp_green_tone rounded-full shadow-xl cursor-pointer 
+        hover:animate-mini_bounce_medium_fast" onclick="redirectToWA('AEM')"
     >
-        <button type="button">
-            {% include "icons/whatsapp.html" with tailwind_class="w-10 h-8 text-white" %}
-        </button>
-    </div>
+        {% include "icons/whatsapp.html" with tailwind_class="size-9 text-white" %}
+    </button>
 
 </body>
 <script type="module" src="{% static 'js/base.js' %}"></script>

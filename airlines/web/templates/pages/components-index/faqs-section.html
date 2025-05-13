@@ -30,8 +30,9 @@
 
         <div class="flex flex-col items-center gap-y-6 text-center">
             <h2>Tu curiosidad no muerde. Respondemos con cariño.<h2>
-            <button class="whatsapp_button flex items-center gap-x-4 w-fit px-4 py-4 bg-tertiary-whatsapp_green_tone 
-                text-secondary-grey_extralight rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse"
+            <button id="faq_whatsapp_button" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-tertiary-whatsapp_green_tone 
+                text-secondary-grey_extralight rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse" 
+                onclick="redirectToWA('AEM')"
             >
                 {% include "icons/whatsapp.html" with tailwind_class="size-8" %}
                 <h3>Tenes alguna pregunta?</h3>
