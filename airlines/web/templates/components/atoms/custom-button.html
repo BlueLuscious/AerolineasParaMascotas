@@ -1,0 +1,9 @@
+<button type="{{ type }}" id="{{ id }}" class="{{ classes }}">
+    {% if label != "" %}
+    <h1 class="{{ label_classes }}">{{ label }}</h1>
+    {% endif %}
+    
+    {% if icon_name != "" %}
+    {% include "icons/"|add:icon_name|add:".html" with classes=icon_classes %}
+    {% endif %}
+</button>

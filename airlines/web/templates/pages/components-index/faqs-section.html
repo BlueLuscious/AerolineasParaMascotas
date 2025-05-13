@@ -1,0 +1,43 @@
+{% load static %}
+{% load inclusiontag.custom_button %}
+
+
+<section id="faqs_section" class="flex items-center justify-center size-full min-h-screen px-8 py-12 
+    bg-gradient-to-b from-primary-blue_extralight from-10% to-secondary-grey_extralight/15 to-100% 
+    text-xl text-secondary-grey_dark font-primary_font"
+>
+    <div class="flex flex-col gap-y-16 size-full max-w-5xl">
+        <div class="flex flex-col items-center gap-y-4 text-center">
+            <h1 class="text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
+                Preguntas Frecuentes
+            <h1>
+            <h2>Estas son las preguntas que más recibimos y nuestras respuestas, listas para que no te quede nada en el aire.</h2>
+        </div>
+
+
+        <div id="faq_accordion" class="flex flex-col items-center gap-y-4">
+            {% for faq in faqs %}
+            <div class="w-full bg-white text-secondary-grey_semidark font-medium border-2 border-secondary-grey_light 
+                rounded-lg transition overflow-hidden group"
+            >
+                {% custom_button faq.id "button" faq.question "chevron-down" faq.classes faq.label_classes faq.icon_classes %}
+                <div class="answer max-h-0 border-t border-secondary-grey_light transition-all duration-500 ease-in-out overflow-hidden">
+                    <p class="p-4 md:p-6 text-md md:text-lg tracking-wide">{{ faq.answer }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="flex flex-col items-center gap-y-6 text-center">
+            <h2>Tu curiosidad no muerde. Respondemos con cariño.<h2>
+            <button class="whatsapp_button flex items-center gap-x-4 w-fit px-4 py-4 bg-tertiary-whatsapp_green_tone 
+                text-secondary-grey_extralight rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse"
+            >
+                {% include "icons/whatsapp.html" with tailwind_class="size-8" %}
+                <h3>Tenes alguna pregunta?</h3>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script src="{% static 'js/faqs.js' %}"></script>

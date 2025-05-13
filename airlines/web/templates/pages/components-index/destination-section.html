@@ -4,15 +4,18 @@
 {% load simpletag.destination_o_tag %}
 
 
-<section id="destination_section" class="relative flex flex-col items-center justify-center gap-y-16 size-full 
-	min-h-screen px-8 py-12 bg-gradient-to-b from-primary-blue_extralight from-10% to-white to-100% 
+<section id="destination_section" class="relative flex flex-col items-center justify-center gap-y-20 size-full 
+	min-h-screen px-8 py-12 bg-gradient-to-b from-primary-blue_extralight from-10% to-secondary-grey_extralight/15 to-100% 
 	text-secondary-grey_dark scroll-mt-20"
 >
 	<!-- Common Destinations -->
-	<div class="flex flex-col gap-y-8 size-full">
-		<h1 class="text-3xl md:text-4xl md:text-center text-secondary-grey_dark 
-			font-secondary_font font-black tracking-wide"
-		>Destinos Frecuentes</h1>
+	<div class="flex flex-col gap-y-16 size-full text-xl text-center">
+		<div class="flex flex-col items-center gap-y-8">
+			<h1 class="text-3xl md:text-4xl font-secondary_font font-black tracking-wide">
+				Destinos Frecuentes
+			</h1>
+			<h2>Estos son los destinos que más eligen quienes confían en nosotros para llevar a sus compañeros de cuatro patas a vivir nuevas aventuras.</h2>
+        </div>
 
 		<div class="flex flex-col items-center gap-y-12 font-primary_font font-black text-secondary-grey_semidark">
 			{% filter_destinations destinations continent="norte america" as north_american_destinations %}
@@ -39,10 +42,10 @@
 	</div>
 
 	<!-- Exotic Destinations -->
-	<div class="flex flex-col gap-y-8 size-full">
-		<h1 class="text-3xl md:text-4xl md:text-center text-secondary-grey_dark 
-			font-secondary_font font-black tracking-wide"
-		>Destinos Exoticos</h1>
+	<div class="flex flex-col gap-y-16 size-full text-xl text-center">
+		<h1 class="text-3xl md:text-4xl font-secondary_font font-black tracking-wide">
+			Destinos Exoticos
+		</h1>
 
 		<div class="font-primary_font font-black text-secondary-grey_semidark">
 			{% filter_destinations destinations "exotico" as exotic_destinations %}

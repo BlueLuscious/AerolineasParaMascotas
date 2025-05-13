@@ -31,7 +31,7 @@
         {% if destination.metadata %}
         <div class="flex flex-col gap-y-2 text-secondary-grey_semidark">
             {% if destination.metadata.title %}
-            <h2 class="text-xl font-extrabold">{{ destination.metadata.title }}</h2>
+            <h2 class="text-lg md:text-xl font-bold">{{ destination.metadata.title }}</h2>
             {% endif %}
 
             {% if destination.metadata.description %}
@@ -40,13 +40,13 @@
                 {% for title, content in item.items %}
                 <div class="flex flex-col gap-y-1">
                     {% if title != "no_key" %} 
-                    <h3 class="text-lg font-bold">{{ title }}:</h3>
+                    <h3 class="text-md md:text-lg font-bold">{{ title }}:</h3>
                     {% endif %}
 
                     {% for item in content %}
                     {% for key, value in item.items %}
                     {% if key != "no_key" %} 
-                    <h4 class="font-semibold">• {{ key }}</h4>
+                    <h4 class="font-semibold">• {{ key }}:</h4>
                     {% endif %}
                     <p>{{ value }}</p>
                     {% endfor %}
@@ -61,7 +61,7 @@
         {% endif %}
         </div>
 
-        <div id="footer_modal" class="flex justify-end gap-x-4 w-full text-secondary-grey_extralight">
+        <div id="footer_modal" class="flex justify-end gap-x-4 w-full text-center text-secondary-grey_extralight">
             <a id="modal_quotation_button" href="#quotation_section" class="flex items-center justify-center gap-x-4 
                 w-fit px-4 py-2 bg-primary-red rounded-md shadow-lg shadow-primary-red/70 hover:animate-pulse"
             >
@@ -69,7 +69,7 @@
                 <span>Solicitá tu cotización</span>
             </a>
             <button class="whatsapp_button flex items-center gap-x-4 w-fit px-4 py-2 bg-tertiary-whatsapp_green_tone 
-                text-center rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse"
+                rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse"
             >
                 {% include "icons/whatsapp.html" with tailwind_class="size-7" %}
                 <span>Consultanos</span>

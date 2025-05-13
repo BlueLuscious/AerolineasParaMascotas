@@ -6,6 +6,7 @@ from config.models.models import ConfigModel
 from review.models import ReviewModel
 from store.models import ProductModel
 from web.mocks.destinations_mock import DestinationMock
+from web.mocks.faqs_mock import mock_faqs
 
 
 class IndexView(View):
@@ -24,6 +25,7 @@ class IndexView(View):
             products=products,
             config=config,
             destinations=destinations,
+            faqs=mock_faqs(),
         )
         return HttpResponse(template.render(context, request))
     

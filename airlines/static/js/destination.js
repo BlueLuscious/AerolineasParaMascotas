@@ -28,7 +28,6 @@ cards.forEach(card => {
 // Open Modal when unicorn is updated.
 window.addEventListener("DOMContentLoaded", (event) => {
     Unicorn.addEventListener("updated", (component) => {
-		console.log(component);
 		if (component.name === "modal" && component.data.destination && Object.keys(component.data.destination).length > 0) {
 			openModal();
 		}
