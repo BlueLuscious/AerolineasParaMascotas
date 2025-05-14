@@ -14,8 +14,7 @@ Teléfono:`
     }
 
     redirectToWA(phone) {
-        console.log(phone);
-        window.location.href = `https://wa.me/${this.phoneNumbers[phone]}/?text=${encodeURIComponent(this.messageWA)}`;
+        window.open(`https://wa.me/${this.phoneNumbers[phone]}/?text=${encodeURIComponent(this.messageWA)}`, "_blank");
     }
 
 }
