@@ -1,5 +1,8 @@
 {% load static %}
+{% load i18n %}
 {% load inclusiontag.custom_bar_item %}
+
+{% get_available_languages as languages %}
 
 
 <!-- Navbar -->
@@ -32,11 +35,24 @@
         </div>
 
         <!-- Language Selector --> <!-- TODO: I18N with Django -->
-        <div class="hidden lg:block">
-            <select class="hidden" id="language_selector" name="language">
-                <option value="es">Español</option>
-                <option value="en">Inglés</option>
+        <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ request.path }}">
+            <select id="language_selector" name="language" onchange="this.form.submit()" class="border p-1 rounded">
+                <option value="es" {% if request.LANGUAGE_CODE == "es" %}selected{% endif %}>{% trans "Español" %}</option>
+                <option value="en" {% if request.LANGUAGE_CODE == "en" %}selected{% endif %}>{% trans "Inglés" %}</option>
             </select>
-        </div>
+        </form>
     </div>
 </header>
+
+
+{% comment %} <form action="{% url 'set_language' %}" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ request.path }}">
+    <select id="language_selector" name="language" onchange="this.form.submit()" class="border p-1 rounded">
+        {% for lang_code, lang_name in languages %}
+        <option value="{{ lang_code }}" {% if request.LANGUAGE_CODE == lang_code %}selected{% endif %}>{% trans lang_name %}</option>
+        {% endfor %}
+    </select>
+</form> {% endcomment %}
