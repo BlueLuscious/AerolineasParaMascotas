@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 07:45+0000\n"
+"POT-Creation-Date: 2025-05-14 21:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,36 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: web/templates/components/navbar.html:53
+
+#: airlines/translation_strings.py:4
+msgid "Inicio"
+msgstr "Inicio"
+
+#: airlines/translation_strings.py:5
+msgid "Quienes somos"
+msgstr "Quienes somos"
+
+#: airlines/translation_strings.py:6
+msgid "Servicios"
+msgstr "Servicios"
+
+#: airlines/translation_strings.py:7
+msgid "Destinos"
+msgstr "Destinos"
+
+#: airlines/translation_strings.py:8
+msgid "Contacto"
+msgstr "Contacto"
+
+#: airlines/translation_strings.py:9
 msgid "Español"
 msgstr "Español"
 
-#: web/templates/components/navbar.html:54
+#: airlines/translation_strings.py:10
 msgid "Inglés"
 msgstr "Inglés"
+
+#: web/templates/components/navbar.html:16
+#: web/templates/components/sidebar.html:16
+msgid "Menú"
+msgstr "Menú"

@@ -2,8 +2,6 @@
 {% load i18n %}
 {% load inclusiontag.custom_bar_item %}
 
-{% get_available_languages as languages %}
-
 
 <!-- Navbar -->
 <header class="fixed z-50 left-0 top-0 w-full p-2 bg-secondary-grey_extralight shadow-lg shadow-secondary-grey/50">
@@ -16,11 +14,11 @@
         <button id="btn_open_menu" class="lg:hidden flex items-center gap-x-2 text-lg lg:text:md 
             text-primary-blue_dark" onclick="toggleElementByClick('sidebar', 'translate-x-full')"
         >
-            <span>Menú</span>
+            <span>{% trans "Menú" %}</span>
             {% include "icons/menu.html" with tailwind_class="size-7" %}
         </button>
 
-        <!-- Navbar Items --> <!-- TODO: Quienes Somos, Destinos, Servicios -> Check -->
+        <!-- Navbar Items -->
         <div class="hidden lg:flex flex-row gap-x-2 text-md">
             {% url 'index' as index_url %}
             {% nav_item request.path index_url "Inicio" "#" "/" "nav_item_index" %}
@@ -34,25 +32,9 @@
             {% nav_item request.path "" "Contacto" "#quotation_section" "/cotizar-traslado/" "nav_item_quotation" %}
         </div>
 
-        <!-- Language Selector --> <!-- TODO: I18N with Django -->
-        <form action="{% url 'set_language' %}" method="post">
-            {% csrf_token %}
-            <input type="hidden" name="next" value="{{ request.path }}">
-            <select id="language_selector" name="language" onchange="this.form.submit()" class="border p-1 rounded">
-                <option value="es" {% if request.LANGUAGE_CODE == "es" %}selected{% endif %}>{% trans "Español" %}</option>
-                <option value="en" {% if request.LANGUAGE_CODE == "en" %}selected{% endif %}>{% trans "Inglés" %}</option>
-            </select>
-        </form>
+        <!-- Language Selector -->
+        <div class="hidden lg:block">
+            {% include "components/language-selector.html" %}
+        </div>
     </div>
 </header>
-
-
-{% comment %} <form action="{% url 'set_language' %}" method="post">
-    {% csrf_token %}
-    <input type="hidden" name="next" value="{{ request.path }}">
-    <select id="language_selector" name="language" onchange="this.form.submit()" class="border p-1 rounded">
-        {% for lang_code, lang_name in languages %}
-        <option value="{{ lang_code }}" {% if request.LANGUAGE_CODE == lang_code %}selected{% endif %}>{% trans lang_name %}</option>
-        {% endfor %}
-    </select>
-</form> {% endcomment %}
