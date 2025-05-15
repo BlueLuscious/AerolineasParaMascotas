@@ -1,6 +1,6 @@
 from django.utils.translation import gettext as _
 
-# Navigation
+# Navigation #
 _("Inicio")
 _("Quienes somos")
 _("Servicios")
@@ -8,5 +8,4 @@ _("Destinos")
 _("Contacto")
 _("Español")
 _("Inglés")
-_("Menú")
-
+# End Navigation #

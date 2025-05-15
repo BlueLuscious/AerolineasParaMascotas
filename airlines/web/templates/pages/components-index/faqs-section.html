@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 {% load inclusiontag.custom_button %}
 
 
@@ -8,9 +9,9 @@
     <div class="flex flex-col gap-y-16 size-full max-w-5xl">
         <div class="flex flex-col items-center gap-y-4 text-center">
             <h1 class="text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
-                Preguntas Frecuentes
+                {% trans "Preguntas Frecuentes" %}
             <h1>
-            <h2>Estas son las preguntas que más recibimos y nuestras respuestas, listas para que no te quede nada en el aire.</h2>
+            <h2>{% trans "Estas son las preguntas que más recibimos y nuestras respuestas, listas para que no te quede nada en el aire." %}</h2>
         </div>
 
 
@@ -28,13 +29,13 @@
         </div>
 
         <div class="flex flex-col items-center gap-y-6 text-center">
-            <h2>Tu curiosidad no muerde. Respondemos con cariño las 24 horas.<h2>
+            <h2>{% trans "Tu curiosidad no muerde. Respondemos con cariño las 24 horas." %}<h2>
             <button id="faq_whatsapp_button" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-tertiary-whatsapp_green_tone 
                 text-secondary-grey_extralight rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse" 
                 onclick="redirectToWA('AEM')"
             >
                 {% include "icons/whatsapp.html" with tailwind_class="size-8" %}
-                <h3>Tenes alguna pregunta?</h3>
+                <h3>{% trans "Tenes alguna pregunta?" %}</h3>
             </button>
         </div>
     </div>

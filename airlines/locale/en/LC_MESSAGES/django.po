@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 21:06+0000\n"
+"POT-Creation-Date: 2025-05-15 01:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,246 @@ msgstr "Spanish"
 msgid "Inglés"
 msgstr "English"
 
-#: web/templates/components/navbar.html:16
-#: web/templates/components/sidebar.html:16
+#: web/mocks/faqs_mock.py:11
+msgid "¿Son una aerolínea?"
+msgstr "Are you an airline?"
+
+#: web/mocks/faqs_mock.py:13
+msgid ""
+"No, Aerolíneas para Mascotas es nuestro nombre ya que somos una empresa "
+"dedicada al exclusivamente al traslado aéreo y terrestre de mascotas, "
+"contamos con alianzas en Varios países para que trasladar a tu mascota no "
+"sea un impedimento, trabajando en forma conjunta logramos que tu mascota "
+"llegue a cualquier parte del mundo. Brindándote la mejor atención y "
+"seguridad que tu mascota merece."
+msgstr ""
+"No, Aerolíneas para Mascotas is our name because we are a company dedicated "
+"exclusively to air and ground pet transportation. We have partnerships in "
+"several countries so transporting your pet isn't an impediment. Working "
+"together, we can get your pet anywhere in the world, providing you with the "
+"best care and safety your pet deserves."
+
+#: web/mocks/faqs_mock.py:26
+msgid "¿Qué peso debe tener mi mascota para viajar en cabina?"
+msgstr "How much weight should my pet have to travel in a cabin?"
+
+#: web/mocks/faqs_mock.py:28
+msgid ""
+"Cada aerolínea cuenta con su propia reglamentación, en cuanto al peso y "
+"medida de la mascota, es por eso que recomendamos informarte previamente "
+"antes de realizar tu reserva aérea."
+msgstr ""
+"Each airline has its own regulations regarding pet weight and size, so we "
+"recommend checking in advance before booking your flight."
+
+#: web/mocks/faqs_mock.py:38
+msgid ""
+"¿Que documentación necesito para viajar con mi mascota en un vuelo "
+"internacional?"
+msgstr "What documentation do I need to travel with my pet on a flight?"
+
+#: web/mocks/faqs_mock.py:40
+msgid ""
+"La documentación necesaria para viajar con tu mascota en un vuelo "
+"internacional. Varía según el país de destino, es por eso que te aconsejamos "
+"que te contactes con nuestro equipo ya que son expertos en traslado de "
+"Mascotas y se encargan de gestionar toda la documentación necesaria para que "
+"vos puedas despreocuparte de esos trámites engorrosos."
+msgstr ""
+"The documentation required to travel with your pet on an international "
+"flight varies depending on the destination country. We recommend contacting "
+"our team, as they are experts in pet transport and can handle all the "
+"necessary paperwork so you can avoid the hassle of paperwork."
+
+#: web/mocks/faqs_mock.py:52
+msgid "¿Qué tipos de Mascotas trasladan?"
+msgstr "What types of pets do you transport?"
+
+#: web/mocks/faqs_mock.py:53
+msgid ""
+"Trasladamos, tanto, caninos como felinos (Perros-Gatos) sin distinción de "
+"razas."
+msgstr ""
+"We transport both canines and felines (Dogs-Cats) without distinction of "
+"breed."
+
+#: web/mocks/faqs_mock.py:60
+msgid "¿Que aerolíneas trabajan con ustedes?"
+msgstr "Which airlines work with you?"
+
+#: web/mocks/faqs_mock.py:62
+msgid ""
+"Trabajamos con varias aerolíneas importantes para garantizar que tus "
+"mascotas lleguen al destino deseado, de manera segura y eficiente. Algunas "
+"de las aerolíneas con las que trabajamos son LATAM Airlines, Avianca entre "
+"otras."
+msgstr ""
+"We work with several major airlines to ensure your pets arrive safely and "
+"efficiently to their desired destination. Some of the airlines we work with "
+"include LATAM Airlines, Avianca, and others."
+
+#: web/mocks/faqs_mock.py:73
+msgid "¿Que pasa si mi mascota posee necesidades especiales?"
+msgstr "What if my pet has special needs?"
+
+#: web/mocks/faqs_mock.py:75
+msgid ""
+"Nuestro equipo de expertos en traslado de Mascotas está altamente capacitado "
+"para atender a Mascotas con necesidades especiales. Por favor, informarnos "
+"sobre cualquier prescripción médica u necesidad especial que presente tu "
+"mascota previamente para que podamos proporcionarle un cuidado adecuado y "
+"tomar los recaudos correspondientes."
+msgstr ""
+"Our team of pet transport experts is highly trained to care for pets with "
+"special needs. Please inform us in advance of any medical prescriptions or "
+"special needs your pet may have so we can provide appropriate care and take "
+"the necessary precautions."
+
+#: web/mocks/faqs_mock.py:87
+msgid ""
+"¿Cómo se garantiza la seguridad y el bienestar de mi mascota durante el "
+"traslado?"
+msgstr "How is my pet's safety and well-being guaranteed during transport?"
+
+#: web/mocks/faqs_mock.py:89
+msgid ""
+"Nuestra flota de vehículos están equipados para garantizar la seguridad y el "
+"confort de tu mascota, trabajamos con contenedores aprobados bajo norma IATA "
+"(Asociación Internacional de Transporte Aéreo). Nuestro equipo de expertos "
+"se encarga de atender a tus mascotas ante todo el proceso de traslado, "
+"brindando la atención necesaria."
+msgstr ""
+"Our fleet of vehicles is equipped to ensure the safety and comfort of your "
+"pet. We work with containers approved under IATA (International Air "
+"Transport Association) standards. Our team of experts is responsible for "
+"caring for your pets throughout the entire transportation process, providing "
+"the necessary care."
+
+#: web/mocks/faqs_mock.py:101
+msgid ""
+"¿Si mascota viaja mediante un Vuelo de carga como es el proceso de embarque?"
+msgstr "If your pet travels via cargo flight, what is the boarding process?"
+
+#: web/mocks/faqs_mock.py:103
+msgid ""
+"Nuestro equipo de expertos se encarga de realizar todos los procedimientos "
+"protocolares desde el ingreso a la TCA (Terminal de Carga Aérea) hasta su "
+"embarque. Inicialmente realizando la colocación previa de todo lo necesario "
+"para su viaje, desde los paños absorbentes para sus necesidades, bebedero, "
+"comedero, hasta la colación de la ración de alimento extra en caso en que "
+"realice una escala aérea, cumpliendo con todos los requisitos indispensables "
+"para que tu mascota viaje segura."
+msgstr ""
+"Our team of experts is responsible for carrying out all protocol procedures "
+"from entry to the TCA (Air Cargo Terminal) until boarding. Initially, we pre-"
+"arrange everything necessary for your trip, from absorbent pads for your "
+"pet's needs, a water bowl, and a food bowl, to providing an extra ration of "
+"food in case you have a stopover in the air, complying with all the "
+"essential requirements for your pet's safe travels."
+
+#: web/mocks/faqs_mock.py:117
+msgid ""
+"¿Si mi mascota es braquicefalo (Nariz Chata) qué precauciones, debo tomar?"
+msgstr ""
+"If my pet is brachycephalic (flat-nosed), what precautions should I take?"
+
+#: web/mocks/faqs_mock.py:119
+msgid ""
+"Al momento de viajar con tu mascota Braquicefalo debes tomar todos los "
+"recaudos necesarios previamente informándote sobre las políticas de la "
+"aerolínea con la que deseas viajar, siempre optando por un viaje seguro "
+"evitando el estrés y su exposición a las altas temperaturas, ya que son dos "
+"factores importantes a la hora de tomar un vuelo. Siempre se aconseja "
+"consultar con tu veterinario de confianza y elegir la  mejor opción según "
+"las necesidades de tu mascota. (A tener en cuenta: la época del año en el "
+"destino al que deseas viajar, se aconseja que la temperatura no supere los "
+"27° C° en toda la ruta Aérea)."
+msgstr ""
+"When traveling with your Brachycephalic pet, you should take all necessary "
+"precautions by first informing yourself about the policies of the airline "
+"you plan to travel with. Always opt for safe travel by avoiding stress and "
+"exposure to high temperatures, as these are two important factors when "
+"taking a flight. It is always advisable to consult with your trusted "
+"veterinarian and choose the best option based on your pet's needs. (Please "
+"note: depending on the time of year at your destination, it is recommended "
+"that the temperature not exceed 27°C throughout the entire flight.)"
+
+#: web/mocks/faqs_mock.py:135
+msgid "¿Cuentan con pensionado canino propio?"
+msgstr "Do you have your own dog boarding facility?"
+
+#: web/mocks/faqs_mock.py:137
+msgid ""
+"No, solo contamos con pensionado transitorio para que las mascotas pasen en "
+"menor tiempo posible lejos de sus dueños, en este espacio le brindamos a tu "
+"mascota, la atención adecuada y el amor de un hogar, tal como en su casa. "
+"Con momentos de juegos, caricias, y paseos lo que hacen de esta corta "
+"estadía que no padezcan tristeza u estrés, siempre dependiendo de cada "
+"mascota. Por lo general nos quedamos a su cuidado nomás de 48 a 72 horas "
+"previas a su vuelo."
+msgstr ""
+"No, we only offer temporary boarding so pets can spend as little time away "
+"from their owners as possible. In this space, we provide your pet with the "
+"proper care and love of a home, just like at home. With playtime, cuddles, "
+"and walks, we ensure this short stay doesn't cause sadness or stress, "
+"depending on the pet. We generally stay in their care for only 48 to 72 "
+"hours before their flight."
+
+#: web/mocks/faqs_mock.py:151
+msgid "¿Cual es el costo del servicio para trasladar a mi mascota?"
+msgstr "What is the cost of transporting my pet?"
+
+#: web/mocks/faqs_mock.py:153
+msgid ""
+"El costo del servicio de traslado de mascota, varía según la distancia, el "
+"tamaño y la raza entre otros factores. Te proporcionaremos un presupuesto en "
+"base a las características de tu mascota, el destino deseado y según la "
+"fecha en la que quieras realizar el mismo."
+msgstr ""
+"The cost of pet transport varies depending on distance, size, breed, and "
+"other factors. We'll provide you with a quote based on your pet's "
+"characteristics, desired destination, and desired travel date."
+
+#: web/mocks/faqs_mock.py:164
+msgid "¿Como realizo la reserva del servicio y el pago de la misma?"
+msgstr "How do I reserve and pay for the service?"
+
+#: web/mocks/faqs_mock.py:166
+msgid ""
+"Podes reservar nuestro servicio de traslado de Mascotas, a través de nuestro "
+"sitio web, o bien mediante nuestro canal de atención telefónica desde "
+"cualquier parte del mundo. El pago se puede realizar en Efectivo en nuestro "
+"domicilio o bien mediante transferencia bancaria a nuestras cuentas; para tu "
+"comodidad contamos con cuentas tanto en pesos como en dólares y euros, de "
+"esta manera podes realizar tu reserva de forma rápida y segura."
+msgstr ""
+"You can book our pet transfer service through our website or by calling us "
+"from anywhere in the world. Payment can be made in cash at our address or by "
+"bank transfer to our accounts. For your convenience, we have accounts in "
+"pesos, dollars, and euros, so you can make your reservation quickly and "
+"securely."
+
+#: web/templates/components/navbar.html:17
+#: web/templates/components/sidebar.html:17
 msgid "Menú"
 msgstr "Menu"
+
+#: web/templates/pages/components-index/faqs-section.html:12
+msgid "Preguntas Frecuentes"
+msgstr "Frequently Asked Questions"
+
+#: web/templates/pages/components-index/faqs-section.html:14
+msgid ""
+"Estas son las preguntas que más recibimos y nuestras respuestas, listas para "
+"que no te quede nada en el aire."
+msgstr ""
+"These are the questions we receive most often and our answers, ready to leave "
+"you with nothing left hanging."
+
+#: web/templates/pages/components-index/faqs-section.html:32
+msgid "Tu curiosidad no muerde. Respondemos con cariño las 24 horas."
+msgstr "Your curiosity doesn't bite. We respond with care 24/7."
+
+#: web/templates/pages/components-index/faqs-section.html:38
+msgid "Tenes alguna pregunta?"
+msgstr "Do you have any questions?"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 21:06+0000\n"
+"POT-Creation-Date: 2025-05-15 01:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,270 @@ msgstr "Español"
 msgid "Inglés"
 msgstr "Inglés"
 
-#: web/templates/components/navbar.html:16
-#: web/templates/components/sidebar.html:16
+#: web/mocks/faqs_mock.py:11
+msgid "¿Son una aerolínea?"
+msgstr "¿Son una aerolínea?"
+
+#: web/mocks/faqs_mock.py:13
+msgid ""
+"No, Aerolíneas para Mascotas es nuestro nombre ya que somos una empresa "
+"dedicada al exclusivamente al traslado aéreo y terrestre de mascotas, "
+"contamos con alianzas en Varios países para que trasladar a tu mascota no "
+"sea un impedimento, trabajando en forma conjunta logramos que tu mascota "
+"llegue a cualquier parte del mundo. Brindándote la mejor atención y "
+"seguridad que tu mascota merece."
+msgstr ""
+"No, Aerolíneas para Mascotas es nuestro nombre ya que somos una empresa "
+"dedicada al exclusivamente al traslado aéreo y terrestre de mascotas, "
+"contamos con alianzas en Varios países para que trasladar a tu mascota no "
+"sea un impedimento, trabajando en forma conjunta logramos que tu mascota "
+"llegue a cualquier parte del mundo. Brindándote la mejor atención y "
+"seguridad que tu mascota merece."
+
+#: web/mocks/faqs_mock.py:26
+msgid "¿Qué peso debe tener mi mascota para viajar en cabina?"
+msgstr "¿Qué peso debe tener mi mascota para viajar en cabina?"
+
+#: web/mocks/faqs_mock.py:28
+msgid ""
+"Cada aerolínea cuenta con su propia reglamentación, en cuanto al peso y "
+"medida de la mascota, es por eso que recomendamos informarte previamente "
+"antes de realizar tu reserva aérea."
+msgstr ""
+"Cada aerolínea cuenta con su propia reglamentación, en cuanto al peso y "
+"medida de la mascota, es por eso que recomendamos informarte previamente "
+"antes de realizar tu reserva aérea."
+
+#: web/mocks/faqs_mock.py:38
+msgid ""
+"¿Que documentación necesito para viajar con mi mascota en un vuelo "
+"internacional?"
+msgstr ""
+"¿Que documentación necesito para viajar con mi mascota en un vuelo "
+"internacional?"
+
+#: web/mocks/faqs_mock.py:40
+msgid ""
+"La documentación necesaria para viajar con tu mascota en un vuelo "
+"internacional. Varía según el país de destino, es por eso que te aconsejamos "
+"que te contactes con nuestro equipo ya que son expertos en traslado de "
+"Mascotas y se encargan de gestionar toda la documentación necesaria para que "
+"vos puedas despreocuparte de esos trámites engorrosos."
+msgstr ""
+"La documentación necesaria para viajar con tu mascota en un vuelo "
+"internacional. Varía según el país de destino, es por eso que te aconsejamos "
+"que te contactes con nuestro equipo ya que son expertos en traslado de "
+"Mascotas y se encargan de gestionar toda la documentación necesaria para que "
+"vos puedas despreocuparte de esos trámites engorrosos."
+
+#: web/mocks/faqs_mock.py:52
+msgid "¿Qué tipos de Mascotas trasladan?"
+msgstr "¿Qué tipos de Mascotas trasladan?"
+
+#: web/mocks/faqs_mock.py:53
+msgid ""
+"Trasladamos, tanto, caninos como felinos (Perros-Gatos) sin distinción de "
+"razas."
+msgstr ""
+"Trasladamos, tanto, caninos como felinos (Perros-Gatos) sin distinción de "
+"razas."
+
+#: web/mocks/faqs_mock.py:60
+msgid "¿Que aerolíneas trabajan con ustedes?"
+msgstr "¿Que aerolíneas trabajan con ustedes?"
+
+#: web/mocks/faqs_mock.py:62
+msgid ""
+"Trabajamos con varias aerolíneas importantes para garantizar que tus "
+"mascotas lleguen al destino deseado, de manera segura y eficiente. Algunas "
+"de las aerolíneas con las que trabajamos son LATAM Airlines, Avianca entre "
+"otras."
+msgstr ""
+"Trabajamos con varias aerolíneas importantes para garantizar que tus "
+"mascotas lleguen al destino deseado, de manera segura y eficiente. Algunas "
+"de las aerolíneas con las que trabajamos son LATAM Airlines, Avianca entre "
+"otras."
+
+#: web/mocks/faqs_mock.py:73
+msgid "¿Que pasa si mi mascota posee necesidades especiales?"
+msgstr "¿Que pasa si mi mascota posee necesidades especiales?"
+
+#: web/mocks/faqs_mock.py:75
+msgid ""
+"Nuestro equipo de expertos en traslado de Mascotas está altamente capacitado "
+"para atender a Mascotas con necesidades especiales. Por favor, informarnos "
+"sobre cualquier prescripción médica u necesidad especial que presente tu "
+"mascota previamente para que podamos proporcionarle un cuidado adecuado y "
+"tomar los recaudos correspondientes."
+msgstr ""
+"Nuestro equipo de expertos en traslado de Mascotas está altamente capacitado "
+"para atender a Mascotas con necesidades especiales. Por favor, informarnos "
+"sobre cualquier prescripción médica u necesidad especial que presente tu "
+"mascota previamente para que podamos proporcionarle un cuidado adecuado y "
+"tomar los recaudos correspondientes."
+
+#: web/mocks/faqs_mock.py:87
+msgid ""
+"¿Cómo se garantiza la seguridad y el bienestar de mi mascota durante el "
+"traslado?"
+msgstr ""
+"¿Cómo se garantiza la seguridad y el bienestar de mi mascota durante el "
+"traslado?"
+
+#: web/mocks/faqs_mock.py:89
+msgid ""
+"Nuestra flota de vehículos están equipados para garantizar la seguridad y el "
+"confort de tu mascota, trabajamos con contenedores aprobados bajo norma IATA "
+"(Asociación Internacional de Transporte Aéreo). Nuestro equipo de expertos "
+"se encarga de atender a tus mascotas ante todo el proceso de traslado, "
+"brindando la atención necesaria."
+msgstr ""
+"Nuestra flota de vehículos están equipados para garantizar la seguridad y el "
+"confort de tu mascota, trabajamos con contenedores aprobados bajo norma IATA "
+"(Asociación Internacional de Transporte Aéreo). Nuestro equipo de expertos "
+"se encarga de atender a tus mascotas ante todo el proceso de traslado, "
+"brindando la atención necesaria."
+
+#: web/mocks/faqs_mock.py:101
+msgid ""
+"¿Si mascota viaja mediante un Vuelo de carga como es el proceso de embarque?"
+msgstr ""
+"¿Si mascota viaja mediante un Vuelo de carga como es el proceso de embarque?"
+
+#: web/mocks/faqs_mock.py:103
+#, fuzzy
+#| msgid ""
+#| "Nuestro equipo de expertos se encarga de realizar todos los "
+#| "procedimientos protocolares desde el ingreso a la TCA (Terminal de Carga "
+#| "Aérea) hasta su embarque.Inicialmente realizando la colocación previa de "
+#| "todo lo necesario para su viaje, desde los paños absorbentes para sus "
+#| "necesidades, bebedero, comedero, hasta la colación de la ración de "
+#| "alimento extra en caso en que realice una escala aérea, cumpliendo con "
+#| "todos los requisitos indispensables para que tu mascota viaje segura."
+msgid ""
+"Nuestro equipo de expertos se encarga de realizar todos los procedimientos "
+"protocolares desde el ingreso a la TCA (Terminal de Carga Aérea) hasta su "
+"embarque. Inicialmente realizando la colocación previa de todo lo necesario "
+"para su viaje, desde los paños absorbentes para sus necesidades, bebedero, "
+"comedero, hasta la colación de la ración de alimento extra en caso en que "
+"realice una escala aérea, cumpliendo con todos los requisitos indispensables "
+"para que tu mascota viaje segura."
+msgstr ""
+"Nuestro equipo de expertos se encarga de realizar todos los procedimientos "
+"protocolares desde el ingreso a la TCA (Terminal de Carga Aérea) hasta su "
+"embarque.Inicialmente realizando la colocación previa de todo lo necesario "
+"para su viaje, desde los paños absorbentes para sus necesidades, bebedero, "
+"comedero, hasta la colación de la ración de alimento extra en caso en que "
+"realice una escala aérea, cumpliendo con todos los requisitos indispensables "
+"para que tu mascota viaje segura."
+
+#: web/mocks/faqs_mock.py:117
+msgid ""
+"¿Si mi mascota es braquicefalo (Nariz Chata) qué precauciones, debo tomar?"
+msgstr ""
+"¿Si mi mascota es braquicefalo (Nariz Chata) qué precauciones, debo tomar?"
+
+#: web/mocks/faqs_mock.py:119
+msgid ""
+"Al momento de viajar con tu mascota Braquicefalo debes tomar todos los "
+"recaudos necesarios previamente informándote sobre las políticas de la "
+"aerolínea con la que deseas viajar, siempre optando por un viaje seguro "
+"evitando el estrés y su exposición a las altas temperaturas, ya que son dos "
+"factores importantes a la hora de tomar un vuelo. Siempre se aconseja "
+"consultar con tu veterinario de confianza y elegir la  mejor opción según "
+"las necesidades de tu mascota. (A tener en cuenta: la época del año en el "
+"destino al que deseas viajar, se aconseja que la temperatura no supere los "
+"27° C° en toda la ruta Aérea)."
+msgstr ""
+"Al momento de viajar con tu mascota Braquicefalo debes tomar todos los "
+"recaudos necesarios previamente informándote sobre las políticas de la "
+"aerolínea con la que deseas viajar, siempre optando por un viaje seguro "
+"evitando el estrés y su exposición a las altas temperaturas, ya que son dos "
+"factores importantes a la hora de tomar un vuelo. Siempre se aconseja "
+"consultar con tu veterinario de confianza y elegir la  mejor opción según "
+"las necesidades de tu mascota. (A tener en cuenta: la época del año en el "
+"destino al que deseas viajar, se aconseja que la temperatura no supere los "
+"27° C° en toda la ruta Aérea)."
+
+#: web/mocks/faqs_mock.py:135
+msgid "¿Cuentan con pensionado canino propio?"
+msgstr "¿Cuentan con pensionado canino propio?"
+
+#: web/mocks/faqs_mock.py:137
+msgid ""
+"No, solo contamos con pensionado transitorio para que las mascotas pasen en "
+"menor tiempo posible lejos de sus dueños, en este espacio le brindamos a tu "
+"mascota, la atención adecuada y el amor de un hogar, tal como en su casa. "
+"Con momentos de juegos, caricias, y paseos lo que hacen de esta corta "
+"estadía que no padezcan tristeza u estrés, siempre dependiendo de cada "
+"mascota. Por lo general nos quedamos a su cuidado nomás de 48 a 72 horas "
+"previas a su vuelo."
+msgstr ""
+"No, solo contamos con pensionado transitorio para que las mascotas pasen en "
+"menor tiempo posible lejos de sus dueños, en este espacio le brindamos a tu "
+"mascota, la atención adecuada y el amor de un hogar, tal como en su casa. "
+"Con momentos de juegos, caricias, y paseos lo que hacen de esta corta "
+"estadía que no padezcan tristeza u estrés, siempre dependiendo de cada "
+"mascota. Por lo general nos quedamos a su cuidado nomás de 48 a 72 horas "
+"previas a su vuelo."
+
+#: web/mocks/faqs_mock.py:151
+msgid "¿Cual es el costo del servicio para trasladar a mi mascota?"
+msgstr "¿Cual es el costo del servicio para trasladar a mi mascota?"
+
+#: web/mocks/faqs_mock.py:153
+msgid ""
+"El costo del servicio de traslado de mascota, varía según la distancia, el "
+"tamaño y la raza entre otros factores. Te proporcionaremos un presupuesto en "
+"base a las características de tu mascota, el destino deseado y según la "
+"fecha en la que quieras realizar el mismo."
+msgstr ""
+"El costo del servicio de traslado de mascota, varía según la distancia, el "
+"tamaño y la raza entre otros factores. Te proporcionaremos un presupuesto en "
+"base a las características de tu mascota, el destino deseado y según la "
+"fecha en la que quieras realizar el mismo."
+
+#: web/mocks/faqs_mock.py:164
+msgid "¿Como realizo la reserva del servicio y el pago de la misma?"
+msgstr "¿Como realizo la reserva del servicio y el pago de la misma?"
+
+#: web/mocks/faqs_mock.py:166
+msgid ""
+"Podes reservar nuestro servicio de traslado de Mascotas, a través de nuestro "
+"sitio web, o bien mediante nuestro canal de atención telefónica desde "
+"cualquier parte del mundo. El pago se puede realizar en Efectivo en nuestro "
+"domicilio o bien mediante transferencia bancaria a nuestras cuentas; para tu "
+"comodidad contamos con cuentas tanto en pesos como en dólares y euros, de "
+"esta manera podes realizar tu reserva de forma rápida y segura."
+msgstr ""
+"Podes reservar nuestro servicio de traslado de Mascotas, a través de nuestro "
+"sitio web, o bien mediante nuestro canal de atención telefónica desde "
+"cualquier parte del mundo. El pago se puede realizar en Efectivo en nuestro "
+"domicilio o bien mediante transferencia bancaria a nuestras cuentas; para tu "
+"comodidad contamos con cuentas tanto en pesos como en dólares y euros, de "
+"esta manera podes realizar tu reserva de forma rápida y segura."
+
+#: web/templates/components/navbar.html:17
+#: web/templates/components/sidebar.html:17
 msgid "Menú"
 msgstr "Menú"
+
+#: web/templates/pages/components-index/faqs-section.html:12
+msgid "Preguntas Frecuentes"
+msgstr "Preguntas Frecuentes"
+
+#: web/templates/pages/components-index/faqs-section.html:14
+msgid ""
+"Estas son las preguntas que más recibimos y nuestras respuestas, listas para "
+"que no te quede nada en el aire."
+msgstr ""
+"Estas son las preguntas que más recibimos y nuestras respuestas, listas para "
+"que no te quede nada en el aire."
+
+#: web/templates/pages/components-index/faqs-section.html:32
+msgid "Tu curiosidad no muerde. Respondemos con cariño las 24 horas."
+msgstr "Tu curiosidad no muerde. Respondemos con cariño las 24 horas."
+
+#: web/templates/pages/components-index/faqs-section.html:38
+msgid "Tenes alguna pregunta?"
+msgstr "Tenes alguna pregunta?"
