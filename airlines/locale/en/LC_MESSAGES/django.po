@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-15 01:10+0000\n"
+"POT-Creation-Date: 2025-06-26 22:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -279,8 +279,8 @@ msgid ""
 "Estas son las preguntas que más recibimos y nuestras respuestas, listas para "
 "que no te quede nada en el aire."
 msgstr ""
-"These are the questions we receive most often and our answers, ready to leave "
-"you with nothing left hanging."
+"These are the questions we receive most often and our answers, ready to "
+"leave you with nothing left hanging."
 
 #: web/templates/pages/components-index/faqs-section.html:32
 msgid "Tu curiosidad no muerde. Respondemos con cariño las 24 horas."
@@ -289,3 +289,39 @@ msgstr "Your curiosity doesn't bite. We respond with care 24/7."
 #: web/templates/pages/components-index/faqs-section.html:38
 msgid "Tenes alguna pregunta?"
 msgstr "Do you have any questions?"
+
+#: web/templates/pages/components-index/home-section.html:17
+msgid "Tu mascota, nuestro pasajero más importante"
+msgstr "Your pet, our most important passenger"
+
+#: web/templates/pages/components-index/home-section.html:18
+msgid "Seguro, cómodo y con amor en cada kilómetro"
+msgstr "Safe, comfortable and with love in every mile"
+
+#: web/templates/pages/components-index/home-section.html:25
+#: web/templates/pages/components-index/home-section.html:56
+#: web/templates/pages/components-index/home-section.html:87
+msgid "Solicitá tu cotización"
+msgstr "Request your quote"
+
+#: web/templates/pages/components-index/home-section.html:32
+#: web/templates/pages/components-index/home-section.html:63
+#: web/templates/pages/components-index/home-section.html:94
+msgid "Consulta por Whatsapp"
+msgstr "Contact us on Whatsapp"
+
+#: web/templates/pages/components-index/home-section.html:48
+msgid "Trasladamos lo que más querés con el cuidado que se merece"
+msgstr "We transport what you love most with the care it deserves"
+
+#: web/templates/pages/components-index/home-section.html:49
+msgid "Porque no es solo un viaje, es una experiencia con corazón"
+msgstr "Because it's not just a trip, it's an experience with heart"
+
+#: web/templates/pages/components-index/home-section.html:79
+msgid "Donde vayan tus mascotas, vamos con ellas"
+msgstr "Wherever your pets go, we go with them"
+
+#: web/templates/pages/components-index/home-section.html:80
+msgid "Viajes responsables, abrazos garantizados"
+msgstr "Responsible travel, guaranteed hugs"
