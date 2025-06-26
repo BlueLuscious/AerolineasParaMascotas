@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-26 22:40+0000\n"
+"POT-Creation-Date: 2025-06-26 23:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -290,38 +290,106 @@ msgstr "Your curiosity doesn't bite. We respond with care 24/7."
 msgid "Tenes alguna pregunta?"
 msgstr "Do you have any questions?"
 
-#: web/templates/pages/components-index/home-section.html:17
+#: web/templates/pages/components-index/home-section.html:18
 msgid "Tu mascota, nuestro pasajero más importante"
 msgstr "Your pet, our most important passenger"
 
-#: web/templates/pages/components-index/home-section.html:18
+#: web/templates/pages/components-index/home-section.html:19
 msgid "Seguro, cómodo y con amor en cada kilómetro"
 msgstr "Safe, comfortable and with love in every mile"
 
-#: web/templates/pages/components-index/home-section.html:25
-#: web/templates/pages/components-index/home-section.html:56
-#: web/templates/pages/components-index/home-section.html:87
+#: web/templates/pages/components-index/home-section.html:26
+#: web/templates/pages/components-index/home-section.html:57
+#: web/templates/pages/components-index/home-section.html:88
 msgid "Solicitá tu cotización"
 msgstr "Request your quote"
 
-#: web/templates/pages/components-index/home-section.html:32
-#: web/templates/pages/components-index/home-section.html:63
-#: web/templates/pages/components-index/home-section.html:94
+#: web/templates/pages/components-index/home-section.html:33
+#: web/templates/pages/components-index/home-section.html:64
+#: web/templates/pages/components-index/home-section.html:95
 msgid "Consulta por Whatsapp"
 msgstr "Contact us on Whatsapp"
 
-#: web/templates/pages/components-index/home-section.html:48
+#: web/templates/pages/components-index/home-section.html:49
 msgid "Trasladamos lo que más querés con el cuidado que se merece"
 msgstr "We transport what you love most with the care it deserves"
 
-#: web/templates/pages/components-index/home-section.html:49
+#: web/templates/pages/components-index/home-section.html:50
 msgid "Porque no es solo un viaje, es una experiencia con corazón"
 msgstr "Because it's not just a trip, it's an experience with heart"
 
-#: web/templates/pages/components-index/home-section.html:79
+#: web/templates/pages/components-index/home-section.html:80
 msgid "Donde vayan tus mascotas, vamos con ellas"
 msgstr "Wherever your pets go, we go with them"
 
-#: web/templates/pages/components-index/home-section.html:80
+#: web/templates/pages/components-index/home-section.html:81
 msgid "Viajes responsables, abrazos garantizados"
 msgstr "Responsible travel, guaranteed hugs"
+
+#: web/templates/pages/components-index/quotation-section.html:13
+msgid "Solicitud de Cotización"
+msgstr "Request for quote"
+
+#: web/templates/pages/components-index/quotation-section.html:25
+msgid "Nombre del propietario"
+msgstr "Owner’s name"
+
+#: web/templates/pages/components-index/quotation-section.html:31
+msgid "Email"
+msgstr "Email"
+
+#: web/templates/pages/components-index/quotation-section.html:37
+msgid "Teléfono"
+msgstr "Phone number"
+
+#: web/templates/pages/components-index/quotation-section.html:43
+msgid "Nombre de su mascota"
+msgstr "Pet name"
+
+#: web/templates/pages/components-index/quotation-section.html:49
+msgid "Edad de su mascota"
+msgstr "Pet age"
+
+#: web/templates/pages/components-index/quotation-section.html:55
+msgid "Peso de su mascota"
+msgstr "Pet weight"
+
+#: web/templates/pages/components-index/quotation-section.html:61
+msgid "Raza de su mascota"
+msgstr "Pet breed"
+
+#: web/templates/pages/components-index/quotation-section.html:67
+msgid "Fecha del viaje"
+msgstr "Travel date"
+
+#: web/templates/pages/components-index/quotation-section.html:73
+msgid "Ciudad de Origen"
+msgstr "Origin City"
+
+#: web/templates/pages/components-index/quotation-section.html:79
+msgid "Ciudad de Destino"
+msgstr "Destination City"
+
+#: web/templates/pages/components-index/quotation-section.html:85
+msgid "Comentarios"
+msgstr "Comments"
+
+#: web/templates/pages/components-index/quotation-section.html:90
+msgid "Subí la foto actual de tu mascota a trasladar"
+msgstr "Upload the current photo of your pet to be transferred"
+
+#: web/templates/pages/components-index/quotation-section.html:99
+msgid "Productos"
+msgstr "Products"
+
+#: web/templates/pages/components-index/quotation-section.html:106
+msgid "He leído y acepto los"
+msgstr "I have read and accept the"
+
+#: web/templates/pages/components-index/quotation-section.html:109
+msgid "términos y condiciones"
+msgstr "terms and conditions"
+
+#: web/templates/pages/components-index/quotation-section.html:118
+msgid "Enviar solicitud"
+msgstr "Send request"
