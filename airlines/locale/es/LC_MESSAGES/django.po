@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-26 23:05+0000\n"
+"POT-Creation-Date: 2025-06-26 23:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,7 @@ msgid "Inicio"
 msgstr "Inicio"
 
 #: airlines/translation_strings.py:5
+#: web/templates/pages/components-index/about-us-section.html:23
 msgid "Quienes somos"
 msgstr "Quienes somos"
 
@@ -293,6 +294,30 @@ msgstr ""
 #: web/templates/components/sidebar.html:17
 msgid "Menú"
 msgstr "Menú"
+
+#: web/templates/pages/components-index/about-us-section.html:25
+msgid "about_us_title"
+msgstr ""
+"En <span class='text-primary-red_dark font-semibold'>Aerolineas para Mascotas</span>, "
+"volamos alto para que tengas cerca a tu amigo peludo."
+
+#: web/templates/pages/components-index/about-us-section.html:26
+msgid "about_us_p_1"
+msgstr ""
+"Somos una empresa joven que cuenta con bases operativas tanto en Argentina como España; "
+"buscamos posicionarnos en el mercado, brindando a nuestros clientes un servicio de excelencia. "
+"Entendemos que el transporte de tu mascota y todo lo que conlleva esto, puede ser todo un desafio."
+
+#: web/templates/pages/components-index/about-us-section.html:27
+msgid "about_us_p_2"
+msgstr ""
+"Es por eso que nuestro compromiso principal es brindarte ante todo seguridad, responsabilidad, "
+"confianza y todo el amor que necesita tu mascota al momento de emprender un nuevo destino. "
+"Sabemos que son parte de tu familia, por eso deseamos que al momento que nos elijas sepas que "
+"están en las mejores manos. Para su traslado contamos con personal altamente capacitado, "
+"que entiende las necesidades de estas en cuanto al manejo de diversas razas. "
+"Además, contamos con unidades equipadas con sistemas de ventilación y seguridad que garantizan "
+"un viaje seguro y cómodo para su mascota."
 
 #: web/templates/pages/components-index/faqs-section.html:12
 msgid "Preguntas Frecuentes"

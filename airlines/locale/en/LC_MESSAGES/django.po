@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-26 23:05+0000\n"
+"POT-Creation-Date: 2025-06-27 00:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,7 @@ msgid "Inicio"
 msgstr "Home"
 
 #: airlines/translation_strings.py:5
+#: web/templates/pages/components-index/about-us-section.html:23
 msgid "Quienes somos"
 msgstr "About Us"
 
@@ -269,6 +270,30 @@ msgstr ""
 #: web/templates/components/sidebar.html:17
 msgid "Menú"
 msgstr "Menu"
+
+#: web/templates/pages/components-index/about-us-section.html:25
+msgid "about_us_title"
+msgstr ""
+"At <span class='text-primary-red_dark font-semibold'>Aerolineas para Mascotas</span>, "
+"we fly high so you can keep your furry friend close."
+
+#: web/templates/pages/components-index/about-us-section.html:26
+msgid "about_us_p_1"
+msgstr ""
+"We are a young company with operational bases in both Argentina and Spain. "
+"We strive to establish ourselves in the market by providing our customers with excellent service. "
+"We understand that transporting your pet and everything that entails can be quite a challenge."
+
+#: web/templates/pages/components-index/about-us-section.html:27
+msgid "about_us_p_2"
+msgstr ""
+"That's why our main commitment is to provide you, above all, with the security, responsibility, "
+"trust, and all the love your pet needs when embarking on a new journey. "
+"We know they're part of your family, so we want you to know they're in the best "
+"hands when choosing us. For your pet's transportation, we have highly trained personnel "
+"who understand the needs of pets when handling different breeds. "
+"In addition, we have vehicles equipped with ventilation and safety systems that guarantee "
+"a safe and comfortable trip for your pet."
 
 #: web/templates/pages/components-index/faqs-section.html:12
 msgid "Preguntas Frecuentes"
