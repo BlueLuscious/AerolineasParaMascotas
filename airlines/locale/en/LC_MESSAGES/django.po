@@ -386,17 +386,6 @@ msgid "peru_description_vaccines_cats"
 msgstr ""
 "Feline panleukopenia, Calicivirosis, Rhinotracheitis, Feline leukemia, "
 "Rabies."
-s_mock.py:246
-msgid "peru_description_vaccines_dogs"
-msgstr "Distemper, Canine Hepatitis, Leptosirosis, Parvovirosis, Rabies, Parainfluenza."
-
-#: web/mocks/destinations_mock.py:247
-msgid "cats"
-msgstr "Cats"
-
-#: web/mocks/destinations_mock.py:247
-msgid "peru_description_vaccines_cats"
-msgstr "Feline panleukopenia, Calicivirosis, Rhinotracheitis, Feline leukemia, Rabies."
 
 #: web/mocks/faqs_mock.py:11
 msgid "¿Son una aerolínea?"
