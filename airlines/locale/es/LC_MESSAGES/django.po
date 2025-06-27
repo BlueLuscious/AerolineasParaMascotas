@@ -630,4 +630,4 @@ msgstr "Enviar solicitud"
 
 #: web/templates/unicorn/modal.html:77
 msgid "Consultanos"
-msgstr "Contact us"
+msgstr "Consultanos"
