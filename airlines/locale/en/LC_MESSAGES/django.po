@@ -1,14 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEA# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 11:17+0000\n"
+"POT-Creation-Date: 2025-06-27 11:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -237,8 +236,8 @@ msgstr "Uruguay"
 #: web/mocks/destinations_mock.py:144
 msgid "uruguay_description"
 msgstr ""
-"Home delivery and ground delivery from Argentina. "
-"We manage all medical documentation."
+"Home delivery and ground delivery from Argentina. We manage all medical "
+"documentation."
 
 #: web/mocks/destinations_mock.py:151
 msgid "chile"
@@ -247,8 +246,8 @@ msgstr "Chile"
 #: web/mocks/destinations_mock.py:159
 msgid "chile_description_doc"
 msgstr ""
-"Health certificate, rabies vaccination certificate, "
-"and, in some cases, the Zoosanitary Export Certificate."
+"Health certificate, rabies vaccination certificate, and, in some cases, the "
+"Zoosanitary Export Certificate."
 
 #: web/mocks/destinations_mock.py:166
 msgid "bolivia"
@@ -257,11 +256,11 @@ msgstr "Bolivia"
 #: web/mocks/destinations_mock.py:174
 msgid "bolivia_description"
 msgstr ""
-"In Bolivia, the airports that generally allow pets are international airports, "
-"including La Paz (LPB), Santa Cruz (VVI), and Cochabamba (CBB). However, "
-"it is crucial to check with the airline and the Ministry of Rural Development "
-"and Lands (MDRyT) regarding specific requirements for transporting pets, "
-"including the need for an import permit."
+"In Bolivia, the airports that generally allow pets are international "
+"airports, including La Paz (LPB), Santa Cruz (VVI), and Cochabamba (CBB). "
+"However, it is crucial to check with the airline and the Ministry of Rural "
+"Development and Lands (MDRyT) regarding specific requirements for "
+"transporting pets, including the need for an import permit."
 
 #: web/mocks/destinations_mock.py:181
 msgid "paraguay"
@@ -271,17 +270,18 @@ msgstr "Paraguay"
 msgid "paraguay_description"
 msgstr ""
 "In Paraguay, airports that allow pets are generally subject to airline "
-"requirements and the country's health regulations. Most airlines "
-"operating in Paraguay, such as Paranair, Flybondi, and Air Europa, "
-"allow pets to be transported in the cabin or in the cargo hold, "
-"provided certain requirements are met, such as weight, carrier "
-"dimensions, pet age, and necessary documentation."
+"requirements and the country's health regulations. Most airlines operating "
+"in Paraguay, such as Paranair, Flybondi, and Air Europa, allow pets to be "
+"transported in the cabin or in the cargo hold, provided certain requirements "
+"are met, such as weight, carrier dimensions, pet age, and necessary "
+"documentation."
 
 #: web/mocks/destinations_mock.py:190
 msgid "paraguay_description_doc"
 msgstr ""
 "Veterinary health certificate, vaccination card (especially rabies), "
-"deworming certificate, and in some cases, a passport or international certificate."
+"deworming certificate, and in some cases, a passport or international "
+"certificate."
 
 #: web/mocks/destinations_mock.py:197
 msgid "brazil"
@@ -300,20 +300,20 @@ msgstr ""
 #: web/mocks/destinations_mock.py:207
 msgid "brazil_description_airport_2"
 msgstr ""
-"Brazil's capital offers pet-friendly services and a wide range "
-"of pet transportation options."
+"Brazil's capital offers pet-friendly services and a wide range of pet "
+"transportation options."
 
 #: web/mocks/destinations_mock.py:208
 msgid "brazil_description_airport_3"
 msgstr ""
-"The Belo Horizonte metropolitan area also has good infrastructure "
-"for transporting animals on international flights."
+"The Belo Horizonte metropolitan area also has good infrastructure for "
+"transporting animals on international flights."
 
 #: web/mocks/destinations_mock.py:209
 msgid "brazil_description_airport_4"
 msgstr ""
-"Located in northeast Brazil, Recife is another popular airport "
-"that accepts pets on international flights."
+"Located in northeast Brazil, Recife is another popular airport that accepts "
+"pets on international flights."
 
 #: web/mocks/destinations_mock.py:216
 msgid "colombia"
@@ -332,8 +332,8 @@ msgstr ""
 #: web/mocks/destinations_mock.py:226
 msgid "colombia_description_2"
 msgstr ""
-"Upon arrival at the airport, you must present the required documentation "
-"to the ICA office to obtain the Health Inspection Certificate (CIS)."
+"Upon arrival at the airport, you must present the required documentation to "
+"the ICA office to obtain the Health Inspection Certificate (CIS)."
 
 #: web/mocks/destinations_mock.py:227
 msgid "colombia_description_3"
@@ -356,9 +356,8 @@ msgstr "Health Certificate"
 #| msgid "eu_description_health_1"
 msgid "peru_description_health_certificate"
 msgstr ""
-"It is essential for entry into Peru; it must be issued in the "
-"country of origin and demonstrate that the pet is vaccinated "
-"against relevant diseases."
+"It is essential for entry into Peru; it must be issued in the country of "
+"origin and demonstrate that the pet is vaccinated against relevant diseases."
 
 #: web/mocks/destinations_mock.py:244
 msgid "vaccines"
@@ -373,6 +372,21 @@ msgid "dogs"
 msgstr "Dogs"
 
 #: web/mocks/destinations_mock.py:246
+msgid "peru_description_vaccines_dogs"
+msgstr ""
+"Distemper, Canine Hepatitis, Leptosirosis, Parvovirosis, Rabies, "
+"Parainfluenza."
+
+#: web/mocks/destinations_mock.py:247
+msgid "cats"
+msgstr "Cats"
+
+#: web/mocks/destinations_mock.py:247
+msgid "peru_description_vaccines_cats"
+msgstr ""
+"Feline panleukopenia, Calicivirosis, Rhinotracheitis, Feline leukemia, "
+"Rabies."
+s_mock.py:246
 msgid "peru_description_vaccines_dogs"
 msgstr "Distemper, Canine Hepatitis, Leptosirosis, Parvovirosis, Rabies, Parainfluenza."
 
