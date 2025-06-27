@@ -1,3 +1,4 @@
+from django.utils.translation import gettext as _
 from app.dtos.destination_o import DestinationO
 
 
@@ -9,37 +10,38 @@ class DestinationMock:
 
 
     def mock_destinations(self) -> None:
+        title_european_union = _("european_union_title")
         description_european_union = [
-            {"no_key": [{"no_key": "La Unión Europea (UE) tiene regulaciones específicas para la entrada de mascotas desde terceros países. A continuación, te presentamos una descripción general de los requisitos necesarios:"}, ]},
-            {"Documentación": [
-                    {"Pasaporte para animales de compañía": "Es obligatorio un pasaporte que identifique a la mascota y contenga información sobre su salud y vacunación."},
-                    {"Certificado de salud veterinario": "Un certificado emitido por un veterinario autorizado que confirme la salud de la mascota y su aptitud para viajar."},
-                    {"Certificado de vacunación": "La mascota debe estar vacunada contra la rabia y otras enfermedades relevantes."},
+            {"no_key": [{"no_key": _("eu_description")}, ]},
+            {_("documentation"): [
+                    {_("pets_permits"): _("eu_description_doc_1")},
+                    {_("vet_certificate_health"): _("eu_description_doc_2")},
+                    {_("vaccination_certificate"): _("eu_description_doc_3")},
                 ],
             },
-            {"Vacunación y tratamientos": [
-                    {"Vacunación contra la rabia": "La mascota debe estar vacunada contra la rabia con una vacuna aprobada por la UE."},
-                    {"Tratamiento contra parásitos": "La mascota debe recibir un tratamiento contra parásitos (garrapatas, pulgas, etc.) antes de viajar."},
+            { _("vaccines_and_treatments"): [
+                    {_("rage_vaccine"): _("eu_description_health_1")},
+                    {_("parasite_treatment"): _("eu_description_health_2")},
                 ],
             },
-            {"Identificación": [{"Microchip": "La mascota debe tener un microchip ISO 11784/11785 que permita su identificación."}, ]},
-            {"Permisos y autorizaciones": [
-                    {"Permiso de importación": "En algunos casos, se requiere un permiso de importación emitido por la autoridad competente del país de destino."},
-                    {"Notificación a la autoridad competente": "Es posible que se requiera notificar a la autoridad competente del país de destino sobre la entrada de la mascota."},
+            {_("identification"): [{_("microchip"): _("eu_description_microchip")}, ]},
+            {_("permits_and_auth"): [
+                    {_("import_permit"): _("eu_description_permits_1")},
+                    {_("notification_authority"): _("eu_description_permits_2")},
                 ],
             },
-            {"Condiciones de transporte": [
-                    {"Contenedor de transporte": "La mascota debe viajar en un contenedor adecuado que cumpla con los estándares internacionales."},
-                    {"Condiciones de viaje": "La mascota debe viajar en condiciones seguras y cómodas."},
+            {_("transport_conditions"): [
+                    {_("transport_container"): _("eu_description_transport_1")},
+                    {_("travel_conditions"): _("eu_description_transport_2")},
                 ],
             },
-            {"Importante": [
-                    {"Verificar requisitos específicos": "Los requisitos pueden variar dependiendo del país de destino dentro de la UE y del tipo de mascota. Es fundamental verificar los requisitos específicos para cada caso."},
-                    {"Consultar con las autoridades competentes": "Es recomendable consultar con las autoridades competentes del país de destino y con un veterinario autorizado para asegurarse de cumplir con todos los requisitos."},
+            {_("important"): [
+                    {_("check_specific_reqs"): _("eu_description_important_1")},
+                    {_("consult_authority"): _("eu_description_important_2")},
                 ],
             },
             {"Aerolineas para Mascotas": [
-                    {"no_key": "En Aerolineas para Mascotas, nos comprometemos a ayudarte a navegar por los requisitos y regulaciones para el traslado internacional de mascotas. Nuestro equipo de expertos está aquí para asistirte en cada paso del proceso. ¡Contáctanos para obtener más información!"},
+                    {"no_key": _("eu_description_aem")},
                 ],
             },
         ]
@@ -47,84 +49,84 @@ class DestinationMock:
         destinations: list[dict] = [
             {
                 "destination": {
-                    "name": "España",
+                    "name": _("spain"),
                     "category": "Frecuente",
                     "continent": "Europa",
                     "flag_image": f"{self.flags_static_path}/spain-flag.png",
                     "airport_image": f"{self.airports_static_path}/spain-airport.jpg",
                     "airports": ["Aeropuerto Adolfo Suárez Madrid-Barajas", ],
                     "metadata": {
-                        "title": "Requisitos para Entrar con Mascotas a la Unión Europea",
+                        "title": title_european_union,
                         "description": description_european_union,
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Italia",
+                    "name": _("italy"),
                     "category": "Frecuente",
                     "continent": "Europa",
                     "flag_image": f"{self.flags_static_path}/italy-flag.png",
                     "airport_image": f"{self.airports_static_path}/italy-airport.jpg",
                     "airports": ["Aeropuerto de Roma-Fiumicino Metropolitan", ],
                     "metadata": {
-                        "title": "Requisitos para Entrar con Mascotas a la Unión Europea",
+                        "title": title_european_union,
                         "description": description_european_union,
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Portugal",
+                    "name": _("portugal"),
                     "category": "Frecuente",
                     "continent": "Europa",
                     "flag_image": f"{self.flags_static_path}/portugal-flag.png",
                     "airport_image": f"{self.airports_static_path}/portugal-airport.jpg",
                     "airports": ["Aeropuerto de Lisboa", "Aeropuerto de Oporto-Francisco Sá Carneiro", "Faro International Airport", ],
                     "metadata": {
-                        "title": "Requisitos para Entrar con Mascotas a la Unión Europea",
+                        "title": title_european_union,
                         "description": description_european_union,
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Francia",
+                    "name": _("france"),
                     "category": "Frecuente",
                     "continent": "Europa",
                     "flag_image": f"{self.flags_static_path}/france-flag.png",
                     "airport_image": f"{self.airports_static_path}/france-airport.webp",
                     "airports": ["Aeropuerto de París-Charles de Gaulle", ],
                     "metadata": {
-                        "title": "Requisitos para Entrar con Mascotas a la Unión Europea",
+                        "title": title_european_union,
                         "description": description_european_union,
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Alemania",
+                    "name": _("germany"),
                     "category": "Frecuente",
                     "continent": "Europa",
                     "flag_image": f"{self.flags_static_path}/germany-flag.png",
                     "airport_image": f"{self.airports_static_path}/germany-airport.jpg",
                     "airports": ["Aeropuerto de Frankfurt (FRA)", ],
                     "metadata": {
-                        "title": "Requisitos para Entrar con Mascotas a la Unión Europea",
+                        "title": title_european_union,
                         "description": description_european_union,
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Austria",
+                    "name": _("austria"),
                     "category": "Frecuente",
                     "continent": "Europa",
                     "flag_image": f"{self.flags_static_path}/austria-flag.png",
                     "airport_image": f"{self.airports_static_path}/austria-airport.jpg",
                     "airports": ["Aeropuerto de Viena-Schwechat", ],
                     "metadata": {
-                        "title": "Requisitos para Entrar con Mascotas a la Unión Europea",
+                        "title": title_european_union,
                         "description": description_european_union,
                     },
                 },

@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-26 23:56+0000\n"
+"POT-Creation-Date: 2025-06-27 09:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,6 +46,187 @@ msgstr "Español"
 #: airlines/translation_strings.py:10
 msgid "Inglés"
 msgstr "Inglés"
+
+#: web/mocks/destinations_mock.py:13
+msgid "european_union_title"
+msgstr "Requisitos para Entrar con Mascotas a la Unión Europea"
+
+#: web/mocks/destinations_mock.py:15
+msgid "eu_description"
+msgstr ""
+"La Unión Europea (UE) tiene regulaciones específicas para la entrada "
+"de mascotas desde terceros países. A continuación, te presentamos "
+"una descripción general de los requisitos necesarios:"
+
+#: web/mocks/destinations_mock.py:16
+msgid "documentation"
+msgstr "Documentación"
+
+#: web/mocks/destinations_mock.py:17
+msgid "pets_permits"
+msgstr "Pasaporte para animales de compañía"
+
+#: web/mocks/destinations_mock.py:17
+msgid "eu_description_doc_1"
+msgstr ""
+"Es obligatorio un pasaporte que identifique a la mascota y contenga "
+"información sobre su salud y vacunación."
+
+#: web/mocks/destinations_mock.py:18
+msgid "vet_certificate_health"
+msgstr "Certificado de salud veterinario"
+
+#: web/mocks/destinations_mock.py:18
+msgid "eu_description_doc_2"
+msgstr ""
+"Un certificado emitido por un veterinario autorizado que confirme "
+"la salud de la mascota y su aptitud para viajar."
+
+#: web/mocks/destinations_mock.py:19
+msgid "vaccination_certificate"
+msgstr "Certificado de vacunación"
+
+#: web/mocks/destinations_mock.py:19
+msgid "eu_description_doc_3"
+msgstr "La mascota debe estar vacunada contra la rabia y otras enfermedades relevantes."
+
+#: web/mocks/destinations_mock.py:22
+msgid "vaccines_and_treatments"
+msgstr "Vacunación y tratamientos"
+
+#: web/mocks/destinations_mock.py:23
+msgid "rage_vaccine"
+msgstr "Vacunación contra la rabia"
+
+#: web/mocks/destinations_mock.py:23
+msgid "eu_description_health_1"
+msgstr "La mascota debe estar vacunada contra la rabia con una vacuna aprobada por la UE."
+
+#: web/mocks/destinations_mock.py:24
+msgid "parasite_treatment"
+msgstr "Tratamiento contra parásitos"
+
+#: web/mocks/destinations_mock.py:24
+msgid "eu_description_health_2"
+msgstr ""
+"La mascota debe recibir un tratamiento contra parásitos (garrapatas, pulgas, etc.) "
+"antes de viajar."
+
+#: web/mocks/destinations_mock.py:27
+msgid "identification"
+msgstr "Identificación"
+
+#: web/mocks/destinations_mock.py:27
+msgid "microchip"
+msgstr "Microchip"
+
+#: web/mocks/destinations_mock.py:27
+msgid "eu_description_microchip"
+msgstr "La mascota debe tener un microchip ISO 11784/11785 que permita su identificación."
+
+#: web/mocks/destinations_mock.py:28
+msgid "permits_and_auth"
+msgstr "Permisos y autorizaciones"
+
+#: web/mocks/destinations_mock.py:29
+msgid "import_permit"
+msgstr "Permiso de importación"
+
+#: web/mocks/destinations_mock.py:29
+msgid "eu_description_permits_1"
+msgstr ""
+"En algunos casos, se requiere un permiso de importación emitido por la autoridad "
+"competente del país de destino."
+
+#: web/mocks/destinations_mock.py:30
+msgid "notification_authority"
+msgstr "Notificación a la autoridad competente"
+
+#: web/mocks/destinations_mock.py:30
+msgid "eu_description_permits_2"
+msgstr ""
+"Es posible que se requiera notificar a la autoridad competente del país de destino "
+"sobre la entrada de la mascota."
+
+#: web/mocks/destinations_mock.py:33
+msgid "transport_conditions"
+msgstr "Condiciones de transporte"
+
+#: web/mocks/destinations_mock.py:34
+msgid "transport_container"
+msgstr "Contenedor de transporte"
+
+#: web/mocks/destinations_mock.py:34
+msgid "eu_description_transport_1"
+msgstr ""
+"La mascota debe viajar en un contenedor adecuado que cumpla con los "
+"estándares internacionales."
+
+#: web/mocks/destinations_mock.py:35
+msgid "travel_conditions"
+msgstr "Condiciones de viaje"
+
+#: web/mocks/destinations_mock.py:35
+msgid "eu_description_transport_2"
+msgstr "La mascota debe viajar en condiciones seguras y cómodas."
+
+#: web/mocks/destinations_mock.py:38
+msgid "important"
+msgstr "Importante"
+
+#: web/mocks/destinations_mock.py:39
+msgid "check_specific_reqs"
+msgstr "Verificar requisitos específicos"
+
+#: web/mocks/destinations_mock.py:39
+msgid "eu_description_important_1"
+msgstr ""
+"Los requisitos pueden variar dependiendo del país de destino dentro de la UE "
+"y del tipo de mascota. Es fundamental verificar los requisitos específicos "
+"para cada caso."
+
+#: web/mocks/destinations_mock.py:40
+msgid "consult_authority"
+msgstr "Consultar con las autoridades competentes"
+
+#: web/mocks/destinations_mock.py:40
+msgid "eu_description_important_2"
+msgstr ""
+"Es recomendable consultar con las autoridades competentes del país de destino "
+"y con un veterinario autorizado para asegurarse de cumplir con todos los "
+"requisitos."
+
+#: web/mocks/destinations_mock.py:44
+msgid "eu_description_aem"
+msgstr ""
+"En Aerolineas para Mascotas, nos comprometemos a ayudarte a navegar por los "
+"requisitos y regulaciones para el traslado internacional de mascotas. "
+"Nuestro equipo de expertos está aquí para asistirte en cada paso del proceso. "
+"¡Contáctanos para obtener más información!"
+
+#: web/mocks/destinations_mock.py:52
+msgid "spain"
+msgstr "España"
+
+#: web/mocks/destinations_mock.py:66
+msgid "italy"
+msgstr "Italia"
+
+#: web/mocks/destinations_mock.py:80
+msgid "portugal"
+msgstr "Portugal"
+
+#: web/mocks/destinations_mock.py:94
+msgid "france"
+msgstr "Francia"
+
+#: web/mocks/destinations_mock.py:108
+msgid "germany"
+msgstr "Alemania"
+
+#: web/mocks/destinations_mock.py:122
+msgid "austria"
+msgstr "Austria"
 
 #: web/mocks/faqs_mock.py:11
 msgid "¿Son una aerolínea?"
@@ -298,26 +479,29 @@ msgstr "Menú"
 #: web/templates/pages/components-index/about-us-section.html:25
 msgid "about_us_title"
 msgstr ""
-"En <span class='text-primary-red_dark font-semibold'>Aerolineas para Mascotas</span>, "
-"volamos alto para que tengas cerca a tu amigo peludo."
+"En <span class='text-primary-red_dark font-semibold'>Aerolineas para "
+"Mascotas</span>, volamos alto para que tengas cerca a tu amigo peludo."
 
 #: web/templates/pages/components-index/about-us-section.html:26
 msgid "about_us_p_1"
 msgstr ""
-"Somos una empresa joven que cuenta con bases operativas tanto en Argentina como España; "
-"buscamos posicionarnos en el mercado, brindando a nuestros clientes un servicio de excelencia. "
-"Entendemos que el transporte de tu mascota y todo lo que conlleva esto, puede ser todo un desafio."
+"Somos una empresa joven que cuenta con bases operativas tanto en Argentina "
+"como España; buscamos posicionarnos en el mercado, brindando a nuestros "
+"clientes un servicio de excelencia. Entendemos que el transporte de tu "
+"mascota y todo lo que conlleva esto, puede ser todo un desafio."
 
 #: web/templates/pages/components-index/about-us-section.html:27
 msgid "about_us_p_2"
 msgstr ""
-"Es por eso que nuestro compromiso principal es brindarte ante todo seguridad, responsabilidad, "
-"confianza y todo el amor que necesita tu mascota al momento de emprender un nuevo destino. "
-"Sabemos que son parte de tu familia, por eso deseamos que al momento que nos elijas sepas que "
-"están en las mejores manos. Para su traslado contamos con personal altamente capacitado, "
-"que entiende las necesidades de estas en cuanto al manejo de diversas razas. "
-"Además, contamos con unidades equipadas con sistemas de ventilación y seguridad que garantizan "
-"un viaje seguro y cómodo para su mascota."
+"Es por eso que nuestro compromiso principal es brindarte ante todo "
+"seguridad, responsabilidad, confianza y todo el amor que necesita tu mascota "
+"al momento de emprender un nuevo destino. Sabemos que son parte de tu "
+"familia, por eso deseamos que al momento que nos elijas sepas que están en "
+"las mejores manos. Para su traslado contamos con personal altamente "
+"capacitado, que entiende las necesidades de estas en cuanto al manejo de "
+"diversas razas. Además, contamos con unidades equipadas con sistemas de "
+"ventilación y seguridad que garantizan un viaje seguro y cómodo para su "
+"mascota."
 
 #: web/templates/pages/components-index/faqs-section.html:12
 msgid "Preguntas Frecuentes"
