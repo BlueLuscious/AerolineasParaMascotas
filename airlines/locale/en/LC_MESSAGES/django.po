@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 11:39+0000\n"
+"POT-Creation-Date: 2025-06-27 20:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -386,6 +386,45 @@ msgid "peru_description_vaccines_cats"
 msgstr ""
 "Feline panleukopenia, Calicivirosis, Rhinotracheitis, Feline leukemia, "
 "Rabies."
+
+#: web/mocks/destinations_mock.py:256
+msgid "usa"
+msgstr "United States"
+
+#: web/mocks/destinations_mock.py:264
+msgid "usa_description"
+msgstr ""
+"To bring pets into the United States, it is crucial to follow the "
+"requirements of the Centers for Disease Control and Prevention (CDC). "
+"Dogs must be at least 6 months old, have a microchip, and be "
+"vaccinated against rabies. They must also have a valid health "
+"certificate and rabies vaccination certificate. A dog importation "
+"form issued by the CDC is also required."
+
+#: web/mocks/destinations_mock.py:271
+msgid "canada"
+msgstr "Canada"
+
+#: web/mocks/destinations_mock.py:282
+msgid "mexico"
+msgstr "Mexico"
+
+#: web/mocks/destinations_mock.py:290
+msgid "mexico_description"
+msgstr ""
+"The European Union (EU) has specific regulations for the entry of pets from "
+"third countries. Below is an overview of the necessary requirements:"
+
+#: web/mocks/destinations_mock.py:291
+msgid "in_summary"
+msgstr "In summary"
+
+#: web/mocks/destinations_mock.py:291
+msgid "mexico_description_summary"
+msgstr ""
+"AICM is a pet-friendly airport, but certain requirements must be "
+"met for traveling with pets, including the use of containers/cages, "
+"registration with the airline, and consulting SENASICA requirements."
 
 #: web/mocks/faqs_mock.py:11
 msgid "¿Son una aerolínea?"

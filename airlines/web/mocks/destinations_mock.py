@@ -253,7 +253,7 @@ class DestinationMock:
             },
             {
                 "destination": {
-                    "name": "Estados Unidos",
+                    "name": _("usa"),
                     "category": "Frecuente",
                     "continent": "Norte America",
                     "flag_image": f"{self.flags_static_path}/usa-flag.png",
@@ -261,24 +261,25 @@ class DestinationMock:
                     "airports": ["Aeropuerto internacional en Florida", ],
                     "metadata": {
                         "description": [
-                            {"no_key": [{"no_key": "Para entrar con mascotas a Estados Unidos, es crucial seguir los requisitos de los Centers for Disease Control and Prevention (CDC). Los perros deben tener al menos 6 meses de edad, tener un microchip y estar vacunados contra la rabia. Además, deben tener un certificado de salud y de vacunación antirrábica válido. También se requiere un formulario de importación para perros, emitido por la CDC."}, ]},
+                            {"no_key": [{"no_key": _("usa_description")}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Canadá",
+                    "name": _("canada"),
                     "category": "Frecuente",
                     "continent": "Norte America",
                     "flag_image": f"{self.flags_static_path}/canada-flag.png",
                     "airport_image": f"{self.airports_static_path}/canada-airport.jpg",
                     "airports": ["Aeropuerto Internacional Pearson de Toronto (YYZ)", "Aeropuerto Internacional Montreal-Trudeau (YUL)", ],
+                    # metadata
                 },
             },
             {
                 "destination": {
-                    "name": "Mexico",
+                    "name": _("mexico"),
                     "category": "Frecuente",
                     "continent": "Norte America",
                     "flag_image": f"{self.flags_static_path}/mexico-flag.png",
@@ -286,8 +287,8 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional de la Ciudad de México (AICM)", ],
                     "metadata": {
                         "description": [
-                            {"no_key": [{"no_key": "Para ingresar con mascotas, es importante consultar con la aerolínea sobre los requisitos específicos para cada tipo de mascota y el tamaño del contenedor."}, ]},
-                            {"En resumen": [{"no_key": "El AICM es un aeropuerto pet-friendly, pero se deben cumplir con ciertos requisitos para viajar con mascotas, incluyendo el uso de contenedores/jaulas, el registro con la aerolínea y la consulta de los requisitos de SENASICA."}, ]},
+                            {"no_key": [{"no_key": _("mexico_description")}, ]},
+                            {_("in_summary"): [{"no_key": _("mexico_description_summary")}, ]},
                         ],
                     },
                 },
