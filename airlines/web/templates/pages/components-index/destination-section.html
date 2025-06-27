@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 {% load unicorn %}
 {% load inclusiontag.custom_grid_card %}
 {% load simpletag.destination_o_tag %}
@@ -11,9 +12,9 @@
 	<div class="flex flex-col gap-y-16 size-full text-xl text-center">
 		<div class="flex flex-col items-center gap-y-8">
 			<h1 class="text-3xl md:text-4xl font-secondary_font font-black tracking-wide">
-				Destinos Frecuentes
+				{% trans "frequent_destinations" %}
 			</h1>
-			<h2>Estos son los destinos que más eligen quienes confían en nosotros para llevar a sus compañeros de cuatro patas a vivir nuevas aventuras.</h2>
+			<h2>{% trans "destination_caption" %}</h2>
         </div>
 
 		<div class="flex flex-col items-center gap-y-12 font-primary_font font-black text-secondary-grey_semidark">
@@ -43,7 +44,7 @@
 	<!-- Exotic Destinations -->
 	<div class="flex flex-col gap-y-16 size-full text-xl text-center">
 		<h1 class="text-3xl md:text-4xl font-secondary_font font-black tracking-wide">
-			Destinos Exoticos
+			{% trans "exotic_destinations" %}
 		</h1>
 
 		<div class="font-primary_font font-black text-secondary-grey_semidark">

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 21:06+0000\n"
+"POT-Creation-Date: 2025-06-27 22:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,8 +59,8 @@ msgstr ""
 "descripción general de los requisitos necesarios:"
 
 #: web/mocks/destinations_mock.py:16 web/mocks/destinations_mock.py:159
-#: web/mocks/destinations_mock.py:190 web/mocks/destinations_mock.py:404
-#: web/mocks/destinations_mock.py:440
+#: web/mocks/destinations_mock.py:190 web/mocks/destinations_mock.py:383
+#: web/mocks/destinations_mock.py:415
 msgid "documentation"
 msgstr "Documentación"
 
@@ -98,7 +98,7 @@ msgstr ""
 msgid "vaccines_and_treatments"
 msgstr "Vacunación y tratamientos"
 
-#: web/mocks/destinations_mock.py:23 web/mocks/destinations_mock.py:398
+#: web/mocks/destinations_mock.py:23 web/mocks/destinations_mock.py:380
 msgid "rabies_vaccine"
 msgstr "Vacunación contra la rabia"
 
@@ -122,7 +122,7 @@ msgstr ""
 msgid "identification"
 msgstr "Identificación"
 
-#: web/mocks/destinations_mock.py:27 web/mocks/destinations_mock.py:396
+#: web/mocks/destinations_mock.py:27 web/mocks/destinations_mock.py:379
 msgid "microchip"
 msgstr "Microchip"
 
@@ -136,7 +136,7 @@ msgstr ""
 msgid "permits_and_auth"
 msgstr "Permisos y autorizaciones"
 
-#: web/mocks/destinations_mock.py:29 web/mocks/destinations_mock.py:356
+#: web/mocks/destinations_mock.py:29 web/mocks/destinations_mock.py:345
 msgid "import_permit"
 msgstr "Permiso de importación"
 
@@ -156,7 +156,7 @@ msgstr ""
 "Es posible que se requiera notificar a la autoridad competente del país de "
 "destino sobre la entrada de la mascota."
 
-#: web/mocks/destinations_mock.py:33 web/mocks/destinations_mock.py:442
+#: web/mocks/destinations_mock.py:33 web/mocks/destinations_mock.py:416
 msgid "transport_conditions"
 msgstr "Condiciones de transporte"
 
@@ -444,8 +444,8 @@ msgstr ""
 msgid "australia"
 msgstr "Austrilia"
 
-#: web/mocks/destinations_mock.py:306 web/mocks/destinations_mock.py:402
-#: web/mocks/destinations_mock.py:420
+#: web/mocks/destinations_mock.py:306 web/mocks/destinations_mock.py:382
+#: web/mocks/destinations_mock.py:398
 msgid "quarantine"
 msgstr "Cuarentena"
 
@@ -454,220 +454,218 @@ msgid "australia_description_quarantine"
 msgstr ""
 "Una vez que la mascota llega a Melbourne, será trasladada al centro de "
 "cuarentena posterior a la entrada en Mickleham para un período de "
-"cuarentena, que varía según el país de origen de la mascota. Desde "
-"Argentina la cuarentena no supera los 30 días."
+"cuarentena, que varía según el país de origen de la mascota. Desde Argentina "
+"la cuarentena no supera los 30 días."
 
-#: web/mocks/destinations_mock.py:308
+#: web/mocks/destinations_mock.py:307
 msgid "cargo_hold_trip"
 msgstr "Viaje de bodega de carga"
 
-#: web/mocks/destinations_mock.py:308
+#: web/mocks/destinations_mock.py:307
 msgid "australia_description_cargo_hold"
 msgstr ""
-"Las mascotas deben viajar en la bodega de carga como carga declarada "
-"en un transportín aprobado por la IATA."
+"Las mascotas deben viajar en la bodega de carga como carga declarada en un "
+"transportín aprobado por la IATA."
 
-#: web/mocks/destinations_mock.py:310
+#: web/mocks/destinations_mock.py:308
 msgid "no_national_transfers"
 msgstr "No se permiten traslados nacionales"
 
-#: web/mocks/destinations_mock.py:310
+#: web/mocks/destinations_mock.py:308
 msgid "australia_description_national_transfers"
 msgstr ""
-"No se permite que las mascotas lleguen a otro aeropuerto australiano "
-"y luego viajen en un vuelo nacional a Melbourne."
+"No se permite que las mascotas lleguen a otro aeropuerto australiano y luego "
+"viajen en un vuelo nacional a Melbourne."
 
-#: web/mocks/destinations_mock.py:312
+#: web/mocks/destinations_mock.py:309
 msgid "quarantine_reqs"
 msgstr "Requisitos de cuarentena"
 
-#: web/mocks/destinations_mock.py:312
+#: web/mocks/destinations_mock.py:309
 msgid "australia_description_quarantine_reqs"
 msgstr ""
-"Se deben seguir los requisitos de cuarentena estrictos del "
-"Departamento de Agricultura, Pesca y Recursos Forestales "
-"(DAFF) de Australia."
+"Se deben seguir los requisitos de cuarentena estrictos del Departamento de "
+"Agricultura, Pesca y Recursos Forestales (DAFF) de Australia."
 
-#: web/mocks/destinations_mock.py:320
+#: web/mocks/destinations_mock.py:316
 msgid "new_zealand"
 msgstr "Nueva Zelanda"
 
-#: web/mocks/destinations_mock.py:328
+#: web/mocks/destinations_mock.py:324
 msgid "new_zealand_description_1"
 msgstr ""
-"Para traer mascotas a Nueva Zelanda, es fundamental que se cumplan "
-"los estrictos requisitos sanitarios y veterinarios del país."
+"Para traer mascotas a Nueva Zelanda, es fundamental que se cumplan los "
+"estrictos requisitos sanitarios y veterinarios del país."
 
-#: web/mocks/destinations_mock.py:330
+#: web/mocks/destinations_mock.py:325
 msgid "new_zealand_description_2"
 msgstr ""
-"El Ministerio de Industrias Primarias (MPI) solo permite la entrada "
-"de perros y gatos de países considerados libres o controlados de rabia."
+"El Ministerio de Industrias Primarias (MPI) solo permite la entrada de "
+"perros y gatos de países considerados libres o controlados de rabia."
 
-#: web/mocks/destinations_mock.py:332
+#: web/mocks/destinations_mock.py:326
 msgid "new_zealand_description_3"
 msgstr ""
-"Las mascotas deben tener un microchip antes de cualquier tratamiento "
-"para la importación."
+"Las mascotas deben tener un microchip antes de cualquier tratamiento para la "
+"importación."
 
-#: web/mocks/destinations_mock.py:334
+#: web/mocks/destinations_mock.py:327
 msgid "new_zealand_description_4"
 msgstr ""
-"Se necesita documentación que confirme que el microchip fue implantado "
-"y/o escaneado antes de la vacunación primaria contra la rabia y "
-"todos los tratamientos posteriores."
+"Se necesita documentación que confirme que el microchip fue implantado y/o "
+"escaneado antes de la vacunación primaria contra la rabia y todos los "
+"tratamientos posteriores."
 
-#: web/mocks/destinations_mock.py:342
+#: web/mocks/destinations_mock.py:334
 msgid "israel"
 msgstr "Israel"
 
-#: web/mocks/destinations_mock.py:350
+#: web/mocks/destinations_mock.py:342
 msgid "israel_description"
 msgstr ""
-"El Aeropuerto Internacional Ben Gurión en Lod, cerca de Tel Aviv, "
-"es el principal aeropuerto internacional de Israel y permite "
-"la entrada de mascotas."
+"El Aeropuerto Internacional Ben Gurión en Lod, cerca de Tel Aviv, es el "
+"principal aeropuerto internacional de Israel y permite la entrada de "
+"mascotas."
 
-#: web/mocks/destinations_mock.py:352
+#: web/mocks/destinations_mock.py:343
 msgid "pets_in_cabin"
 msgstr "Mascotas en cabina"
 
-#: web/mocks/destinations_mock.py:352
+#: web/mocks/destinations_mock.py:343
 msgid "israel_description_cabin"
 msgstr ""
-"Las mascotas pueden viajar en cabina si pesan hasta 8 kg, incluyendo "
-"el transportín, y si el transportín cumple con las dimensiones "
-"permitidas por la aerolínea."
+"Las mascotas pueden viajar en cabina si pesan hasta 8 kg, incluyendo el "
+"transportín, y si el transportín cumple con las dimensiones permitidas por "
+"la aerolínea."
 
-#: web/mocks/destinations_mock.py:354
+#: web/mocks/destinations_mock.py:344
 msgid "pets_in_hold"
 msgstr "Mascotas en bodega"
 
-#: web/mocks/destinations_mock.py:354
+#: web/mocks/destinations_mock.py:344
 msgid "israel_description_hold"
 msgstr ""
-"Las mascotas también pueden viajar como equipaje en bodega, pero deben "
-"estar en una jaula rígida y segura, según las regulaciones de la aerolínea."
+"Las mascotas también pueden viajar como equipaje en bodega, pero deben estar "
+"en una jaula rígida y segura, según las regulaciones de la aerolínea."
 
-#: web/mocks/destinations_mock.py:356
+#: web/mocks/destinations_mock.py:345
 msgid "israel_description_import_license"
 msgstr ""
-"Es crucial obtener el permiso de importación antes de viajar a Israel "
-"con mascotas."
+"Es crucial obtener el permiso de importación antes de viajar a Israel con "
+"mascotas."
 
-#: web/mocks/destinations_mock.py:358
+#: web/mocks/destinations_mock.py:346
 msgid "others_considerations"
 msgstr "Otras consideraciones"
 
-#: web/mocks/destinations_mock.py:358
+#: web/mocks/destinations_mock.py:346
 msgid "israel_description_other"
 msgstr ""
-"Es recomendable verificar las regulaciones específicas de cada "
-"aerolínea antes de reservar el vuelo, ya que pueden variar."
+"Es recomendable verificar las regulaciones específicas de cada aerolínea "
+"antes de reservar el vuelo, ya que pueden variar."
 
-#: web/mocks/destinations_mock.py:366
+#: web/mocks/destinations_mock.py:353
 msgid "turkey"
 msgstr "Turquía"
 
-#: web/mocks/destinations_mock.py:374
+#: web/mocks/destinations_mock.py:361
 msgid "turkey_description"
 msgstr ""
-"Además, algunas aerolíneas, como Turkish Airlines, tienen "
-"políticas específicas para el transporte de mascotas."
+"Además, algunas aerolíneas, como Turkish Airlines, tienen políticas "
+"específicas para el transporte de mascotas."
 
-#: web/mocks/destinations_mock.py:376
+#: web/mocks/destinations_mock.py:362
 msgid "turkey_description_airlines"
 msgstr ""
 "Tiene una política de mascotas que incluye la posibilidad de viajar en "
 "cabina o bodega, según el peso y tamaño de la mascota y su transportín."
 
-#: web/mocks/destinations_mock.py:378
+#: web/mocks/destinations_mock.py:363
 msgid "considerations"
 msgstr "Consideraciones"
 
-#: web/mocks/destinations_mock.py:378
+#: web/mocks/destinations_mock.py:363
 msgid "turkey_description_other"
 msgstr ""
-"Es importante verificar las políticas de cada aerolínea y cumplir con "
-"los requisitos de salud y documentación necesarios para viajar con "
-"mascotas a Turquía."
+"Es importante verificar las políticas de cada aerolínea y cumplir con los "
+"requisitos de salud y documentación necesarios para viajar con mascotas a "
+"Turquía."
 
-#: web/mocks/destinations_mock.py:386
+#: web/mocks/destinations_mock.py:370
 msgid "japan"
 msgstr "Japón"
 
-#: web/mocks/destinations_mock.py:393
+#: web/mocks/destinations_mock.py:377
 msgid "japan_title"
 msgstr "Requisitos para viajar con mascotas a Japón"
 
-#: web/mocks/destinations_mock.py:396
+#: web/mocks/destinations_mock.py:379
 msgid "japan_description_microchip"
 msgstr "Las mascotas deben tener un microchip."
 
-#: web/mocks/destinations_mock.py:398
+#: web/mocks/destinations_mock.py:380
 msgid "japan_description_vaccines"
 msgstr "La vacunación debe ser al menos 30 días antes de la entrada al país."
 
-#: web/mocks/destinations_mock.py:400
+#: web/mocks/destinations_mock.py:381
 msgid "rabies_titer_test"
 msgstr "Prueba de titulación de rabia"
 
-#: web/mocks/destinations_mock.py:400
+#: web/mocks/destinations_mock.py:381
 msgid "japan_description_rage"
 msgstr ""
-"Se requiere una prueba para asegurar la efectividad de la vacuna "
-"contra la rabia."
+"Se requiere una prueba para asegurar la efectividad de la vacuna contra la "
+"rabia."
 
-#: web/mocks/destinations_mock.py:402
+#: web/mocks/destinations_mock.py:382
 msgid "japan_description_quarantine"
 msgstr ""
-"Dependiendo de los requisitos cumplidos por la mascota, puede "
-"haber un período de cuarentena de 12 horas o más."
+"Dependiendo de los requisitos cumplidos por la mascota, puede haber un "
+"período de cuarentena de 12 horas o más."
 
-#: web/mocks/destinations_mock.py:404
+#: web/mocks/destinations_mock.py:383
 msgid "japan_description_doc"
 msgstr ""
-"Se debe presentar la documentación requerida, como el certificado "
-"ASE-3293 y la solicitud de inspección de importación."
+"Se debe presentar la documentación requerida, como el certificado ASE-3293 y "
+"la solicitud de inspección de importación."
 
-#: web/mocks/destinations_mock.py:412
+#: web/mocks/destinations_mock.py:390
 msgid "china"
 msgstr "China"
 
-#: web/mocks/destinations_mock.py:420
+#: web/mocks/destinations_mock.py:398
 msgid "china_description_quarantine"
 msgstr "Las mascotas que ingresan a China pueden estar sujetas a cuarentena."
 
-#: web/mocks/destinations_mock.py:422
+#: web/mocks/destinations_mock.py:399
 msgid "restrictions"
 msgstr "Restricciones"
 
-#: web/mocks/destinations_mock.py:422
+#: web/mocks/destinations_mock.py:399
 msgid "china_description_restrictions"
 msgstr "Solo se permite una mascota por pasajero."
 
-#: web/mocks/destinations_mock.py:430
+#: web/mocks/destinations_mock.py:406
 msgid "south_korea"
 msgstr "Corea del Sur"
 
-#: web/mocks/destinations_mock.py:437
+#: web/mocks/destinations_mock.py:413
 msgid "south_korea_title"
 msgstr "Requisitos para viajar con mascotas a Corea del Sur"
 
-#: web/mocks/destinations_mock.py:440
+#: web/mocks/destinations_mock.py:415
 msgid "south_korea_description_doc"
 msgstr ""
-"Es necesario tener la documentación de la mascota en regla, incluyendo "
-"el certificado de vacunación contra la rabia y otros requisitos que "
-"pueden variar según el país de origen de la mascota. Desde Argentina "
-"exigen test de anticuerpos de rabia."
+"Es necesario tener la documentación de la mascota en regla, incluyendo el "
+"certificado de vacunación contra la rabia y otros requisitos que pueden "
+"variar según el país de origen de la mascota. Desde Argentina exigen test de "
+"anticuerpos de rabia."
 
-#: web/mocks/destinations_mock.py:442
+#: web/mocks/destinations_mock.py:416
 msgid "south_korea_description_transport"
 msgstr ""
-"Las aerolíneas tienen sus propias políticas sobre el transporte de "
-"mascotas, por lo que es importante consultar con la aerolínea "
-"antes de viajar."
+"Las aerolíneas tienen sus propias políticas sobre el transporte de mascotas, "
+"por lo que es importante consultar con la aerolínea antes de viajar."
 
 #: web/mocks/faqs_mock.py:11
 msgid "¿Son una aerolínea?"
@@ -943,6 +941,20 @@ msgstr ""
 "diversas razas. Además, contamos con unidades equipadas con sistemas de "
 "ventilación y seguridad que garantizan un viaje seguro y cómodo para su "
 "mascota."
+
+#: web/templates/pages/components-index/destination-section.html:14
+msgid "frequent_destinations"
+msgstr "Destinos Frecuentes"
+
+#: web/templates/pages/components-index/destination-section.html:16
+msgid "destination_caption"
+msgstr ""
+"Estos son los destinos que más eligen quienes confían en nosotros para "
+"llevar a sus compañeros de cuatro patas a vivir nuevas aventuras."
+
+#: web/templates/pages/components-index/destination-section.html:46
+msgid "exotic_destinations"
+msgstr "Destinos Exoticos"
 
 #: web/templates/pages/components-index/faqs-section.html:12
 msgid "Preguntas Frecuentes"
