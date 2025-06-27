@@ -95,7 +95,7 @@ msgid "vaccines_and_treatments"
 msgstr "Vacunación y tratamientos"
 
 #: web/mocks/destinations_mock.py:23
-msgid "rage_vaccine"
+msgid "rabies_vaccine"
 msgstr "Vacunación contra la rabia"
 
 #: web/mocks/destinations_mock.py:23
@@ -534,6 +534,7 @@ msgstr "Seguro, cómodo y con amor en cada kilómetro"
 #: web/templates/pages/components-index/home-section.html:26
 #: web/templates/pages/components-index/home-section.html:57
 #: web/templates/pages/components-index/home-section.html:88
+#: web/templates/unicorn/modal.html:70
 msgid "Solicitá tu cotización"
 msgstr "Solicitá tu cotización"
 
@@ -626,3 +627,7 @@ msgstr "términos y condiciones"
 #: web/templates/pages/components-index/quotation-section.html:118
 msgid "Enviar solicitud"
 msgstr "Enviar solicitud"
+
+#: web/templates/unicorn/modal.html:77
+msgid "Consultanos"
+msgstr "Contact us"

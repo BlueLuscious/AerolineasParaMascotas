@@ -21,6 +21,7 @@ class DestinationMock:
             },
             { _("vaccines_and_treatments"): [
                     {_("rage_vaccine"): _("eu_description_health_1")},
+                    {_("rabies_vaccine"): _("eu_description_health_1")},
                     {_("parasite_treatment"): _("eu_description_health_2")},
                 ],
             },

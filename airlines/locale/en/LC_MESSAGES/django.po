@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 00:00+0000\n"
+"POT-Creation-Date: 2025-06-27 10:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,6 +46,185 @@ msgstr "Spanish"
 #: airlines/translation_strings.py:10
 msgid "Inglés"
 msgstr "English"
+
+#: web/mocks/destinations_mock.py:13
+msgid "european_union_title"
+msgstr "Requirements for entering the European Union with pets"
+
+#: web/mocks/destinations_mock.py:15
+msgid "eu_description"
+msgstr ""
+"The European Union (EU) has specific regulations for the entry "
+"of pets from third countries. Below is an overview of the "
+"necessary requirements:"
+
+#: web/mocks/destinations_mock.py:16
+msgid "documentation"
+msgstr "Documentation"
+
+#: web/mocks/destinations_mock.py:17
+msgid "pets_permits"
+msgstr "Pet passport"
+
+#: web/mocks/destinations_mock.py:17
+msgid "eu_description_doc_1"
+msgstr ""
+"A passport that identifies the pet and contains information "
+"about its health and vaccinations is required."
+
+#: web/mocks/destinations_mock.py:18
+msgid "vet_certificate_health"
+msgstr "Veterinary health certificate"
+
+#: web/mocks/destinations_mock.py:18
+msgid "eu_description_doc_2"
+msgstr ""
+"A certificate issued by a licensed veterinarian confirming "
+"the pet's health and fitness to travel."
+
+#: web/mocks/destinations_mock.py:19
+msgid "vaccination_certificate"
+msgstr "Vaccination certificate"
+
+#: web/mocks/destinations_mock.py:19
+msgid "eu_description_doc_3"
+msgstr "The pet must be vaccinated against rabies and other relevant diseases."
+
+#: web/mocks/destinations_mock.py:22
+msgid "vaccines_and_treatments"
+msgstr "Vaccination and treatments"
+
+#: web/mocks/destinations_mock.py:23
+msgid "rabies_vaccine"
+msgstr "Rabies vaccination"
+
+#: web/mocks/destinations_mock.py:23
+msgid "eu_description_health_1"
+msgstr "The pet must be vaccinated against rabies with an EU-approved vaccine."
+
+#: web/mocks/destinations_mock.py:24
+msgid "parasite_treatment"
+msgstr "Parasite treatment"
+
+#: web/mocks/destinations_mock.py:24
+msgid "eu_description_health_2"
+msgstr ""
+"The pet must receive treatment against parasites (ticks, fleas, etc.) "
+"before traveling."
+
+#: web/mocks/destinations_mock.py:27
+msgid "identification"
+msgstr "Identificación"
+
+#: web/mocks/destinations_mock.py:27
+msgid "microchip"
+msgstr "Microchip"
+
+#: web/mocks/destinations_mock.py:27
+msgid "eu_description_microchip"
+msgstr "The pet must have an ISO 11784/11785 microchip that allows for identification."
+
+#: web/mocks/destinations_mock.py:28
+msgid "permits_and_auth"
+msgstr "Permits & authorizations"
+
+#: web/mocks/destinations_mock.py:29
+msgid "import_permit"
+msgstr "Import license"
+
+#: web/mocks/destinations_mock.py:29
+msgid "eu_description_permits_1"
+msgstr ""
+"In some cases, an import permit issued by the competent authority "
+"of the destination country is required."
+
+#: web/mocks/destinations_mock.py:30
+msgid "notification_authority"
+msgstr "Notification to the competent authority"
+
+#: web/mocks/destinations_mock.py:30
+msgid "eu_description_permits_2"
+msgstr ""
+"It may be necessary to notify the competent authority of the "
+"destination country about the pet's entry."
+
+#: web/mocks/destinations_mock.py:33
+msgid "transport_conditions"
+msgstr "Transport conditions"
+
+#: web/mocks/destinations_mock.py:34
+msgid "transport_container"
+msgstr "Transport container"
+
+#: web/mocks/destinations_mock.py:34
+msgid "eu_description_transport_1"
+msgstr "The pet must travel in a suitable container that meets international standards."
+
+#: web/mocks/destinations_mock.py:35
+msgid "travel_conditions"
+msgstr "Travel conditions"
+
+#: web/mocks/destinations_mock.py:35
+msgid "eu_description_transport_2"
+msgstr "The pet must travel in safe and comfortable conditions."
+
+#: web/mocks/destinations_mock.py:38
+msgid "important"
+msgstr "Importante"
+
+#: web/mocks/destinations_mock.py:39
+msgid "check_specific_reqs"
+msgstr "Check specific requirements"
+
+#: web/mocks/destinations_mock.py:39
+msgid "eu_description_important_1"
+msgstr ""
+"Requirements may vary depending on the destination country within the EU "
+"and the type of pet. It is essential to check the specific requirements "
+"for each case."
+
+#: web/mocks/destinations_mock.py:40
+msgid "consult_authority"
+msgstr "Consult with the competent authorities"
+
+#: web/mocks/destinations_mock.py:40
+msgid "eu_description_important_2"
+msgstr ""
+"It is advisable to consult with the competent authorities of the "
+"destination country and with an authorized veterinarian to "
+"ensure compliance with all requirements."
+
+#: web/mocks/destinations_mock.py:44
+msgid "eu_description_aem"
+msgstr ""
+"At Aerolineas para Mascotas, we're committed to helping you navigate "
+"the requirements and regulations for international pet transportation. "
+"Our team of experts is here to assist you every step of the way. "
+"Contact us for more information!"
+
+#: web/mocks/destinations_mock.py:52
+msgid "spain"
+msgstr "Spain"
+
+#: web/mocks/destinations_mock.py:66
+msgid "italy"
+msgstr "italy"
+
+#: web/mocks/destinations_mock.py:80
+msgid "portugal"
+msgstr "Portugal"
+
+#: web/mocks/destinations_mock.py:94
+msgid "france"
+msgstr "France"
+
+#: web/mocks/destinations_mock.py:108
+msgid "germany"
+msgstr "Germany"
+
+#: web/mocks/destinations_mock.py:122
+msgid "austria"
+msgstr "Austria"
 
 #: web/mocks/faqs_mock.py:11
 msgid "¿Son una aerolínea?"
@@ -274,26 +453,28 @@ msgstr "Menu"
 #: web/templates/pages/components-index/about-us-section.html:25
 msgid "about_us_title"
 msgstr ""
-"At <span class='text-primary-red_dark font-semibold'>Aerolineas para Mascotas</span>, "
-"we fly high so you can keep your furry friend close."
+"At <span class='text-primary-red_dark font-semibold'>Aerolineas para "
+"Mascotas</span>, we fly high so you can keep your furry friend close."
 
 #: web/templates/pages/components-index/about-us-section.html:26
 msgid "about_us_p_1"
 msgstr ""
 "We are a young company with operational bases in both Argentina and Spain. "
-"We strive to establish ourselves in the market by providing our customers with excellent service. "
-"We understand that transporting your pet and everything that entails can be quite a challenge."
+"We strive to establish ourselves in the market by providing our customers "
+"with excellent service. We understand that transporting your pet and "
+"everything that entails can be quite a challenge."
 
 #: web/templates/pages/components-index/about-us-section.html:27
 msgid "about_us_p_2"
 msgstr ""
-"That's why our main commitment is to provide you, above all, with the security, responsibility, "
-"trust, and all the love your pet needs when embarking on a new journey. "
-"We know they're part of your family, so we want you to know they're in the best "
-"hands when choosing us. For your pet's transportation, we have highly trained personnel "
-"who understand the needs of pets when handling different breeds. "
-"In addition, we have vehicles equipped with ventilation and safety systems that guarantee "
-"a safe and comfortable trip for your pet."
+"That's why our main commitment is to provide you, above all, with the "
+"security, responsibility, trust, and all the love your pet needs when "
+"embarking on a new journey. We know they're part of your family, so we want "
+"you to know they're in the best hands when choosing us. For your pet's "
+"transportation, we have highly trained personnel who understand the needs of "
+"pets when handling different breeds. In addition, we have vehicles equipped "
+"with ventilation and safety systems that guarantee a safe and comfortable "
+"trip for your pet."
 
 #: web/templates/pages/components-index/faqs-section.html:12
 msgid "Preguntas Frecuentes"
@@ -326,6 +507,7 @@ msgstr "Safe, comfortable and with love in every mile"
 #: web/templates/pages/components-index/home-section.html:26
 #: web/templates/pages/components-index/home-section.html:57
 #: web/templates/pages/components-index/home-section.html:88
+#: web/templates/unicorn/modal.html:70
 msgid "Solicitá tu cotización"
 msgstr "Request your quote"
 
@@ -418,3 +600,7 @@ msgstr "terms and conditions"
 #: web/templates/pages/components-index/quotation-section.html:118
 msgid "Enviar solicitud"
 msgstr "Send request"
+
+#: web/templates/unicorn/modal.html:77
+msgid "Consultanos"
+msgstr "Contact us"
