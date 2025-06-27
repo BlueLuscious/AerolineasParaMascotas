@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 10:13+0000\n"
+"POT-Creation-Date: 2025-06-27 11:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,11 +54,11 @@ msgstr "Requirements for entering the European Union with pets"
 #: web/mocks/destinations_mock.py:15
 msgid "eu_description"
 msgstr ""
-"The European Union (EU) has specific regulations for the entry "
-"of pets from third countries. Below is an overview of the "
-"necessary requirements:"
+"The European Union (EU) has specific regulations for the entry of pets from "
+"third countries. Below is an overview of the necessary requirements:"
 
-#: web/mocks/destinations_mock.py:16
+#: web/mocks/destinations_mock.py:16 web/mocks/destinations_mock.py:159
+#: web/mocks/destinations_mock.py:190
 msgid "documentation"
 msgstr "Documentation"
 
@@ -69,8 +69,8 @@ msgstr "Pet passport"
 #: web/mocks/destinations_mock.py:17
 msgid "eu_description_doc_1"
 msgstr ""
-"A passport that identifies the pet and contains information "
-"about its health and vaccinations is required."
+"A passport that identifies the pet and contains information about its health "
+"and vaccinations is required."
 
 #: web/mocks/destinations_mock.py:18
 msgid "vet_certificate_health"
@@ -79,8 +79,8 @@ msgstr "Veterinary health certificate"
 #: web/mocks/destinations_mock.py:18
 msgid "eu_description_doc_2"
 msgstr ""
-"A certificate issued by a licensed veterinarian confirming "
-"the pet's health and fitness to travel."
+"A certificate issued by a licensed veterinarian confirming the pet's health "
+"and fitness to travel."
 
 #: web/mocks/destinations_mock.py:19
 msgid "vaccination_certificate"
@@ -109,8 +109,8 @@ msgstr "Parasite treatment"
 #: web/mocks/destinations_mock.py:24
 msgid "eu_description_health_2"
 msgstr ""
-"The pet must receive treatment against parasites (ticks, fleas, etc.) "
-"before traveling."
+"The pet must receive treatment against parasites (ticks, fleas, etc.) before "
+"traveling."
 
 #: web/mocks/destinations_mock.py:27
 msgid "identification"
@@ -122,7 +122,9 @@ msgstr "Microchip"
 
 #: web/mocks/destinations_mock.py:27
 msgid "eu_description_microchip"
-msgstr "The pet must have an ISO 11784/11785 microchip that allows for identification."
+msgstr ""
+"The pet must have an ISO 11784/11785 microchip that allows for "
+"identification."
 
 #: web/mocks/destinations_mock.py:28
 msgid "permits_and_auth"
@@ -135,8 +137,8 @@ msgstr "Import license"
 #: web/mocks/destinations_mock.py:29
 msgid "eu_description_permits_1"
 msgstr ""
-"In some cases, an import permit issued by the competent authority "
-"of the destination country is required."
+"In some cases, an import permit issued by the competent authority of the "
+"destination country is required."
 
 #: web/mocks/destinations_mock.py:30
 msgid "notification_authority"
@@ -145,8 +147,8 @@ msgstr "Notification to the competent authority"
 #: web/mocks/destinations_mock.py:30
 msgid "eu_description_permits_2"
 msgstr ""
-"It may be necessary to notify the competent authority of the "
-"destination country about the pet's entry."
+"It may be necessary to notify the competent authority of the destination "
+"country about the pet's entry."
 
 #: web/mocks/destinations_mock.py:33
 msgid "transport_conditions"
@@ -158,7 +160,9 @@ msgstr "Transport container"
 
 #: web/mocks/destinations_mock.py:34
 msgid "eu_description_transport_1"
-msgstr "The pet must travel in a suitable container that meets international standards."
+msgstr ""
+"The pet must travel in a suitable container that meets international "
+"standards."
 
 #: web/mocks/destinations_mock.py:35
 msgid "travel_conditions"
@@ -179,9 +183,9 @@ msgstr "Check specific requirements"
 #: web/mocks/destinations_mock.py:39
 msgid "eu_description_important_1"
 msgstr ""
-"Requirements may vary depending on the destination country within the EU "
-"and the type of pet. It is essential to check the specific requirements "
-"for each case."
+"Requirements may vary depending on the destination country within the EU and "
+"the type of pet. It is essential to check the specific requirements for each "
+"case."
 
 #: web/mocks/destinations_mock.py:40
 msgid "consult_authority"
@@ -190,17 +194,17 @@ msgstr "Consult with the competent authorities"
 #: web/mocks/destinations_mock.py:40
 msgid "eu_description_important_2"
 msgstr ""
-"It is advisable to consult with the competent authorities of the "
-"destination country and with an authorized veterinarian to "
-"ensure compliance with all requirements."
+"It is advisable to consult with the competent authorities of the destination "
+"country and with an authorized veterinarian to ensure compliance with all "
+"requirements."
 
 #: web/mocks/destinations_mock.py:44
 msgid "eu_description_aem"
 msgstr ""
-"At Aerolineas para Mascotas, we're committed to helping you navigate "
-"the requirements and regulations for international pet transportation. "
-"Our team of experts is here to assist you every step of the way. "
-"Contact us for more information!"
+"At Aerolineas para Mascotas, we're committed to helping you navigate the "
+"requirements and regulations for international pet transportation. Our team "
+"of experts is here to assist you every step of the way. Contact us for more "
+"information!"
 
 #: web/mocks/destinations_mock.py:52
 msgid "spain"
@@ -225,6 +229,160 @@ msgstr "Germany"
 #: web/mocks/destinations_mock.py:122
 msgid "austria"
 msgstr "Austria"
+
+#: web/mocks/destinations_mock.py:136
+msgid "uruguay"
+msgstr "Uruguay"
+
+#: web/mocks/destinations_mock.py:144
+msgid "uruguay_description"
+msgstr ""
+"Home delivery and ground delivery from Argentina. "
+"We manage all medical documentation."
+
+#: web/mocks/destinations_mock.py:151
+msgid "chile"
+msgstr "Chile"
+
+#: web/mocks/destinations_mock.py:159
+msgid "chile_description_doc"
+msgstr ""
+"Health certificate, rabies vaccination certificate, "
+"and, in some cases, the Zoosanitary Export Certificate."
+
+#: web/mocks/destinations_mock.py:166
+msgid "bolivia"
+msgstr "Bolivia"
+
+#: web/mocks/destinations_mock.py:174
+msgid "bolivia_description"
+msgstr ""
+"In Bolivia, the airports that generally allow pets are international airports, "
+"including La Paz (LPB), Santa Cruz (VVI), and Cochabamba (CBB). However, "
+"it is crucial to check with the airline and the Ministry of Rural Development "
+"and Lands (MDRyT) regarding specific requirements for transporting pets, "
+"including the need for an import permit."
+
+#: web/mocks/destinations_mock.py:181
+msgid "paraguay"
+msgstr "Paraguay"
+
+#: web/mocks/destinations_mock.py:189
+msgid "paraguay_description"
+msgstr ""
+"In Paraguay, airports that allow pets are generally subject to airline "
+"requirements and the country's health regulations. Most airlines "
+"operating in Paraguay, such as Paranair, Flybondi, and Air Europa, "
+"allow pets to be transported in the cabin or in the cargo hold, "
+"provided certain requirements are met, such as weight, carrier "
+"dimensions, pet age, and necessary documentation."
+
+#: web/mocks/destinations_mock.py:190
+msgid "paraguay_description_doc"
+msgstr ""
+"Veterinary health certificate, vaccination card (especially rabies), "
+"deworming certificate, and in some cases, a passport or international certificate."
+
+#: web/mocks/destinations_mock.py:197
+msgid "brazil"
+msgstr "Brazil"
+
+#: web/mocks/destinations_mock.py:204
+msgid "brazil_title"
+msgstr "International airports in Brazil that welcome pets"
+
+#: web/mocks/destinations_mock.py:206
+msgid "brazil_description_airport_1"
+msgstr ""
+"It's the largest airport in Brazil and offers multiple international "
+"connections, making it an excellent option for traveling with pets."
+
+#: web/mocks/destinations_mock.py:207
+msgid "brazil_description_airport_2"
+msgstr ""
+"Brazil's capital offers pet-friendly services and a wide range "
+"of pet transportation options."
+
+#: web/mocks/destinations_mock.py:208
+msgid "brazil_description_airport_3"
+msgstr ""
+"The Belo Horizonte metropolitan area also has good infrastructure "
+"for transporting animals on international flights."
+
+#: web/mocks/destinations_mock.py:209
+msgid "brazil_description_airport_4"
+msgstr ""
+"Located in northeast Brazil, Recife is another popular airport "
+"that accepts pets on international flights."
+
+#: web/mocks/destinations_mock.py:216
+msgid "colombia"
+msgstr "Colombia"
+
+#: web/mocks/destinations_mock.py:223
+msgid "colombia_title"
+msgstr "Entry to Colombia"
+
+#: web/mocks/destinations_mock.py:225
+msgid "colombia_description_1"
+msgstr ""
+"To enter the country with dogs and cats, you must register in advance "
+"through the ICA website."
+
+#: web/mocks/destinations_mock.py:226
+msgid "colombia_description_2"
+msgstr ""
+"Upon arrival at the airport, you must present the required documentation "
+"to the ICA office to obtain the Health Inspection Certificate (CIS)."
+
+#: web/mocks/destinations_mock.py:227
+msgid "colombia_description_3"
+msgstr "Pets must have a current rabies vaccination and be dewormed."
+
+#: web/mocks/destinations_mock.py:234
+msgid "peru"
+msgstr "Peru"
+
+#: web/mocks/destinations_mock.py:241
+msgid "peru_title"
+msgstr "Requirements for traveling with pets at Jorge Chávez Airport"
+
+#: web/mocks/destinations_mock.py:243
+msgid "health_certificate"
+msgstr "Health Certificate"
+
+#: web/mocks/destinations_mock.py:243
+#, fuzzy
+#| msgid "eu_description_health_1"
+msgid "peru_description_health_certificate"
+msgstr ""
+"It is essential for entry into Peru; it must be issued in the "
+"country of origin and demonstrate that the pet is vaccinated "
+"against relevant diseases."
+
+#: web/mocks/destinations_mock.py:244
+msgid "vaccines"
+msgstr "Vaccines"
+
+#: web/mocks/destinations_mock.py:245
+msgid "peru_description_vaccines"
+msgstr "Animals must be vaccinated against species-specific diseases."
+
+#: web/mocks/destinations_mock.py:246
+msgid "dogs"
+msgstr "Dogs"
+
+#: web/mocks/destinations_mock.py:246
+msgid "peru_description_vaccines_dogs"
+msgstr "Distemper, Canine Hepatitis, Leptosirosis, Parvovirosis, Rabies, Parainfluenza."
+
+#: web/mocks/destinations_mock.py:247
+msgid "cats"
+msgstr "Cats"
+
+#: web/mocks/destinations_mock.py:247
+msgid "peru_description_vaccines_cats"
+msgstr "Feline panleukopenia, Calicivirosis, Rhinotracheitis, Feline leukemia, Rabies."
 
 #: web/mocks/faqs_mock.py:11
 msgid "¿Son una aerolínea?"

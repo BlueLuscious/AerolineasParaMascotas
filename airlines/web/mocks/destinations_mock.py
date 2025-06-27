@@ -133,7 +133,7 @@ class DestinationMock:
             },
             {
                 "destination": {
-                    "name": "Uruguay",
+                    "name": _("uruguay"),
                     "category": "Frecuente",
                     "continent": "America",
                     "flag_image": f"{self.flags_static_path}/uruguay-flag.png",
@@ -141,14 +141,14 @@ class DestinationMock:
                     "airports": [],
                     "metadata": {
                         "description": [
-                            {"no_key": [{"no_key": "Entrega en domicilio y de manera Terrestre desde Argentina. Gestionamos toda la documentación sanitaria."}, ]},
+                            {"no_key": [{"no_key": _("uruguay_description")}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Chile",
+                    "name": _("chile"),
                     "category": "Frecuente",
                     "continent": "America",
                     "flag_image": f"{self.flags_static_path}/chile-flag.png",
@@ -156,14 +156,14 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional Arturo Merino Benítez", ],
                     "metadata": {
                         "description": [
-                            {"Documentación": [{"no_key": "Certificado sanitario, certificado de vacunación antirrábica y, en algunos casos, el Certificado Zoosanitario de Exportación."}, ]},
+                            {_("documentation"): [{"no_key": _("chile_description_doc")}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Bolivia",
+                    "name": _("bolivia"),
                     "category": "Frecuente",
                     "continent": "America",
                     "flag_image": f"{self.flags_static_path}/bolivia-flag.png",
@@ -171,14 +171,14 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional Viru Viru (VVI)", ],
                     "metadata": {
                         "description": [
-                            {"no_key": [{"no_key": "En Bolivia, los aeropuertos que permiten la entrada de mascotas generalmente son los aeropuertos internacionales, que incluyen La Paz (LPB), Santa Cruz (VVI) y Cochabamba (CBB). Sin embargo, es crucial verificar con la aerolínea y con el Ministerio de Desarrollo Rural y Tierras (MDRyT) los requisitos específicos para el transporte de mascotas, incluyendo la necesidad de un permiso de importación."}, ]},
+                            {"no_key": [{"no_key": _("bolivia_description")}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Paraguay",
+                    "name": _("paraguay"),
                     "category": "Frecuente",
                     "continent": "America",
                     "flag_image": f"{self.flags_static_path}/paraguay-flag.png",
@@ -186,65 +186,65 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional Silvio Pettirossi-Luque", ],
                     "metadata": {
                         "description": [
-                            {"no_key": [{"no_key": "En Paraguay, los aeropuertos que permiten la entrada de mascotas generalmente están sujetos a los requisitos de la línea aérea y las regulaciones sanitarias del país. La mayoría de las líneas aéreas que operan en Paraguay, como Paranair, Flybondi, y Air Europa, permiten el transporte de mascotas en cabina o en bodega, siempre y cuando se cumplan ciertos requisitos, como el peso, las dimensiones del transportín, la edad de la mascota y la documentación necesaria."},]},
-                            {"Documentación": [{"no_key": "Certificado de salud veterinario, carnet de vacunación (especialmente antirrábica), certificado de desparasitación y en algunos casos, pasaporte o certificado internacional."}, ]},
+                            {"no_key": [{"no_key": _("paraguay_description")},]},
+                            {_("documentation"): [{"no_key": _("paraguay_description_doc")}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Brasil",
+                    "name": _("brazil"),
                     "category": "Frecuente",
                     "continent": "America",
                     "flag_image": f"{self.flags_static_path}/brazil-flag.png",
                     "airport_image": f"{self.airports_static_path}/brazil-airport.jpg",
                     "airports": [],
                     "metadata": {
-                        "title": "Aeropuertos internacionales en Brasil que reciben mascotas" ,
+                        "title": _("brazil_title") ,
                         "description": [
-                            {"São Paulo (GRU)": [{"no_key": "Es el aeropuerto más grande de Brasil y ofrece múltiples conexiones internacionales, lo que lo convierte en una excelente opción para viajes con mascotas."}, ]},
-                            {"Brasilia (BSB)": [{"no_key": "La capital de Brasil cuenta con servicios para viajeros con mascotas y ofrece una amplia gama de opciones para el transporte de animales."}, ]},
-                            {"Belo Horizonte (CNF)": [{"no_key": "La región metropolitana de Belo Horizonte también cuenta con buena infraestructura para el transporte de animales en vuelos internacionales."}, ]},
-                            {"Recife (REC)": [{"no_key": "Ubicado en el noreste de Brasil, Recife es otro aeropuerto popular que acepta mascotas en vuelos internacionales."}, ]},
+                            {"São Paulo (GRU)": [{"no_key": _("brazil_description_airport_1")}, ]},
+                            {"Brasilia (BSB)": [{"no_key": _("brazil_description_airport_2")}, ]},
+                            {"Belo Horizonte (CNF)": [{"no_key": _("brazil_description_airport_3")}, ]},
+                            {"Recife (REC)": [{"no_key": _("brazil_description_airport_4")}, ]},
                         ],
                     }
                 },
             },
             {
                 "destination": {
-                    "name": "Colombia",
+                    "name": _("colombia"),
                     "category": "Frecuente",
                     "continent": "America",
                     "flag_image": f"{self.flags_static_path}/colombia-flag.png",
                     "airport_image": f"{self.airports_static_path}/colombia-airport.jpg",
                     "airports": ["Aeropuerto Internacional El Dorado (Bogotá)", "Aeropuerto internacional José María Córdova's (Medellín)", ],
                     "metadata": {
-                        "title": "Ingreso a Colombia",
+                        "title": _("colombia_title"),
                         "description": [
-                            {"no_key": [{"no_key": "Para ingresar al país con perros y gatos, se debe registrar previamente el ingreso a través del sitio web del ICA."}, ]},
-                            {"no_key": [{"no_key": "Al llegar al aeropuerto, se deberá presentar la documentación requerida a la oficina del ICA para obtener el Certificado de Inspección Sanitaria (CIS)."}, ]},
-                            {"no_key": [{"no_key": "Las mascotas deben tener vacunación vigente contra la rabia y estar desparasitadas."}, ]},
+                            {"no_key": [{"no_key": _("colombia_description_1")}, ]},
+                            {"no_key": [{"no_key": _("colombia_description_2")}, ]},
+                            {"no_key": [{"no_key": _("colombia_description_3")}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Perú",
+                    "name": _("peru"),
                     "category": "Frecuente",
                     "continent": "America",
                     "flag_image": f"{self.flags_static_path}/peru-flag.png",
                     "airport_image": f"{self.airports_static_path}/peru-airport.jpg",
                     "airports": ["International Airport Jorge Chávez (Lima)", ],
                     "metadata": {
-                        "title": "Requisitos para viajar con mascotas en el Aeropuerto Jorge Chávez",
+                        "title": _("peru_title"),
                         "description": [
-                            {"Certificado sanitario": [{"no_key": "Es indispensable para el ingreso a Perú, debe ser emitido en el país de origen y demostrar que la mascota está vacunada contra las enfermedades relevantes."}, ]},
-                            {"Vacunas": [
-                                    {"no_key": "Los animales deben estar vacunados contra las enfermedades específicas según su especie."}, 
-                                    {"Perros": "Distemper, Hepatitis canina, Leptosirosis, Parvovirosis, Rabia, Parainfluenza."},
-                                    {"Gatos": "Panleucoopenia felina, Calicivirosis, Rinotraqueitis, Leucemia felina, Rabia."}, 
+                            {_("health_certificate"): [{"no_key": _("peru_description_health_certificate")}, ]},
+                            {_("vaccines"): [
+                                    {"no_key": _("peru_description_vaccines")}, 
+                                    {_("dogs"): _("peru_description_vaccines_dogs")},
+                                    {_("cats"): _("peru_description_vaccines_cats")}, 
                                 ]
                             },
                         ],
