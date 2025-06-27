@@ -295,7 +295,7 @@ class DestinationMock:
             },
             {
                 "destination": {
-                    "name": "Australia",
+                    "name": _("australia"),
                     "category": "Exotico",
                     "continent": "Oceania",
                     "flag_image": f"{self.flags_static_path}/australia-flag.png",
@@ -303,17 +303,17 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional de Melbourne", ],
                     "metadata": {
                         "description": [
-                            {"Cuarentena": [{"no_key": "Una vez que la mascota llega a Melbourne, será trasladada al centro de cuarentena posterior a la entrada en Mickleham para un período de cuarentena, que varía según el país de origen de la mascota. Desde Argentina la cuarentena no supera los 30 días."}, ]},
-                            {"Viaje de bodega de carga": [{"no_key": "Las mascotas deben viajar en la bodega de carga como carga declarada en un transportín aprobado por la IATA."}, ]},
-                            {"No se permiten traslados nacionales": [{"no_key": "No se permite que las mascotas lleguen a otro aeropuerto australiano y luego viajen en un vuelo nacional a Melbourne."}, ]},
-                            {"Requisitos de cuarentena": [{"no_key": "Se deben seguir los requisitos de cuarentena estrictos del Departamento de Agricultura, Pesca y Recursos Forestales (DAFF) de Australia"}, ]},
+                            {_("quarantine"): [{"no_key": _("australia_description_quarantine")}, ]},
+                            {_("cargo_hold_trip"): [{"no_key": _("australia_description_cargo_hold")}, ]},
+                            {_("no_national_transfers"): [{"no_key": _("australia_description_national_transfers")}, ]},
+                            {_("quarantine_reqs"): [{"no_key": _("australia_description_quarantine_reqs")}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Nueva Zelanda",
+                    "name": _("new_zealand"),
                     "category": "Exotico",
                     "continent": "Oceania",
                     "flag_image": f"{self.flags_static_path}/new-zealand-flag.png",
@@ -321,17 +321,17 @@ class DestinationMock:
                     "airports": ["Aeropuerto de Auckland", "Aeropuerto de Christchurc", ],
                     "metadata": {
                         "description": [
-                            {"no_key": [{"no_key": "Para traer mascotas a Nueva Zelanda, es fundamental que se cumplan los estrictos requisitos sanitarios y veterinarios del país."}, ]},
-                            {"no_key": [{"no_key": "El Ministerio de Industrias Primarias (MPI) solo permite la entrada de perros y gatos de países considerados libres o controlados de rabia."}, ]},
-                            {"no_key": [{"no_key": "Las mascotas deben tener un microchip antes de cualquier tratamiento para la importación."}, ]},
-                            {"no_key": [{"no_key": "Se necesita documentación que confirme que el microchip fue implantado y/o escaneado antes de la vacunación primaria contra la rabia y todos los tratamientos posteriores."}, ]},
+                            {"no_key": [{"no_key": _("new_zealand_description_1")}, ]},
+                            {"no_key": [{"no_key": _("new_zealand_description_2")}, ]},
+                            {"no_key": [{"no_key": _("new_zealand_description_3")}, ]},
+                            {"no_key": [{"no_key": _("new_zealand_description_4")}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Israel",
+                    "name": _("israel"),
                     "category": "Exotico",
                     "continent": "Asia",
                     "flag_image": f"{self.flags_static_path}/israel-flag.png",
@@ -339,18 +339,18 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional Ben Gurión en Lod", ],
                     "metadata": {
                         "description": [
-                            {"no_key": [{"no_key": "El Aeropuerto Internacional Ben Gurión en Lod, cerca de Tel Aviv, es el principal aeropuerto internacional de Israel y permite la entrada de mascotas."}, ]},
-                            {"Mascotas en cabina": [{"no_key": "Las mascotas pueden viajar en cabina si pesan hasta 8 kg, incluyendo el transportín, y si el transportín cumple con las dimensiones permitidas por la aerolínea."}, ]},
-                            {"Mascotas en bodega": [{"no_key": "Las mascotas también pueden viajar como equipaje en bodega, pero deben estar en una jaula rígida y segura, según las regulaciones de la aerolínea."}, ]},
-                            {"Permiso de importación": [{"no_key": "Es crucial obtener el permiso de importación antes de viajar a Israel con mascotas."}, ]},
-                            {"Otras consideraciones": [{"no_key": "Es recomendable verificar las regulaciones específicas de cada aerolínea antes de reservar el vuelo, ya que pueden variar."}, ]},
+                            {"no_key": [{"no_key": _("israel_description")}, ]},
+                            {_("pets_in_cabin"): [{"no_key": _("israel_description_cabin")}, ]},
+                            {_("pets_in_hold"): [{"no_key": _("israel_description_hold")}, ]},
+                            {_("import_permit"): [{"no_key": _("israel_description_import_license")}, ]},
+                            {_("others_considerations"): [{"no_key": _("israel_description_other")}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Turquía",
+                    "name": _("turkey"),
                     "category": "Exotico",
                     "continent": "Asia",
                     "flag_image": f"{self.flags_static_path}/turkey-flag.png",
@@ -358,36 +358,36 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional de Estambul (IST)", ],
                     "metadata": {
                         "description": [
-                            {"no_key": [{"no_key": "Además, algunas aerolíneas, como Turkish Airlines, tienen políticas específicas para el transporte de mascotas."}, ]},
-                            {"Turkish Airlines": [{"no_key": "Tiene una política de mascotas que incluye la posibilidad de viajar en cabina o bodega, según el peso y tamaño de la mascota y su transportín."}, ]},
-                            {"Consideraciones": [{"no_key": "Es importante verificar las políticas de cada aerolínea y cumplir con los requisitos de salud y documentación necesarios para viajar con mascotas a Turquía."}, ]},
+                            {"no_key": [{"no_key": _("turkey_description")}, ]},
+                            {"Turkish Airlines": [{"no_key": _("turkey_description_airlines")}, ]},
+                            {_("considerations"): [{"no_key": _("turkey_description_other")}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Japón",
+                    "name": _("japan"),
                     "category": "Exotico",
                     "continent": "Asia",
                     "flag_image": f"{self.flags_static_path}/japan-flag.png",
                     "airport_image": f"{self.airports_static_path}/japan-airport.jpg",
                     "airports": ["Aeropuerto de Haneda (HND)", "Aeropuerto de Narita (NRT)", ],
                     "metadata": {
-                        "title": "Requisitos para viajar con mascotas a Japón",
+                        "title": _("japan_title"),
                         "description": [
-                            {"Microchip": [{"no_key": "Las mascotas deben tener un microchip."}, ]},
-                            {"Vacunación contra la rabia": [{"no_key": "La vacunación debe ser al menos 30 días antes de la entrada al país."}, ]},
-                            {"Prueba de titulación de rabia": [{"no_key": "Se requiere una prueba para asegurar la efectividad de la vacuna contra la rabia."}, ]},
-                            {"Cuarentena": [{"no_key": "Dependiendo de los requisitos cumplidos por la mascota, puede haber un período de cuarentena de 12 horas o más."}, ]},
-                            {"Documentación": [{"no_key": "Se debe presentar la documentación requerida, como el certificado ASE-3293 y la solicitud de inspección de importación."}, ]},
+                            {_("microchip"): [{"no_key": _("japan_description_microchip")}, ]},
+                            {_("rabies_vaccine"): [{"no_key": _("japan_description_vaccines")}, ]},
+                            {_("rabies_titer_test"): [{"no_key": _("japan_description_rage")}, ]},
+                            {_("quarantine"): [{"no_key": _("japan_description_quarantine")}, ]},
+                            {_("documentation"): [{"no_key": _("japan_description_doc")}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "China",
+                    "name": _("china"),
                     "category": "Exotico",
                     "continent": "Asia",
                     "flag_image": f"{self.flags_static_path}/china-flag.png",
@@ -395,25 +395,25 @@ class DestinationMock:
                     "airports": ["Aeropuerto Internacional de Beijing", ],
                     "metadata": {
                         "description": [
-                            {"Cuarentena": [{"no_key": "Las mascotas que ingresan a China pueden estar sujetas a cuarentena."}, ]},
-                            {"Restricciones": [{"no_key": "Solo se permite una mascota por pasajero."}, ]},
+                            {_("quarantine"): [{"no_key": _("china_description_quarantine")}, ]},
+                            {_("restrictions"): [{"no_key": _("china_description_restrictions")}, ]},
                         ],
                     },
                 },
             },
             {
                 "destination": {
-                    "name": "Corea del Sur",
+                    "name": _("south_korea"),
                     "category": "Exotico",
                     "continent": "Asia",
                     "flag_image": f"{self.flags_static_path}/south-korea-flag.png",
                     "airport_image": f"{self.airports_static_path}/south-korea-airport.jpg",
                     "airports": ["Aeropuerto Internacional de Incheon (Seúl)", ],
                     "metadata": {
-                        "title": "Requisitos para viajar con mascotas a Corea del Sur",
+                        "title": _("south_korea_title"),
                         "description": [
-                            {"Documentación": [{"no_key": "Es necesario tener la documentación de la mascota en regla, incluyendo el certificado de vacunación contra la rabia y otros requisitos que pueden variar según el país de origen de la mascota. Desde Argentina exigen test de anticuerpos de rabia."}, ]},
-                            {"Condiciones de transporte": [{"no_key": "Las aerolíneas tienen sus propias políticas sobre el transporte de mascotas, por lo que es importante consultar con la aerolínea antes de viajar."}, ]},
+                            {_("documentation"): [{"no_key": _("south_korea_description_doc")}, ]},
+                            {_("transport_conditions"): [{"no_key": _("south_korea_description_transport")}, ]},
                         ],
                     },
                 },
