@@ -1,12 +1,12 @@
 {% load static %}
-
+{% load i18n %}
 
 <section id="services_section" class="flex flex-col items-center justify-center gap-y-20 size-full min-h-screen px-8 py-12 
     bg-gradient-to-b from-primary-blue_extralight from-10% to-secondary-grey_extralight/15 to-100% scroll-mt-20"
 >
 
     <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
-        Nuestros Servicios
+        {% trans "our_services" %}
     </h1>
 
     <div id="services_body" class="flex flex-col items-center gap-y-16 md:gap-y-24">
@@ -15,26 +15,21 @@
             <!-- Text -->
             <div class="flex flex-col gap-y-6 size-fit max-w-4xl text-left">
                 <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
-                    Tu mascota en tu vuelo
+                    {% trans "aem_service_1_title" %}
                 </h1>
-                <p class="text-secondary-grey_semidark leading-relaxed">
-                    Éste servicio está pensado para que Viajes en el mismo vuelo junto a tu amigo de cuatro patas.
-                    Nosotros nos encargamos de brindarte el asesoramiento necesario para que realices tu reserva aérea 
-                    y también tramitamos la documentación necesaria, para que al momento de tomar tu vuelo, no sea preocupación y estrés.
-                </p>
+                <p class="text-secondary-grey_semidark leading-relaxed">{% trans "aem_service_1_description" %}</p>
                 <button id="services_whatsapp_button_1" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-primary-blue_dark 
                     text-secondary-grey_extralight rounded-md shadow-lg shadow-primary-blue_dark/70 hover:animate-pulse" 
                     onclick="redirectToWA('VDR')"
                 >
                     {% include "icons/chat-bubble-left.html" with tailwind_class="size-8" %}
-                    <h3>Asistencia 24/7 disponible</h3>
+                    <h3>{% trans "support_phrase_1" %}</h3>
                 </button>
             </div>
     
             <!-- Image -->
             <div class="max-w-lg flex items-center p-4 md:p-8 rounded-md shadow-lg shadow-primary-red_dark/30">
-                <img src="{% static 'img/services/services_1.jpg' %}" alt="-img" class="rounded-sm shadow-lg"
-                />
+                <img src="{% static 'img/services/services_1.jpg' %}" alt="-img" class="rounded-sm shadow-lg" />
             </div>
         </article>
     
@@ -43,26 +38,21 @@
             <!-- Text -->
             <div class="lg:col-start-2 flex flex-col gap-y-6 size-fit max-w-4xl text-left">
                 <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
-                    Asistencia en Aeropuerto
+                    {% trans "aem_service_2_title" %}
                 </h1>
-                <p class="text-secondary-grey_semidark leading-relaxed">
-                    Un servicio extra, donde te acompañamos en el proceso previo al vuelo, asistiéndote tanto en los controles que requiere 
-                    embarcar con tu mascota, como en el momento del check-in. Sabemos que viajar genera momentos de tensión y estrés, 
-                    la idea es que te relajes por completo y disfrutes de tu ansiado viaje.
-                </p>
+                <p class="text-secondary-grey_semidark leading-relaxed">{% trans "aem_service_2_description" %}</p>
                 <button id="services_whatsapp_button_2" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-primary-blue_dark 
                     text-secondary-grey_extralight rounded-md shadow-lg shadow-primary-blue_dark/70 hover:animate-pulse" 
                     onclick="redirectToWA('VDR')"
                 >
                     {% include "icons/chat-bubble-left.html" with tailwind_class="size-8" %}
-                    <h3>Soporte a toda hora</h3>
+                    <h3>{% trans "support_phrase_2" %}</h3>
                 </button>
             </div>
     
             <!-- Image -->
             <div class="lg:row-start-1 max-w-lg flex items-center p-4 md:p-8 rounded-md shadow-lg shadow-primary-red_dark/30">
-                <img src="{% static 'img/services/services_2.png' %}" alt="-img" class="rounded-sm shadow-lg"
-                />
+                <img src="{% static 'img/services/services_2.png' %}" alt="-img" class="rounded-sm shadow-lg" />
             </div>
         </article>
         
@@ -71,27 +61,21 @@
             <!-- Text -->
             <div class="flex flex-col gap-y-6 size-fit max-w-4xl text-left">
                 <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
-                    Traslado por carga aérea / Vuelos de Carga Viva
+                    {% trans "aem_service_3_title" %}
                 </h1>
-                <p class="text-secondary-grey_semidark leading-relaxed">
-                    Éstos vuelos son especiales para Mascotas cumplen con la temperatura adecuada y las normas sanitarias de transporte aéreo. 
-                    Tu Mascota viaja de manera presurizada es un servicio que está pensado para aquellas mascotas que superan el peso máximo 
-                    en los vuelos comerciales, razas, consideradas por las aerolíneas, potencialmente peligrosas (PPP), 
-                    como también razas con condiciones respiratorias diferentes (Braquicefálicos).
-                </p>
+                <p class="text-secondary-grey_semidark leading-relaxed">{% trans "aem_service_3_description" %}</p>
                 <button id="services_whatsapp_button_3" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-primary-blue_dark 
                     text-secondary-grey_extralight rounded-md shadow-lg shadow-primary-blue_dark/70 hover:animate-pulse" 
                     onclick="redirectToWA('VDR')"
                 >
                     {% include "icons/chat-bubble-left.html" with tailwind_class="size-8" %}
-                    <h3>Ayuda inmediata, sin horario</h3>
+                    <h3>{% trans "support_phrase_3" %}</h3>
                 </button>
             </div>
     
             <!-- Image -->
             <div class="max-w-lg flex items-center p-4 md:p-8 rounded-md shadow-lg shadow-primary-red_dark/30">
-                <img src="{% static 'img/services/services_3.png' %}" alt="-img" class="rounded-sm shadow-lg"
-                />
+                <img src="{% static 'img/services/services_3.png' %}" alt="-img" class="rounded-sm shadow-lg" />
             </div>
         </article>
         
@@ -100,35 +84,29 @@
             <!-- Text -->
             <div class="lg:col-start-2 flex flex-col gap-y-6 size-fit max-w-4xl text-left">
                 <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
-                    Traslado Acompañado / Traslado Puerta a Puerta
+                    {% trans "aem_service_4_title" %}
                 </h1>
                 <div class="space-y-4 text-secondary-grey_semidark leading-relaxed">
-                    <p>
-                        Tu mascota viaja acompañada por nuestro equipo, quienes se encargan de brindarle la atención y el cuidado necesario, 
-                        asistiendo a tu mascota desde el inicio del vuelo, durante una escala, y hasta el momento más ansiado del reencuentro con su familia. 
-                        Este servicio está pensado para quienes ya se encuentran en el país de destino, y que por diversas circunstancias o mudanza, 
-                        no pudieron llevar a su mascota en su vuelo. 
-                    </p>
-                    <h2 class="font-semibold">Cómo procedemos?</h2>
+                    <p>{% trans "aem_service_4_description" %}</p>
+                    <h2 class="font-semibold">{% trans "aem_service_4_question" %}</h2>
                     <ol class="list-decimal list-inside">
-                        <li>Buscamos a tu mascota, por el domicilio, donde reside actualmente.</li>
-                        <li>Nos encargamos de realizarle un control veterinario previo donde se emiten los certificados requeridos según el destino.</li>
-                        <li>Tramitamos su documentación, la misma es la que nos dará permiso de embarcar junto a tu mascota, hasta llegar al aeropuerto destino ó domicilio en destino.</li>
+                        <li>{% trans "aem_service_4_answer_1" %}</li>
+                        <li>{% trans "aem_service_4_answer_2" %}</li>
+                        <li>{% trans "aem_service_4_answer_3" %}</li>
                     </ol>
                     <button id="services_whatsapp_button_4" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-primary-blue_dark 
                         text-secondary-grey_extralight rounded-md shadow-lg shadow-primary-blue_dark/70 hover:animate-pulse" 
                         onclick="redirectToWA('VDR')"
                     >
                         {% include "icons/chat-bubble-left.html" with tailwind_class="size-8" %}
-                        <h3>Estamos para ayudarte, siempre</h3>
+                        <h3>{% trans "support_phrase_4" %}</h3>
                     </button>
                 </div>
             </div>
     
             <!-- Image -->
             <div class="lg:row-start-1 max-w-lg flex items-center p-4 md:p-8 rounded-md shadow-lg shadow-primary-red_dark/30">
-                <img src="{% static 'img/services/services_1.jpg' %}" alt="-img" class="rounded-sm shadow-lg"
-                />
+                <img src="{% static 'img/services/services_1.jpg' %}" alt="-img" class="rounded-sm shadow-lg" />
             </div>
         </article>
     
@@ -137,28 +115,21 @@
             <!-- Text -->
             <div class="flex flex-col gap-y-6 size-fit max-w-4xl text-left">
                 <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
-                    Test de Anticuerpos (Estudios Serológicos)
+                    {% trans "aem_service_5_title" %}
                 </h1>
-                <p class="text-secondary-grey_semidark leading-relaxed">
-                    En este servicio realizamos los Test de anticuerpos que exigen ciertos países, por ejemplo (Australia, Nueva Zelanda, Asia, etc.)
-                    En este estudio nuestro veterinario experto es quien le realiza a tu mascota la toma de muestras de sangre, siempre tomando todos 
-                    los recaudos correspondientes, estas son enviadas al Laboratorio internacional Kansas State Univertsity para luego ser analizadas. 
-                    Este estudio es un requisito indispensable para el ingreso a países o regiones considerados RABIES FREE por lo que te recomendamos... 
-                    Si tu idea es viajar alguno de estos destinos lo realices con bastante anticipación.
-                </p>
+                <p class="text-secondary-grey_semidark leading-relaxed">{% trans "aem_service_5_description" %}</p>
                 <button id="services_whatsapp_button_5" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-primary-blue_dark 
                     text-secondary-grey_extralight rounded-md shadow-lg shadow-primary-blue_dark/70 hover:animate-pulse" 
                     onclick="redirectToWA('VDR')"
                 >
                     {% include "icons/chat-bubble-left.html" with tailwind_class="size-8" %}
-                    <h3>Consultas las 24 horas</h3>
+                    <h3>{% trans "support_phrase_5" %}</h3>
                 </button>
             </div>
     
             <!-- Image -->
             <div class="max-w-lg flex items-center p-4 md:p-8 rounded-md shadow-lg shadow-primary-red_dark/30">
-                <img src="{% static 'img/services/services_3.png' %}" alt="-img" class="rounded-sm shadow-lg"
-                />
+                <img src="{% static 'img/services/services_3.png' %}" alt="-img" class="rounded-sm shadow-lg" />
             </div>
         </article>
     </div>

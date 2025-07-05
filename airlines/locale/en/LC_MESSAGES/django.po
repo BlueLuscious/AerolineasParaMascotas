@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 22:18+0000\n"
+"POT-Creation-Date: 2025-07-05 01:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -896,17 +896,17 @@ msgstr ""
 "with ventilation and safety systems that guarantee a safe and comfortable "
 "trip for your pet."
 
-#: web/templates/pages/components-index/destination-section.html:14
+#: web/templates/pages/components-index/destination-section.html:15
 msgid "frequent_destinations"
 msgstr "Frequent Destinations"
 
-#: web/templates/pages/components-index/destination-section.html:16
+#: web/templates/pages/components-index/destination-section.html:17
 msgid "destination_caption"
 msgstr ""
-"These are the destinations most chosen by those who trust us to take "
-"their four-legged companions on new adventures."
+"These are the destinations most chosen by those who trust us to take their "
+"four-legged companions on new adventures."
 
-#: web/templates/pages/components-index/destination-section.html:46
+#: web/templates/pages/components-index/destination-section.html:47
 msgid "exotic_destinations"
 msgstr "Exotic Destinations"
 
@@ -1034,6 +1034,123 @@ msgstr "terms and conditions"
 #: web/templates/pages/components-index/quotation-section.html:118
 msgid "Enviar solicitud"
 msgstr "Send request"
+
+#: web/templates/pages/components-index/services-section.html:9
+msgid "our_services"
+msgstr "Our Services"
+
+#: web/templates/pages/components-index/services-section.html:18
+msgid "aem_service_1_title"
+msgstr "Your pet on your flight"
+
+#: web/templates/pages/components-index/services-section.html:20
+msgid "aem_service_1_description"
+msgstr ""
+"This service is designed so you can travel on the same flight "
+"with your four-legged friend. We'll provide you with the "
+"necessary advice for making your airline reservation and also "
+"process the necessary paperwork, so you don't have to worry "
+"or stress when it's time to board your flight."
+
+#: web/templates/pages/components-index/services-section.html:26
+msgid "support_phrase_1"
+msgstr "24/7 assistance available"
+
+#: web/templates/pages/components-index/services-section.html:41
+msgid "aem_service_2_title"
+msgstr "Airport Assistance"
+
+#: web/templates/pages/components-index/services-section.html:43
+msgid "aem_service_2_description"
+msgstr ""
+"An additional service where we accompany you throughout the "
+"pre-flight process, assisting you with both the security "
+"checks required to board your pet and check-in. We know that "
+"traveling can be stressful and tense, but our goal is for "
+"you to fully relax and enjoy your long-awaited trip."
+
+#: web/templates/pages/components-index/services-section.html:49
+msgid "support_phrase_2"
+msgstr "Assistance at all hours"
+
+#: web/templates/pages/components-index/services-section.html:64
+msgid "aem_service_3_title"
+msgstr "Air Cargo Transfer / Live Cargo Flights"
+
+#: web/templates/pages/components-index/services-section.html:66
+msgid "aem_service_3_description"
+msgstr ""
+"These flights are specifically designed for pets and comply with "
+"the appropriate temperature and health regulations for air travel. "
+"Your pet travels pressurized is a service designed for pets that "
+"exceed the maximum weight limit for commercial flights, breeds "
+"considered by airlines to be potentially dangerous (PPP), and "
+"breeds with respiratory conditions (brachycephalic)."
+
+#: web/templates/pages/components-index/services-section.html:72
+msgid "support_phrase_3"
+msgstr "Immediate help, without schedule"
+
+#: web/templates/pages/components-index/services-section.html:87
+msgid "aem_service_4_title"
+msgstr "Escorted Transfer / Door-to-Door Transfer"
+
+#: web/templates/pages/components-index/services-section.html:90
+msgid "aem_service_4_description"
+msgstr ""
+"Your pet travels accompanied by our team, who are responsible "
+"for providing the necessary care and attention, assisting "
+"your pet from the beginning of the flight, during any layover, "
+"and until the most anticipated moment of reuniting with their "
+"family. This service is designed for those already in the "
+"destination country and who, due to various circumstances or "
+"moving, were unable to bring their pet on their flight."
+
+#: web/templates/pages/components-index/services-section.html:91
+msgid "aem_service_4_question"
+msgstr "How do we proceed?"
+
+#: web/templates/pages/components-index/services-section.html:93
+msgid "aem_service_4_answer_1"
+msgstr "We search for your pet, by address, where it currently resides."
+
+#: web/templates/pages/components-index/services-section.html:94
+msgid "aem_service_4_answer_2"
+msgstr ""
+"We carry out a pre-shipment veterinary check, where the required "
+"certificates are issued depending on the destination."
+
+#: web/templates/pages/components-index/services-section.html:95
+msgid "aem_service_4_answer_3"
+msgstr ""
+"We process your documentation, which will give us permission "
+"to board with your pet until we reach the destination "
+"airport or home."
+
+#: web/templates/pages/components-index/services-section.html:102
+msgid "support_phrase_4"
+msgstr "We're here to help you, always"
+
+#: web/templates/pages/components-index/services-section.html:118
+msgid "aem_service_5_title"
+msgstr "Antibody Test (Serological Studies)"
+
+#: web/templates/pages/components-index/services-section.html:120
+msgid "aem_service_5_description"
+msgstr ""
+"In this service, we perform antibody tests required by certain "
+"countries, for example (Australia, New Zealand, Asia, etc.). "
+"In this study, our expert veterinarian takes your pet's blood "
+"samples, always taking all the corresponding precautions. "
+"These samples are sent to the Kansas State University "
+"International Laboratory for later analysis. This study is an "
+"essential requirement for entry into countries or regions "
+"considered rabies-free, so we recommend... If you plan to "
+"travel to any of these destinations, do so well in advance."
+
+#: web/templates/pages/components-index/services-section.html:126
+msgid "support_phrase_5"
+msgstr "24-hour consultations"
 
 #: web/templates/unicorn/modal.html:77
 msgid "Consultanos"

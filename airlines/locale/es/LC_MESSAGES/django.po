@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 22:16+0000\n"
+"POT-Creation-Date: 2025-07-04 23:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -942,17 +942,17 @@ msgstr ""
 "ventilación y seguridad que garantizan un viaje seguro y cómodo para su "
 "mascota."
 
-#: web/templates/pages/components-index/destination-section.html:14
+#: web/templates/pages/components-index/destination-section.html:15
 msgid "frequent_destinations"
 msgstr "Destinos Frecuentes"
 
-#: web/templates/pages/components-index/destination-section.html:16
+#: web/templates/pages/components-index/destination-section.html:17
 msgid "destination_caption"
 msgstr ""
 "Estos son los destinos que más eligen quienes confían en nosotros para "
 "llevar a sus compañeros de cuatro patas a vivir nuevas aventuras."
 
-#: web/templates/pages/components-index/destination-section.html:46
+#: web/templates/pages/components-index/destination-section.html:47
 msgid "exotic_destinations"
 msgstr "Destinos Exoticos"
 
@@ -1080,6 +1080,125 @@ msgstr "términos y condiciones"
 #: web/templates/pages/components-index/quotation-section.html:118
 msgid "Enviar solicitud"
 msgstr "Enviar solicitud"
+
+#: web/templates/pages/components-index/services-section.html:9
+msgid "our_services"
+msgstr "Nuestros Servicios"
+
+#: web/templates/pages/components-index/services-section.html:19
+msgid "aem_service_1_title"
+msgstr "Tu mascota en tu vuelo"
+
+#: web/templates/pages/components-index/services-section.html:22
+msgid "aem_service_1_description"
+msgstr ""
+"Éste servicio está pensado para que Viajes en el mismo vuelo junto "
+"a tu amigo de cuatro patas. Nosotros nos encargamos de brindarte el "
+"asesoramiento necesario para que realices tu reserva aérea y también "
+"tramitamos la documentación necesaria, para que al momento de tomar "
+"tu vuelo, no sea preocupación y estrés."
+
+#: web/templates/pages/components-index/services-section.html:29
+msgid "support_phrase_1"
+msgstr "Asistencia 24/7 disponible"
+
+#: web/templates/pages/components-index/services-section.html:44
+msgid "aem_service_2_title"
+msgstr "Asistencia en Aeropuerto"
+
+#: web/templates/pages/components-index/services-section.html:47
+msgid "aem_service_2_description"
+msgstr ""
+"Un servicio extra, donde te acompañamos en el proceso previo al vuelo, "
+"asistiéndote tanto en los controles que requiere embarcar con tu "
+"mascota, como en el momento del check-in. Sabemos que viajar genera "
+"momentos de tensión y estrés, la idea es que te relajes por completo "
+"y disfrutes de tu ansiado viaje."
+
+#: web/templates/pages/components-index/services-section.html:54
+msgid "support_phrase_2"
+msgstr "Soporte a toda hora"
+
+#: web/templates/pages/components-index/services-section.html:69
+msgid "aem_service_3_title"
+msgstr "Traslado por carga aérea / Vuelos de Carga Viva"
+
+#: web/templates/pages/components-index/services-section.html:72
+msgid "aem_service_3_description"
+msgstr ""
+"Éstos vuelos son especiales para Mascotas cumplen con la temperatura "
+"adecuada y las normas sanitarias de transporte aéreo. Tu Mascota "
+"viaja de manera presurizada es un servicio que está pensado para "
+"aquellas mascotas que superan el peso máximo en los vuelos comerciales, "
+"razas, consideradas por las aerolíneas, potencialmente peligrosas "
+"(PPP), como también razas con condiciones respiratorias diferentes "
+"(Braquicefálicos)."
+
+#: web/templates/pages/components-index/services-section.html:79
+msgid "support_phrase_3"
+msgstr "Ayuda inmediata, sin horario"
+
+#: web/templates/pages/components-index/services-section.html:94
+msgid "aem_service_4_title"
+msgstr "Traslado Acompañado / Traslado Puerta a Puerta"
+
+#: web/templates/pages/components-index/services-section.html:98
+msgid "aem_service_4_description"
+msgstr ""
+"Tu mascota viaja acompañada por nuestro equipo, quienes se encargan "
+"de brindarle la atención y el cuidado necesario, asistiendo a tu "
+"mascota desde el inicio del vuelo, durante una escala, y hasta el "
+"momento más ansiado del reencuentro con su familia. Este servicio "
+"está pensado para quienes ya se encuentran en el país de destino, y "
+"que por diversas circunstancias o mudanza, no pudieron llevar a su "
+"mascota en su vuelo."
+
+#: web/templates/pages/components-index/services-section.html:100
+msgid "aem_service_4_question"
+msgstr "Cómo procedemos?"
+
+#: web/templates/pages/components-index/services-section.html:102
+msgid "aem_service_4_answer_1"
+msgstr "Buscamos a tu mascota, por el domicilio, donde reside actualmente."
+
+#: web/templates/pages/components-index/services-section.html:103
+msgid "aem_service_4_answer_2"
+msgstr ""
+"Nos encargamos de realizarle un control veterinario previo donde se "
+"emiten los certificados requeridos según el destino."
+
+#: web/templates/pages/components-index/services-section.html:104
+msgid "aem_service_4_answer_3"
+msgstr ""
+"Tramitamos su documentación, la misma es la que nos dará permiso "
+"de embarcar junto a tu mascota, hasta llegar al aeropuerto "
+"destino ó domicilio en destino."
+
+#: web/templates/pages/components-index/services-section.html:111
+msgid "support_phrase_4"
+msgstr "Estamos para ayudarte, siempre"
+
+#: web/templates/pages/components-index/services-section.html:127
+msgid "aem_service_5_title"
+msgstr "Test de Anticuerpos (Estudios Serológicos)"
+
+#: web/templates/pages/components-index/services-section.html:130
+msgid "aem_service_5_description"
+msgstr ""
+"En este servicio realizamos los Test de anticuerpos que exigen "
+"ciertos países, por ejemplo (Australia, Nueva Zelanda, Asia, "
+"etc.) En este estudio nuestro veterinario experto es quien le "
+"realiza a tu mascota la toma de muestras de sangre, siempre "
+"tomando todos los recaudos correspondientes, estas son enviadas "
+"al Laboratorio internacional Kansas State Univertsity para "
+"luego ser analizadas. Este estudio es un requisito indispensable "
+"para el ingreso a países o regiones considerados RABIES FREE "
+"por lo que te recomendamos... Si tu idea es viajar alguno de "
+"estos destinos lo realices con bastante anticipación."
+
+#: web/templates/pages/components-index/services-section.html:137
+msgid "support_phrase_5"
+msgstr "Consultas las 24 horas"
 
 #: web/templates/unicorn/modal.html:77
 msgid "Consultanos"
