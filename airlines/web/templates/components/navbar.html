@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 {% load inclusiontag.custom_bar_item %}
 
 
@@ -13,11 +14,11 @@
         <button id="btn_open_menu" class="lg:hidden flex items-center gap-x-2 text-lg lg:text:md 
             text-primary-blue_dark" onclick="toggleElementByClick('sidebar', 'translate-x-full')"
         >
-            <span>Menú</span>
+            <span>{% trans "Menú" %}</span>
             {% include "icons/menu.html" with tailwind_class="size-7" %}
         </button>
 
-        <!-- Navbar Items --> <!-- TODO: Quienes Somos, Destinos, Servicios -> Check -->
+        <!-- Navbar Items -->
         <div class="hidden lg:flex flex-row gap-x-2 text-md">
             {% url 'index' as index_url %}
             {% nav_item request.path index_url "Inicio" "#" "/" "nav_item_index" %}
@@ -31,12 +32,9 @@
             {% nav_item request.path "" "Contacto" "#quotation_section" "/cotizar-traslado/" "nav_item_quotation" %}
         </div>
 
-        <!-- Language Selector --> <!-- TODO: I18N with Django -->
+        <!-- Language Selector -->
         <div class="hidden lg:block">
-            <select class="hidden" id="language_selector" name="language">
-                <option value="es">Español</option>
-                <option value="en">Inglés</option>
-            </select>
+            {% include "components/language-selector.html" %}
         </div>
     </div>
 </header>

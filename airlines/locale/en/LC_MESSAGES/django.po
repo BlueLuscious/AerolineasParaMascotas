@@ -1,0 +1,1157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEA# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-05 01:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: airlines/translation_strings.py:4
+msgid "Inicio"
+msgstr "Home"
+
+#: airlines/translation_strings.py:5
+#: web/templates/pages/components-index/about-us-section.html:23
+msgid "Quienes somos"
+msgstr "About Us"
+
+#: airlines/translation_strings.py:6
+msgid "Servicios"
+msgstr "Services"
+
+#: airlines/translation_strings.py:7
+msgid "Destinos"
+msgstr "Destinations"
+
+#: airlines/translation_strings.py:8
+msgid "Contacto"
+msgstr "Contact"
+
+#: airlines/translation_strings.py:9
+msgid "Español"
+msgstr "Spanish"
+
+#: airlines/translation_strings.py:10
+msgid "Inglés"
+msgstr "English"
+
+#: web/mocks/destinations_mock.py:13
+msgid "european_union_title"
+msgstr "Requirements for entering the European Union with pets"
+
+#: web/mocks/destinations_mock.py:15
+msgid "eu_description"
+msgstr ""
+"The European Union (EU) has specific regulations for the entry of pets from "
+"third countries. Below is an overview of the necessary requirements:"
+
+#: web/mocks/destinations_mock.py:16 web/mocks/destinations_mock.py:159
+#: web/mocks/destinations_mock.py:190 web/mocks/destinations_mock.py:383
+#: web/mocks/destinations_mock.py:415
+msgid "documentation"
+msgstr "Documentation"
+
+#: web/mocks/destinations_mock.py:17
+msgid "pets_permits"
+msgstr "Pet passport"
+
+#: web/mocks/destinations_mock.py:17
+msgid "eu_description_doc_1"
+msgstr ""
+"A passport that identifies the pet and contains information about its health "
+"and vaccinations is required."
+
+#: web/mocks/destinations_mock.py:18
+msgid "vet_certificate_health"
+msgstr "Veterinary health certificate"
+
+#: web/mocks/destinations_mock.py:18
+msgid "eu_description_doc_2"
+msgstr ""
+"A certificate issued by a licensed veterinarian confirming the pet's health "
+"and fitness to travel."
+
+#: web/mocks/destinations_mock.py:19
+msgid "vaccination_certificate"
+msgstr "Vaccination certificate"
+
+#: web/mocks/destinations_mock.py:19
+msgid "eu_description_doc_3"
+msgstr "The pet must be vaccinated against rabies and other relevant diseases."
+
+#: web/mocks/destinations_mock.py:22
+msgid "vaccines_and_treatments"
+msgstr "Vaccination and treatments"
+
+#: web/mocks/destinations_mock.py:23 web/mocks/destinations_mock.py:380
+msgid "rabies_vaccine"
+msgstr "Rabies vaccination"
+
+#: web/mocks/destinations_mock.py:23
+msgid "eu_description_health_1"
+msgstr "The pet must be vaccinated against rabies with an EU-approved vaccine."
+
+#: web/mocks/destinations_mock.py:24
+msgid "parasite_treatment"
+msgstr "Parasite treatment"
+
+#: web/mocks/destinations_mock.py:24
+msgid "eu_description_health_2"
+msgstr ""
+"The pet must receive treatment against parasites (ticks, fleas, etc.) before "
+"traveling."
+
+#: web/mocks/destinations_mock.py:27
+msgid "identification"
+msgstr "Identificación"
+
+#: web/mocks/destinations_mock.py:27 web/mocks/destinations_mock.py:379
+msgid "microchip"
+msgstr "Microchip"
+
+#: web/mocks/destinations_mock.py:27
+msgid "eu_description_microchip"
+msgstr ""
+"The pet must have an ISO 11784/11785 microchip that allows for "
+"identification."
+
+#: web/mocks/destinations_mock.py:28
+msgid "permits_and_auth"
+msgstr "Permits & authorizations"
+
+#: web/mocks/destinations_mock.py:29 web/mocks/destinations_mock.py:345
+msgid "import_permit"
+msgstr "Import license"
+
+#: web/mocks/destinations_mock.py:29
+msgid "eu_description_permits_1"
+msgstr ""
+"In some cases, an import permit issued by the competent authority of the "
+"destination country is required."
+
+#: web/mocks/destinations_mock.py:30
+msgid "notification_authority"
+msgstr "Notification to the competent authority"
+
+#: web/mocks/destinations_mock.py:30
+msgid "eu_description_permits_2"
+msgstr ""
+"It may be necessary to notify the competent authority of the destination "
+"country about the pet's entry."
+
+#: web/mocks/destinations_mock.py:33 web/mocks/destinations_mock.py:416
+msgid "transport_conditions"
+msgstr "Transport conditions"
+
+#: web/mocks/destinations_mock.py:34
+msgid "transport_container"
+msgstr "Transport container"
+
+#: web/mocks/destinations_mock.py:34
+msgid "eu_description_transport_1"
+msgstr ""
+"The pet must travel in a suitable container that meets international "
+"standards."
+
+#: web/mocks/destinations_mock.py:35
+msgid "travel_conditions"
+msgstr "Travel conditions"
+
+#: web/mocks/destinations_mock.py:35
+msgid "eu_description_transport_2"
+msgstr "The pet must travel in safe and comfortable conditions."
+
+#: web/mocks/destinations_mock.py:38
+msgid "important"
+msgstr "Importante"
+
+#: web/mocks/destinations_mock.py:39
+msgid "check_specific_reqs"
+msgstr "Check specific requirements"
+
+#: web/mocks/destinations_mock.py:39
+msgid "eu_description_important_1"
+msgstr ""
+"Requirements may vary depending on the destination country within the EU and "
+"the type of pet. It is essential to check the specific requirements for each "
+"case."
+
+#: web/mocks/destinations_mock.py:40
+msgid "consult_authority"
+msgstr "Consult with the competent authorities"
+
+#: web/mocks/destinations_mock.py:40
+msgid "eu_description_important_2"
+msgstr ""
+"It is advisable to consult with the competent authorities of the destination "
+"country and with an authorized veterinarian to ensure compliance with all "
+"requirements."
+
+#: web/mocks/destinations_mock.py:44
+msgid "eu_description_aem"
+msgstr ""
+"At Aerolineas para Mascotas, we're committed to helping you navigate the "
+"requirements and regulations for international pet transportation. Our team "
+"of experts is here to assist you every step of the way. Contact us for more "
+"information!"
+
+#: web/mocks/destinations_mock.py:52
+msgid "spain"
+msgstr "Spain"
+
+#: web/mocks/destinations_mock.py:66
+msgid "italy"
+msgstr "italy"
+
+#: web/mocks/destinations_mock.py:80
+msgid "portugal"
+msgstr "Portugal"
+
+#: web/mocks/destinations_mock.py:94
+msgid "france"
+msgstr "France"
+
+#: web/mocks/destinations_mock.py:108
+msgid "germany"
+msgstr "Germany"
+
+#: web/mocks/destinations_mock.py:122
+msgid "austria"
+msgstr "Austria"
+
+#: web/mocks/destinations_mock.py:136
+msgid "uruguay"
+msgstr "Uruguay"
+
+#: web/mocks/destinations_mock.py:144
+msgid "uruguay_description"
+msgstr ""
+"Home delivery and ground delivery from Argentina. We manage all medical "
+"documentation."
+
+#: web/mocks/destinations_mock.py:151
+msgid "chile"
+msgstr "Chile"
+
+#: web/mocks/destinations_mock.py:159
+msgid "chile_description_doc"
+msgstr ""
+"Health certificate, rabies vaccination certificate, and, in some cases, the "
+"Zoosanitary Export Certificate."
+
+#: web/mocks/destinations_mock.py:166
+msgid "bolivia"
+msgstr "Bolivia"
+
+#: web/mocks/destinations_mock.py:174
+msgid "bolivia_description"
+msgstr ""
+"In Bolivia, the airports that generally allow pets are international "
+"airports, including La Paz (LPB), Santa Cruz (VVI), and Cochabamba (CBB). "
+"However, it is crucial to check with the airline and the Ministry of Rural "
+"Development and Lands (MDRyT) regarding specific requirements for "
+"transporting pets, including the need for an import permit."
+
+#: web/mocks/destinations_mock.py:181
+msgid "paraguay"
+msgstr "Paraguay"
+
+#: web/mocks/destinations_mock.py:189
+msgid "paraguay_description"
+msgstr ""
+"In Paraguay, airports that allow pets are generally subject to airline "
+"requirements and the country's health regulations. Most airlines operating "
+"in Paraguay, such as Paranair, Flybondi, and Air Europa, allow pets to be "
+"transported in the cabin or in the cargo hold, provided certain requirements "
+"are met, such as weight, carrier dimensions, pet age, and necessary "
+"documentation."
+
+#: web/mocks/destinations_mock.py:190
+msgid "paraguay_description_doc"
+msgstr ""
+"Veterinary health certificate, vaccination card (especially rabies), "
+"deworming certificate, and in some cases, a passport or international "
+"certificate."
+
+#: web/mocks/destinations_mock.py:197
+msgid "brazil"
+msgstr "Brazil"
+
+#: web/mocks/destinations_mock.py:204
+msgid "brazil_title"
+msgstr "International airports in Brazil that welcome pets"
+
+#: web/mocks/destinations_mock.py:206
+msgid "brazil_description_airport_1"
+msgstr ""
+"It's the largest airport in Brazil and offers multiple international "
+"connections, making it an excellent option for traveling with pets."
+
+#: web/mocks/destinations_mock.py:207
+msgid "brazil_description_airport_2"
+msgstr ""
+"Brazil's capital offers pet-friendly services and a wide range of pet "
+"transportation options."
+
+#: web/mocks/destinations_mock.py:208
+msgid "brazil_description_airport_3"
+msgstr ""
+"The Belo Horizonte metropolitan area also has good infrastructure for "
+"transporting animals on international flights."
+
+#: web/mocks/destinations_mock.py:209
+msgid "brazil_description_airport_4"
+msgstr ""
+"Located in northeast Brazil, Recife is another popular airport that accepts "
+"pets on international flights."
+
+#: web/mocks/destinations_mock.py:216
+msgid "colombia"
+msgstr "Colombia"
+
+#: web/mocks/destinations_mock.py:223
+msgid "colombia_title"
+msgstr "Entry to Colombia"
+
+#: web/mocks/destinations_mock.py:225
+msgid "colombia_description_1"
+msgstr ""
+"To enter the country with dogs and cats, you must register in advance "
+"through the ICA website."
+
+#: web/mocks/destinations_mock.py:226
+msgid "colombia_description_2"
+msgstr ""
+"Upon arrival at the airport, you must present the required documentation to "
+"the ICA office to obtain the Health Inspection Certificate (CIS)."
+
+#: web/mocks/destinations_mock.py:227
+msgid "colombia_description_3"
+msgstr "Pets must have a current rabies vaccination and be dewormed."
+
+#: web/mocks/destinations_mock.py:234
+msgid "peru"
+msgstr "Peru"
+
+#: web/mocks/destinations_mock.py:241
+msgid "peru_title"
+msgstr "Requirements for traveling with pets at Jorge Chávez Airport"
+
+#: web/mocks/destinations_mock.py:243
+msgid "health_certificate"
+msgstr "Health Certificate"
+
+#: web/mocks/destinations_mock.py:243
+#, fuzzy
+#| msgid "eu_description_health_1"
+msgid "peru_description_health_certificate"
+msgstr ""
+"It is essential for entry into Peru; it must be issued in the country of "
+"origin and demonstrate that the pet is vaccinated against relevant diseases."
+
+#: web/mocks/destinations_mock.py:244
+msgid "vaccines"
+msgstr "Vaccines"
+
+#: web/mocks/destinations_mock.py:245
+msgid "peru_description_vaccines"
+msgstr "Animals must be vaccinated against species-specific diseases."
+
+#: web/mocks/destinations_mock.py:246
+msgid "dogs"
+msgstr "Dogs"
+
+#: web/mocks/destinations_mock.py:246
+msgid "peru_description_vaccines_dogs"
+msgstr ""
+"Distemper, Canine Hepatitis, Leptosirosis, Parvovirosis, Rabies, "
+"Parainfluenza."
+
+#: web/mocks/destinations_mock.py:247
+msgid "cats"
+msgstr "Cats"
+
+#: web/mocks/destinations_mock.py:247
+msgid "peru_description_vaccines_cats"
+msgstr ""
+"Feline panleukopenia, Calicivirosis, Rhinotracheitis, Feline leukemia, "
+"Rabies."
+
+#: web/mocks/destinations_mock.py:256
+msgid "usa"
+msgstr "United States"
+
+#: web/mocks/destinations_mock.py:264
+msgid "usa_description"
+msgstr ""
+"To bring pets into the United States, it is crucial to follow the "
+"requirements of the Centers for Disease Control and Prevention (CDC). Dogs "
+"must be at least 6 months old, have a microchip, and be vaccinated against "
+"rabies. They must also have a valid health certificate and rabies "
+"vaccination certificate. A dog importation form issued by the CDC is also "
+"required."
+
+#: web/mocks/destinations_mock.py:271
+msgid "canada"
+msgstr "Canada"
+
+#: web/mocks/destinations_mock.py:282
+msgid "mexico"
+msgstr "Mexico"
+
+#: web/mocks/destinations_mock.py:290
+msgid "mexico_description"
+msgstr ""
+"The European Union (EU) has specific regulations for the entry of pets from "
+"third countries. Below is an overview of the necessary requirements:"
+
+#: web/mocks/destinations_mock.py:291
+msgid "in_summary"
+msgstr "In summary"
+
+#: web/mocks/destinations_mock.py:291
+msgid "mexico_description_summary"
+msgstr ""
+"AICM is a pet-friendly airport, but certain requirements must be met for "
+"traveling with pets, including the use of containers/cages, registration "
+"with the airline, and consulting SENASICA requirements."
+
+#: web/mocks/destinations_mock.py:298
+msgid "australia"
+msgstr "Austrilia"
+
+#: web/mocks/destinations_mock.py:306 web/mocks/destinations_mock.py:382
+#: web/mocks/destinations_mock.py:398
+msgid "quarantine"
+msgstr "Quarantine"
+
+#: web/mocks/destinations_mock.py:306
+msgid "australia_description_quarantine"
+msgstr ""
+"Once the pet arrives in Melbourne, it will be transferred to the post-entry "
+"quarantine center in Mickleham for a quarantine period, which varies "
+"depending on the pet's country of origin. From Argentina, the quarantine "
+"period does not exceed 30 days."
+
+#: web/mocks/destinations_mock.py:307
+msgid "cargo_hold_trip"
+msgstr "Cargo hold trip"
+
+#: web/mocks/destinations_mock.py:307
+msgid "australia_description_cargo_hold"
+msgstr ""
+"Pets must travel in the cargo hold as declared cargo in an IATA-approved "
+"carrier."
+
+#: web/mocks/destinations_mock.py:308
+msgid "no_national_transfers"
+msgstr "National transfers are not permitted."
+
+#: web/mocks/destinations_mock.py:308
+msgid "australia_description_national_transfers"
+msgstr ""
+"Pets are not permitted to arrive at another Australian airport and then "
+"travel on a domestic flight to Melbourne."
+
+#: web/mocks/destinations_mock.py:309
+msgid "quarantine_reqs"
+msgstr "Quarantine requirements"
+
+#: web/mocks/destinations_mock.py:309
+msgid "australia_description_quarantine_reqs"
+msgstr ""
+"Strict quarantine requirements of the Australian Department of Agriculture, "
+"Fisheries and Forestry (DAFF) must be followed."
+
+#: web/mocks/destinations_mock.py:316
+msgid "new_zealand"
+msgstr "New Zealand"
+
+#: web/mocks/destinations_mock.py:324
+msgid "new_zealand_description_1"
+msgstr ""
+"When bringing pets to New Zealand, it is essential that the country's strict "
+"health and veterinary requirements be met."
+
+#: web/mocks/destinations_mock.py:325
+msgid "new_zealand_description_2"
+msgstr ""
+"The Ministry for Primary Industries (MPI) only allows dogs and cats from "
+"countries considered rabies-free or controlled."
+
+#: web/mocks/destinations_mock.py:326
+msgid "new_zealand_description_3"
+msgstr "Pets must be microchipped prior to any treatment for importation."
+
+#: web/mocks/destinations_mock.py:327
+msgid "new_zealand_description_4"
+msgstr ""
+"Documentation confirming that the microchip was implanted and/or scanned "
+"prior to primary rabies vaccination and all subsequent treatments is "
+"required."
+
+#: web/mocks/destinations_mock.py:334
+msgid "israel"
+msgstr "Israel"
+
+#: web/mocks/destinations_mock.py:342
+msgid "israel_description"
+msgstr ""
+"Ben Gurion International Airport in Los Angeles, near Tel Aviv, is Israel's "
+"main international airport and is pet-friendly."
+
+#: web/mocks/destinations_mock.py:343
+msgid "pets_in_cabin"
+msgstr "Pets in cabin"
+
+#: web/mocks/destinations_mock.py:343
+msgid "israel_description_cabin"
+msgstr ""
+"Pets can travel in the cabin if they weigh up to 8 kg, including the "
+"carrier, and if the carrier meets the dimensions allowed by the airline."
+
+#: web/mocks/destinations_mock.py:344
+msgid "pets_in_hold"
+msgstr "Pets in cargo hold"
+
+#: web/mocks/destinations_mock.py:344
+msgid "israel_description_hold"
+msgstr ""
+"Pets can also travel as checked baggage, but they must be in a secure, rigid "
+"cage, according to airline regulations."
+
+#: web/mocks/destinations_mock.py:345
+msgid "israel_description_import_license"
+msgstr ""
+"It is crucial to obtain an import permit before traveling to Israel with "
+"pets."
+
+#: web/mocks/destinations_mock.py:346
+msgid "others_considerations"
+msgstr "Others considerations"
+
+#: web/mocks/destinations_mock.py:346
+msgid "israel_description_other"
+msgstr ""
+"It's advisable to check each airline's specific regulations before booking "
+"your flight, as they may vary."
+
+#: web/mocks/destinations_mock.py:353
+msgid "turkey"
+msgstr "Turkey"
+
+#: web/mocks/destinations_mock.py:361
+msgid "turkey_description"
+msgstr ""
+"Additionally, some airlines, such as Turkish Airlines, have specific "
+"policies for transporting pets."
+
+#: web/mocks/destinations_mock.py:362
+msgid "turkey_description_airlines"
+msgstr ""
+"It has a pet policy that includes the possibility of traveling in the cabin "
+"or hold, depending on the weight and size of the pet and its carrier."
+
+#: web/mocks/destinations_mock.py:363
+msgid "considerations"
+msgstr "Considerations"
+
+#: web/mocks/destinations_mock.py:363
+msgid "turkey_description_other"
+msgstr ""
+"It's important to check each airline's policies and meet the health and "
+"documentation requirements for traveling with pets to Turkey."
+
+#: web/mocks/destinations_mock.py:370
+msgid "japan"
+msgstr "Japan"
+
+#: web/mocks/destinations_mock.py:377
+msgid "japan_title"
+msgstr "Requirements for traveling with pets to Japan"
+
+#: web/mocks/destinations_mock.py:379
+msgid "japan_description_microchip"
+msgstr "Pets must have a microchip."
+
+#: web/mocks/destinations_mock.py:380
+msgid "japan_description_vaccines"
+msgstr "Vaccination must be at least 30 days before entering the country."
+
+#: web/mocks/destinations_mock.py:381
+msgid "rabies_titer_test"
+msgstr "Rabies titer test"
+
+#: web/mocks/destinations_mock.py:381
+msgid "japan_description_rage"
+msgstr "Testing is required to ensure the effectiveness of the rabies vaccine."
+
+#: web/mocks/destinations_mock.py:382
+msgid "japan_description_quarantine"
+msgstr ""
+"Depending on the pet's requirements, there may be a quarantine period of 12 "
+"hours or more."
+
+#: web/mocks/destinations_mock.py:383
+msgid "japan_description_doc"
+msgstr ""
+"The required documentation, such as the ASE-3293 certificate and the import "
+"inspection application, must be submitted."
+
+#: web/mocks/destinations_mock.py:390
+msgid "china"
+msgstr "China"
+
+#: web/mocks/destinations_mock.py:398
+msgid "china_description_quarantine"
+msgstr "Pets entering China may be subject to quarantine."
+
+#: web/mocks/destinations_mock.py:399
+msgid "restrictions"
+msgstr "Restrictions"
+
+#: web/mocks/destinations_mock.py:399
+msgid "china_description_restrictions"
+msgstr "Only allow one pet per passenger"
+
+#: web/mocks/destinations_mock.py:406
+msgid "south_korea"
+msgstr "South Korea"
+
+#: web/mocks/destinations_mock.py:413
+msgid "south_korea_title"
+msgstr "Requirements for traveling with pets to South Korea"
+
+#: web/mocks/destinations_mock.py:415
+msgid "south_korea_description_doc"
+msgstr ""
+"It's necessary to have your pet's documentation in order, including a rabies "
+"vaccination certificate and other requirements that may vary depending on "
+"the pet's country of origin. Argentina requires a rabies antibody test."
+
+#: web/mocks/destinations_mock.py:416
+msgid "south_korea_description_transport"
+msgstr ""
+"Airlines have their own policies regarding pet transportation, so it's "
+"important to check with the airline before traveling."
+
+#: web/mocks/faqs_mock.py:11
+msgid "¿Son una aerolínea?"
+msgstr "Are you an airline?"
+
+#: web/mocks/faqs_mock.py:13
+msgid ""
+"No, Aerolíneas para Mascotas es nuestro nombre ya que somos una empresa "
+"dedicada al exclusivamente al traslado aéreo y terrestre de mascotas, "
+"contamos con alianzas en Varios países para que trasladar a tu mascota no "
+"sea un impedimento, trabajando en forma conjunta logramos que tu mascota "
+"llegue a cualquier parte del mundo. Brindándote la mejor atención y "
+"seguridad que tu mascota merece."
+msgstr ""
+"No, Aerolíneas para Mascotas is our name because we are a company dedicated "
+"exclusively to air and ground pet transportation. We have partnerships in "
+"several countries so transporting your pet isn't an impediment. Working "
+"together, we can get your pet anywhere in the world, providing you with the "
+"best care and safety your pet deserves."
+
+#: web/mocks/faqs_mock.py:26
+msgid "¿Qué peso debe tener mi mascota para viajar en cabina?"
+msgstr "How much weight should my pet have to travel in a cabin?"
+
+#: web/mocks/faqs_mock.py:28
+msgid ""
+"Cada aerolínea cuenta con su propia reglamentación, en cuanto al peso y "
+"medida de la mascota, es por eso que recomendamos informarte previamente "
+"antes de realizar tu reserva aérea."
+msgstr ""
+"Each airline has its own regulations regarding pet weight and size, so we "
+"recommend checking in advance before booking your flight."
+
+#: web/mocks/faqs_mock.py:38
+msgid ""
+"¿Que documentación necesito para viajar con mi mascota en un vuelo "
+"internacional?"
+msgstr "What documentation do I need to travel with my pet on a flight?"
+
+#: web/mocks/faqs_mock.py:40
+msgid ""
+"La documentación necesaria para viajar con tu mascota en un vuelo "
+"internacional. Varía según el país de destino, es por eso que te aconsejamos "
+"que te contactes con nuestro equipo ya que son expertos en traslado de "
+"Mascotas y se encargan de gestionar toda la documentación necesaria para que "
+"vos puedas despreocuparte de esos trámites engorrosos."
+msgstr ""
+"The documentation required to travel with your pet on an international "
+"flight varies depending on the destination country. We recommend contacting "
+"our team, as they are experts in pet transport and can handle all the "
+"necessary paperwork so you can avoid the hassle of paperwork."
+
+#: web/mocks/faqs_mock.py:52
+msgid "¿Qué tipos de Mascotas trasladan?"
+msgstr "What types of pets do you transport?"
+
+#: web/mocks/faqs_mock.py:53
+msgid ""
+"Trasladamos, tanto, caninos como felinos (Perros-Gatos) sin distinción de "
+"razas."
+msgstr ""
+"We transport both canines and felines (Dogs-Cats) without distinction of "
+"breed."
+
+#: web/mocks/faqs_mock.py:60
+msgid "¿Que aerolíneas trabajan con ustedes?"
+msgstr "Which airlines work with you?"
+
+#: web/mocks/faqs_mock.py:62
+msgid ""
+"Trabajamos con varias aerolíneas importantes para garantizar que tus "
+"mascotas lleguen al destino deseado, de manera segura y eficiente. Algunas "
+"de las aerolíneas con las que trabajamos son LATAM Airlines, Avianca entre "
+"otras."
+msgstr ""
+"We work with several major airlines to ensure your pets arrive safely and "
+"efficiently to their desired destination. Some of the airlines we work with "
+"include LATAM Airlines, Avianca, and others."
+
+#: web/mocks/faqs_mock.py:73
+msgid "¿Que pasa si mi mascota posee necesidades especiales?"
+msgstr "What if my pet has special needs?"
+
+#: web/mocks/faqs_mock.py:75
+msgid ""
+"Nuestro equipo de expertos en traslado de Mascotas está altamente capacitado "
+"para atender a Mascotas con necesidades especiales. Por favor, informarnos "
+"sobre cualquier prescripción médica u necesidad especial que presente tu "
+"mascota previamente para que podamos proporcionarle un cuidado adecuado y "
+"tomar los recaudos correspondientes."
+msgstr ""
+"Our team of pet transport experts is highly trained to care for pets with "
+"special needs. Please inform us in advance of any medical prescriptions or "
+"special needs your pet may have so we can provide appropriate care and take "
+"the necessary precautions."
+
+#: web/mocks/faqs_mock.py:87
+msgid ""
+"¿Cómo se garantiza la seguridad y el bienestar de mi mascota durante el "
+"traslado?"
+msgstr "How is my pet's safety and well-being guaranteed during transport?"
+
+#: web/mocks/faqs_mock.py:89
+msgid ""
+"Nuestra flota de vehículos están equipados para garantizar la seguridad y el "
+"confort de tu mascota, trabajamos con contenedores aprobados bajo norma IATA "
+"(Asociación Internacional de Transporte Aéreo). Nuestro equipo de expertos "
+"se encarga de atender a tus mascotas ante todo el proceso de traslado, "
+"brindando la atención necesaria."
+msgstr ""
+"Our fleet of vehicles is equipped to ensure the safety and comfort of your "
+"pet. We work with containers approved under IATA (International Air "
+"Transport Association) standards. Our team of experts is responsible for "
+"caring for your pets throughout the entire transportation process, providing "
+"the necessary care."
+
+#: web/mocks/faqs_mock.py:101
+msgid ""
+"¿Si mascota viaja mediante un Vuelo de carga como es el proceso de embarque?"
+msgstr "If your pet travels via cargo flight, what is the boarding process?"
+
+#: web/mocks/faqs_mock.py:103
+msgid ""
+"Nuestro equipo de expertos se encarga de realizar todos los procedimientos "
+"protocolares desde el ingreso a la TCA (Terminal de Carga Aérea) hasta su "
+"embarque. Inicialmente realizando la colocación previa de todo lo necesario "
+"para su viaje, desde los paños absorbentes para sus necesidades, bebedero, "
+"comedero, hasta la colación de la ración de alimento extra en caso en que "
+"realice una escala aérea, cumpliendo con todos los requisitos indispensables "
+"para que tu mascota viaje segura."
+msgstr ""
+"Our team of experts is responsible for carrying out all protocol procedures "
+"from entry to the TCA (Air Cargo Terminal) until boarding. Initially, we pre-"
+"arrange everything necessary for your trip, from absorbent pads for your "
+"pet's needs, a water bowl, and a food bowl, to providing an extra ration of "
+"food in case you have a stopover in the air, complying with all the "
+"essential requirements for your pet's safe travels."
+
+#: web/mocks/faqs_mock.py:117
+msgid ""
+"¿Si mi mascota es braquicefalo (Nariz Chata) qué precauciones, debo tomar?"
+msgstr ""
+"If my pet is brachycephalic (flat-nosed), what precautions should I take?"
+
+#: web/mocks/faqs_mock.py:119
+msgid ""
+"Al momento de viajar con tu mascota Braquicefalo debes tomar todos los "
+"recaudos necesarios previamente informándote sobre las políticas de la "
+"aerolínea con la que deseas viajar, siempre optando por un viaje seguro "
+"evitando el estrés y su exposición a las altas temperaturas, ya que son dos "
+"factores importantes a la hora de tomar un vuelo. Siempre se aconseja "
+"consultar con tu veterinario de confianza y elegir la  mejor opción según "
+"las necesidades de tu mascota. (A tener en cuenta: la época del año en el "
+"destino al que deseas viajar, se aconseja que la temperatura no supere los "
+"27° C° en toda la ruta Aérea)."
+msgstr ""
+"When traveling with your Brachycephalic pet, you should take all necessary "
+"precautions by first informing yourself about the policies of the airline "
+"you plan to travel with. Always opt for safe travel by avoiding stress and "
+"exposure to high temperatures, as these are two important factors when "
+"taking a flight. It is always advisable to consult with your trusted "
+"veterinarian and choose the best option based on your pet's needs. (Please "
+"note: depending on the time of year at your destination, it is recommended "
+"that the temperature not exceed 27°C throughout the entire flight.)"
+
+#: web/mocks/faqs_mock.py:135
+msgid "¿Cuentan con pensionado canino propio?"
+msgstr "Do you have your own dog boarding facility?"
+
+#: web/mocks/faqs_mock.py:137
+msgid ""
+"No, solo contamos con pensionado transitorio para que las mascotas pasen en "
+"menor tiempo posible lejos de sus dueños, en este espacio le brindamos a tu "
+"mascota, la atención adecuada y el amor de un hogar, tal como en su casa. "
+"Con momentos de juegos, caricias, y paseos lo que hacen de esta corta "
+"estadía que no padezcan tristeza u estrés, siempre dependiendo de cada "
+"mascota. Por lo general nos quedamos a su cuidado nomás de 48 a 72 horas "
+"previas a su vuelo."
+msgstr ""
+"No, we only offer temporary boarding so pets can spend as little time away "
+"from their owners as possible. In this space, we provide your pet with the "
+"proper care and love of a home, just like at home. With playtime, cuddles, "
+"and walks, we ensure this short stay doesn't cause sadness or stress, "
+"depending on the pet. We generally stay in their care for only 48 to 72 "
+"hours before their flight."
+
+#: web/mocks/faqs_mock.py:151
+msgid "¿Cual es el costo del servicio para trasladar a mi mascota?"
+msgstr "What is the cost of transporting my pet?"
+
+#: web/mocks/faqs_mock.py:153
+msgid ""
+"El costo del servicio de traslado de mascota, varía según la distancia, el "
+"tamaño y la raza entre otros factores. Te proporcionaremos un presupuesto en "
+"base a las características de tu mascota, el destino deseado y según la "
+"fecha en la que quieras realizar el mismo."
+msgstr ""
+"The cost of pet transport varies depending on distance, size, breed, and "
+"other factors. We'll provide you with a quote based on your pet's "
+"characteristics, desired destination, and desired travel date."
+
+#: web/mocks/faqs_mock.py:164
+msgid "¿Como realizo la reserva del servicio y el pago de la misma?"
+msgstr "How do I reserve and pay for the service?"
+
+#: web/mocks/faqs_mock.py:166
+msgid ""
+"Podes reservar nuestro servicio de traslado de Mascotas, a través de nuestro "
+"sitio web, o bien mediante nuestro canal de atención telefónica desde "
+"cualquier parte del mundo. El pago se puede realizar en Efectivo en nuestro "
+"domicilio o bien mediante transferencia bancaria a nuestras cuentas; para tu "
+"comodidad contamos con cuentas tanto en pesos como en dólares y euros, de "
+"esta manera podes realizar tu reserva de forma rápida y segura."
+msgstr ""
+"You can book our pet transfer service through our website or by calling us "
+"from anywhere in the world. Payment can be made in cash at our address or by "
+"bank transfer to our accounts. For your convenience, we have accounts in "
+"pesos, dollars, and euros, so you can make your reservation quickly and "
+"securely."
+
+#: web/templates/components/navbar.html:17
+#: web/templates/components/sidebar.html:17
+msgid "Menú"
+msgstr "Menu"
+
+#: web/templates/pages/components-index/about-us-section.html:25
+msgid "about_us_title"
+msgstr ""
+"At <span class='text-primary-red_dark font-semibold'>Aerolineas para "
+"Mascotas</span>, we fly high so you can keep your furry friend close."
+
+#: web/templates/pages/components-index/about-us-section.html:26
+msgid "about_us_p_1"
+msgstr ""
+"We are a young company with operational bases in both Argentina and Spain. "
+"We strive to establish ourselves in the market by providing our customers "
+"with excellent service. We understand that transporting your pet and "
+"everything that entails can be quite a challenge."
+
+#: web/templates/pages/components-index/about-us-section.html:27
+msgid "about_us_p_2"
+msgstr ""
+"That's why our main commitment is to provide you, above all, with the "
+"security, responsibility, trust, and all the love your pet needs when "
+"embarking on a new journey. We know they're part of your family, so we want "
+"you to know they're in the best hands when choosing us. For your pet's "
+"transportation, we have highly trained personnel who understand the needs of "
+"pets when handling different breeds. In addition, we have vehicles equipped "
+"with ventilation and safety systems that guarantee a safe and comfortable "
+"trip for your pet."
+
+#: web/templates/pages/components-index/destination-section.html:15
+msgid "frequent_destinations"
+msgstr "Frequent Destinations"
+
+#: web/templates/pages/components-index/destination-section.html:17
+msgid "destination_caption"
+msgstr ""
+"These are the destinations most chosen by those who trust us to take their "
+"four-legged companions on new adventures."
+
+#: web/templates/pages/components-index/destination-section.html:47
+msgid "exotic_destinations"
+msgstr "Exotic Destinations"
+
+#: web/templates/pages/components-index/faqs-section.html:12
+msgid "Preguntas Frecuentes"
+msgstr "Frequently Asked Questions"
+
+#: web/templates/pages/components-index/faqs-section.html:14
+msgid ""
+"Estas son las preguntas que más recibimos y nuestras respuestas, listas para "
+"que no te quede nada en el aire."
+msgstr ""
+"These are the questions we receive most often and our answers, ready to "
+"leave you with nothing left hanging."
+
+#: web/templates/pages/components-index/faqs-section.html:32
+msgid "Tu curiosidad no muerde. Respondemos con cariño las 24 horas."
+msgstr "Your curiosity doesn't bite. We respond with care 24/7."
+
+#: web/templates/pages/components-index/faqs-section.html:38
+msgid "Tenes alguna pregunta?"
+msgstr "Do you have any questions?"
+
+#: web/templates/pages/components-index/home-section.html:18
+msgid "Tu mascota, nuestro pasajero más importante"
+msgstr "Your pet, our most important passenger"
+
+#: web/templates/pages/components-index/home-section.html:19
+msgid "Seguro, cómodo y con amor en cada kilómetro"
+msgstr "Safe, comfortable and with love in every mile"
+
+#: web/templates/pages/components-index/home-section.html:26
+#: web/templates/pages/components-index/home-section.html:57
+#: web/templates/pages/components-index/home-section.html:88
+#: web/templates/unicorn/modal.html:70
+msgid "Solicitá tu cotización"
+msgstr "Request your quote"
+
+#: web/templates/pages/components-index/home-section.html:33
+#: web/templates/pages/components-index/home-section.html:64
+#: web/templates/pages/components-index/home-section.html:95
+msgid "Consulta por Whatsapp"
+msgstr "Contact us on Whatsapp"
+
+#: web/templates/pages/components-index/home-section.html:49
+msgid "Trasladamos lo que más querés con el cuidado que se merece"
+msgstr "We transport what you love most with the care it deserves"
+
+#: web/templates/pages/components-index/home-section.html:50
+msgid "Porque no es solo un viaje, es una experiencia con corazón"
+msgstr "Because it's not just a trip, it's an experience with heart"
+
+#: web/templates/pages/components-index/home-section.html:80
+msgid "Donde vayan tus mascotas, vamos con ellas"
+msgstr "Wherever your pets go, we go with them"
+
+#: web/templates/pages/components-index/home-section.html:81
+msgid "Viajes responsables, abrazos garantizados"
+msgstr "Responsible travel, guaranteed hugs"
+
+#: web/templates/pages/components-index/quotation-section.html:13
+msgid "Solicitud de Cotización"
+msgstr "Request for quote"
+
+#: web/templates/pages/components-index/quotation-section.html:25
+msgid "Nombre del propietario"
+msgstr "Owner’s name"
+
+#: web/templates/pages/components-index/quotation-section.html:31
+msgid "Email"
+msgstr "Email"
+
+#: web/templates/pages/components-index/quotation-section.html:37
+msgid "Teléfono"
+msgstr "Phone number"
+
+#: web/templates/pages/components-index/quotation-section.html:43
+msgid "Nombre de su mascota"
+msgstr "Pet name"
+
+#: web/templates/pages/components-index/quotation-section.html:49
+msgid "Edad de su mascota"
+msgstr "Pet age"
+
+#: web/templates/pages/components-index/quotation-section.html:55
+msgid "Peso de su mascota"
+msgstr "Pet weight"
+
+#: web/templates/pages/components-index/quotation-section.html:61
+msgid "Raza de su mascota"
+msgstr "Pet breed"
+
+#: web/templates/pages/components-index/quotation-section.html:67
+msgid "Fecha del viaje"
+msgstr "Travel date"
+
+#: web/templates/pages/components-index/quotation-section.html:73
+msgid "Ciudad de Origen"
+msgstr "Origin City"
+
+#: web/templates/pages/components-index/quotation-section.html:79
+msgid "Ciudad de Destino"
+msgstr "Destination City"
+
+#: web/templates/pages/components-index/quotation-section.html:85
+msgid "Comentarios"
+msgstr "Comments"
+
+#: web/templates/pages/components-index/quotation-section.html:90
+msgid "Subí la foto actual de tu mascota a trasladar"
+msgstr "Upload the current photo of your pet to be transferred"
+
+#: web/templates/pages/components-index/quotation-section.html:99
+msgid "Productos"
+msgstr "Products"
+
+#: web/templates/pages/components-index/quotation-section.html:106
+msgid "He leído y acepto los"
+msgstr "I have read and accept the"
+
+#: web/templates/pages/components-index/quotation-section.html:109
+msgid "términos y condiciones"
+msgstr "terms and conditions"
+
+#: web/templates/pages/components-index/quotation-section.html:118
+msgid "Enviar solicitud"
+msgstr "Send request"
+
+#: web/templates/pages/components-index/services-section.html:9
+msgid "our_services"
+msgstr "Our Services"
+
+#: web/templates/pages/components-index/services-section.html:18
+msgid "aem_service_1_title"
+msgstr "Your pet on your flight"
+
+#: web/templates/pages/components-index/services-section.html:20
+msgid "aem_service_1_description"
+msgstr ""
+"This service is designed so you can travel on the same flight "
+"with your four-legged friend. We'll provide you with the "
+"necessary advice for making your airline reservation and also "
+"process the necessary paperwork, so you don't have to worry "
+"or stress when it's time to board your flight."
+
+#: web/templates/pages/components-index/services-section.html:26
+msgid "support_phrase_1"
+msgstr "24/7 assistance available"
+
+#: web/templates/pages/components-index/services-section.html:41
+msgid "aem_service_2_title"
+msgstr "Airport Assistance"
+
+#: web/templates/pages/components-index/services-section.html:43
+msgid "aem_service_2_description"
+msgstr ""
+"An additional service where we accompany you throughout the "
+"pre-flight process, assisting you with both the security "
+"checks required to board your pet and check-in. We know that "
+"traveling can be stressful and tense, but our goal is for "
+"you to fully relax and enjoy your long-awaited trip."
+
+#: web/templates/pages/components-index/services-section.html:49
+msgid "support_phrase_2"
+msgstr "Assistance at all hours"
+
+#: web/templates/pages/components-index/services-section.html:64
+msgid "aem_service_3_title"
+msgstr "Air Cargo Transfer / Live Cargo Flights"
+
+#: web/templates/pages/components-index/services-section.html:66
+msgid "aem_service_3_description"
+msgstr ""
+"These flights are specifically designed for pets and comply with "
+"the appropriate temperature and health regulations for air travel. "
+"Your pet travels pressurized is a service designed for pets that "
+"exceed the maximum weight limit for commercial flights, breeds "
+"considered by airlines to be potentially dangerous (PPP), and "
+"breeds with respiratory conditions (brachycephalic)."
+
+#: web/templates/pages/components-index/services-section.html:72
+msgid "support_phrase_3"
+msgstr "Immediate help, without schedule"
+
+#: web/templates/pages/components-index/services-section.html:87
+msgid "aem_service_4_title"
+msgstr "Escorted Transfer / Door-to-Door Transfer"
+
+#: web/templates/pages/components-index/services-section.html:90
+msgid "aem_service_4_description"
+msgstr ""
+"Your pet travels accompanied by our team, who are responsible "
+"for providing the necessary care and attention, assisting "
+"your pet from the beginning of the flight, during any layover, "
+"and until the most anticipated moment of reuniting with their "
+"family. This service is designed for those already in the "
+"destination country and who, due to various circumstances or "
+"moving, were unable to bring their pet on their flight."
+
+#: web/templates/pages/components-index/services-section.html:91
+msgid "aem_service_4_question"
+msgstr "How do we proceed?"
+
+#: web/templates/pages/components-index/services-section.html:93
+msgid "aem_service_4_answer_1"
+msgstr "We search for your pet, by address, where it currently resides."
+
+#: web/templates/pages/components-index/services-section.html:94
+msgid "aem_service_4_answer_2"
+msgstr ""
+"We carry out a pre-shipment veterinary check, where the required "
+"certificates are issued depending on the destination."
+
+#: web/templates/pages/components-index/services-section.html:95
+msgid "aem_service_4_answer_3"
+msgstr ""
+"We process your documentation, which will give us permission "
+"to board with your pet until we reach the destination "
+"airport or home."
+
+#: web/templates/pages/components-index/services-section.html:102
+msgid "support_phrase_4"
+msgstr "We're here to help you, always"
+
+#: web/templates/pages/components-index/services-section.html:118
+msgid "aem_service_5_title"
+msgstr "Antibody Test (Serological Studies)"
+
+#: web/templates/pages/components-index/services-section.html:120
+msgid "aem_service_5_description"
+msgstr ""
+"In this service, we perform antibody tests required by certain "
+"countries, for example (Australia, New Zealand, Asia, etc.). "
+"In this study, our expert veterinarian takes your pet's blood "
+"samples, always taking all the corresponding precautions. "
+"These samples are sent to the Kansas State University "
+"International Laboratory for later analysis. This study is an "
+"essential requirement for entry into countries or regions "
+"considered rabies-free, so we recommend... If you plan to "
+"travel to any of these destinations, do so well in advance."
+
+#: web/templates/pages/components-index/services-section.html:126
+msgid "support_phrase_5"
+msgstr "24-hour consultations"
+
+#: web/templates/unicorn/modal.html:77
+msgid "Consultanos"
+msgstr "Contact us"

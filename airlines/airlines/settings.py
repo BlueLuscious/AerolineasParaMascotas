@@ -73,6 +73,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -114,7 +115,7 @@ Q_CLUSTER = {
 DATABASES = {
     'default': dj_database_url.config(
         default=os.environ.get(
-            "DATABASE_URL_CONNECTION", "postgres://barba:barba@127.0.0.1:5432/aerolineasparamascotas_db"
+            "DATABASE_URL_CONNECTION", "postgres://barba:barba@postgres:5432/aerolineasparamascotas_db"
         ),
         conn_max_age=600,
         conn_health_checks=True,
@@ -152,13 +153,17 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
+USE_L10N = True
 USE_TZ = True
 
+LANGUAGES = [
+    ("es", "Español"),
+    ("en", "English"),
+]
+
+LOCALE_PATHS = [BASE_DIR / "locale"]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/

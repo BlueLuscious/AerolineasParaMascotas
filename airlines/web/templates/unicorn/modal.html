@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 
 <div id="modal" class="z-50 fixed inset-0 hidden bg-secondary-grey_dark/50 backdrop-blur-sm">
@@ -12,53 +13,53 @@
         <div id="content_modal" class="relative flex-1 flex flex-col items-center gap-y-6 w-full 
             px-4 md:px-8 py-8 text-secondary-grey_dark border-y border-primary-blue_dark overflow-y-auto"
         >
-        {% if destination %}
-        <div class="flex items-center justify-center gap-x-4">
-            {% if destination.flag_image %}
-            <img src="{% static destination.flag_image %}" class="max-w-12 rounded-full" />
-            {% endif %}
-            <h1 class="text-xl md:text-3xl font-secondary_font">{{ destination.name }}</h1>
-        </div>
+            {% if destination %}
+            <div class="flex items-center justify-center gap-x-4">
+                {% if destination.flag_image %}
+                <img src="{% static destination.flag_image %}" class="max-w-12 rounded-full" />
+                {% endif %}
+                <h1 class="text-xl md:text-3xl font-secondary_font">{% trans destination.name %}</h1>
+            </div>
 
-        {% if destination.airports %}
-        <div class="space-y-2 text-center">
-            {% for airport in destination.airports %}
-            <p class="text-secondary-grey_semidark">{{ airport }}</p>
-            {% endfor %}
-        </div>
-        {% endif %}
-        
-        {% if destination.metadata %}
-        <div class="flex flex-col gap-y-2 text-secondary-grey_semidark">
-            {% if destination.metadata.title %}
-            <h2 class="text-lg md:text-xl font-bold">{{ destination.metadata.title }}</h2>
-            {% endif %}
-
-            {% if destination.metadata.description %}
-            <div class="flex flex-col gap-y-4">
-                {% for item in destination.metadata.description %}
-                {% for title, content in item.items %}
-                <div class="flex flex-col gap-y-1">
-                    {% if title != "no_key" %} 
-                    <h3 class="text-md md:text-lg font-bold">{{ title }}:</h3>
-                    {% endif %}
-
-                    {% for item in content %}
-                    {% for key, value in item.items %}
-                    {% if key != "no_key" %} 
-                    <h4 class="font-semibold">• {{ key }}:</h4>
-                    {% endif %}
-                    <p>{{ value }}</p>
-                    {% endfor %}
-                    {% endfor %}
-                </div>
-                {% endfor %}
+            {% if destination.airports %}
+            <div class="space-y-2 text-center">
+                {% for airport in destination.airports %}
+                <p class="text-secondary-grey_semidark">{{ airport }}</p>
                 {% endfor %}
             </div>
             {% endif %}
-        </div>
-        {% endif %}
-        {% endif %}
+            
+            {% if destination.metadata %}
+            <div class="flex flex-col gap-y-2 w-full text-secondary-grey_semidark">
+                {% if destination.metadata.title %}
+                <h2 class="text-lg md:text-xl font-bold">{% trans destination.metadata.title %}</h2>
+                {% endif %}
+
+                {% if destination.metadata.description %}
+                <div class="flex flex-col gap-y-4">
+                    {% for item in destination.metadata.description %}
+                    {% for title, content in item.items %}
+                    <div class="flex flex-col gap-y-1">
+                        {% if title != "no_key" %} 
+                        <h3 class="text-md md:text-lg font-bold">{% trans title %}:</h3>
+                        {% endif %}
+
+                        {% for item in content %}
+                        {% for key, value in item.items %}
+                        {% if key != "no_key" %} 
+                        <h4 class="font-semibold">• {% trans key %}:</h4>
+                        {% endif %}
+                        <p>{% trans value %}</p>
+                        {% endfor %}
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+            {% endif %}
         </div>
 
         <div id="footer_modal" class="flex justify-end gap-x-4 w-full text-center text-secondary-grey_extralight">
@@ -66,14 +67,14 @@
                 w-fit px-4 py-2 bg-primary-red rounded-md shadow-lg shadow-primary-red/70 hover:animate-pulse"
             >
                 {% include "icons/envelope.html" with tailwind_class="size-8" %}
-                <span>Solicitá tu cotización</span>
+                <span>{% trans "Solicitá tu cotización" %}</span>
             </a>
             <button id="modal_whatsapp_button" class="whatsapp_button flex items-center gap-x-4 w-fit px-4 py-2 
                 bg-tertiary-whatsapp_green_tone rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse" 
                 onclick="redirectToWA('{{ phone_map }}')"
             >
                 {% include "icons/whatsapp.html" with tailwind_class="size-7" %}
-                <span>Consultanos</span>
+                <span>{% trans "Consultanos" %}</span>
             </button>
         </div>
 

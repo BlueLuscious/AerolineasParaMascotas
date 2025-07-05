@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 {% load unicorn %}
 
 
@@ -9,7 +10,7 @@
     <div class="flex flex-col gap-y-4 md:gap-y-12 w-full max-w-5xl">
         <h2 class="text-3xl md:text-4xl md:text-center text-secondary-grey_dark 
             font-secondary_font font-black tracking-wide"
-        >Solicitud de Cotización</h2>
+        >{% trans "Solicitud de Cotización" %}</h2>
         <form id="quotation_form" action="{% url 'quotation' %}" method="post" enctype="multipart/form-data" 
             class="flex flex-col gap-y-4 md:gap-y-8 w-full font-primary_font"
         >
@@ -21,72 +22,72 @@
     
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                 <div class="space-y-2">
-                    <label>Nombre del propietario</label>
+                    <label>{% trans "Nombre del propietario" %}</label>
                     <input type="text" name="owner_name" class="w-full px-4 py-2 bg-white outline-none ring-2 ring-primary-blue_light 
                         focus:ring-primary-blue rounded-sm" required
                     >
                 </div>
                 <div class="space-y-2">
-                    <label>Email</label>
+                    <label>{% trans "Email" %}</label>
                     <input type="email" name="email" class="w-full px-4 py-2 bg-white outline-none ring-2 ring-primary-blue_light 
                         focus:ring-primary-blue rounded-sm" required
                     >
                 </div>
                 <div class="space-y-2">
-                    <label>Teléfono</label>
+                    <label>{% trans "Teléfono" %}</label>
                     <input type="tel" name="phone" class="w-full px-4 py-2 bg-white outline-none ring-2 ring-primary-blue_light 
                         focus:ring-primary-blue rounded-sm" required
                     >
                 </div>
                 <div class="space-y-2">
-                    <label>Nombre de su mascota</label>
+                    <label>{% trans "Nombre de su mascota" %}</label>
                     <input type="text" name="pet_name" class="w-full px-4 py-2 bg-white outline-none ring-2 ring-primary-blue_light 
                         focus:ring-primary-blue rounded-sm" required
                     >
                 </div>
                 <div class="space-y-2">
-                    <label>Edad de su mascota</label>
+                    <label>{% trans "Edad de su mascota" %}</label>
                     <input type="number" name="pet_age" class="w-full px-4 py-2 bg-white outline-none ring-2 ring-primary-blue_light 
                         focus:ring-primary-blue rounded-sm" required
                     >
                 </div>
                 <div class="space-y-2">
-                    <label>Peso de su mascota</label>
+                    <label>{% trans "Peso de su mascota" %}</label>
                     <input type="number" name="pet_weight" class="w-full px-4 py-2 bg-white outline-none ring-2 ring-primary-blue_light 
                         focus:ring-primary-blue rounded-sm" required
                     >
                 </div>
                 <div class="space-y-2">
-                    <label>Raza de su mascota</label>
+                    <label>{% trans "Raza de su mascota" %}</label>
                     <input type="text" name="pet_breed" class="w-full px-4 py-2 bg-white outline-none ring-2 ring-primary-blue_light 
                         focus:ring-primary-blue rounded-sm" required
                     >
                 </div>
                 <div class="space-y-2">
-                    <label>Fecha del viaje</label>
+                    <label>{% trans "Fecha del viaje" %}</label>
                     <input type="date" name="travel_date" class="w-full px-4 py-2 bg-white outline-none ring-2 ring-primary-blue_light 
                         focus:ring-primary-blue rounded-sm" required
                     >
                 </div>
                 <div class="space-y-2">
-                    <label>Ciudad de Origen</label>
+                    <label>{% trans "Ciudad de Origen" %}</label>
                     <input type="text" name="origin_city" class="w-full px-4 py-2 bg-white outline-none ring-2 ring-primary-blue_light 
                         focus:ring-primary-blue rounded-sm" required
                     >
                 </div>
                 <div class="space-y-2">
-                    <label>Ciudad de Destino</label>
+                    <label>{% trans "Ciudad de Destino" %}</label>
                     <input type="text" name="destination_city" class="w-full px-4 py-2 bg-white outline-none ring-2 ring-primary-blue_light 
                         focus:ring-primary-blue rounded-sm" required
                     >
                 </div>
                 <div class="space-y-2">
-                    <label>Comentarios</label>
+                    <label>{% trans "Comentarios" %}</label>
                     <textarea name="comments" class="w-full px-4 py-2 bg-white outline-none ring-2 ring-primary-blue_light 
                         focus:ring-primary-blue rounded-sm"></textarea>
                 </div>
                 <div class="space-y-2">
-                    <label>Subí la foto actual de tu mascota a trasladar</label>
+                    <label>{% trans "Subí la foto actual de tu mascota a trasladar" %}</label>
                     <input type="file" name="pet_photo" class="w-full px-4 py-2 bg-white outline-none ring-2 ring-primary-blue_light 
                         focus:ring-primary-blue rounded-sm" required
                     >
@@ -95,17 +96,17 @@
     
             {% if products %}
             <div class="w-full">
-                <label>Productos:</label>
+                <label>{% trans "Productos" %}:</label>
                 {% include "components/products.html" %}
             </div>
             {% endif %}
             
             <label class="flex items-center gap-x-4">
                 <input type="checkbox" name="terms" class="form-checkbox scale-[1.75]" required="True">
-                <span>He leído y acepto los
+                <span>{% trans "He leído y acepto los" %}
                     <a class="text-primary-red font-semibold" href="{{ config.terms_and_conditions.url }}" 
                         target="_blank"
-                    >términos y condiciones</a>
+                    >{% trans "términos y condiciones" %}</a>
                 </span>
             </label>
             
@@ -114,7 +115,7 @@
                 text-secondary-grey_extralight rounded-md shadow-lg shadow-primary-red/70 hover:animate-pulse"
             >
                 {% include "icons/paper-airplane.html" with tailwind_class="size-9" %}
-                <span class="w-full text-center">Enviar solicitud</span>
+                <span class="w-full text-center">{% trans "Enviar solicitud" %}</span>
             </button>
         </form>
     </div>

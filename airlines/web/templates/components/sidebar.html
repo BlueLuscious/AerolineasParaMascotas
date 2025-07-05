@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 {% load inclusiontag.custom_bar_item %}
 
 <!-- Sidebar Backdrop -->
@@ -10,10 +11,10 @@
 <div id="sidebar" class="lg:hidden fixed z-50 right-0 top-0 flex justify-end size-full  
     transform translate-x-full transition-transform duration-300 ease-in-out"
 >
-    <div class="w-[90vw] max-w-sm px-4 bg-secondary-grey_extralight rounded-l-xl">
+    <div class="flex flex-col w-[90vw] max-w-sm px-4 bg-secondary-grey_extralight rounded-l-xl">
         <!-- Sidebar Header-->
         <div class="flex items-center justify-between w-full h-20 px-2 border-b-2 border-secondary-grey">
-            <span class="text-xl text-primary-blue_dark font-semibold">Menú</span>
+            <span class="text-xl text-primary-blue_dark font-semibold">{% trans "Menú" %}</span>
             <button id="btn_close_menu" onclick="toggleElementByClick('sidebar', 'translate-x-full')">
                 {% include "icons/x-mark.html" with tailwind_class="size-7 text-primary-red_dark" %}
             </button>
@@ -33,6 +34,9 @@
             {% nav_item request.path "" "Contacto" "#quotation_section" "/cotizar-traslado/" "nav_item_quotation" %}
         </div>
 
-        <!-- Language Selector --> <!-- TODO: I18N with Django -->
+        <!-- Language Selector -->
+        <div class="flex justify-center w-full mt-auto py-6">
+            {% include "components/language-selector.html" %}
+        </div>
     </div>
 </div>

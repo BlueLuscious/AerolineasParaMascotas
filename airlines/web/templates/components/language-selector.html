@@ -1,0 +1,38 @@
+{% load static %}
+{% load i18n %}
+{% get_available_languages as languages %}
+
+
+<div x-data="{ open: false }" class="relative inline-block">
+    <!-- Selector -->
+    <button @click="open = !open" class="flex items-center justify-between gap-x-2 w-full p-2 
+        bg-white text-left border border-gray-300 rounded-md shadow-sm cursor-pointer"
+    >
+        <span class="flex items-center gap-x-2">
+            <img src="{% static 'img/languages/'|add:request.LANGUAGE_CODE|add:'.png' %}" class="size-4 rounded-full">
+            {{ request.LANGUAGE_CODE|upper }}
+        </span>
+        {% include "icons/chevron-down.html" with classes="size-4 stroke-2 text-gray-500" %}
+    </button>
+
+  <!-- Dropdown Menu -->
+    <div x-show="open" @click.away="open = false" class="absolute z-10 my-1 bottom-full 
+        md:top-full md:bottom-auto w-full bg-white border border-gray-300 rounded-md shadow-lg"
+    >
+        <ul>
+            {% for lang_code, lang_name in languages %}
+            <li>
+                <form action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="next" value="{{ request.get_full_path }}">
+                    <input type="hidden" name="language" value="{{ lang_code }}">
+                    <button type="submit" class="flex items-center gap-x-2 w-full p-2 text-sm text-left hover:bg-gray-100">
+                        <img src="{% static 'img/languages/'|add:lang_code|add:'.png' %}" class="size-4 rounded-full">
+                        {{ lang_code|upper }}
+                    </button>
+                </form>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
