@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-05 01:11+0000\n"
+"POT-Creation-Date: 2025-07-15 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr "Services"
 msgid "Destinos"
 msgstr "Destinations"
 
-#: airlines/translation_strings.py:8
+#: airlines/translation_strings.py:8 web/templates/components/footer.html:66
 msgid "Contacto"
 msgstr "Contact"
 
@@ -865,6 +865,31 @@ msgstr ""
 "pesos, dollars, and euros, so you can make your reservation quickly and "
 "securely."
 
+#: web/templates/components/footer.html:14
+msgid "footer_motto"
+msgstr "Your pets in the best hands"
+
+#: web/templates/components/footer.html:24
+msgid "our_social_media"
+msgstr "Our Social Media"
+
+#: web/templates/components/footer.html:47
+msgid "our_sponsors"
+msgstr "Our Sponsors"
+
+#: web/templates/components/footer.html:61
+#: web/templates/pages/components-index/quotation-section.html:31
+msgid "Email"
+msgstr "Email"
+
+#: web/templates/components/footer.html:84
+msgid "copyright"
+msgstr "All rights reserved."
+
+#: web/templates/components/footer.html:86
+msgid "powered_by"
+msgstr "Powered by"
+
 #: web/templates/components/navbar.html:17
 #: web/templates/components/sidebar.html:17
 msgid "Menú"
@@ -975,10 +1000,6 @@ msgstr "Request for quote"
 msgid "Nombre del propietario"
 msgstr "Owner’s name"
 
-#: web/templates/pages/components-index/quotation-section.html:31
-msgid "Email"
-msgstr "Email"
-
 #: web/templates/pages/components-index/quotation-section.html:37
 msgid "Teléfono"
 msgstr "Phone number"
@@ -1046,11 +1067,10 @@ msgstr "Your pet on your flight"
 #: web/templates/pages/components-index/services-section.html:20
 msgid "aem_service_1_description"
 msgstr ""
-"This service is designed so you can travel on the same flight "
-"with your four-legged friend. We'll provide you with the "
-"necessary advice for making your airline reservation and also "
-"process the necessary paperwork, so you don't have to worry "
-"or stress when it's time to board your flight."
+"This service is designed so you can travel on the same flight with your four-"
+"legged friend. We'll provide you with the necessary advice for making your "
+"airline reservation and also process the necessary paperwork, so you don't "
+"have to worry or stress when it's time to board your flight."
 
 #: web/templates/pages/components-index/services-section.html:26
 msgid "support_phrase_1"
@@ -1063,11 +1083,10 @@ msgstr "Airport Assistance"
 #: web/templates/pages/components-index/services-section.html:43
 msgid "aem_service_2_description"
 msgstr ""
-"An additional service where we accompany you throughout the "
-"pre-flight process, assisting you with both the security "
-"checks required to board your pet and check-in. We know that "
-"traveling can be stressful and tense, but our goal is for "
-"you to fully relax and enjoy your long-awaited trip."
+"An additional service where we accompany you throughout the pre-flight "
+"process, assisting you with both the security checks required to board your "
+"pet and check-in. We know that traveling can be stressful and tense, but our "
+"goal is for you to fully relax and enjoy your long-awaited trip."
 
 #: web/templates/pages/components-index/services-section.html:49
 msgid "support_phrase_2"
@@ -1080,12 +1099,12 @@ msgstr "Air Cargo Transfer / Live Cargo Flights"
 #: web/templates/pages/components-index/services-section.html:66
 msgid "aem_service_3_description"
 msgstr ""
-"These flights are specifically designed for pets and comply with "
-"the appropriate temperature and health regulations for air travel. "
-"Your pet travels pressurized is a service designed for pets that "
-"exceed the maximum weight limit for commercial flights, breeds "
-"considered by airlines to be potentially dangerous (PPP), and "
-"breeds with respiratory conditions (brachycephalic)."
+"These flights are specifically designed for pets and comply with the "
+"appropriate temperature and health regulations for air travel. Your pet "
+"travels pressurized is a service designed for pets that exceed the maximum "
+"weight limit for commercial flights, breeds considered by airlines to be "
+"potentially dangerous (PPP), and breeds with respiratory conditions "
+"(brachycephalic)."
 
 #: web/templates/pages/components-index/services-section.html:72
 msgid "support_phrase_3"
@@ -1098,13 +1117,12 @@ msgstr "Escorted Transfer / Door-to-Door Transfer"
 #: web/templates/pages/components-index/services-section.html:90
 msgid "aem_service_4_description"
 msgstr ""
-"Your pet travels accompanied by our team, who are responsible "
-"for providing the necessary care and attention, assisting "
-"your pet from the beginning of the flight, during any layover, "
-"and until the most anticipated moment of reuniting with their "
-"family. This service is designed for those already in the "
-"destination country and who, due to various circumstances or "
-"moving, were unable to bring their pet on their flight."
+"Your pet travels accompanied by our team, who are responsible for providing "
+"the necessary care and attention, assisting your pet from the beginning of "
+"the flight, during any layover, and until the most anticipated moment of "
+"reuniting with their family. This service is designed for those already in "
+"the destination country and who, due to various circumstances or moving, "
+"were unable to bring their pet on their flight."
 
 #: web/templates/pages/components-index/services-section.html:91
 msgid "aem_service_4_question"
@@ -1123,9 +1141,8 @@ msgstr ""
 #: web/templates/pages/components-index/services-section.html:95
 msgid "aem_service_4_answer_3"
 msgstr ""
-"We process your documentation, which will give us permission "
-"to board with your pet until we reach the destination "
-"airport or home."
+"We process your documentation, which will give us permission to board with "
+"your pet until we reach the destination airport or home."
 
 #: web/templates/pages/components-index/services-section.html:102
 msgid "support_phrase_4"
@@ -1138,15 +1155,14 @@ msgstr "Antibody Test (Serological Studies)"
 #: web/templates/pages/components-index/services-section.html:120
 msgid "aem_service_5_description"
 msgstr ""
-"In this service, we perform antibody tests required by certain "
-"countries, for example (Australia, New Zealand, Asia, etc.). "
-"In this study, our expert veterinarian takes your pet's blood "
-"samples, always taking all the corresponding precautions. "
-"These samples are sent to the Kansas State University "
-"International Laboratory for later analysis. This study is an "
-"essential requirement for entry into countries or regions "
-"considered rabies-free, so we recommend... If you plan to "
-"travel to any of these destinations, do so well in advance."
+"In this service, we perform antibody tests required by certain countries, "
+"for example (Australia, New Zealand, Asia, etc.). In this study, our expert "
+"veterinarian takes your pet's blood samples, always taking all the "
+"corresponding precautions. These samples are sent to the Kansas State "
+"University International Laboratory for later analysis. This study is an "
+"essential requirement for entry into countries or regions considered rabies-"
+"free, so we recommend... If you plan to travel to any of these destinations, "
+"do so well in advance."
 
 #: web/templates/pages/components-index/services-section.html:126
 msgid "support_phrase_5"
