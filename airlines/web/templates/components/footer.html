@@ -18,13 +18,13 @@
 		<!-- Begin Footer Content -->
 		<div class="flex flex-col items-center lg:flex-row lg:items-start lg:justify-between gap-8">
 			<!-- Begin Social Networks -->
-			<div class="flex flex-col gap-y-6">
+			<div class="flex flex-col gap-y-6 md:w-1/2">
 				<div class="flex items-center gap-x-4">
 					{% include "icons/share.html" with tailwind_class="size-5 fill-white" %}
 					<h3 class="text-lg">{% trans "our_social_media" %}</h3>
 				</div>
 
-				<div class="grid grid-cols-3 place-items-center gap-3">
+				<div class="flex flex-wrap gap-6">
 					<a href="https://www.instagram.com/aerolineasparamascotas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
 						class="flex items-center px-4 py-3 rounded-lg bg-slate-900 hover:bg-slate-600 transition">
 						{% include "icons/instagram.html" with tailwind_class="size-7 fill-[#c13584]" %}
@@ -41,16 +41,19 @@
 			<!-- End Social Networks -->
 
 			<!-- Begin Sponsors -->
-			<div class="flex flex-col gap-y-6">
+			<div class="flex flex-col gap-y-6 w-1/2">
 				<div class="flex items-center gap-x-4">
 					{% include "icons/star.html" with tailwind_class="size-5 fill-white" %}
 					<h3 class="text-lg">{% trans "our_sponsors" %}</h3>
 				</div>
 				<div class="grid grid-cols-2 sm:grid-cols-4 place-items-center gap-6">
-					<img src="{% static 'img/sponsors/air-europa-logo.png' %}" alt="" class="w-20 bg-white rounded-lg">
-					<img src="{% static 'img/sponsors/ita-airways-logo.png' %}" alt="" class="w-20 bg-white rounded-lg">
-					<img src="{% static 'img/sponsors/avianca-logo.png' %}" alt="" class="w-20 bg-white rounded-lg">
-					<img src="{% static 'img/sponsors/aero-arg-2000-logo.png' %}" alt="" class="w-20 bg-white rounded-lg">
+					<img src="{% static 'img/sponsors/air-europa-logo.png' %}" alt="" class="size-full bg-white rounded-lg">
+					<img src="{% static 'img/sponsors/ita-airways-logo.png' %}" alt="" class="size-full bg-white rounded-lg">
+					<img src="{% static 'img/sponsors/avianca-logo.png' %}" alt="" class="size-full bg-white rounded-lg">
+					<img src="{% static 'img/sponsors/aero-arg-2000-logo.png' %}" alt="" class="size-full bg-white rounded-lg">
+					<a href="https://www.dinamolog.com.ar/" class="col-span-2 size-full p-5 bg-white rounded-lg">
+						<img src="{% static 'img/sponsors/dinamo-li-logo.png' %}" alt="" class="size-full">
+					</a>
 				</div>
 			</div>
 			<!-- End Sponsors -->
