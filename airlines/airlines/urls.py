@@ -8,6 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('web.urls')),
     path("unicorn/", include("django_unicorn.urls")),
+    path("", include("django_components.urls")),
     path('i18n/', include('django.conf.urls.i18n')),
 ]
 if settings.DEBUG: #aca pregunto si estoy en debug, ya que nunca me dejaria hacerlo en produccion
