@@ -274,7 +274,17 @@ class DestinationMock:
                     "flag_image": f"{self.flags_static_path}/canada-flag.png",
                     "airport_image": f"{self.airports_static_path}/canada-airport.jpg",
                     "airports": ["Aeropuerto Internacional Pearson de Toronto (YYZ)", "Aeropuerto Internacional Montreal-Trudeau (YUL)", ],
-                    # metadata
+                    "metadata": {
+                        "description": [
+                            {"no_key": [{"no_key": _("canada_description")}, ]},
+                            {_("general_reqs_for_dogs_and_cats"): [
+                                    {_("rabies_vaccine"): _("canada_description_vaccines")}, 
+                                    {_("vet_certificate_health_international"): _("canada_description_health_international")}, 
+                                    {_("vet_certificate_health"): _("canada_description_health")}, 
+                                ],
+                            },
+                        ],
+                    },
                 },
             },
             {

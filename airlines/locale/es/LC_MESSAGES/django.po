@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 08:30+0000\n"
+"POT-Creation-Date: 2025-08-04 23:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr "Servicios"
 msgid "Destinos"
 msgstr "Destinos"
 
-#: airlines/translation_strings.py:8 web/templates/components/footer.html:66
+#: airlines/translation_strings.py:8 web/templates/components/footer.html:69
 msgid "Contacto"
 msgstr "Contacto"
 
@@ -59,8 +59,8 @@ msgstr ""
 "descripción general de los requisitos necesarios:"
 
 #: web/mocks/destinations_mock.py:16 web/mocks/destinations_mock.py:159
-#: web/mocks/destinations_mock.py:190 web/mocks/destinations_mock.py:383
-#: web/mocks/destinations_mock.py:415
+#: web/mocks/destinations_mock.py:190 web/mocks/destinations_mock.py:393
+#: web/mocks/destinations_mock.py:425
 msgid "documentation"
 msgstr "Documentación"
 
@@ -74,7 +74,7 @@ msgstr ""
 "Es obligatorio un pasaporte que identifique a la mascota y contenga "
 "información sobre su salud y vacunación."
 
-#: web/mocks/destinations_mock.py:18
+#: web/mocks/destinations_mock.py:18 web/mocks/destinations_mock.py:283
 msgid "vet_certificate_health"
 msgstr "Certificado de salud veterinario"
 
@@ -98,7 +98,8 @@ msgstr ""
 msgid "vaccines_and_treatments"
 msgstr "Vacunación y tratamientos"
 
-#: web/mocks/destinations_mock.py:23 web/mocks/destinations_mock.py:380
+#: web/mocks/destinations_mock.py:23 web/mocks/destinations_mock.py:281
+#: web/mocks/destinations_mock.py:390
 msgid "rabies_vaccine"
 msgstr "Vacunación contra la rabia"
 
@@ -122,7 +123,7 @@ msgstr ""
 msgid "identification"
 msgstr "Identificación"
 
-#: web/mocks/destinations_mock.py:27 web/mocks/destinations_mock.py:379
+#: web/mocks/destinations_mock.py:27 web/mocks/destinations_mock.py:389
 msgid "microchip"
 msgstr "Microchip"
 
@@ -136,7 +137,7 @@ msgstr ""
 msgid "permits_and_auth"
 msgstr "Permisos y autorizaciones"
 
-#: web/mocks/destinations_mock.py:29 web/mocks/destinations_mock.py:345
+#: web/mocks/destinations_mock.py:29 web/mocks/destinations_mock.py:355
 msgid "import_permit"
 msgstr "Permiso de importación"
 
@@ -156,7 +157,7 @@ msgstr ""
 "Es posible que se requiera notificar a la autoridad competente del país de "
 "destino sobre la entrada de la mascota."
 
-#: web/mocks/destinations_mock.py:33 web/mocks/destinations_mock.py:416
+#: web/mocks/destinations_mock.py:33 web/mocks/destinations_mock.py:426
 msgid "transport_conditions"
 msgstr "Condiciones de transporte"
 
@@ -417,22 +418,60 @@ msgstr ""
 msgid "canada"
 msgstr "Canadá"
 
+#: web/mocks/destinations_mock.py:279
+msgid "canada_description"
+msgstr ""
+"Para ingresar mascotas a Canadá, se deben cumplir ciertos requisitos "
+"generales, incluyendo la vacunación contra la rabia para perros y gatos, un "
+"certificado veterinario internacional y, en algunos casos, un certificado de "
+"salud. También es importante verificar los requisitos específicos de la "
+"aerolínea y las autoridades canadienses antes del viaje, especialmente si la "
+"mascota viaja en cabina o bodega."
+
+#: web/mocks/destinations_mock.py:280
+msgid "general_reqs_for_dogs_and_cats"
+msgstr "Requisitos generales para perros y gatos"
+
+#: web/mocks/destinations_mock.py:281
+msgid "canada_description_vaccines"
+msgstr ""
+"Se requiere un certificado de vacunación contra la rabia vigente para perros "
+"y gatos mayores de 3 meses."
+
 #: web/mocks/destinations_mock.py:282
+msgid "vet_certificate_health_international"
+msgstr "Certificado veterinario internacional"
+
+#: web/mocks/destinations_mock.py:282
+msgid "canada_description_health_international"
+msgstr ""
+"Es necesario un certificado que acredite la sanidad de la mascota, emitido "
+"por el Servicio Nacional de Sanidad y Calidad Agroalimentaria (Senasa) (en "
+"el caso de Argentina) o una autoridad similar en el país de origen."
+
+#: web/mocks/destinations_mock.py:283
+msgid "canada_description_health"
+msgstr ""
+"En algunos casos, se puede solicitar un certificado de salud emitido por un "
+"veterinario, que confirme que la mascota está libre de enfermedades y que no "
+"ha habido casos de rabia en el país de origen durante un período determinado."
+
+#: web/mocks/destinations_mock.py:292
 msgid "mexico"
 msgstr "Mexico"
 
-#: web/mocks/destinations_mock.py:290
+#: web/mocks/destinations_mock.py:300
 msgid "mexico_description"
 msgstr ""
 "Para ingresar con mascotas, es importante consultar con la aerolínea sobre "
 "los requisitos específicos para cada tipo de mascota y el tamaño del "
 "contenedor."
 
-#: web/mocks/destinations_mock.py:291
+#: web/mocks/destinations_mock.py:301
 msgid "in_summary"
 msgstr "En resumen"
 
-#: web/mocks/destinations_mock.py:291
+#: web/mocks/destinations_mock.py:301
 msgid "mexico_description_summary"
 msgstr ""
 "El AICM es un aeropuerto pet-friendly, pero se deben cumplir con ciertos "
@@ -440,16 +479,16 @@ msgstr ""
 "jaulas, el registro con la aerolínea y la consulta de los requisitos de "
 "SENASICA."
 
-#: web/mocks/destinations_mock.py:298
+#: web/mocks/destinations_mock.py:308
 msgid "australia"
 msgstr "Austrilia"
 
-#: web/mocks/destinations_mock.py:306 web/mocks/destinations_mock.py:382
-#: web/mocks/destinations_mock.py:398
+#: web/mocks/destinations_mock.py:316 web/mocks/destinations_mock.py:392
+#: web/mocks/destinations_mock.py:408
 msgid "quarantine"
 msgstr "Cuarentena"
 
-#: web/mocks/destinations_mock.py:306
+#: web/mocks/destinations_mock.py:316
 msgid "australia_description_quarantine"
 msgstr ""
 "Una vez que la mascota llega a Melbourne, será trasladada al centro de "
@@ -457,203 +496,203 @@ msgstr ""
 "cuarentena, que varía según el país de origen de la mascota. Desde Argentina "
 "la cuarentena no supera los 30 días."
 
-#: web/mocks/destinations_mock.py:307
+#: web/mocks/destinations_mock.py:317
 msgid "cargo_hold_trip"
 msgstr "Viaje de bodega de carga"
 
-#: web/mocks/destinations_mock.py:307
+#: web/mocks/destinations_mock.py:317
 msgid "australia_description_cargo_hold"
 msgstr ""
 "Las mascotas deben viajar en la bodega de carga como carga declarada en un "
 "transportín aprobado por la IATA."
 
-#: web/mocks/destinations_mock.py:308
+#: web/mocks/destinations_mock.py:318
 msgid "no_national_transfers"
 msgstr "No se permiten traslados nacionales"
 
-#: web/mocks/destinations_mock.py:308
+#: web/mocks/destinations_mock.py:318
 msgid "australia_description_national_transfers"
 msgstr ""
 "No se permite que las mascotas lleguen a otro aeropuerto australiano y luego "
 "viajen en un vuelo nacional a Melbourne."
 
-#: web/mocks/destinations_mock.py:309
+#: web/mocks/destinations_mock.py:319
 msgid "quarantine_reqs"
 msgstr "Requisitos de cuarentena"
 
-#: web/mocks/destinations_mock.py:309
+#: web/mocks/destinations_mock.py:319
 msgid "australia_description_quarantine_reqs"
 msgstr ""
 "Se deben seguir los requisitos de cuarentena estrictos del Departamento de "
 "Agricultura, Pesca y Recursos Forestales (DAFF) de Australia."
 
-#: web/mocks/destinations_mock.py:316
+#: web/mocks/destinations_mock.py:326
 msgid "new_zealand"
 msgstr "Nueva Zelanda"
 
-#: web/mocks/destinations_mock.py:324
+#: web/mocks/destinations_mock.py:334
 msgid "new_zealand_description_1"
 msgstr ""
 "Para traer mascotas a Nueva Zelanda, es fundamental que se cumplan los "
 "estrictos requisitos sanitarios y veterinarios del país."
 
-#: web/mocks/destinations_mock.py:325
+#: web/mocks/destinations_mock.py:335
 msgid "new_zealand_description_2"
 msgstr ""
 "El Ministerio de Industrias Primarias (MPI) solo permite la entrada de "
 "perros y gatos de países considerados libres o controlados de rabia."
 
-#: web/mocks/destinations_mock.py:326
+#: web/mocks/destinations_mock.py:336
 msgid "new_zealand_description_3"
 msgstr ""
 "Las mascotas deben tener un microchip antes de cualquier tratamiento para la "
 "importación."
 
-#: web/mocks/destinations_mock.py:327
+#: web/mocks/destinations_mock.py:337
 msgid "new_zealand_description_4"
 msgstr ""
 "Se necesita documentación que confirme que el microchip fue implantado y/o "
 "escaneado antes de la vacunación primaria contra la rabia y todos los "
 "tratamientos posteriores."
 
-#: web/mocks/destinations_mock.py:334
+#: web/mocks/destinations_mock.py:344
 msgid "israel"
 msgstr "Israel"
 
-#: web/mocks/destinations_mock.py:342
+#: web/mocks/destinations_mock.py:352
 msgid "israel_description"
 msgstr ""
 "El Aeropuerto Internacional Ben Gurión en Lod, cerca de Tel Aviv, es el "
 "principal aeropuerto internacional de Israel y permite la entrada de "
 "mascotas."
 
-#: web/mocks/destinations_mock.py:343
+#: web/mocks/destinations_mock.py:353
 msgid "pets_in_cabin"
 msgstr "Mascotas en cabina"
 
-#: web/mocks/destinations_mock.py:343
+#: web/mocks/destinations_mock.py:353
 msgid "israel_description_cabin"
 msgstr ""
 "Las mascotas pueden viajar en cabina si pesan hasta 8 kg, incluyendo el "
 "transportín, y si el transportín cumple con las dimensiones permitidas por "
 "la aerolínea."
 
-#: web/mocks/destinations_mock.py:344
+#: web/mocks/destinations_mock.py:354
 msgid "pets_in_hold"
 msgstr "Mascotas en bodega"
 
-#: web/mocks/destinations_mock.py:344
+#: web/mocks/destinations_mock.py:354
 msgid "israel_description_hold"
 msgstr ""
 "Las mascotas también pueden viajar como equipaje en bodega, pero deben estar "
 "en una jaula rígida y segura, según las regulaciones de la aerolínea."
 
-#: web/mocks/destinations_mock.py:345
+#: web/mocks/destinations_mock.py:355
 msgid "israel_description_import_license"
 msgstr ""
 "Es crucial obtener el permiso de importación antes de viajar a Israel con "
 "mascotas."
 
-#: web/mocks/destinations_mock.py:346
+#: web/mocks/destinations_mock.py:356
 msgid "others_considerations"
 msgstr "Otras consideraciones"
 
-#: web/mocks/destinations_mock.py:346
+#: web/mocks/destinations_mock.py:356
 msgid "israel_description_other"
 msgstr ""
 "Es recomendable verificar las regulaciones específicas de cada aerolínea "
 "antes de reservar el vuelo, ya que pueden variar."
 
-#: web/mocks/destinations_mock.py:353
+#: web/mocks/destinations_mock.py:363
 msgid "turkey"
 msgstr "Turquía"
 
-#: web/mocks/destinations_mock.py:361
+#: web/mocks/destinations_mock.py:371
 msgid "turkey_description"
 msgstr ""
 "Además, algunas aerolíneas, como Turkish Airlines, tienen políticas "
 "específicas para el transporte de mascotas."
 
-#: web/mocks/destinations_mock.py:362
+#: web/mocks/destinations_mock.py:372
 msgid "turkey_description_airlines"
 msgstr ""
 "Tiene una política de mascotas que incluye la posibilidad de viajar en "
 "cabina o bodega, según el peso y tamaño de la mascota y su transportín."
 
-#: web/mocks/destinations_mock.py:363
+#: web/mocks/destinations_mock.py:373
 msgid "considerations"
 msgstr "Consideraciones"
 
-#: web/mocks/destinations_mock.py:363
+#: web/mocks/destinations_mock.py:373
 msgid "turkey_description_other"
 msgstr ""
 "Es importante verificar las políticas de cada aerolínea y cumplir con los "
 "requisitos de salud y documentación necesarios para viajar con mascotas a "
 "Turquía."
 
-#: web/mocks/destinations_mock.py:370
+#: web/mocks/destinations_mock.py:380
 msgid "japan"
 msgstr "Japón"
 
-#: web/mocks/destinations_mock.py:377
+#: web/mocks/destinations_mock.py:387
 msgid "japan_title"
 msgstr "Requisitos para viajar con mascotas a Japón"
 
-#: web/mocks/destinations_mock.py:379
+#: web/mocks/destinations_mock.py:389
 msgid "japan_description_microchip"
 msgstr "Las mascotas deben tener un microchip."
 
-#: web/mocks/destinations_mock.py:380
+#: web/mocks/destinations_mock.py:390
 msgid "japan_description_vaccines"
 msgstr "La vacunación debe ser al menos 30 días antes de la entrada al país."
 
-#: web/mocks/destinations_mock.py:381
+#: web/mocks/destinations_mock.py:391
 msgid "rabies_titer_test"
 msgstr "Prueba de titulación de rabia"
 
-#: web/mocks/destinations_mock.py:381
+#: web/mocks/destinations_mock.py:391
 msgid "japan_description_rage"
 msgstr ""
 "Se requiere una prueba para asegurar la efectividad de la vacuna contra la "
 "rabia."
 
-#: web/mocks/destinations_mock.py:382
+#: web/mocks/destinations_mock.py:392
 msgid "japan_description_quarantine"
 msgstr ""
 "Dependiendo de los requisitos cumplidos por la mascota, puede haber un "
 "período de cuarentena de 12 horas o más."
 
-#: web/mocks/destinations_mock.py:383
+#: web/mocks/destinations_mock.py:393
 msgid "japan_description_doc"
 msgstr ""
 "Se debe presentar la documentación requerida, como el certificado ASE-3293 y "
 "la solicitud de inspección de importación."
 
-#: web/mocks/destinations_mock.py:390
+#: web/mocks/destinations_mock.py:400
 msgid "china"
 msgstr "China"
 
-#: web/mocks/destinations_mock.py:398
+#: web/mocks/destinations_mock.py:408
 msgid "china_description_quarantine"
 msgstr "Las mascotas que ingresan a China pueden estar sujetas a cuarentena."
 
-#: web/mocks/destinations_mock.py:399
+#: web/mocks/destinations_mock.py:409
 msgid "restrictions"
 msgstr "Restricciones"
 
-#: web/mocks/destinations_mock.py:399
+#: web/mocks/destinations_mock.py:409
 msgid "china_description_restrictions"
 msgstr "Solo se permite una mascota por pasajero."
 
-#: web/mocks/destinations_mock.py:406
+#: web/mocks/destinations_mock.py:416
 msgid "south_korea"
 msgstr "Corea del Sur"
 
-#: web/mocks/destinations_mock.py:413
+#: web/mocks/destinations_mock.py:423
 msgid "south_korea_title"
 msgstr "Requisitos para viajar con mascotas a Corea del Sur"
 
-#: web/mocks/destinations_mock.py:415
+#: web/mocks/destinations_mock.py:425
 msgid "south_korea_description_doc"
 msgstr ""
 "Es necesario tener la documentación de la mascota en regla, incluyendo el "
@@ -661,7 +700,7 @@ msgstr ""
 "variar según el país de origen de la mascota. Desde Argentina exigen test de "
 "anticuerpos de rabia."
 
-#: web/mocks/destinations_mock.py:416
+#: web/mocks/destinations_mock.py:426
 msgid "south_korea_description_transport"
 msgstr ""
 "Las aerolíneas tienen sus propias políticas sobre el transporte de mascotas, "
@@ -922,16 +961,16 @@ msgstr "Nuestras Redes Sociales"
 msgid "our_sponsors"
 msgstr "Nuestros Sponsors"
 
-#: web/templates/components/footer.html:61
+#: web/templates/components/footer.html:64
 #: web/templates/pages/components-index/quotation-section.html:31
 msgid "Email"
 msgstr "Email"
 
-#: web/templates/components/footer.html:84
+#: web/templates/components/footer.html:87
 msgid "copyright"
 msgstr "Todos los derechos reservados."
 
-#: web/templates/components/footer.html:86
+#: web/templates/components/footer.html:89
 msgid "powered_by"
 msgstr "Desarrollado por"
 

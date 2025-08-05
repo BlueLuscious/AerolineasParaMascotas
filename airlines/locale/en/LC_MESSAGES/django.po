@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 08:35+0000\n"
+"POT-Creation-Date: 2025-08-05 00:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr "Services"
 msgid "Destinos"
 msgstr "Destinations"
 
-#: airlines/translation_strings.py:8 web/templates/components/footer.html:66
+#: airlines/translation_strings.py:8 web/templates/components/footer.html:69
 msgid "Contacto"
 msgstr "Contact"
 
@@ -57,8 +57,8 @@ msgstr ""
 "third countries. Below is an overview of the necessary requirements:"
 
 #: web/mocks/destinations_mock.py:16 web/mocks/destinations_mock.py:159
-#: web/mocks/destinations_mock.py:190 web/mocks/destinations_mock.py:383
-#: web/mocks/destinations_mock.py:415
+#: web/mocks/destinations_mock.py:190 web/mocks/destinations_mock.py:393
+#: web/mocks/destinations_mock.py:425
 msgid "documentation"
 msgstr "Documentation"
 
@@ -72,7 +72,7 @@ msgstr ""
 "A passport that identifies the pet and contains information about its health "
 "and vaccinations is required."
 
-#: web/mocks/destinations_mock.py:18
+#: web/mocks/destinations_mock.py:18 web/mocks/destinations_mock.py:283
 msgid "vet_certificate_health"
 msgstr "Veterinary health certificate"
 
@@ -94,7 +94,8 @@ msgstr "The pet must be vaccinated against rabies and other relevant diseases."
 msgid "vaccines_and_treatments"
 msgstr "Vaccination and treatments"
 
-#: web/mocks/destinations_mock.py:23 web/mocks/destinations_mock.py:380
+#: web/mocks/destinations_mock.py:23 web/mocks/destinations_mock.py:281
+#: web/mocks/destinations_mock.py:390
 msgid "rabies_vaccine"
 msgstr "Rabies vaccination"
 
@@ -116,7 +117,7 @@ msgstr ""
 msgid "identification"
 msgstr "Identificación"
 
-#: web/mocks/destinations_mock.py:27 web/mocks/destinations_mock.py:379
+#: web/mocks/destinations_mock.py:27 web/mocks/destinations_mock.py:389
 msgid "microchip"
 msgstr "Microchip"
 
@@ -130,7 +131,7 @@ msgstr ""
 msgid "permits_and_auth"
 msgstr "Permits & authorizations"
 
-#: web/mocks/destinations_mock.py:29 web/mocks/destinations_mock.py:345
+#: web/mocks/destinations_mock.py:29 web/mocks/destinations_mock.py:355
 msgid "import_permit"
 msgstr "Import license"
 
@@ -150,7 +151,7 @@ msgstr ""
 "It may be necessary to notify the competent authority of the destination "
 "country about the pet's entry."
 
-#: web/mocks/destinations_mock.py:33 web/mocks/destinations_mock.py:416
+#: web/mocks/destinations_mock.py:33 web/mocks/destinations_mock.py:426
 msgid "transport_conditions"
 msgstr "Transport conditions"
 
@@ -406,37 +407,75 @@ msgstr ""
 msgid "canada"
 msgstr "Canada"
 
+#: web/mocks/destinations_mock.py:279
+msgid "canada_description"
+msgstr ""
+"To bring pets into Canada, certain general requirements must be met, "
+"including rabies vaccination for dogs and cats, an international veterinary "
+"certificate, and, in some cases, a health certificate. It's also important "
+"to check the specific requirements of the airline and Canadian authorities "
+"before traveling, especially if your pet is traveling in the cabin or cargo "
+"hold."
+
+#: web/mocks/destinations_mock.py:280
+msgid "general_reqs_for_dogs_and_cats"
+msgstr "General Requirements for Dogs and Cats"
+
+#: web/mocks/destinations_mock.py:281
+msgid "canada_description_vaccines"
+msgstr ""
+"A current rabies vaccination certificate is required for dogs and cats older "
+"than 3 months."
+
 #: web/mocks/destinations_mock.py:282
+msgid "vet_certificate_health_international"
+msgstr "International veterinary certificate"
+
+#: web/mocks/destinations_mock.py:282
+msgid "canada_description_health_international"
+msgstr ""
+"A certificate certifying the pet's health is required, issued by the "
+"National Service of Health and Agri-Food Quality (Senasa) (in the case of "
+"Argentina) or a similar authority in the country of origin."
+
+#: web/mocks/destinations_mock.py:283
+msgid "canada_description_health"
+msgstr ""
+"In some cases, a health certificate issued by a veterinarian may be "
+"required, confirming that the pet is disease-free and that there have been "
+"no cases of rabies in the country of origin for a specified period."
+
+#: web/mocks/destinations_mock.py:292
 msgid "mexico"
 msgstr "Mexico"
 
-#: web/mocks/destinations_mock.py:290
+#: web/mocks/destinations_mock.py:300
 msgid "mexico_description"
 msgstr ""
 "The European Union (EU) has specific regulations for the entry of pets from "
 "third countries. Below is an overview of the necessary requirements:"
 
-#: web/mocks/destinations_mock.py:291
+#: web/mocks/destinations_mock.py:301
 msgid "in_summary"
 msgstr "In summary"
 
-#: web/mocks/destinations_mock.py:291
+#: web/mocks/destinations_mock.py:301
 msgid "mexico_description_summary"
 msgstr ""
 "AICM is a pet-friendly airport, but certain requirements must be met for "
 "traveling with pets, including the use of containers/cages, registration "
 "with the airline, and consulting SENASICA requirements."
 
-#: web/mocks/destinations_mock.py:298
+#: web/mocks/destinations_mock.py:308
 msgid "australia"
 msgstr "Austrilia"
 
-#: web/mocks/destinations_mock.py:306 web/mocks/destinations_mock.py:382
-#: web/mocks/destinations_mock.py:398
+#: web/mocks/destinations_mock.py:316 web/mocks/destinations_mock.py:392
+#: web/mocks/destinations_mock.py:408
 msgid "quarantine"
 msgstr "Quarantine"
 
-#: web/mocks/destinations_mock.py:306
+#: web/mocks/destinations_mock.py:316
 msgid "australia_description_quarantine"
 msgstr ""
 "Once the pet arrives in Melbourne, it will be transferred to the post-entry "
@@ -444,203 +483,203 @@ msgstr ""
 "depending on the pet's country of origin. From Argentina, the quarantine "
 "period does not exceed 30 days."
 
-#: web/mocks/destinations_mock.py:307
+#: web/mocks/destinations_mock.py:317
 msgid "cargo_hold_trip"
 msgstr "Cargo hold trip"
 
-#: web/mocks/destinations_mock.py:307
+#: web/mocks/destinations_mock.py:317
 msgid "australia_description_cargo_hold"
 msgstr ""
 "Pets must travel in the cargo hold as declared cargo in an IATA-approved "
 "carrier."
 
-#: web/mocks/destinations_mock.py:308
+#: web/mocks/destinations_mock.py:318
 msgid "no_national_transfers"
 msgstr "National transfers are not permitted."
 
-#: web/mocks/destinations_mock.py:308
+#: web/mocks/destinations_mock.py:318
 msgid "australia_description_national_transfers"
 msgstr ""
 "Pets are not permitted to arrive at another Australian airport and then "
 "travel on a domestic flight to Melbourne."
 
-#: web/mocks/destinations_mock.py:309
+#: web/mocks/destinations_mock.py:319
 msgid "quarantine_reqs"
 msgstr "Quarantine requirements"
 
-#: web/mocks/destinations_mock.py:309
+#: web/mocks/destinations_mock.py:319
 msgid "australia_description_quarantine_reqs"
 msgstr ""
 "Strict quarantine requirements of the Australian Department of Agriculture, "
 "Fisheries and Forestry (DAFF) must be followed."
 
-#: web/mocks/destinations_mock.py:316
+#: web/mocks/destinations_mock.py:326
 msgid "new_zealand"
 msgstr "New Zealand"
 
-#: web/mocks/destinations_mock.py:324
+#: web/mocks/destinations_mock.py:334
 msgid "new_zealand_description_1"
 msgstr ""
 "When bringing pets to New Zealand, it is essential that the country's strict "
 "health and veterinary requirements be met."
 
-#: web/mocks/destinations_mock.py:325
+#: web/mocks/destinations_mock.py:335
 msgid "new_zealand_description_2"
 msgstr ""
 "The Ministry for Primary Industries (MPI) only allows dogs and cats from "
 "countries considered rabies-free or controlled."
 
-#: web/mocks/destinations_mock.py:326
+#: web/mocks/destinations_mock.py:336
 msgid "new_zealand_description_3"
 msgstr "Pets must be microchipped prior to any treatment for importation."
 
-#: web/mocks/destinations_mock.py:327
+#: web/mocks/destinations_mock.py:337
 msgid "new_zealand_description_4"
 msgstr ""
 "Documentation confirming that the microchip was implanted and/or scanned "
 "prior to primary rabies vaccination and all subsequent treatments is "
 "required."
 
-#: web/mocks/destinations_mock.py:334
+#: web/mocks/destinations_mock.py:344
 msgid "israel"
 msgstr "Israel"
 
-#: web/mocks/destinations_mock.py:342
+#: web/mocks/destinations_mock.py:352
 msgid "israel_description"
 msgstr ""
 "Ben Gurion International Airport in Los Angeles, near Tel Aviv, is Israel's "
 "main international airport and is pet-friendly."
 
-#: web/mocks/destinations_mock.py:343
+#: web/mocks/destinations_mock.py:353
 msgid "pets_in_cabin"
 msgstr "Pets in cabin"
 
-#: web/mocks/destinations_mock.py:343
+#: web/mocks/destinations_mock.py:353
 msgid "israel_description_cabin"
 msgstr ""
 "Pets can travel in the cabin if they weigh up to 8 kg, including the "
 "carrier, and if the carrier meets the dimensions allowed by the airline."
 
-#: web/mocks/destinations_mock.py:344
+#: web/mocks/destinations_mock.py:354
 msgid "pets_in_hold"
 msgstr "Pets in cargo hold"
 
-#: web/mocks/destinations_mock.py:344
+#: web/mocks/destinations_mock.py:354
 msgid "israel_description_hold"
 msgstr ""
 "Pets can also travel as checked baggage, but they must be in a secure, rigid "
 "cage, according to airline regulations."
 
-#: web/mocks/destinations_mock.py:345
+#: web/mocks/destinations_mock.py:355
 msgid "israel_description_import_license"
 msgstr ""
 "It is crucial to obtain an import permit before traveling to Israel with "
 "pets."
 
-#: web/mocks/destinations_mock.py:346
+#: web/mocks/destinations_mock.py:356
 msgid "others_considerations"
 msgstr "Others considerations"
 
-#: web/mocks/destinations_mock.py:346
+#: web/mocks/destinations_mock.py:356
 msgid "israel_description_other"
 msgstr ""
 "It's advisable to check each airline's specific regulations before booking "
 "your flight, as they may vary."
 
-#: web/mocks/destinations_mock.py:353
+#: web/mocks/destinations_mock.py:363
 msgid "turkey"
 msgstr "Turkey"
 
-#: web/mocks/destinations_mock.py:361
+#: web/mocks/destinations_mock.py:371
 msgid "turkey_description"
 msgstr ""
 "Additionally, some airlines, such as Turkish Airlines, have specific "
 "policies for transporting pets."
 
-#: web/mocks/destinations_mock.py:362
+#: web/mocks/destinations_mock.py:372
 msgid "turkey_description_airlines"
 msgstr ""
 "It has a pet policy that includes the possibility of traveling in the cabin "
 "or hold, depending on the weight and size of the pet and its carrier."
 
-#: web/mocks/destinations_mock.py:363
+#: web/mocks/destinations_mock.py:373
 msgid "considerations"
 msgstr "Considerations"
 
-#: web/mocks/destinations_mock.py:363
+#: web/mocks/destinations_mock.py:373
 msgid "turkey_description_other"
 msgstr ""
 "It's important to check each airline's policies and meet the health and "
 "documentation requirements for traveling with pets to Turkey."
 
-#: web/mocks/destinations_mock.py:370
+#: web/mocks/destinations_mock.py:380
 msgid "japan"
 msgstr "Japan"
 
-#: web/mocks/destinations_mock.py:377
+#: web/mocks/destinations_mock.py:387
 msgid "japan_title"
 msgstr "Requirements for traveling with pets to Japan"
 
-#: web/mocks/destinations_mock.py:379
+#: web/mocks/destinations_mock.py:389
 msgid "japan_description_microchip"
 msgstr "Pets must have a microchip."
 
-#: web/mocks/destinations_mock.py:380
+#: web/mocks/destinations_mock.py:390
 msgid "japan_description_vaccines"
 msgstr "Vaccination must be at least 30 days before entering the country."
 
-#: web/mocks/destinations_mock.py:381
+#: web/mocks/destinations_mock.py:391
 msgid "rabies_titer_test"
 msgstr "Rabies titer test"
 
-#: web/mocks/destinations_mock.py:381
+#: web/mocks/destinations_mock.py:391
 msgid "japan_description_rage"
 msgstr "Testing is required to ensure the effectiveness of the rabies vaccine."
 
-#: web/mocks/destinations_mock.py:382
+#: web/mocks/destinations_mock.py:392
 msgid "japan_description_quarantine"
 msgstr ""
 "Depending on the pet's requirements, there may be a quarantine period of 12 "
 "hours or more."
 
-#: web/mocks/destinations_mock.py:383
+#: web/mocks/destinations_mock.py:393
 msgid "japan_description_doc"
 msgstr ""
 "The required documentation, such as the ASE-3293 certificate and the import "
 "inspection application, must be submitted."
 
-#: web/mocks/destinations_mock.py:390
+#: web/mocks/destinations_mock.py:400
 msgid "china"
 msgstr "China"
 
-#: web/mocks/destinations_mock.py:398
+#: web/mocks/destinations_mock.py:408
 msgid "china_description_quarantine"
 msgstr "Pets entering China may be subject to quarantine."
 
-#: web/mocks/destinations_mock.py:399
+#: web/mocks/destinations_mock.py:409
 msgid "restrictions"
 msgstr "Restrictions"
 
-#: web/mocks/destinations_mock.py:399
+#: web/mocks/destinations_mock.py:409
 msgid "china_description_restrictions"
 msgstr "Only allow one pet per passenger"
 
-#: web/mocks/destinations_mock.py:406
+#: web/mocks/destinations_mock.py:416
 msgid "south_korea"
 msgstr "South Korea"
 
-#: web/mocks/destinations_mock.py:413
+#: web/mocks/destinations_mock.py:423
 msgid "south_korea_title"
 msgstr "Requirements for traveling with pets to South Korea"
 
-#: web/mocks/destinations_mock.py:415
+#: web/mocks/destinations_mock.py:425
 msgid "south_korea_description_doc"
 msgstr ""
 "It's necessary to have your pet's documentation in order, including a rabies "
 "vaccination certificate and other requirements that may vary depending on "
 "the pet's country of origin. Argentina requires a rabies antibody test."
 
-#: web/mocks/destinations_mock.py:416
+#: web/mocks/destinations_mock.py:426
 msgid "south_korea_description_transport"
 msgstr ""
 "Airlines have their own policies regarding pet transportation, so it's "
@@ -877,16 +916,16 @@ msgstr "Our Social Media"
 msgid "our_sponsors"
 msgstr "Our Sponsors"
 
-#: web/templates/components/footer.html:61
+#: web/templates/components/footer.html:64
 #: web/templates/pages/components-index/quotation-section.html:31
 msgid "Email"
 msgstr "Email"
 
-#: web/templates/components/footer.html:84
+#: web/templates/components/footer.html:87
 msgid "copyright"
 msgstr "All rights reserved."
 
-#: web/templates/components/footer.html:86
+#: web/templates/components/footer.html:89
 msgid "powered_by"
 msgstr "Powered by"
 
