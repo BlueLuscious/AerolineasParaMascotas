@@ -7,13 +7,20 @@
 >
     <!-- Main Article -->
     <article class="grid lg:grid-cols-2 place-items-center gap-y-8 md:gap-x-12 w-full max-w-7xl">
-        <!-- Image -->
-        <div class="max-w-64 md:max-w-xs flex flex-col items-stretch animate-mini_bounce_medium">
-            <img src="{% static 'img/about-us/logo.png' %}" alt="main-img" 
-                class="size-full ring-8 ring-primary-blue_dark rounded-full shadow-lg"
+        <!-- Images -->
+        <div class="grid grid-cols-4 grid-rows-2">
+            <img src="{% static 'img/about-us/team-0.png' %}" alt="main-img" 
+                class="z-[3] col-start-1 col-end-3 row-start-1 bg-white border
+                size-full p-2 rounded-sm shadow-lg -rotate-2"
             />
-            <div class="self-end size-10 mr-5 bg-primary-blue_dark rounded-full"></div>
-            <div class="self-end size-6 bg-primary-blue_dark rounded-full"></div>
+            <img src="{% static 'img/about-us/team-1.JPG' %}" alt="main-img" 
+                class="z-[2] col-start-2 col-end-4 row-start-2 bg-white border
+                size-full p-1 rounded-sm shadow-lg rotate-2 -translate-y-4"
+            />
+            <img src="{% static 'img/about-us/team-2.png' %}" alt="main-img" 
+                class="z-[2] col-start-3 col-end-5 row-start-1 bg-white border
+                size-full p-2 rounded-sm shadow-lg rotate-3 translate-y-6"
+            />
         </div>
   
         <!-- Text -->
