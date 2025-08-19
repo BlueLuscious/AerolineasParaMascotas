@@ -69,6 +69,7 @@ INSTALLED_APPS = [
     'review',
     'store',
     'config',
+    'news',
 ]
 
 MIDDLEWARE = [ 
