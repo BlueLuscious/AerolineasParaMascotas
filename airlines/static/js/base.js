@@ -1,4 +1,6 @@
-import { WhatsappService } from "./services/whatsapp_service.js"
+import { WhatsappService } from "./services/whatsapp_service.js";
+import { FabController } from "./fab.controller.js";
+
 const wa_service = new WhatsappService()
 
 window.redirectToWA = wa_service.redirectToWA.bind(wa_service)
@@ -6,6 +8,9 @@ window.toggleElementByClick = toggleElementByClick
 
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    new FabController("whatsapp_fab");
+
     // Nav-Link Styles & Interactivity
     const sections = document.querySelectorAll("section")
     const navLinks = document.querySelectorAll(".nav_link")

@@ -1,5 +1,7 @@
 {% load static %}
 {% load unicorn %}
+{% load component_tags %}
+
 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
@@ -19,9 +21,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aerolineas para Mascotas</title>
     <link rel="icon" href="{% static 'img/logotipo.ico' %}" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script> <!-- Alpine.js -->
     <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script> <!-- Alpine.js -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,12 +63,33 @@
         {% include "components/footer.html" %}
     </section>
 
-    <button id="whatsapp_button" class="z-40 fixed bottom-3 right-3 sm:bottom-5 sm:right-5 
-        flex items-center p-3.5 bg-tertiary-whatsapp_green_tone rounded-full shadow-xl cursor-pointer 
-        hover:animate-mini_bounce_medium_fast" onclick="redirectToWA('AEM')"
-    >
-        {% include "icons/whatsapp.html" with tailwind_class="size-9 text-white" %}
-    </button>
+    {% component "CustomFab" id="whatsapp_fab" icon_name="whatsapp" 
+        icon_classes="size-9 text-white" colour="tertiary-whatsapp_green_tone" 
+        dropdown_classes="bottom-full right-0 w-full max-w-40 font-secondary_font" 
+    %}
+        {% fill actions %}
+        <button id="whatsapp_chl_button" class="flex items-center justify-between gap-x-2 w-full 
+            p-2 bg-secondary-grey_extralight text-center text-secondary-grey_dark border-2 
+            border-tertiary-whatsapp_green_tone rounded-full shadow-md hover:bg-gray-100 transition" 
+            onclick="redirectToWA('CHL')"
+        >
+            <h2 class="w-full">Chile</h2>
+            <img src="{% static 'img/destination/flags/chile-flag.png' %}" 
+                alt="chile-flag" class="size-10 rounded-full" 
+            />
+        </button>
+        <button id="whatsapp_arg_button" class="flex items-center justify-between gap-x-2 w-full 
+            p-2 bg-secondary-grey_extralight text-center text-secondary-grey_dark border-2 
+            border-tertiary-whatsapp_green_tone rounded-full shadow-md hover:bg-gray-100 transition" 
+            onclick="redirectToWA('AEM')"
+        >
+            <h2 class="w-full">Argentina</h2>
+            <img src="{% static 'img/destination/flags/argentina-flag.png' %}" 
+                alt="argentina-flag" class="size-10 rounded-full" 
+            />
+        </button>
+        {% endfill %}
+    {% endcomponent %}
 
 </body>
 <script type="module" src="{% static 'js/base.js' %}"></script>

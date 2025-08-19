@@ -10,5 +10,11 @@ class ModalView(UnicornView):
         destination = DestinationO.filter(name=name).first()
         if destination:
             self.destination = destination.__dict__ if name != "" else {}
-            self.phone_map = "VDR" if destination.continent.lower() == "norte america" else "AEM"
+            if destination.continent.lower() == "norte america":
+                self.phone_map = "VDR"
+            else:
+                if destination.name.lower() == "chile":
+                    self.phone_map = "CHL"
+                else:
+                    self.phone_map = "AEM"
             
