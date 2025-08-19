@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-05 00:01+0000\n"
+"POT-Creation-Date: 2025-08-19 03:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "Inicio"
 msgstr "Home"
 
 #: airlines/translation_strings.py:5
-#: web/templates/pages/components-index/about-us-section.html:23
+#: web/templates/pages/components-index/about-us-section.html:30
 msgid "Quienes somos"
 msgstr "About Us"
 
@@ -34,7 +34,7 @@ msgstr "Services"
 msgid "Destinos"
 msgstr "Destinations"
 
-#: airlines/translation_strings.py:8 web/templates/components/footer.html:69
+#: airlines/translation_strings.py:8 web/templates/components/footer.html:70
 msgid "Contacto"
 msgstr "Contact"
 
@@ -916,16 +916,24 @@ msgstr "Our Social Media"
 msgid "our_sponsors"
 msgstr "Our Sponsors"
 
-#: web/templates/components/footer.html:64
+#: web/templates/components/footer.html:65
 #: web/templates/pages/components-index/quotation-section.html:31
 msgid "Email"
 msgstr "Email"
 
-#: web/templates/components/footer.html:87
+#: web/templates/components/footer.html:79
+msgid "direction"
+msgstr "Direction"
+
+#: web/templates/components/footer.html:81
+msgid "request_appointment"
+msgstr "Request for an appointment in order of attention"
+
+#: web/templates/components/footer.html:94
 msgid "copyright"
 msgstr "All rights reserved."
 
-#: web/templates/components/footer.html:89
+#: web/templates/components/footer.html:96
 msgid "powered_by"
 msgstr "Powered by"
 
@@ -934,13 +942,13 @@ msgstr "Powered by"
 msgid "Menú"
 msgstr "Menu"
 
-#: web/templates/pages/components-index/about-us-section.html:25
+#: web/templates/pages/components-index/about-us-section.html:32
 msgid "about_us_title"
 msgstr ""
 "At <span class='text-primary-red_dark font-semibold'>Aerolineas para "
 "Mascotas</span>, we fly high so you can keep your furry friend close."
 
-#: web/templates/pages/components-index/about-us-section.html:26
+#: web/templates/pages/components-index/about-us-section.html:33
 msgid "about_us_p_1"
 msgstr ""
 "We are a young company with operational bases in both Argentina and Spain. "
@@ -948,7 +956,7 @@ msgstr ""
 "with excellent service. We understand that transporting your pet and "
 "everything that entails can be quite a challenge."
 
-#: web/templates/pages/components-index/about-us-section.html:27
+#: web/templates/pages/components-index/about-us-section.html:34
 msgid "about_us_p_2"
 msgstr ""
 "That's why our main commitment is to provide you, above all, with the "

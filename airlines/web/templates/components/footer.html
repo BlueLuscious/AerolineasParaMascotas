@@ -60,19 +60,26 @@
 		</div>
 
 		<!-- Begin Contacts -->
-		<div class="flex flex-col items-center gap-y-2 text-gray-300 md:flex-row md:justify-around text-md">
-			<p class="md:order-1">{% trans "Email" %}: 
-				<a href="https://mail.google.com/mail/?view=cm&fs=1&to=aem.logistica.arg@gmail.com" target="_blank"
-					class="hover:text-white transition-colors duration-200 ease-in-out"
-				>aem.logistica.arg@gmail.com</a>
-			</p>
-			<p class="order-1 md:order-2">{% trans "Contacto" %}: 
-				<button onclick="redirectToWA('AEM')" class="hover:text-white transition-colors duration-200 ease-in-out">
-					+54 9 1160375662
-				</button>, 
-				<button onclick="redirectToWA('VDR')" class="hover:text-white transition-colors duration-200 ease-in-out">
-					+54 9 1150599636
-				</button>
+		<div class="flex flex-col items-center gap-y-2 p-4 text-gray-300 text-md">
+			<div class="flex flex-col md:flex-row items-center md:justify-around gap-y-2 w-full">
+				<p class="md:order-1">{% trans "Email" %}: 
+					<a href="https://mail.google.com/mail/?view=cm&fs=1&to=aem.logistica.arg@gmail.com" target="_blank"
+						class="text-secondary-grey_light hover:text-white transition-colors duration-200 ease-in-out"
+					>aem.logistica.arg@gmail.com</a>
+				</p>
+				<p class="order-1 md:order-2">{% trans "Contacto" %}: 
+					<button onclick="redirectToWA('AEM')" class="text-secondary-grey_light 
+						hover:text-white transition-colors duration-200 ease-in-out"
+					>+54 9 1160375662</button>, 
+					<button onclick="redirectToWA('VDR')" class="text-secondary-grey_light 
+						hover:text-white transition-colors duration-200 ease-in-out"
+					>+54 9 1150599636</button>
+				</p>
+			</div>
+			<p>{% trans "direction" %}: 
+				<span class="text-secondary-grey_light hover:text-white transition-colors duration-200 ease-in-out">
+					Bacacay 4131, Cdad. Autónoma de Buenos Aires ({% trans "request_appointment" %})
+				</span>
 			</p>
 		</div>
 		<!-- End Contacts -->
