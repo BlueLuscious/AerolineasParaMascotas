@@ -60,7 +60,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'django_unicorn',
-    "django_components",
     'storages',
     'colorfield',
     'destination', 
@@ -70,6 +69,7 @@ INSTALLED_APPS = [
     'store',
     'config',
     'news',
+    "django_components",
 ]
 
 MIDDLEWARE = [ 
