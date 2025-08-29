@@ -1,0 +1,128 @@
+{% load static %}
+{% load i18n %}
+
+
+<section id="">
+    <div id="carrousel" class="relative w-full h-screen font-primary_font overflow-hidden">
+        <!-- Slides -->
+        <div id="carrousel-slides" class="flex transition-transform duration-700 ease-in-out w-svw h-full pt-20">
+            <!-- Item 1-->
+            <div class="size-full flex-shrink-0 bg-[url({% static 'img/home/background-1.jpg' %})] bg-cover bg-center">
+                <div class="grid grid-cols-1 grid-rows-3 md:grid-rows-2 lg:grid-cols-2 lg:grid-rows-none size-full">
+                    <!-- Image -->
+                    <img src="{% static 'img/home/couple-1.png' %}" class="row-start-3 lg:row-start-2 self-end" />
+                    
+                    <!-- Texts & Buttons -->
+                    <div class="row-start-1 row-end-3 self-center justify-self-center flex flex-col items-center gap-y-8 p-8">
+                        <div class="space-y-4 max-w-lg">
+                            <h1 class="text-3xl md:text-5xl text-secondary-grey_dark font-bold">{% trans "Tu mascota, nuestro pasajero más importante" %}</h1>
+                            <p class="text-lg md:text-xl text-gray-700">{% trans "Seguro, cómodo y con amor en cada kilómetro" %}</p>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-4 w-full text-secondary-grey_extralight">
+                            <a href="#quotation_section" class="flex items-center justify-center gap-x-4 w-full px-2 py-3 bg-primary-red 
+                                rounded-md shadow-lg shadow-primary-red/70 hover:animate-pulse"
+                            >
+                                {% include "icons/envelope.html" with tailwind_class="size-9" %}
+                                <span>{% trans "Solicitá tu cotización" %}</span>
+                            </a>
+                            <button id="home_whatsapp_button_1" class="flex items-center justify-center gap-x-4 w-full px-2 py-3 
+                                bg-tertiary-whatsapp_green_tone rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse" 
+                                onclick="redirectToWA('AEM')"
+                            >
+                                {% include "icons/whatsapp.html" with tailwind_class="size-8" %}
+                                <span>{% trans "Consulta por Whatsapp" %}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2-->
+            <div class="size-full flex-shrink-0 bg-[url({% static 'img/home/background-2.jpg' %})] bg-cover bg-center">
+                <div class="grid grid-cols-1 grid-rows-3 md:grid-rows-2 lg:grid-cols-2 lg:grid-rows-none size-full">
+                    <!-- Image -->
+                    <img src="{% static 'img/home/couple-2.png' %}" class="lg:col-start-2 row-start-3 lg:row-start-2 self-end" />
+                    
+                    <!-- Texts & Buttons -->
+                    <div class="row-start-1 row-end-3 self-center justify-self-center flex flex-col items-center gap-y-8 p-8">
+                        <div class="space-y-4 max-w-lg">
+                            <h1 class="text-3xl md:text-5xl text-secondary-grey_dark font-bold">{% trans "Trasladamos lo que más querés con el cuidado que se merece" %}</h1>
+                            <p class="text-lg md:text-xl text-gray-700">{% trans "Porque no es solo un viaje, es una experiencia con corazón" %}</p>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-4 w-full text-secondary-grey_extralight">
+                            <a href="#quotation_section" class="flex items-center justify-center gap-x-4 w-full px-2 py-3 bg-primary-red 
+                                rounded-md shadow-lg shadow-primary-red/70 hover:animate-pulse"
+                            >
+                                {% include "icons/envelope.html" with tailwind_class="size-9" %}
+                                <span>{% trans "Solicitá tu cotización" %}</span>
+                            </a>
+                            <button id="home_whatsapp_button_2" class="flex items-center justify-center gap-x-4 w-full px-2 py-3 
+                                bg-tertiary-whatsapp_green_tone rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse" 
+                                onclick="redirectToWA('AEM')"
+                            >
+                                {% include "icons/whatsapp.html" with tailwind_class="size-8" %}
+                                <span>{% trans "Consulta por Whatsapp" %}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3-->
+            <div class="size-full flex-shrink-0 bg-[url({% static 'img/home/background-3.jpeg' %})] bg-cover bg-center">
+                <div class="grid grid-cols-1 grid-rows-3 md:grid-rows-2 lg:grid-cols-2 lg:grid-rows-none size-full">
+                    <!-- Image -->
+                    <img src="{% static 'img/home/couple-3.png' %}" class="w-full row-start-3 lg:row-start-2 self-end" />
+                    
+                    <!-- Texts & Buttons -->
+                    <div class="row-start-1 row-end-3 self-center justify-self-center flex flex-col items-center gap-y-8 p-8">
+                        <div class="space-y-4 max-w-lg">
+                            <h1 class="text-3xl md:text-5xl text-secondary-grey_dark font-bold">{% trans "Donde vayan tus mascotas, vamos con ellas" %}</h1>
+                            <p class="text-lg md:text-xl text-gray-700">{% trans "Viajes responsables, abrazos garantizados" %}</p>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-4 w-full text-secondary-grey_extralight">
+                            <a href="#quotation_section" class="flex items-center justify-center gap-x-4 w-full px-2 py-3 bg-primary-red 
+                                rounded-md shadow-lg shadow-primary-red/70 hover:animate-pulse"
+                            >
+                                {% include "icons/envelope.html" with tailwind_class="size-9" %}
+                                <span>{% trans "Solicitá tu cotización" %}</span>
+                            </a>
+                            <button id="home_whatsapp_button_3" class="flex items-center justify-center gap-x-4 w-full px-2 py-3 
+                                bg-tertiary-whatsapp_green_tone rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse" 
+                                onclick="redirectToWA('AEM')"
+                            >
+                                {% include "icons/whatsapp.html" with tailwind_class="size-8" %}
+                                <span>{% trans "Consulta por Whatsapp" %}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prev / Next buttons -->
+        <button onclick="prevSlide()" class="hidden absolute top-1/2 left-4 md:flex items-center justify-center size-10 
+            bg-primary-blue_extralight hover:bg-primary-blue_extralight/70 font-bold rounded-full -translate-y-1/2"
+        >
+            <svg class="size-4 text-primary-blue_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+        </button>
+        <button onclick="nextSlide()" class="hidden absolute top-1/2 right-4 md:flex items-center justify-center size-10 
+            bg-primary-blue_extralight hover:bg-primary-blue_light/70 font-bold rounded-full -translate-y-1/2"
+        >
+            <svg class="size-4 text-primary-blue_dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+        </button>
+
+        <!-- Indicators -->
+        <div class="absolute bottom-4 left-1/2 flex gap-2 p-2 bg-primary-blue_dark rounded-full transform -translate-x-1/2">
+            <span onclick="goToSlide(0)" class="size-5 rounded-full bg-primary-blue_extralight/50 hover:bg-primary-blue_extralight cursor-pointer" id="indicator-0"></span>
+            <span onclick="goToSlide(1)" class="size-5 rounded-full bg-primary-blue_extralight/50 hover:bg-primary-blue_extralight cursor-pointer" id="indicator-1"></span>
+            <span onclick="goToSlide(2)" class="size-5 rounded-full bg-primary-blue_extralight/50 hover:bg-primary-blue_extralight cursor-pointer" id="indicator-2"></span>
+        </div>
+    </div>
+</section>
+
+<script src="{% static 'js/carrousel-full.js' %}"></script>

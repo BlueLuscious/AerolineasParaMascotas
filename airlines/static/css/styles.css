@@ -1,30 +1,39 @@
-.satisfy-regular {
-  font-family: "Satisfy", cursive;
-  font-weight: 400;
-  font-style: normal;
+/* Variables */
+:root {
+    /* Primaries Colours */
+    --colour-red: #dc2626;
+    --colour-red-light: #fee2e2;
+    --colour-red-dark: #991b1b;
+    --blue: #2563eb;
+    --blue-extralight: #eff6ff;
+    --blue-light: #dbeafe;
+    --blue-dark: #1e3a8a;
+    --blue-dark-rgb: 30, 58, 138;
+
+    /* Secondaries Colours */
+    --grey: #9ca3af;
+    --grey-light: #f9fafb;
+    --grey-dark: #1f2937;
+
+    /* Tertiaries Colours */
+    --whatsapp_green_tone: #00bb2d;
 }
 
-/* frases aisladas */
-.titles{
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+/* Body Scrollbar */
+body {
+    &::-webkit-scrollbar { width: 0.75rem; }
+    &::-webkit-scrollbar-track { background-color: var(--grey-light); }
+    &::-webkit-scrollbar-thumb { background-color: var(--blue-dark); }
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(var(--blue-dark-rgb), 0.7);
+        cursor: grab;
+    }
+    &::-webkit-scrollbar-thumb:active { cursor: grabbing; }
 }
 
-/* Texto general */
-.belleza-regular {
-  font-family: "Belleza", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
- /* Titulo del landscape */
-.main-title{
-  font-family: "Aboreto", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
+
+
 
 #slider::-webkit-scrollbar {
     height: 8px;
@@ -44,20 +53,19 @@
     background: #555;
 }
 
-
-/* Tipografia */
+/* Typography */
 .text-shadow-sm {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .text-shadow-md {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .text-shadow-lg {
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .text-shadow-xl {
-  text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
 }

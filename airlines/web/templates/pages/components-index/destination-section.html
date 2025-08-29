@@ -1,0 +1,65 @@
+{% load static %}
+{% load i18n %}
+{% load unicorn %}
+{% load inclusiontag.custom_grid_card %}
+{% load simpletag.destination_o_tag %}
+
+
+<section id="destination_section" class="relative flex flex-col items-center justify-center gap-y-20 size-full 
+	min-h-screen px-8 py-12 bg-secondary-grey_extralight/15 text-secondary-grey_dark scroll-mt-20"
+>
+	<!-- Common Destinations -->
+	<div class="flex flex-col gap-y-16 size-full text-xl text-center">
+		<div class="flex flex-col items-center gap-y-8">
+			<h1 class="text-3xl md:text-4xl font-secondary_font font-black tracking-wide">
+				{% trans "frequent_destinations" %}
+			</h1>
+			<h2>{% trans "destination_caption" %}</h2>
+        </div>
+
+		<div class="flex flex-col items-center gap-y-12 font-primary_font font-black text-secondary-grey_semidark">
+			{% filter_destinations destinations continent="norte america" as north_american_destinations %}
+			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ north_american_destinations|length|add:1 }} lg:grid-rows-2 gap-12 size-full md:max-w-4xl group/card-stack">
+				{% for d in north_american_destinations %}
+				{% grid_card forloop.counter "card" d.airport_image d.flag_image d.name %}
+				{% endfor %}
+			</div>
+
+			{% filter_destinations destinations continent="europa" as european_destinations %}
+			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ european_destinations|length|add:1 }} lg:grid-rows-2 gap-12 size-full group/card-stack">
+				{% for d in european_destinations %}
+				{% grid_card forloop.counter "card" d.airport_image d.flag_image d.name %}
+				{% endfor %}
+			</div>
+
+			{% filter_destinations destinations continent="america" as american_destinations %}
+			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ american_destinations|length|add:1 }} lg:grid-rows-2 gap-12 size-full group/card-stack">
+				{% for d in american_destinations %}
+				{% grid_card forloop.counter "card" d.airport_image d.flag_image d.name %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	<!-- Exotic Destinations -->
+	<div class="flex flex-col gap-y-16 size-full text-xl text-center">
+		<h1 class="text-3xl md:text-4xl font-secondary_font font-black tracking-wide">
+			{% trans "exotic_destinations" %}
+		</h1>
+
+		<div class="font-primary_font font-black text-secondary-grey_semidark">
+			{% filter_destinations destinations "exotico" as exotic_destinations %}
+			<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ exotic_destinations|length|add:1 }} lg:grid-rows-2 gap-12 size-full group/card-stack">
+				{% for d in exotic_destinations %}
+				{% grid_card forloop.counter "card" d.airport_image d.flag_image d.name %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Country Description -->
+	{% unicorn "modal" %}
+
+</section>
+
+<script src="{% static 'js/destination.js' %}"></script>

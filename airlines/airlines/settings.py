@@ -13,6 +13,7 @@ import dj_database_url
 import os
 from pathlib import Path 
 from dotenv import load_dotenv
+from django_components import ComponentsSettings
 
 load_dotenv() 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -67,12 +68,14 @@ INSTALLED_APPS = [
     'review',
     'store',
     'config',
+    "django_components",
 ]
 
 MIDDLEWARE = [ 
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -86,8 +89,18 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [BASE_DIR / "templates"],
-        'APP_DIRS': True,
+        # 'APP_DIRS': True,
         'OPTIONS': {
+            "loaders": [
+                (
+                    "django.template.loaders.cached.Loader",
+                    [
+                        "django.template.loaders.filesystem.Loader",
+                        "django.template.loaders.app_directories.Loader",
+                        "django_components.template_loader.Loader",
+                    ],
+                )
+            ],
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
@@ -114,7 +127,7 @@ Q_CLUSTER = {
 DATABASES = {
     'default': dj_database_url.config(
         default=os.environ.get(
-            "DATABASE_URL_CONNECTION", "postgres://barba:barba@127.0.0.1:5432/aerolineasparamascotas_db"
+            "DATABASE_URL_CONNECTION", "postgres://barba:barba@postgres:5432/aerolineasparamascotas_db"
         ),
         conn_max_age=600,
         conn_health_checks=True,
@@ -152,13 +165,17 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
+USE_L10N = True
 USE_TZ = True
 
+LANGUAGES = [
+    ("es", "Español"),
+    ("en", "English"),
+]
+
+LOCALE_PATHS = [BASE_DIR / "locale"]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
@@ -166,6 +183,12 @@ USE_TZ = True
 STATIC_URL = "static/"
 
 STATICFILES_DIRS = [BASE_DIR / "static"]
+
+STATICFILES_FINDERS = [
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "django_components.finders.ComponentsFileSystemFinder",
+]
 
 ## Levanta servidor whitenoise de statics files cuando corre en docker (sino no llegarian los statics)
 if ENVIRONMENT == "local":
@@ -211,4 +234,9 @@ DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-
+# Django Components
+COMPONENTS = ComponentsSettings(
+    app_dirs=[
+        "dj_components",
+    ],
+)

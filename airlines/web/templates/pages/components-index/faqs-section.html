@@ -1,0 +1,44 @@
+{% load static %}
+{% load i18n %}
+{% load inclusiontag.custom_button %}
+
+
+<section id="faqs_section" class="flex items-center justify-center size-full min-h-screen px-8 py-12 
+    bg-primary-blue_extralight text-xl text-secondary-grey_dark font-primary_font"
+>
+    <div class="flex flex-col gap-y-16 size-full max-w-5xl">
+        <div class="flex flex-col items-center gap-y-4 text-center">
+            <h1 class="text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
+                {% trans "Preguntas Frecuentes" %}
+            <h1>
+            <h2>{% trans "Estas son las preguntas que más recibimos y nuestras respuestas, listas para que no te quede nada en el aire." %}</h2>
+        </div>
+
+
+        <div id="faq_accordion" class="flex flex-col items-center gap-y-4">
+            {% for faq in faqs %}
+            <div class="w-full bg-white text-secondary-grey_semidark font-medium border-2 border-secondary-grey_light 
+                rounded-lg transition overflow-hidden group"
+            >
+                {% custom_button faq.id "button" faq.question "chevron-down" faq.classes faq.label_classes faq.icon_classes %}
+                <div class="answer max-h-0 border-t border-secondary-grey_light transition-all duration-500 ease-in-out overflow-hidden">
+                    <p class="p-4 md:p-6 text-md md:text-lg tracking-wide">{{ faq.answer }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="flex flex-col items-center gap-y-6 text-center">
+            <h2>{% trans "Tu curiosidad no muerde. Respondemos con cariño las 24 horas." %}<h2>
+            <button id="faq_whatsapp_button" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-tertiary-whatsapp_green_tone 
+                text-secondary-grey_extralight rounded-md shadow-lg shadow-tertiary-whatsapp_green_tone/70 hover:animate-pulse" 
+                onclick="redirectToWA('AEM')"
+            >
+                {% include "icons/whatsapp.html" with tailwind_class="size-8" %}
+                <h3>{% trans "Tenes alguna pregunta?" %}</h3>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script src="{% static 'js/faqs.js' %}"></script>

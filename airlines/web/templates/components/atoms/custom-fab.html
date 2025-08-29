@@ -1,0 +1,24 @@
+{% load component_tags %}
+
+
+<div id="{{ id }}" class="z-20 fixed {{ position }} flex justify-end w-full pointer-events-none">
+
+    <div class="relative inline-flex items-center justify-end w-full pointer-events-auto">
+        <!-- Main FAB button -->
+        <button id="{{ id }}_button" class="flex items-center p-3 bg-{{ colour }} text-white rounded-full 
+            shadow-lg transition-all duration-300 ease-in-out hover:bg-{{ colour }}/70 {{ extra_classes }}"
+        >
+            {% if icon_name != "" %}
+            {% include "icons/"|add:icon_name|add:".html" with tailwind_class=icon_classes %}
+            {% endif %}
+        </button>
+    
+        <!-- FAB options -->
+        <div id="{{ id }}_options" class="absolute flex flex-col gap-y-2 my-2 opacity-0 
+            pointer-events-none transition-opacity duration-300 ease-in-out {{ dropdown_classes }}"
+        >
+            {% slot actions %}{% endslot %}
+        </div>
+    </div>
+
+</div>

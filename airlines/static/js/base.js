@@ -1,41 +1,63 @@
-import { WhatsappService } from "./services/whatsapp_service.js"
+import { WhatsappService } from "./services/whatsapp_service.js";
+import { FabController } from "./fab.controller.js";
+
 const wa_service = new WhatsappService()
+
+window.redirectToWA = wa_service.redirectToWA.bind(wa_service)
+window.toggleElementByClick = toggleElementByClick
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const openMenu = document.getElementById("btn_open_menu")
-    const sideNavbarMenu = document.getElementById("side_navbar_menu")
-    const closeMenu = document.getElementById("btn_close_menu")
+    new FabController("whatsapp_fab");
 
-    toggleElementByClick(openMenu, sideNavbarMenu, "translate-x-full")
-    toggleElementByClick(closeMenu, sideNavbarMenu, "translate-x-full")
+    // Nav-Link Styles & Interactivity
+    const sections = document.querySelectorAll("section")
+    const navLinks = document.querySelectorAll(".nav_link")
+    let current_link = ""
 
-    
-    const whatsappButton = document.getElementById("whatsapp_button")
-    wa_service.redirectToWA(whatsappButton, 0)
-    
-    /* SubMenu Previo a volar */
-    const navItemBeforeFly = document.getElementById("nav_item_before_fly")
-    const navItemBeforeFlyContent = navItemBeforeFly.querySelector(".item_content")
-    const subMenu = navItemBeforeFly.querySelector(".sub_menu")
-    const closeSubMenu = document.getElementById("btn_close_sub_menu")
-    
-    toggleElementByClick(navItemBeforeFlyContent, subMenu, "hidden")
-    toggleElementByClick(closeSubMenu, subMenu, "hidden")
-    
-    /* SubMenu Previo a volar Mobile */
-    const navItemBeforeFlyMobile = document.getElementById("nav_item_before_fly_mobile")
-    const navItemBeforeFlyContentMobile = navItemBeforeFlyMobile.querySelector(".item_content")
-    const subMenuMobile = navItemBeforeFlyMobile.querySelector(".sub_menu")
-    const navItemBeforeFlyContentArrow = navItemBeforeFlyContentMobile.querySelector(".arrow")
-
-    toggleElementByClick(navItemBeforeFlyContentArrow, subMenuMobile, "hidden")
-    toggleElementByClick(navItemBeforeFlyContentArrow, navItemBeforeFlyContentArrow, "rotate-180")
-
+    activeNavLink(navLinks, current_link)
+  
+    window.addEventListener("scroll", () => {
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100
+            if (pageYOffset >= sectionTop) {
+                current_link = section.getAttribute("id")
+            }
+        })
+        activeNavLink(navLinks, current_link)
+    })
 })
 
-function toggleElementByClick(button, element, tailwind_class) {
-    button.addEventListener("click", () => {
-        element.classList.toggle(tailwind_class)
+/**
+ * Beautify nav-links by section.
+ * @param {NodeListOf<Element>} nav_links - All Nav-Links
+ * @param {string} current_link - Current Nav-Link
+ * @returns {void}
+ */
+function activeNavLink(nav_links, current_link) {
+    nav_links.forEach(link => {
+        const linkHref = link.getAttribute("href")
+        const linkPathname = link.getAttribute("data-pathname")
+
+        link.classList.remove("bg-primary-blue_light", "hover:bg-primary-blue_light", "hover:animate-mini_bounce_fast")
+        if (linkHref === `#${current_link}` && window.location.pathname === "/") {
+            link.classList.add("bg-primary-blue_light")
+        } else if (linkPathname != "/" && linkPathname == window.location.pathname) {
+            link.classList.add("bg-primary-blue_light")
+        } else {
+            link.classList.add("hover:bg-primary-blue_light", "hover:animate-mini_bounce_fast")
+        }
     })
+}
+
+// Toggle sidemenu
+function toggleElementByClick(element_id, tailwind_class) {
+    const element = document.getElementById(element_id);
+    element.classList.toggle(tailwind_class);
+
+    const backdrop = document.getElementById(`${element_id}_backdrop`)
+    if (backdrop) {
+        backdrop.classList.toggle(`-${tailwind_class}`);
+    }
 }

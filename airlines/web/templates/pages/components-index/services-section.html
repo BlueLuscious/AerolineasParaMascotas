@@ -1,0 +1,137 @@
+{% load static %}
+{% load i18n %}
+
+<section id="services_section" class="flex flex-col items-center justify-center gap-y-12 md:gap-y-20 size-full min-h-screen px-8 py-12 
+    bg-gradient-to-b from-primary-blue_extralight from-10% to-secondary-grey_extralight/15 to-100% scroll-mt-20"
+>
+
+    <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
+        {% trans "our_services" %}
+    </h1>
+
+    <div id="services_body" class="flex flex-col items-center gap-y-16 md:gap-y-24">
+        <!-- Service 1 -->
+        <article class="grid lg:grid-cols-2 place-items-center gap-y-16 md:gap-x-12 size-full max-w-7xl text-lg md:text-xl">
+            <!-- Text -->
+            <div class="flex flex-col gap-y-6 size-fit max-w-4xl text-left">
+                <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
+                    {% trans "aem_service_1_title" %}
+                </h1>
+                <p class="text-secondary-grey_semidark leading-relaxed">{% trans "aem_service_1_description" %}</p>
+                <button id="services_whatsapp_button_1" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-primary-blue_dark 
+                    text-secondary-grey_extralight rounded-md shadow-lg shadow-primary-blue_dark/70 hover:animate-pulse" 
+                    onclick="redirectToWA('VDR')"
+                >
+                    {% include "icons/chat-bubble-left.html" with tailwind_class="size-8" %}
+                    <h3>{% trans "support_phrase_1" %}</h3>
+                </button>
+            </div>
+    
+            <!-- Image -->
+            <div class="max-w-lg flex items-center p-4 md:p-8 rounded-md shadow-lg shadow-primary-red_dark/30">
+                <img src="{% static 'img/services/service_1.png' %}" alt="-img" class="rounded-sm shadow-lg" />
+            </div>
+        </article>
+    
+        <!-- Service 2 -->
+        <article class="grid lg:grid-cols-2 place-items-center gap-y-8 md:gap-x-12 size-full max-w-7xl text-lg md:text-xl">
+            <!-- Text -->
+            <div class="lg:col-start-2 flex flex-col gap-y-6 size-fit max-w-4xl text-left">
+                <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
+                    {% trans "aem_service_2_title" %}
+                </h1>
+                <p class="text-secondary-grey_semidark leading-relaxed">{% trans "aem_service_2_description" %}</p>
+                <button id="services_whatsapp_button_2" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-primary-blue_dark 
+                    text-secondary-grey_extralight rounded-md shadow-lg shadow-primary-blue_dark/70 hover:animate-pulse" 
+                    onclick="redirectToWA('VDR')"
+                >
+                    {% include "icons/chat-bubble-left.html" with tailwind_class="size-8" %}
+                    <h3>{% trans "support_phrase_2" %}</h3>
+                </button>
+            </div>
+    
+            <!-- Image -->
+            <div class="lg:row-start-1 max-w-lg flex items-center p-4 md:p-8 rounded-md shadow-lg shadow-primary-red_dark/30">
+                <img src="{% static 'img/services/service_2.png' %}" alt="-img" class="rounded-sm shadow-lg" />
+            </div>
+        </article>
+        
+        <!-- Service 3 -->
+        <article class="grid lg:grid-cols-2 place-items-center gap-y-8 md:gap-x-12 size-full max-w-7xl text-lg md:text-xl">
+            <!-- Text -->
+            <div class="flex flex-col gap-y-6 size-fit max-w-4xl text-left">
+                <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
+                    {% trans "aem_service_3_title" %}
+                </h1>
+                <p class="text-secondary-grey_semidark leading-relaxed">{% trans "aem_service_3_description" %}</p>
+                <button id="services_whatsapp_button_3" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-primary-blue_dark 
+                    text-secondary-grey_extralight rounded-md shadow-lg shadow-primary-blue_dark/70 hover:animate-pulse" 
+                    onclick="redirectToWA('VDR')"
+                >
+                    {% include "icons/chat-bubble-left.html" with tailwind_class="size-8" %}
+                    <h3>{% trans "support_phrase_3" %}</h3>
+                </button>
+            </div>
+    
+            <!-- Image -->
+            <div class="max-w-lg flex items-center p-4 md:p-8 rounded-md shadow-lg shadow-primary-red_dark/30">
+                <img src="{% static 'img/services/service_3.png' %}" alt="-img" class="rounded-sm shadow-lg" />
+            </div>
+        </article>
+        
+        <!-- Service 4 -->
+        <article class="grid lg:grid-cols-2 place-items-center gap-y-8 md:gap-x-12 size-full max-w-7xl text-lg md:text-xl">
+            <!-- Text -->
+            <div class="lg:col-start-2 flex flex-col gap-y-6 size-fit max-w-4xl text-left">
+                <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
+                    {% trans "aem_service_4_title" %}
+                </h1>
+                <div class="space-y-4 text-secondary-grey_semidark leading-relaxed">
+                    <p>{% trans "aem_service_4_description" %}</p>
+                    <h2 class="font-semibold">{% trans "aem_service_4_question" %}</h2>
+                    <ol class="list-decimal list-inside">
+                        <li>{% trans "aem_service_4_answer_1" %}</li>
+                        <li>{% trans "aem_service_4_answer_2" %}</li>
+                        <li>{% trans "aem_service_4_answer_3" %}</li>
+                    </ol>
+                    <button id="services_whatsapp_button_4" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-primary-blue_dark 
+                        text-secondary-grey_extralight rounded-md shadow-lg shadow-primary-blue_dark/70 hover:animate-pulse" 
+                        onclick="redirectToWA('VDR')"
+                    >
+                        {% include "icons/chat-bubble-left.html" with tailwind_class="size-8" %}
+                        <h3>{% trans "support_phrase_4" %}</h3>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Image -->
+            <div class="lg:row-start-1 max-w-lg flex items-center p-4 md:p-8 rounded-md shadow-lg shadow-primary-red_dark/30">
+                <img src="{% static 'img/services/service_4.png' %}" alt="-img" class="rounded-sm shadow-lg" />
+            </div>
+        </article>
+    
+        <!-- Service 5 -->
+        <article class="grid lg:grid-cols-2 place-items-center gap-y-8 md:gap-x-12 size-full max-w-7xl text-lg md:text-xl">
+            <!-- Text -->
+            <div class="flex flex-col gap-y-6 size-fit max-w-4xl text-left">
+                <h1 class="w-fit text-3xl md:text-4xl text-secondary-grey_dark font-secondary_font font-black tracking-wide">
+                    {% trans "aem_service_5_title" %}
+                </h1>
+                <p class="text-secondary-grey_semidark leading-relaxed">{% trans "aem_service_5_description" %}</p>
+                <button id="services_whatsapp_button_5" class="flex items-center gap-x-4 w-fit px-4 py-4 bg-primary-blue_dark 
+                    text-secondary-grey_extralight rounded-md shadow-lg shadow-primary-blue_dark/70 hover:animate-pulse" 
+                    onclick="redirectToWA('VDR')"
+                >
+                    {% include "icons/chat-bubble-left.html" with tailwind_class="size-8" %}
+                    <h3>{% trans "support_phrase_5" %}</h3>
+                </button>
+            </div>
+    
+            <!-- Image -->
+            <div class="max-w-lg flex items-center p-4 md:p-8 rounded-md shadow-lg shadow-primary-red_dark/30">
+                <img src="{% static 'img/services/service_5.png' %}" alt="-img" class="rounded-sm shadow-lg" />
+            </div>
+        </article>
+    </div>
+
+</section>

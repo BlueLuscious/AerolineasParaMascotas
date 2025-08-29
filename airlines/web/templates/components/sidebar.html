@@ -1,0 +1,42 @@
+{% load static %}
+{% load i18n %}
+{% load inclusiontag.custom_bar_item %}
+
+<!-- Sidebar Backdrop -->
+<div id="sidebar_backdrop" class="lg:hidden fixed z-50 left-0 top-0 size-full bg-secondary-grey_dark/70
+    transform -translate-x-full"
+></div>
+
+<!-- Sidebar -->
+<div id="sidebar" class="lg:hidden fixed z-50 right-0 top-0 flex justify-end size-full  
+    transform translate-x-full transition-transform duration-300 ease-in-out"
+>
+    <div class="flex flex-col w-[90vw] max-w-sm px-4 bg-secondary-grey_extralight rounded-l-xl">
+        <!-- Sidebar Header-->
+        <div class="flex items-center justify-between w-full h-20 px-2 border-b-2 border-secondary-grey">
+            <span class="text-xl text-primary-blue_dark font-semibold">{% trans "Menú" %}</span>
+            <button id="btn_close_menu" onclick="toggleElementByClick('sidebar', 'translate-x-full')">
+                {% include "icons/x-mark.html" with tailwind_class="size-7 text-primary-red_dark" %}
+            </button>
+        </div>
+    
+        <!-- Sidebar Content --> <!-- TODO: Quienes Somos, Destinos, Servicios -> Check -->
+        <div class="flex flex-col gap-y-6 py-12 text-lg text-center">
+            {% url 'index' as index_url %}
+            {% nav_item request.path index_url "Inicio" "#" "/" "nav_item_index" %}
+
+            {% nav_item request.path "" "Quienes somos" "#about_us_section" "/quienes-somos/" "nav_item_about_us" %}
+
+            {% nav_item request.path "" "Servicios" "#services_section" "/servicios/" "nav_item_services" %}
+
+            {% nav_item request.path "" "Destinos" "#destination_section" "/destinos/" "nav_item_destination" %}
+
+            {% nav_item request.path "" "Contacto" "#quotation_section" "/cotizar-traslado/" "nav_item_quotation" %}
+        </div>
+
+        <!-- Language Selector -->
+        <div class="flex justify-center w-full mt-auto py-6">
+            {% include "components/language-selector.html" %}
+        </div>
+    </div>
+</div>

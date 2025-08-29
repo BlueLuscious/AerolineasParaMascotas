@@ -1,72 +1,42 @@
 {% load static %}
-{% load inclusiontag.nav_item_tag %}
+{% load i18n %}
+{% load inclusiontag.custom_bar_item %}
 
 
-<div class="fixed z-50 left-0 top-0 w-full p-2 bg-blue-900 shadow-lg shadow-gray-800/50">
-    <div class="flex flex-row justify-between px-6">
-        <div>
-            <img class="w-16 h-16 drop-shadow-lg" 
-                src="{% static 'img/logo-minimalista.png' %}" alt="logotipo">
+<!-- Navbar -->
+<header class="fixed z-50 left-0 top-0 w-full p-2 bg-secondary-grey_extralight shadow-lg shadow-secondary-grey/50">
+    <!-- Navbar Content -->
+    <div class="flex flex-row items-center justify-between px-2">
+        <!-- Logo -->
+        <a href="#">
+            <img class="size-16 drop-shadow-lg" src="{% static 'img/logo-minimalista.png' %}" alt="logotipo">
+        </a>
+
+        <!-- Open Menu Button - Only MD Screen and smaller -->
+        <button id="btn_open_menu" class="lg:hidden flex items-center gap-x-2 text-lg lg:text:md 
+            text-primary-blue_dark" onclick="toggleElementByClick('sidebar', 'translate-x-full')"
+        >
+            <span>{% trans "Menú" %}</span>
+            {% include "icons/menu.html" with tailwind_class="size-7" %}
+        </button>
+
+        <!-- Navbar Items -->
+        <div class="hidden lg:flex flex-row gap-x-2 text-md">
+            {% url 'index' as index_url %}
+            {% nav_item request.path index_url "Inicio" "#" "/" "nav_item_index" %}
+
+            {% nav_item request.path "" "Quienes somos" "#about_us_section" "/quienes-somos/" "nav_item_about_us" %}
+
+            {% nav_item request.path "" "Servicios" "#services_section" "/servicios/" "nav_item_services" %}
+
+            {% nav_item request.path "" "Destinos" "#destination_section" "/destinos/" "nav_item_destination" %}
+
+            {% nav_item request.path "" "Contacto" "#quotation_section" "/cotizar-traslado/" "nav_item_quotation" %}
         </div>
 
-        <div id="btn_open_menu" class="md:hidden flex items-center text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
-                stroke="currentColor" class="size-6 cursor-pointer">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>                      
-        </div>
-
-        <div class="hidden md:flex flex-row items-center gap-x-4 text-white">
-            <a {% if request.path != '/' %} href="{% url 'index' %}" {% endif %}>
-                <div class="p-2
-                    {% if request.path == '/' %} bg-white text-blue-900 rounded-sm
-                    {% else %} hover:bg-white hover:text-blue-900 hover:rounded-sm
-                    {% endif %}">
-                    Inicio
-                </div>
-            </a>
-            <div class="cursor-pointer">
-                <div class="p-2
-                    {% if request.path == '/quienes-somos/' %} bg-white text-blue-900 rounded-sm
-                    {% else %} hover:bg-white hover:text-blue-900 hover:rounded-sm
-                    {% endif %}">
-                    Quienes somos
-                </div>
-            </div>
-            <div id="nav_item_before_fly" class="relative cursor-pointer">
-                <div class="item_content h-full p-2 hover:bg-white hover:text-blue-900 hover:rounded-sm">
-                    Previo a volar
-                </div>
-                <div class="sub_menu hidden absolute -bottom-100 right-0 w-[18rem] flex flex-col gap-y-3 
-                    p-3 bg-blue-900 rounded-sm ring ring-gray-100">
-                    <div class="flex justify-end w-full text-white">
-                        <svg id="btn_close_sub_menu" xmlns="http://www.w3.org/2000/svg" fill="none" 
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
-                            class="size-4 cursor-pointer transition-transform hover:-rotate-90">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                        </svg>          
-                    </div>
-                    {% url 'race-distintion' as rd_url %}
-                    {% nav_item request.path "/sin-distincion-de-raza/" rd_url "Sin distincion de raza" %}
-
-                    {% comment %} {% url 'travel-restriction' as tr_url %}
-                    {% nav_item request.path "/restricciones-por-raza/" tr_url "Requisitos de viaje aereo por raza" %} {% endcomment %}
-                    
-                    {% url 'travel-quietly' as tq_url %}
-                    {% nav_item request.path "/viaje-tranquilo/" tq_url "Viaje tranquilo" %}
-
-                    {% url 'country-requirement' as cr_url %}
-                    {% nav_item request.path "/requisitos-de-ingreso-por-pais/" cr_url "Requisitos de ingreso por pais" %}
-                </div>
-            </div>
-            <a {% if request.path != '/cotizar-traslado/' %} href="{% url 'quotation' %}" {% endif %}>
-                <div id="contact_us" class="p-2
-                    {% if request.path == '/cotizar-traslado/' %} bg-white text-blue-900 rounded-sm
-                    {% else %} cursor-pointer hover:bg-white hover:text-blue-900 hover:rounded-sm
-                    {% endif %}">
-                    Contactanos
-                </div>
-            </a>
+        <!-- Language Selector -->
+        <div class="hidden lg:block">
+            {% include "components/language-selector.html" %}
         </div>
     </div>
-</div>
+</header>
