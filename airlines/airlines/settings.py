@@ -46,6 +46,7 @@ ALLOWED_HOSTS = ["*.aerolineasparamascotas.store",
                  "localhost",
                  "aerolineasparamascotas.com.ar",
                  "www.aerolineasparamascotas.com.ar",
+                 "aerolineasparamascotas-dq6k.onrender.com", # staging
                  ]
 
 
