@@ -52,6 +52,7 @@ ALLOWED_HOSTS = ["*.aerolineasparamascotas.store",
 # Application definition
 
 INSTALLED_APPS = [  
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -175,6 +176,8 @@ LANGUAGES = [
     ("es", "Español"),
     ("en", "English"),
 ]
+
+# MODELTRANSLATION_DEFAULT_LANGUAGE = 'es'
 
 LOCALE_PATHS = [BASE_DIR / "locale"]
 
