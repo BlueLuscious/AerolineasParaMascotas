@@ -1,13 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEA# 
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-29 00:08+0000\n"
+"POT-Creation-Date: 2025-09-14 23:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,6 +46,51 @@ msgstr "Spanish"
 #: airlines/translation_strings.py:10
 msgid "Inglés"
 msgstr "English"
+
+#: news/models/news_model.py:8
+msgid "title"
+msgstr "Title"
+
+#: news/models/news_model.py:10
+msgid "content"
+msgstr "Content"
+
+#: news/models/news_model.py:11
+msgid "image"
+msgstr "Image"
+
+#: news/models/news_model.py:12
+msgid "is_featured"
+msgstr "Featured"
+
+#: news/models/news_model.py:13
+msgid "published"
+msgstr "Published"
+
+#: news/models/news_model.py:14
+msgid "start_date"
+msgstr "Start Date"
+
+#: news/models/news_model.py:15
+msgid "end_date"
+msgstr "End Date"
+
+#: news/models/news_model.py:16
+msgid "created_at"
+msgstr "Created At"
+
+#: news/models/news_model.py:17
+msgid "updated_at"
+msgstr "Update At"
+
+#: news/models/news_model.py:20
+msgid "news_sing"
+msgstr "News"
+
+#: news/models/news_model.py:21
+#: web/templates/pages/components-index/news-section.html:10
+msgid "news_pl"
+msgstr "News"
 
 #: web/mocks/destinations_mock.py:13
 msgid "european_union_title"
@@ -941,6 +987,14 @@ msgstr "Powered by"
 #: web/templates/components/sidebar.html:17
 msgid "Menú"
 msgstr "Menu"
+
+#: web/templates/components/news-card.html:32
+msgid "from"
+msgstr "From"
+
+#: web/templates/components/news-card.html:35
+msgid "to"
+msgstr "To"
 
 #: web/templates/pages/components-index/about-us-section.html:32
 msgid "about_us_title"
