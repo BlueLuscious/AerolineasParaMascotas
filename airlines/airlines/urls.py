@@ -6,6 +6,7 @@ from django.conf import settings
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("", include("dashboard.urls")),
     path("", include("web.urls")),
     path("unicorn/", include("django_unicorn.urls")),
     path("", include("django_components.urls")),
