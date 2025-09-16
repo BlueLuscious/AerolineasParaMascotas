@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-29 00:08+0000\n"
+"POT-Creation-Date: 2025-09-16 22:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,6 +46,18 @@ msgstr "Español"
 #: airlines/translation_strings.py:10
 msgid "Inglés"
 msgstr "Inglés"
+
+#: dashboard/apps.py:8
+msgid "dashboard"
+msgstr "Panel"
+
+#: dashboard/models/proxies/staff_user.py:8
+msgid "staff_user"
+msgstr "Usuario Staff"
+
+#: dashboard/models/proxies/staff_user.py:9
+msgid "staff_users"
+msgstr "Usuarios Staff"
 
 #: web/mocks/destinations_mock.py:13
 msgid "european_union_title"
