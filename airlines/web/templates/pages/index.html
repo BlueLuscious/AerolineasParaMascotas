@@ -6,6 +6,11 @@
 
     <!-- Home Section -->
     {% include "./components-index/home-section.html" %}
+    
+    <!-- News Section -->
+    {% if news %}
+    {% include "./components-index/news-section.html" %}
+    {% endif %}
 
     <!-- About Us Section -->
     {% include "./components-index/about-us-section.html" %}
@@ -21,7 +26,7 @@
 
     <!-- Quotation Section -->
     {% include "./components-index/quotation-section.html" %}
-
+    
     <!-- Reviews Carroussel -->
     {% comment %} {% if reviews %}
     {% include "components/review.html" %}
