@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'storages',
     'colorfield',
     'destination', 
+    "dashboard",
     'web',
     'django_q',
     'review',
