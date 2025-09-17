@@ -1,4 +1,5 @@
 from django.contrib import admin
+from dashboard.sites import staff_admin_site
 from ..models.news_model import NewsModel
 
 @admin.register(NewsModel)
@@ -29,3 +30,5 @@ class NewsModelAdmin(admin.ModelAdmin):
     ]
     ordering = ["-created_at"]
     
+
+staff_admin_site.register(NewsModel, NewsModelAdmin)
