@@ -14,7 +14,7 @@ class ModalView(UnicornView):
                 self.phone_map = "VDR"
             else:
                 if destination.name.lower() == "chile":
-                    self.phone_map = "CHL"
+                    self.phone_map = "AEM"
                 else:
                     self.phone_map = "AEM"
             

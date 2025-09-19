@@ -2,7 +2,7 @@ from django.contrib import admin
 from store.models import ProductModel
 
 @admin.register(ProductModel)
-class ReviewAdmin(admin.ModelAdmin):
+class ProductAdmin(admin.ModelAdmin):
     list_display = (
         "name",
         "price",

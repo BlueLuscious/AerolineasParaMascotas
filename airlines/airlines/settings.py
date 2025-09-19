@@ -52,6 +52,7 @@ ALLOWED_HOSTS = ["*.aerolineasparamascotas.store",
 # Application definition
 
 INSTALLED_APPS = [  
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -69,6 +70,7 @@ INSTALLED_APPS = [
     'review',
     'store',
     'config',
+    'news',
     "django_components",
 ]
 
@@ -165,7 +167,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
@@ -175,6 +177,8 @@ LANGUAGES = [
     ("es", "Español"),
     ("en", "English"),
 ]
+
+# MODELTRANSLATION_DEFAULT_LANGUAGE = 'es'
 
 LOCALE_PATHS = [BASE_DIR / "locale"]
 
@@ -200,7 +204,7 @@ if ENVIRONMENT == "local":
     # and creating unique names for each version so they can safely be cached forever.
     # STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage" 
 
-LOGOUT_REDIRECT_URL = '/web/'#tengo que meter esto pq sino me tira al admin
+LOGOUT_REDIRECT_URL = '/'
 
 IMAGES = {
     "default_product" : "default_product.png",
