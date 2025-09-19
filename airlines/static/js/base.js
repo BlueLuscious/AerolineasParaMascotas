@@ -1,5 +1,6 @@
 import { WhatsappService } from "./services/whatsapp_service.js";
 import { FabController } from "./fab.controller.js";
+import { CarrouselController } from "./carrousel/carrousel.controller.js";
 
 const wa_service = new WhatsappService()
 
@@ -10,6 +11,11 @@ window.toggleElementByClick = toggleElementByClick
 document.addEventListener("DOMContentLoaded", () => {
 
     new FabController("whatsapp_fab");
+
+    const newsCarrouselMobile = document.getElementById("news_carrousel_mobile")
+    new CarrouselController(newsCarrouselMobile, true)
+    const newsCarrouselDesktop = document.getElementById("news_carrousel_desktop")
+    new CarrouselController(newsCarrouselDesktop, true)
 
     // Nav-Link Styles & Interactivity
     const sections = document.querySelectorAll("section")

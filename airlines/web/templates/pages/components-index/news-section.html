@@ -1,0 +1,40 @@
+{% load i18n %}
+{% load component_tags %}
+{% load filter.group_filters %}
+
+
+<div class="flex flex-col items-center p-2 md:p-4 bg-primary-blue_extralight">
+
+    <h1 class="w-fit py-12 text-3xl md:text-4xl text-secondary-grey_dark 
+        font-secondary_font font-black tracking-wide"
+    >{% trans "news_pl" %}</h1>
+
+
+        <!-- Carrousel Mobile -->
+    {% component "CustomCarrousel" id="news_carrousel_mobile" extra_classes="md:hidden" %}
+        {% fill slides %}
+            {% for new in news %}
+            <div class="flex-shrink-0 grid grid-cols-1 gap-6 w-full py-6 px-8">
+                {% include "components/news-card.html" with new=new %}
+            </div>
+            {% endfor %}
+        {% endfill %}
+    {% endcomponent %}
+    <!-- Carrousel Mobile -->
+
+
+    <!-- Carrousel Desktop -->
+    {% component "CustomCarrousel" id="news_carrousel_desktop" extra_classes="hidden md:block" %}
+        {% fill slides %}
+            {% for pair in news|group_by:2 %}
+            <div class="flex-shrink-0 grid md:grid-cols-2 md:gap-12 w-full py-6 px-14">
+                {% for new in pair %}
+                {% include "components/news-card.html" with new=new %}
+                {% endfor %}
+            </div>
+            {% endfor %}
+        {% endfill %}
+    {% endcomponent %}
+    <!-- Carrousel Desktop -->
+
+</div>

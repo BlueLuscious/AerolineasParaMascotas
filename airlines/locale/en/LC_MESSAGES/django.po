@@ -1,7 +1,8 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEA# 
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -57,6 +58,51 @@ msgstr "Staff User"
 #: dashboard/models/proxies/staff_user.py:9
 msgid "staff_users"
 msgstr "Staff Users"
+
+#: news/models/news_model.py:8
+msgid "title"
+msgstr "Title"
+
+#: news/models/news_model.py:10
+msgid "content"
+msgstr "Content"
+
+#: news/models/news_model.py:11
+msgid "image"
+msgstr "Image"
+
+#: news/models/news_model.py:12
+msgid "is_featured"
+msgstr "Featured"
+
+#: news/models/news_model.py:13
+msgid "published"
+msgstr "Published"
+
+#: news/models/news_model.py:14
+msgid "start_date"
+msgstr "Start Date"
+
+#: news/models/news_model.py:15
+msgid "end_date"
+msgstr "End Date"
+
+#: news/models/news_model.py:16
+msgid "created_at"
+msgstr "Created At"
+
+#: news/models/news_model.py:17
+msgid "updated_at"
+msgstr "Update At"
+
+#: news/models/news_model.py:20
+msgid "news_sing"
+msgstr "News"
+
+#: news/models/news_model.py:21
+#: web/templates/pages/components-index/news-section.html:10
+msgid "news_pl"
+msgstr "News"
 
 #: web/mocks/destinations_mock.py:13
 msgid "european_union_title"
@@ -953,6 +999,14 @@ msgstr "Powered by"
 #: web/templates/components/sidebar.html:17
 msgid "Menú"
 msgstr "Menu"
+
+#: web/templates/components/news-card.html:32
+msgid "from"
+msgstr "From"
+
+#: web/templates/components/news-card.html:35
+msgid "to"
+msgstr "To"
 
 #: web/templates/pages/components-index/about-us-section.html:32
 msgid "about_us_title"
