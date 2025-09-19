@@ -204,7 +204,7 @@ if ENVIRONMENT == "local":
     # and creating unique names for each version so they can safely be cached forever.
     # STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage" 
 
-LOGOUT_REDIRECT_URL = '/web/'#tengo que meter esto pq sino me tira al admin
+LOGOUT_REDIRECT_URL = '/'
 
 IMAGES = {
     "default_product" : "default_product.png",
